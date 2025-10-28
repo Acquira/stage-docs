@@ -1,0 +1,298 @@
+---
+title: "How the AI Uses Knowledge Base Documents"
+description: "Understand how the AI assistant accesses and references your uploaded documents"
+---
+
+When you upload documents to the knowledge base, the AI assistant can search and reference them to provide better answers. Here's how it works behind the scenes.
+
+## Document Processing
+
+When a document is uploaded:
+
+<Steps>
+  <Step title="Text Extraction">
+    The system extracts all readable text from the document, preserving structure like headings, paragraphs, and lists.
+  </Step>
+
+  <Step title="Content Chunking">
+    The text is divided into manageable sections while maintaining context. Each section is connected to its source document.
+  </Step>
+
+  <Step title="Indexing">
+    Content is indexed for fast searching, making it easy for the AI to find relevant information quickly.
+  </Step>
+
+  <Step title="Availability">
+    Once processing is complete, the AI can immediately search and reference the document.
+  </Step>
+</Steps>
+
+<Info>
+This happens automatically in the background. Most documents are ready within a few minutes of upload.
+</Info>
+
+## How the AI Searches
+
+When a user asks a question, the AI:
+
+1. **Analyzes the question** to understand what information is needed
+2. **Searches the knowledge base** for relevant content
+3. **Retrieves matching sections** from documents
+4. **Combines information** from multiple sources if needed
+5. **Provides an answer** with source citations
+
+### Example Search Process
+
+```
+User asks: "What's our policy on working from home?"
+
+AI process:
+1. Identifies keywords: policy, working from home, remote work
+2. Searches knowledge base for matching content
+3. Finds: "Remote Work Policy 2024" document
+4. Extracts relevant sections about eligibility and requirements
+5. Responds with policy details and cites the source document
+```
+
+## Source Attribution
+
+The AI always tells users where information comes from:
+
+<AccordionGroup>
+  <Accordion title="Direct Quotes">
+    When quoting directly from a document:
+
+    **AI Response:**
+    "According to the Employee Handbook (Section 3.4): 'All employees are eligible for up to 3 remote work days per week, subject to manager approval.'"
+  </Accordion>
+
+  <Accordion title="Summarized Information">
+    When summarizing content:
+
+    **AI Response:**
+    "Based on the Travel Expense Policy, meals are reimbursed up to $50 per day for domestic travel and $75 per day for international travel."
+  </Accordion>
+
+  <Accordion title="Multiple Sources">
+    When combining information from several documents:
+
+    **AI Response:**
+    "I found information from several sources:
+
+    From the Remote Work Policy: Equipment provision guidelines
+    From the IT Security Policy: Required security measures
+    From the Manager's Handbook: Approval process"
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+Source citations help users verify information and know where to find more details if needed.
+</Tip>
+
+## Relevance Ranking
+
+Not all documents are equally relevant to every question. The AI ranks results by:
+
+- **Keyword matches** - How well the document matches search terms
+- **Context relevance** - Whether the section actually answers the question
+- **Document recency** - Newer documents may be prioritized for policy questions
+- **Document type** - Official policies may rank higher than general guides
+
+This ensures users get the most relevant information first.
+
+## Combining Sources
+
+The AI can synthesize information from multiple documents:
+
+```
+User: "What's the complete process for hiring a contractor?"
+
+AI combines:
+- Contractor Onboarding Process (steps and timeline)
+- Legal Requirements Guide (contract requirements)
+- Finance Policy (payment terms)
+- IT Security Policy (access provisioning)
+
+Result: A comprehensive answer that covers all aspects
+```
+
+## Context Awareness
+
+The AI understands context from:
+
+1. **Previous conversation** - Remembers what you've discussed
+2. **User's current page** - Knows what process or activity you're viewing
+3. **Document relationships** - Understands how documents relate to each other
+4. **User's role** - Can prioritize information relevant to specific roles
+
+<Info>
+This context awareness means you don't have to repeat yourself or explain which process you're asking about.
+</Info>
+
+## When Information Conflicts
+
+If the AI finds conflicting information, it will:
+
+1. **Note the conflict** and inform the user
+2. **Compare the sources** (dates, document types)
+3. **Recommend** which information is likely current
+4. **Suggest** confirming with the document owner
+
+Example:
+```
+AI: "I found two different procedures:
+
+The Sales Playbook (updated March 2024) says leads should be
+contacted within 24 hours.
+
+The Manager's Guide (updated June 2023) says leads should be
+contacted within 48 hours.
+
+The Sales Playbook is more recent and likely reflects the current
+standard. I recommend confirming with the Sales Manager."
+```
+
+## Document Types and Usage
+
+Different document types serve different purposes:
+
+<CardGroup cols={2}>
+  <Card title="Policies" icon="file-contract">
+    **Used for:** Official rules, guidelines, requirements
+
+    **AI uses to:** Answer "what's allowed" and "what's required"
+  </Card>
+
+  <Card title="Procedures & SOPs" icon="list-check">
+    **Used for:** Step-by-step instructions
+
+    **AI uses to:** Explain "how to do" something
+  </Card>
+
+  <Card title="Research & Reports" icon="chart-line">
+    **Used for:** Data, insights, analysis
+
+    **AI uses to:** Provide context and background information
+  </Card>
+
+  <Card title="Guides & Manuals" icon="book">
+    **Used for:** Detailed explanations, best practices
+
+    **AI uses to:** Offer comprehensive guidance
+  </Card>
+</CardGroup>
+
+## Keeping Information Current
+
+For the AI to provide accurate information:
+
+<Steps>
+  <Step title="Update documents promptly">
+    When policies or procedures change, update the knowledge base immediately.
+  </Step>
+
+  <Step title="Disable outdated versions">
+    Turn off old versions so the AI doesn't reference obsolete information.
+  </Step>
+
+  <Step title="Include effective dates">
+    Add dates to document titles and content so everyone knows what's current.
+  </Step>
+
+  <Step title="Review regularly">
+    Periodically audit the knowledge base to ensure all content is up-to-date.
+  </Step>
+</Steps>
+
+<Warning>
+Outdated documents in the knowledge base can lead to incorrect AI responses. Always disable or remove superseded documents.
+</Warning>
+
+## Privacy and Access
+
+The AI respects document access:
+
+- Only searches documents marked "Available to AI"
+- Only provides information to authenticated users
+- Maintains the same security as other system data
+- Does not share information outside your organization
+
+<Note>
+The AI can only access documents uploaded to the knowledge base. It cannot access external files, databases, or systems.
+</Note>
+
+## Improving AI Responses
+
+The quality of AI responses depends on document quality:
+
+### Write Clear Documents
+
+<CardGroup cols={2}>
+  <Card title="Good Document Structure" icon="circle-check">
+    - Clear headings
+    - Organized sections
+    - Specific procedures
+    - Complete information
+  </Card>
+
+  <Card title="Poor Document Structure" icon="circle-xmark">
+    - Vague headings
+    - Unorganized content
+    - Missing steps
+    - Incomplete details
+  </Card>
+</CardGroup>
+
+### Use Consistent Terminology
+
+Use the same terms throughout documents:
+- "Remote work" OR "work from home" (pick one)
+- "Purchase request" OR "procurement request" (be consistent)
+- "Expense report" OR "reimbursement claim" (use the same term)
+
+### Include Context
+
+Help the AI understand when and why:
+- "This policy applies to full-time employees hired after January 1, 2024"
+- "Use this process for purchases between $1,000 and $10,000"
+- "This procedure is required for GDPR compliance"
+
+<Tip>
+Well-structured, clear documents lead to better AI responses. Invest time in document quality and the AI will be more helpful.
+</Tip>
+
+## Best Practices for Knowledge Base Content
+
+<AccordionGroup>
+  <Accordion title="Be Specific">
+    Instead of: "Employees may work remotely sometimes"
+
+    Write: "Full-time employees are eligible for up to 3 remote work days per week, subject to manager approval and business needs"
+  </Accordion>
+
+  <Accordion title="Include Examples">
+    "Expense reports should itemize meals by: breakfast ($15), lunch ($20), dinner ($35), with receipts for each meal over $25"
+
+    Examples help the AI provide better guidance to users.
+  </Accordion>
+
+  <Accordion title="Define Terms">
+    "Contractor (1099): An individual providing services under a service agreement, not eligible for employee benefits"
+
+    Definitions prevent confusion and help the AI explain concepts.
+  </Accordion>
+
+  <Accordion title="Note Exceptions">
+    "Standard approval limit is $5,000, except for IT purchases which require CTO approval regardless of amount"
+
+    Exceptions are important for accurate AI responses.
+  </Accordion>
+</AccordionGroup>
+
+## What's Next?
+
+Learn more about managing the AI assistant:
+
+- [Uploading documents](/ai/uploading-documents) (Admin)
+- [Managing the knowledge base](/ai/managing-knowledge-base) (Admin)
+- [Creating custom master prompts](/ai/creating-custom-prompts) (Admin)

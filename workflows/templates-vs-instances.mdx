@@ -1,0 +1,117 @@
+---
+title: "Templates vs Instances"
+description: "Understand the difference between workflow templates and workflow instances"
+---
+
+## The Cookie Cutter Analogy
+
+Think of workflow templates and instances like cookie cutters and cookies:
+
+- **Template** = The cookie cutter (reusable pattern)
+- **Instance** = The actual cookie (one-time use)
+
+You use the same cookie cutter over and over to make many cookies. Similarly, you use the same workflow template over and over to create many workflow instances.
+
+## Templates vs Instances
+
+<CardGroup cols={2}>
+  <Card title="Workflow Template" icon="cookie">
+    - Reusable blueprint
+    - Contains task definitions
+    - Used to create instances
+    - Edited by admins only
+    - Saved in template library
+  </Card>
+
+  <Card title="Workflow Instance" icon="list-check">
+    - One-time execution
+    - Actual work gets done here
+    - Created from a template
+    - Assigned to specific people
+    - Tracks real progress
+  </Card>
+</CardGroup>
+
+## Comparison Table
+
+| Aspect | Template | Instance |
+|--------|----------|----------|
+| **Purpose** | Blueprint for future work | Actual work execution |
+| **Reusability** | Used many times | Used once, then complete |
+| **Who Creates** | Admins | System (from template) |
+| **Who Uses** | Admins (to create instances) | Team members (to do work) |
+| **Changes** | Updates affect future instances | Changes only affect this instance |
+| **Example** | "Employee Onboarding" | "Onboarding John Smith - May 2025" |
+
+## Visual Representation
+
+<Frame>
+  <img src="/images/workflows/template-instance-diagram.png" alt="Template to Instance Flow" />
+</Frame>
+
+<Note>
+**Placeholder**: Diagram showing one template branching into multiple instances
+</Note>
+
+## Why This Distinction Matters
+
+<AccordionGroup>
+  <Accordion title="Consistency Across Your Team">
+    Templates ensure everyone follows the same process. When you onboard 10 employees, all 10 get the exact same steps.
+  </Accordion>
+
+  <Accordion title="Easy Updates">
+    Update the template once, and all future instances automatically use the improved process. You don't have to update every single workflow.
+  </Accordion>
+
+  <Accordion title="Clear Separation of Roles">
+    - **Admins** design and maintain templates
+    - **Team members** execute instances
+
+    This keeps your processes organized and prevents accidental changes to your master workflows.
+  </Accordion>
+
+  <Accordion title="Historical Record">
+    Completed instances preserve exactly how work was done, even if the template changes later. This is crucial for audits and compliance.
+  </Accordion>
+</AccordionGroup>
+
+## Real-World Examples
+
+<Steps>
+  <Step title="Template: Employee Onboarding">
+    Admin creates a workflow template with 15 tasks covering paperwork, equipment setup, training, and introductions.
+  </Step>
+
+  <Step title="Instance: Onboarding Sarah Chen">
+    When Sarah joins in March, HR creates an instance from the template. Sarah's manager completes the 15 tasks specific to her onboarding.
+  </Step>
+
+  <Step title="Instance: Onboarding James Rodriguez">
+    When James joins in April, HR creates another instance from the same template. James' manager completes his 15 tasks.
+  </Step>
+
+  <Step title="Template Updated">
+    Admin adds a new task: "Schedule security training." This task will appear in all future onboarding instances but won't affect Sarah's or James' completed workflows.
+  </Step>
+</Steps>
+
+## Key Takeaways
+
+<CardGroup cols={3}>
+  <Card title="Templates" icon="stamp">
+    The master copy that never changes unless an admin updates it
+  </Card>
+
+  <Card title="Instances" icon="clipboard-list">
+    The working copy where actual tasks get completed
+  </Card>
+
+  <Card title="Relationship" icon="arrows-split-up-and-left">
+    One template creates unlimited instances
+  </Card>
+</CardGroup>
+
+<Tip>
+When you're working on tasks, you're always working in an **instance**. You'll never directly interact with templates unless you're an admin.
+</Tip>

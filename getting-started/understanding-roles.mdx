@@ -1,0 +1,206 @@
+---
+title: "Understanding User Roles"
+description: "Learn about the three user roles and what they mean for you"
+---
+
+## What Are User Roles?
+
+User roles determine what you can do in the Business Process Framework. Your role defines your level of access and the actions you can take.
+
+There are three roles: Owner, Admin, and Member. Each role builds on the previous one, giving you more capabilities as you move up.
+
+## The Three Roles
+
+<CardGroup cols={3}>
+  <Card title="Member" icon="user">
+    Basic access to view and use processes. Perfect for most team members.
+  </Card>
+
+  <Card title="Admin" icon="user-shield">
+    Can create and manage processes. Ideal for process owners and managers.
+  </Card>
+
+  <Card title="Owner" icon="crown">
+    Full control over the entire workspace. Reserved for executives and system managers.
+  </Card>
+</CardGroup>
+
+## Role Comparison
+
+Here's a quick overview of what each role can do:
+
+| Action | Member | Admin | Owner |
+|--------|--------|-------|-------|
+| View processes | ✅ | ✅ | ✅ |
+| Search and use AI | ✅ | ✅ | ✅ |
+| Comment on processes | ✅ | ✅ | ✅ |
+| Create new processes | ❌ | ✅ | ✅ |
+| Edit processes | ❌ | ✅ | ✅ |
+| Delete processes | ❌ | ✅ | ✅ |
+| Manage team members | ❌ | ❌ | ✅ |
+| Change roles | ❌ | ❌ | ✅ |
+| Configure workspace | ❌ | ❌ | ✅ |
+| Billing and subscription | ❌ | ❌ | ✅ |
+
+<Note>
+These are the default role permissions. Your organization may have customized these settings.
+</Note>
+
+## Member Role Explained
+
+Members have read access to the processes shared with them. This is the most common role for regular team members.
+
+**What Members Can Do**
+- View all processes shared with them
+- Search for processes
+- Ask the AI assistant questions
+- Leave comments and feedback
+- Save favorite processes
+- Get notifications about updates
+- Download process attachments
+
+**What Members Cannot Do**
+- Create new processes
+- Edit existing processes
+- Delete processes
+- Manage other users
+- Change workspace settings
+
+**Who Should Be a Member**
+- Most employees
+- New hires
+- Contractors with limited access
+- Anyone who needs to reference processes but not create them
+
+<Tip>
+Being a Member doesn't mean you're less important! Most users are Members, and that's perfectly fine for accessing and using your organization's processes.
+</Tip>
+
+## Admin Role Explained
+
+Admins can create, edit, and manage processes. They're the process owners and content managers.
+
+**What Admins Can Do**
+Everything Members can do, plus:
+- Create new processes from scratch
+- Edit any process they have access to
+- Delete processes they created
+- Organize processes into folders
+- Share processes with specific users
+- Upload and manage attachments
+- Create templates for reuse
+- Bulk import processes
+
+**What Admins Cannot Do**
+- Add or remove team members
+- Change user roles
+- Modify workspace settings
+- Access billing information
+- Delete the entire workspace
+
+**Who Should Be an Admin**
+- Department managers
+- Process owners
+- Team leads
+- Training coordinators
+- Anyone responsible for documenting procedures
+
+<Info>
+Admins are responsible for keeping processes accurate and up-to-date. If you're an Admin, make sure to review your processes regularly.
+</Info>
+
+## Owner Role Explained
+
+Owners have complete control over the workspace. There's usually only one or two Owners per organization.
+
+**What Owners Can Do**
+Everything Admins can do, plus:
+- Invite new team members
+- Remove team members
+- Change anyone's role
+- Configure workspace settings
+- Manage integrations
+- Access all processes (even private ones)
+- View usage analytics
+- Manage billing and subscription
+- Delete the workspace
+
+**What Owners Should Be Careful About**
+- Don't give Owner access to too many people
+- Be cautious when deleting users or processes
+- Review workspace settings before changing them
+- Protect your login credentials carefully
+
+**Who Should Be an Owner**
+- Company executives
+- IT administrators
+- Business owners
+- System managers
+
+<Warning>
+Owners have powerful privileges, including the ability to delete the entire workspace. Only assign this role to highly trusted individuals.
+</Warning>
+
+## How Roles Are Assigned
+
+When you're invited to join the Business Process Framework, you're assigned a role by an Owner.
+
+**During Onboarding**
+1. An Owner sends you an invitation email
+2. The invitation specifies your role
+3. You accept the invitation and create your account
+4. Your role is active immediately
+
+**Requesting a Role Change**
+If you need different permissions:
+1. Contact your workspace Owner
+2. Explain why you need the change
+3. The Owner can update your role instantly
+4. You'll receive a notification about the change
+
+<Tip>
+If you're unsure what your current role is, click your profile picture in the top right corner. Your role is displayed in your profile information.
+</Tip>
+
+## Permission Inheritance
+
+Roles work on an inheritance model. This means higher roles can do everything lower roles can do, plus more.
+
+**How It Works**
+- Admin = Member permissions + admin permissions
+- Owner = Admin permissions + owner permissions
+
+**Why This Matters**
+You never lose capabilities when you're promoted to a higher role. You only gain new ones.
+
+## Role Best Practices
+
+<AccordionGroup>
+  <Accordion title="Start with the minimum role needed">
+    Always assign the lowest role that allows someone to do their job. You can upgrade later if needed. This principle is called "least privilege" and keeps your workspace secure.
+  </Accordion>
+
+  <Accordion title="Review roles regularly">
+    Owners should review user roles every few months. Remove users who have left the company and adjust roles as job responsibilities change.
+  </Accordion>
+
+  <Accordion title="Document who has what role">
+    Keep a list of who your Owners and Admins are. This helps during emergencies and when planning team changes.
+  </Accordion>
+
+  <Accordion title="Train Admins properly">
+    Before giving someone Admin access, make sure they understand how to create and manage processes properly. Poor documentation is worse than no documentation.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Role Capabilities" icon="list-check" href="/getting-started/role-capabilities">
+    See detailed capabilities for each role
+  </Card>
+
+  <Card title="How Sharing Works" icon="share-nodes" href="/getting-started/how-sharing-works">
+    Learn how to share processes based on your role
+  </Card>
+</CardGroup>

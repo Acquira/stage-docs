@@ -1,0 +1,439 @@
+---
+title: "Permission Levels"
+description: "Understanding View, Comment, and Edit permissions for shared processes"
+---
+
+## Three Permission Levels
+
+When you share a process, you choose what level of access each person gets. The Business Process Framework uses three standard permission levels that control what people can do with your processes.
+
+<Info>
+Think of permissions like levels of trust. View is "you can see it," Comment is "you can give feedback," and Edit is "you can change it."
+</Info>
+
+## The Three Levels
+
+<CardGroup cols={3}>
+  <Card title="View" icon="eye" color="#3b82f6">
+    **Can see, can't change**
+
+    Read-only access to the process
+  </Card>
+  <Card title="Comment" icon="message" color="#10b981">
+    **Can see and suggest**
+
+    View access plus ability to add comments
+  </Card>
+  <Card title="Edit" icon="pen" color="#f59e0b">
+    **Can change anything**
+
+    Full access to modify the process
+  </Card>
+</CardGroup>
+
+## View Permission
+
+View permission gives read-only access. People can see the process but can't make any changes.
+
+### What You Can Do with View Permission
+
+<AccordionGroup>
+  <Accordion title="See Process Details" icon="eye" defaultOpen>
+    - View all activities and their sequence
+    - See RACI assignments
+    - Read all documentation (SOPs, guides, blueprints)
+    - View visual and swimlane diagrams
+    - See forms and attachments
+    - View KPIs and performance data
+  </Accordion>
+
+  <Accordion title="Use as Reference" icon="book">
+    - Follow process steps while working
+    - Reference procedures during tasks
+    - Print or export for personal use
+    - Bookmark or favorite the process
+    - Search within the process
+  </Accordion>
+
+  <Accordion title="Access from Anywhere" icon="globe">
+    - Open the process whenever needed
+    - View on any device (desktop, tablet, mobile)
+    - See real-time updates made by others
+    - Receive notifications about changes (if enabled)
+  </Accordion>
+</AccordionGroup>
+
+### What You CANNOT Do with View Permission
+
+<Warning>
+**Cannot make any changes:**
+- Can't edit activities
+- Can't update documentation
+- Can't change RACI assignments
+- Can't add or remove content
+- Can't share with others
+- Can't add comments or suggestions
+</Warning>
+
+### Best For
+
+<CardGroup cols={2}>
+  <Card title="Process Users" icon="user">
+    Team members who follow the process but don't maintain it
+  </Card>
+  <Card title="New Employees" icon="user-plus">
+    People learning the process who shouldn't edit yet
+  </Card>
+  <Card title="Stakeholders" icon="briefcase">
+    Managers or partners who need visibility but not control
+  </Card>
+  <Card title="Wide Distribution" icon="building">
+    Company-wide processes everyone needs to reference
+  </Card>
+</CardGroup>
+
+**Example:** Share your customer support process with all support agents (View permission). They can reference procedures while handling tickets but can't accidentally change the documented process.
+
+## Comment Permission
+
+Comment permission includes everything View permission offers, plus the ability to add comments and suggestions.
+
+### What You Can Do with Comment Permission
+
+<AccordionGroup>
+  <Accordion title="Everything from View" icon="check" defaultOpen>
+    All View permissions apply:
+    - See all process details
+    - Use as reference
+    - Access from anywhere
+  </Accordion>
+
+  <Accordion title="Add Comments" icon="comment">
+    - Comment on activities
+    - Comment on documentation
+    - Ask questions about procedures
+    - Tag other people in comments (@mentions)
+    - Reply to existing comments
+    - See all comment threads
+  </Accordion>
+
+  <Accordion title="Suggest Improvements" icon="lightbulb">
+    - Propose changes or improvements
+    - Point out errors or unclear instructions
+    - Share insights from experience
+    - Recommend additional documentation
+    - Suggest better RACI assignments
+  </Accordion>
+
+  <Accordion title="Collaborate" icon="users">
+    - Participate in process improvement discussions
+    - Provide feedback on updates
+    - Vote or react to suggestions (if available)
+    - See who else has access
+  </Accordion>
+</AccordionGroup>
+
+### What You CANNOT Do with Comment Permission
+
+<Warning>
+**Cannot make direct changes:**
+- Can't edit the process structure
+- Can't update activities or documentation
+- Can't delete anything
+- Can't share with others
+- Can't accept or implement your own suggestions
+
+**However:** Your comments and suggestions are visible to people with Edit permission, who can implement your ideas.
+</Warning>
+
+### Best For
+
+<CardGroup cols={2}>
+  <Card title="Subject Matter Experts" icon="award">
+    People with expertise who should provide input
+  </Card>
+  <Card title="Cross-Functional Partners" icon="handshake">
+    Teams that interact with the process
+  </Card>
+  <Card title="Process Reviewers" icon="magnifying-glass">
+    People auditing or improving processes
+  </Card>
+  <Card title="Collaborative Culture" icon="users">
+    Organizations that value input from all levels
+  </Card>
+</CardGroup>
+
+**Example:** Share your sales process with the marketing team (Comment permission). They can't edit the process, but they can suggest improvements to lead handoff procedures based on their experience.
+
+## Edit Permission
+
+Edit permission gives full control. People can see, comment, and make changes to the process.
+
+### What You Can Do with Edit Permission
+
+<AccordionGroup>
+  <Accordion title="Everything from View and Comment" icon="check" defaultOpen>
+    All View and Comment permissions apply:
+    - See all process details
+    - Add comments and suggestions
+    - Collaborate with others
+  </Accordion>
+
+  <Accordion title="Modify Process Structure" icon="sitemap">
+    - Add, edit, or delete activities
+    - Create or modify categories
+    - Reorder activities
+    - Change activity properties
+    - Update process descriptions
+  </Accordion>
+
+  <Accordion title="Update Documentation" icon="file-lines">
+    - Create or edit SOPs
+    - Write or modify guides
+    - Create or update blueprints
+    - Add or remove forms
+    - Upload attachments
+  </Accordion>
+
+  <Accordion title="Manage RACI Assignments" icon="user-tag">
+    - Assign RACI roles
+    - Update role assignments
+    - Remove assignments
+    - Change who's Responsible, Accountable, Consulted, or Informed
+  </Accordion>
+
+  <Accordion title="Control Sharing" icon="share-nodes">
+    - Share the process with others
+    - Change permission levels
+    - Remove people's access
+    - Generate share links
+    - Manage organization-wide visibility
+  </Accordion>
+
+  <Accordion title="Configure KPIs" icon="chart-line">
+    - Create KPIs
+    - Set targets and thresholds
+    - Assign KPI ownership
+    - Update KPI values
+    - Delete KPIs
+  </Accordion>
+</AccordionGroup>
+
+### What You SHOULD NOT Do with Edit Permission
+
+<Warning>
+**With great power comes great responsibility:**
+- Don't make significant changes without discussing with the team
+- Don't delete content others created without agreement
+- Don't change RACI assignments that were carefully planned
+- Don't share processes with inappropriate people
+- Don't make changes while others are actively editing (risk of conflicts)
+</Warning>
+
+### Best For
+
+<CardGroup cols={2}>
+  <Card title="Process Owners" icon="crown">
+    Person responsible for maintaining the process
+  </Card>
+  <Card title="Team Leads" icon="user-tie">
+    Managers who oversee the process area
+  </Card>
+  <Card title="Documentation Maintainers" icon="pen-to-square">
+    Dedicated people updating documentation
+  </Card>
+  <Card title="Small Core Teams" icon="users">
+    Trusted group collaboratively maintaining processes
+  </Card>
+</CardGroup>
+
+**Example:** Share your HR onboarding process with the HR Director and Senior HR Coordinator (Edit permission). They can update procedures as policies change without needing to ask permission for every edit.
+
+## Permission Comparison Table
+
+| Capability | View | Comment | Edit |
+|------------|:----:|:-------:|:----:|
+| **See Process** | ✅ | ✅ | ✅ |
+| **Read Documentation** | ✅ | ✅ | ✅ |
+| **View Diagrams** | ✅ | ✅ | ✅ |
+| **See RACI Assignments** | ✅ | ✅ | ✅ |
+| **Export/Print** | ✅ | ✅ | ✅ |
+| **Add Comments** | ❌ | ✅ | ✅ |
+| **Reply to Comments** | ❌ | ✅ | ✅ |
+| **Tag Others (@mention)** | ❌ | ✅ | ✅ |
+| **Edit Activities** | ❌ | ❌ | ✅ |
+| **Update Documentation** | ❌ | ❌ | ✅ |
+| **Change RACI** | ❌ | ❌ | ✅ |
+| **Manage KPIs** | ❌ | ❌ | ✅ |
+| **Share with Others** | ❌ | ❌ | ✅ |
+| **Delete Content** | ❌ | ❌ | ✅ |
+
+## Choosing the Right Permission Level
+
+Ask yourself these questions:
+
+<Steps>
+  <Step title="Does this person perform activities in the process?">
+    **Yes:** At minimum, give View permission so they can reference procedures.
+
+    **No:** Consider if they need access at all.
+  </Step>
+
+  <Step title="Should this person help improve the process?">
+    **Yes:** Give Comment permission so they can suggest improvements.
+
+    **No:** View permission is sufficient.
+  </Step>
+
+  <Step title="Is this person responsible for maintaining documentation?">
+    **Yes:** Give Edit permission so they can update as needed.
+
+    **No:** Comment permission is probably enough.
+  </Step>
+
+  <Step title="Does this person need to control who else has access?">
+    **Yes:** Give Edit permission (includes sharing rights).
+
+    **No:** View or Comment is appropriate.
+  </Step>
+</Steps>
+
+## Permission Level Examples by Role
+
+| Role | Typical Permission | Reason |
+|------|-------------------|---------|
+| **Process Owner** | Edit | Responsible for maintaining the process |
+| **Team Lead/Manager** | Edit | Oversees the process and makes updates |
+| **Team Members** | View | Follow the process but don't maintain it |
+| **New Employees** | View | Learning the process, shouldn't edit yet |
+| **Subject Matter Expert** | Comment | Provides valuable input but doesn't maintain docs |
+| **Cross-Functional Partner** | Comment | Interacts with process, can suggest improvements |
+| **Executive/Stakeholder** | View | Needs visibility but not control |
+| **Auditor/Compliance** | View or Comment | Reviews for compliance, may suggest changes |
+| **Consultant/Contractor** | View | Temporary access for specific projects |
+
+## Changing Permissions
+
+You can update someone's permission level at any time:
+
+<Steps>
+  <Step title="Open Share Settings">
+    Click the Share button for the process.
+  </Step>
+  <Step title="Find the Person">
+    Locate the team member in the access list.
+  </Step>
+  <Step title="Click Current Permission">
+    Click on their current permission level (View, Comment, or Edit).
+  </Step>
+  <Step title="Select New Permission">
+    Choose the new permission level from the dropdown.
+  </Step>
+  <Step title="Save">
+    Changes take effect immediately. No need to notify the person unless you want to explain the change.
+  </Step>
+</Steps>
+
+<Note>
+**Common reason to change permissions:** Promoting someone from View to Comment as they gain experience, or from Comment to Edit when they become a process maintainer.
+</Note>
+
+## Permission Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Start Conservative" icon="shield">
+    Give the minimum permission needed. It's easier to grant more access later than to restrict it.
+  </Card>
+  <Card title="Limit Editors" icon="users-slash">
+    Too many people with Edit permission creates chaos. Limit to 2-4 maintainers per process.
+  </Card>
+  <Card title="Use Comment Freely" icon="comments">
+    Comment permission is great for collaborative culture. People feel heard without risking accidental changes.
+  </Card>
+  <Card title="Review Regularly" icon="calendar-check">
+    Audit permissions quarterly. Update as people's roles change or as they gain experience.
+  </Card>
+</CardGroup>
+
+## Common Permission Scenarios
+
+<AccordionGroup>
+  <Accordion title="Scenario: Team Member Keeps Asking Questions" icon="comment-dots" defaultOpen>
+    **Problem:** A team member with View permission constantly emails questions about the process.
+
+    **Solution:** Upgrade them to Comment permission so they can ask questions directly in the process. This creates a knowledge base for others.
+  </Accordion>
+
+  <Accordion title="Scenario: Too Many Conflicting Edits" icon="triangle-exclamation">
+    **Problem:** Multiple people with Edit permission are making conflicting changes.
+
+    **Solution:** Reduce Edit permissions to just 1-2 process owners. Downgrade others to Comment so they can still suggest changes.
+  </Accordion>
+
+  <Accordion title="Scenario: Someone Left the Team" icon="user-minus">
+    **Problem:** A former team member still has Edit permission after changing roles.
+
+    **Solution:** Remove their access entirely or downgrade to View if they still need to reference the process occasionally.
+  </Accordion>
+
+  <Accordion title="Scenario: Want Feedback Before Implementing" icon="lightbulb">
+    **Problem:** You want team input on a new process before finalizing it.
+
+    **Solution:** Share with team members with Comment permission. Gather feedback via comments, then implement suggested changes.
+  </Accordion>
+</AccordionGroup>
+
+## Security Considerations
+
+<Warning>
+**Sensitive Processes**
+
+For processes containing sensitive information (financials, compensation, legal, personal data):
+- Limit sharing to only necessary people
+- Use View permission by default
+- Only grant Edit to trusted owners
+- Regularly audit who has access
+- Never use public sharing
+</Warning>
+
+<Warning>
+**Compliance Processes**
+
+For processes subject to audit or regulatory requirements:
+- Track who has Edit permission
+- Consider requiring approval for changes
+- Document why people have access
+- Review access during audits
+- Use version control features
+</Warning>
+
+## Tips for Success
+
+<CardGroup cols={2}>
+  <Card title="Communicate Changes" icon="megaphone">
+    When changing someone's permissions, let them know why. This prevents confusion.
+  </Card>
+  <Card title="Document Decision Criteria" icon="clipboard-list">
+    Create guidelines for your team about who gets which permission level.
+  </Card>
+  <Card title="Trust Your Team" icon="handshake">
+    Don't withhold Comment permission out of fear. Collaborative input improves processes.
+  </Card>
+  <Card title="Monitor Activity" icon="chart-line">
+    If your system shows who's editing, monitor for issues and adjust permissions as needed.
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Sharing Processes" icon="share-nodes" href="/processes/sharing-processes">
+    Learn how to share processes with your team
+  </Card>
+  <Card title="Working with Shared Processes" icon="folder-open" href="/processes/working-with-shared">
+    Learn how to use processes shared with you
+  </Card>
+  <Card title="Collaboration Best Practices" icon="users" href="/processes/collaboration-best-practices">
+    Tips for effective team collaboration
+  </Card>
+</CardGroup>

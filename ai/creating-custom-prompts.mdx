@@ -1,0 +1,446 @@
+---
+title: "Creating Custom Master Prompts"
+description: "Learn how to create and customize master prompts for your AI assistant (Admin feature)"
+---
+
+<Note>
+This is an **administrator-only feature**. Only users with admin privileges can create and manage master prompts.
+</Note>
+
+Master prompts help you customize how the AI assistant behaves and communicates with your team. This guide shows you how to create effective prompts.
+
+## Before You Start
+
+Have ready:
+
+- Understanding of your organization's communication style
+- List of systems and tools your team uses
+- Key priorities or values to emphasize
+- Any special terminology or industry context
+- Examples of questions users commonly ask
+
+<Tip>
+Don't worry about making it perfect the first time. You can test, refine, and update master prompts as often as needed.
+</Tip>
+
+## Creating Your First Master Prompt
+
+<Steps>
+  <Step title="Navigate to Master Prompts">
+    From the admin panel, select **AI Settings** then **Master Prompts**.
+  </Step>
+
+  <Step title="Click 'Create New Prompt'">
+    Click the **Create Master Prompt** button.
+  </Step>
+
+  <Step title="Name your prompt">
+    Give it a clear, descriptive name like "Global AI Guidelines" or "Customer Service Context".
+  </Step>
+
+  <Step title="Choose prompt type">
+    Select:
+    - **Global**: Applies to all AI conversations
+    - **Context-specific**: Applies only in certain situations
+  </Step>
+
+  <Step title="Write your prompt">
+    Enter your instructions for the AI (detailed guidance below).
+  </Step>
+
+  <Step title="Test the prompt">
+    Use the testing panel to see how the AI responds with your prompt.
+  </Step>
+
+  <Step title="Activate the prompt">
+    Once satisfied, activate it to make it live for all users.
+  </Step>
+</Steps>
+
+## What to Include in Your Prompt
+
+A good master prompt typically includes:
+
+### 1. Communication Style
+
+Tell the AI how to communicate:
+
+```
+Examples:
+
+"Use a friendly, conversational tone. Avoid overly formal language."
+
+"Maintain a professional tone suitable for a corporate environment."
+
+"Be concise and direct. Busy executives prefer brief, actionable answers."
+
+"Be encouraging and supportive, especially for training topics."
+```
+
+### 2. Organizational Context
+
+Provide background about your organization:
+
+```
+Examples:
+
+"We are a healthcare provider. Patient privacy and HIPAA compliance
+are critical considerations in all processes."
+
+"We're a fast-growing startup. Emphasize flexibility and adaptability.
+Processes may change frequently."
+
+"We operate globally across 15 countries. Be mindful of time zones
+and international considerations."
+```
+
+### 3. System and Tool References
+
+List the tools your team uses:
+
+```
+Examples:
+
+"When discussing CRM, reference Salesforce specifically."
+
+"For time tracking, mention that we use ClickTime."
+
+"Project management questions should reference Asana."
+
+"Always include links to tool login pages when mentioning systems."
+```
+
+### 4. Key Priorities
+
+Highlight what matters most:
+
+```
+Examples:
+
+"Safety is our top priority. Always mention safety considerations
+first, followed by operational steps."
+
+"Customer satisfaction drives all decisions. Frame answers in terms
+of customer impact."
+
+"Efficiency and speed are valued. Suggest the quickest compliant
+approach first."
+```
+
+### 5. Special Considerations
+
+Note unique aspects of your organization:
+
+```
+Examples:
+
+"We have a fully remote team. Don't assume people are in the office."
+
+"Our fiscal year runs July-June, not calendar year."
+
+"We use 'clients' not 'customers' in all communications."
+
+"Include accessibility considerations in process recommendations."
+```
+
+## Sample Master Prompts
+
+<AccordionGroup>
+  <Accordion title="Professional Services Firm">
+    ```
+    Communication Style:
+    - Professional and precise tone
+    - Address users respectfully
+    - Provide thorough, detailed answers
+
+    Organizational Context:
+    - We are a management consulting firm
+    - Client confidentiality is paramount
+    - Billable time tracking is critical to our business
+
+    Systems and Tools:
+    - Time tracking: ClickTime (mention project codes)
+    - CRM: Salesforce
+    - Document management: SharePoint
+    - Communication: Microsoft Teams
+
+    Key Priorities:
+    - Client service excellence
+    - Accurate time and expense tracking
+    - Professional development and learning
+    - Ethical practices and confidentiality
+
+    Special Considerations:
+    - Always mention project codes for billable work
+    - Reference client engagement letters for scope questions
+    - Emphasize documentation for client deliverables
+    - Note when activities may be billable vs. non-billable
+    ```
+  </Accordion>
+
+  <Accordion title="E-Commerce Company">
+    ```
+    Communication Style:
+    - Friendly, helpful, and enthusiastic
+    - Use casual language appropriate for a young company
+    - Emphasize speed and customer satisfaction
+
+    Organizational Context:
+    - Fast-growing e-commerce business
+    - Customer obsessed culture
+    - Move fast and iterate
+
+    Systems and Tools:
+    - Order management: Shopify
+    - Customer service: Zendesk
+    - Inventory: Inventory Planner
+    - Analytics: Google Analytics + Looker
+
+    Key Priorities:
+    - Customer satisfaction (NPS is our North Star)
+    - Fast shipping and fulfillment
+    - Product quality and presentation
+    - Data-driven decision making
+
+    Special Considerations:
+    - Peak season is Q4 (October-December)
+    - We have same-day fulfillment goals
+    - Customer reviews are monitored daily
+    - Sustainability is part of our brand values
+    ```
+  </Accordion>
+
+  <Accordion title="Healthcare Provider">
+    ```
+    Communication Style:
+    - Professional, compassionate, and clear
+    - Patient-centered language
+    - Clear explanations that non-medical staff can understand
+
+    Organizational Context:
+    - Multi-location healthcare provider
+    - HIPAA compliance is non-negotiable
+    - Patient safety and quality of care are paramount
+
+    Systems and Tools:
+    - EMR: Epic
+    - Scheduling: Epic Cadence
+    - Billing: Epic Resolute
+    - Communication: Secure messaging through Epic
+
+    Key Priorities:
+    - Patient safety and privacy (HIPAA)
+    - Quality of care
+    - Regulatory compliance (Joint Commission, CMS)
+    - Compassionate patient experience
+
+    Special Considerations:
+    - Always mention HIPAA considerations for patient data
+    - Reference infection control protocols where relevant
+    - Note emergency procedures take priority
+    - Include escalation paths for patient safety concerns
+    ```
+  </Accordion>
+
+  <Accordion title="Software Development Company">
+    ```
+    Communication Style:
+    - Technical but accessible
+    - Collaborative and inclusive
+    - Encourage questions and learning
+
+    Organizational Context:
+    - SaaS product development company
+    - Agile methodology throughout
+    - Remote-first with global team
+
+    Systems and Tools:
+    - Project management: Jira
+    - Code repository: GitHub
+    - Documentation: Confluence
+    - Communication: Slack (async preferred)
+    - Meetings: Zoom
+
+    Key Priorities:
+    - Code quality and security
+    - Customer uptime and reliability
+    - Team collaboration and knowledge sharing
+    - Continuous improvement and learning
+
+    Special Considerations:
+    - Team spans 8 time zones (note this for scheduling)
+    - We work in 2-week sprints
+    - Documentation is critical for remote team
+    - Security and data protection are table stakes
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Prompt Writing Tips
+
+<CardGroup cols={2}>
+  <Card title="Be Specific" icon="bullseye">
+    Instead of: "Be helpful"
+
+    Write: "When users ask about processes, include specific system names, approval workflows, and typical timelines"
+  </Card>
+
+  <Card title="Use Examples" icon="list">
+    Instead of: "Reference our tools"
+
+    Write: "For CRM questions, say 'in Salesforce' rather than 'in the CRM system'"
+  </Card>
+
+  <Card title="Prioritize Clearly" icon="arrow-down-1-9">
+    Instead of: "Mention safety and efficiency"
+
+    Write: "Always mention safety first, then efficiency. Safety is never compromised for speed."
+  </Card>
+
+  <Card title="Include Context" icon="circle-info">
+    Instead of: "We're remote"
+
+    Write: "We're fully remote with team members across US, Europe, and Asia. Assume async communication and note time zones for meetings."
+  </Card>
+</CardGroup>
+
+## Testing Your Prompt
+
+Always test before activating:
+
+<Steps>
+  <Step title="Use the test panel">
+    The prompt editor includes a test interface. Ask typical questions to see responses.
+  </Step>
+
+  <Step title="Try diverse questions">
+    Test different types of questions:
+    - Process questions
+    - Team questions
+    - Tool/system questions
+    - Policy questions
+  </Step>
+
+  <Step title="Check for consistency">
+    Verify the AI follows your guidance consistently across different topics.
+  </Step>
+
+  <Step title="Refine as needed">
+    Adjust the prompt based on test results. It may take a few iterations.
+  </Step>
+</Steps>
+
+<Tip>
+Save test questions that represent common user needs. Reuse them each time you update the prompt to ensure consistency.
+</Tip>
+
+## Common Mistakes to Avoid
+
+<Warning>
+**Don't:**
+
+- Write novels - Keep prompts concise (500-1000 words max)
+- Include detailed processes - Put those in documentation
+- Over-constrain the AI - Give guidance, not rigid rules
+- Forget to test - Always verify before activating
+- Set and forget - Review and update regularly
+</Warning>
+
+## Updating Master Prompts
+
+Your organization evolves, and your prompt should too:
+
+**Review quarterly:**
+- Are referenced systems still current?
+- Has company culture or priorities shifted?
+- Are there new tools to mention?
+- Do test responses still match expectations?
+
+**Update when:**
+- You implement new systems
+- Company priorities change
+- You get feedback about AI responses
+- Organizational structure changes
+
+<Info>
+You can update master prompts anytime. Changes take effect immediately for new conversations.
+</Info>
+
+## Multiple Prompts Strategy
+
+For larger organizations, consider multiple prompts:
+
+### Recommended Approach
+
+1. **Start with one global prompt** covering organization-wide guidance
+2. **Add department-specific prompts** only when needed:
+   - Sales team prompt (emphasizes CRM, pipeline)
+   - Finance team prompt (emphasizes compliance, accuracy)
+   - HR team prompt (emphasizes confidentiality, employee care)
+
+### Managing Multiple Prompts
+
+- Use clear naming conventions
+- Document what each prompt is for
+- Assign prompts to specific contexts
+- Test how they interact
+
+<Note>
+Most organizations do fine with a single, well-crafted global prompt. Only add complexity when you have clear, specific needs.
+</Note>
+
+## Prompt Templates
+
+Start with these templates and customize:
+
+### Basic Template
+
+```
+[YOUR ORGANIZATION NAME] AI Assistant Guidelines
+
+Communication Style:
+- [Tone: professional/casual/friendly/technical]
+- [Format: concise/detailed/visual/step-by-step]
+
+Organizational Context:
+- We are a [type of organization]
+- Our key focus is [main business/mission]
+- We value [core values]
+
+Systems and Tools:
+- [System type]: [Specific tool name]
+- [System type]: [Specific tool name]
+
+Key Priorities:
+- [Priority 1]
+- [Priority 2]
+- [Priority 3]
+
+Special Considerations:
+- [Unique aspect 1]
+- [Unique aspect 2]
+```
+
+## Getting Feedback
+
+After activating your prompt:
+
+1. **Ask users** how AI responses feel (too formal? too casual? helpful?)
+2. **Monitor questions** to see if the AI is guiding effectively
+3. **Review example conversations** to spot issues
+4. **Iterate based on feedback**
+
+<Tip>
+Create a feedback channel (Slack, email, survey) where users can report when AI responses miss the mark. Use this to refine your prompt.
+</Tip>
+
+## What's Next?
+
+After creating your master prompt:
+
+- [Set up API keys](/ai/setting-up-api-keys) to connect to OpenAI
+- [Upload documents](/ai/uploading-documents) to enhance AI knowledge
+- [Manage the knowledge base](/ai/managing-knowledge-base) for ongoing maintenance
+
+Learn more about how the AI works:
+- [How AI uses documents](/ai/how-ai-uses-documents)

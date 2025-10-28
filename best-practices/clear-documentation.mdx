@@ -1,0 +1,871 @@
+---
+title: "Clear Documentation"
+description: "Best practices for writing effective SOPs, blueprints, guides, and process documentation"
+---
+
+Good documentation is the foundation of consistent execution. Learn how to write documentation that people actually read, understand, and use.
+
+## Why Documentation Matters
+
+<CardGroup cols={2}>
+  <Card title="Consistency" icon="equals">
+    Ensures everyone executes the process the same way, reducing errors and variability
+  </Card>
+
+  <Card title="Onboarding" icon="user-plus">
+    New team members can learn processes without requiring extensive training time
+  </Card>
+
+  <Card title="Scalability" icon="chart-line">
+    Processes can be repeated across teams and locations without quality degradation
+  </Card>
+
+  <Card title="Improvement" icon="arrows-rotate">
+    You can't improve what you haven't documented. Clear documentation enables process optimization
+  </Card>
+</CardGroup>
+
+## Types of Process Documentation
+
+<Tabs>
+  <Tab title="SOPs">
+    ### Standard Operating Procedures (SOPs)
+
+    **Purpose:** Step-by-step instructions for completing a specific activity
+
+    **When to Use:**
+    - Repetitive tasks performed the same way every time
+    - Activities with compliance or quality requirements
+    - Complex procedures with multiple steps
+    - Activities performed by different people at different times
+
+    **Example Topics:**
+    - How to process a refund
+    - How to onboard a new customer
+    - How to deploy code to production
+    - How to conduct a performance review
+
+    **Length:** 1-3 pages per SOP
+
+    <Tip>
+    SOPs answer: "How do I do this task correctly?"
+    </Tip>
+  </Tab>
+
+  <Tab title="Blueprints">
+    ### Process Blueprints
+
+    **Purpose:** High-level overview of an entire process flow
+
+    **When to Use:**
+    - Introducing someone to a new process
+    - Training on process fundamentals
+    - Explaining how activities connect
+    - Showing decision points and branches
+
+    **Example Topics:**
+    - Sales process overview
+    - Product development lifecycle
+    - Hiring process flow
+    - Customer journey map
+
+    **Length:** 1-2 pages with visual diagrams
+
+    <Tip>
+    Blueprints answer: "What's the big picture and how do the pieces fit together?"
+    </Tip>
+  </Tab>
+
+  <Tab title="Guides">
+    ### How-To Guides
+
+    **Purpose:** Teaching someone to accomplish a goal that may require multiple activities
+
+    **When to Use:**
+    - Onboarding new team members
+    - Training on complex workflows
+    - Providing troubleshooting instructions
+    - Explaining best practices
+
+    **Example Topics:**
+    - How to qualify a sales lead
+    - How to handle customer escalations
+    - How to write effective user stories
+    - How to conduct a design review
+
+    **Length:** 3-10 pages with examples
+
+    <Tip>
+    Guides answer: "How do I become competent at this?"
+    </Tip>
+  </Tab>
+
+  <Tab title="Reference Docs">
+    ### Reference Documentation
+
+    **Purpose:** Quick lookup information for experienced users
+
+    **When to Use:**
+    - Lists of options or codes
+    - Field definitions
+    - Keyboard shortcuts
+    - Templates and checklists
+
+    **Example Topics:**
+    - Glossary of terms
+    - List of status codes
+    - Template library
+    - Approval matrix
+
+    **Length:** As short as possible for quick reference
+
+    <Tip>
+    Reference docs answer: "What is the correct value/option for this?"
+    </Tip>
+  </Tab>
+</Tabs>
+
+## Writing Principles
+
+### 1. Write for Your Audience
+
+<AccordionGroup>
+  <Accordion title="Know Who Will Read This">
+    **Questions to Ask:**
+    - What is their role and experience level?
+    - How familiar are they with the domain?
+    - What's their technical proficiency?
+    - Will they read this once or reference it repeatedly?
+
+    **Example: Bad**
+    "Execute the ETL pipeline using the batch processor"
+
+    **Example: Good (for non-technical audience)**
+    "Run the nightly data import by clicking the 'Import Data' button in the admin panel"
+
+    **Example: Good (for technical audience)**
+    "Trigger the ETL pipeline: `./scripts/run-etl.sh --env=production`"
+  </Accordion>
+
+  <Accordion title="Match Their Context">
+    **For New Employees:**
+    - Define acronyms and jargon
+    - Provide more context and background
+    - Include links to related concepts
+    - Add screenshots and examples
+
+    **For Experienced Team Members:**
+    - Skip basic explanations
+    - Focus on edge cases and gotchas
+    - Provide technical details
+    - Link to related processes
+
+    **For Executives:**
+    - Lead with outcomes and business impact
+    - Minimize operational detail
+    - Focus on decisions and approvals
+    - Highlight KPIs and metrics
+  </Accordion>
+
+  <Accordion title="Use Appropriate Language Level">
+    **General Principles:**
+    - Use active voice ("Complete the form" not "The form should be completed")
+    - Use present tense ("Click Save" not "You will click Save")
+    - Use second person ("You" not "The user" or "One")
+    - Keep sentences short (under 25 words)
+    - Use simple words (prefer "use" over "utilize")
+
+    **Readability Target:**
+    - Internal docs: 8th-10th grade reading level
+    - Customer-facing: 6th-8th grade reading level
+    - Technical docs: Can be higher, but clarity still matters
+  </Accordion>
+</AccordionGroup>
+
+### 2. Structure for Scannability
+
+<CardGroup cols={2}>
+  <Card title="Use Headings" icon="heading">
+    Break content into logical sections with descriptive headings
+
+    **Good:** "Submitting Your Expense Report"
+    **Bad:** "Step 3"
+  </Card>
+
+  <Card title="Use Lists" icon="list">
+    Convert paragraphs to bulleted or numbered lists when possible
+
+    Lists are easier to scan than dense paragraphs
+  </Card>
+
+  <Card title="Use Visual Hierarchy" icon="layer-group">
+    Use formatting to show importance:
+    - Bold for key terms
+    - *Italics* for emphasis
+    - `Code formatting` for technical terms
+    - Callout boxes for important notes
+  </Card>
+
+  <Card title="Front-Load Information" icon="arrow-up">
+    Put the most important information first
+
+    Lead with the answer, then provide details
+  </Card>
+</CardGroup>
+
+### 3. Be Specific and Actionable
+
+<Tabs>
+  <Tab title="Vague vs Specific">
+    **Vague:**
+    "Follow up with the customer"
+
+    **Specific:**
+    "Send a follow-up email to the customer within 24 hours of the demo, using the 'Post-Demo Follow-Up' template"
+
+    ---
+
+    **Vague:**
+    "Review the proposal"
+
+    **Specific:**
+    "Review the proposal for accurate pricing, correct legal terms, and alignment with discussed scope. Use the Proposal Checklist."
+
+    ---
+
+    **Vague:**
+    "Get approval"
+
+    **Specific:**
+    "Obtain written approval via email from your direct manager. For requests over $10,000, also get VP approval."
+  </Tab>
+
+  <Tab title="Use Action Verbs">
+    Start instructions with strong action verbs:
+
+    **Good Verbs:**
+    - Click, select, enter, complete
+    - Review, verify, validate, confirm
+    - Send, submit, upload, download
+    - Create, update, delete, archive
+    - Approve, reject, escalate, assign
+
+    **Avoid Vague Verbs:**
+    - Do, handle, process, manage
+    - Deal with, take care of, work on
+    - Make sure, ensure, check
+  </Tab>
+
+  <Tab title="Provide Context">
+    Explain the "why" when it's not obvious:
+
+    **Without Context:**
+    "CC the sales manager on all proposal emails"
+
+    **With Context:**
+    "CC the sales manager on all proposal emails so they can track pipeline progress and jump in if needed"
+
+    ---
+
+    **Without Context:**
+    "Always test in staging before production"
+
+    **With Context:**
+    "Always test in staging before production to catch bugs before they affect customers. Staging mirrors production configuration."
+  </Tab>
+</Tabs>
+
+## SOP Template
+
+Use this template for writing effective SOPs:
+
+```markdown
+# [Activity Name]
+
+## Purpose
+[1-2 sentences explaining why this activity exists and what it accomplishes]
+
+## When to Use This
+[When should someone perform this activity? What triggers it?]
+
+## Prerequisites
+- [What must be true before starting? Any required access, information, or completed activities?]
+- [List all prerequisites]
+
+## Estimated Time
+[How long should this activity take?]
+
+## Steps
+
+### 1. [First Major Step]
+[Detailed instructions for the first step]
+
+**Example:**
+[Concrete example showing what this looks like]
+
+**Tips:**
+- [Helpful tips or best practices]
+
+### 2. [Second Major Step]
+[Detailed instructions]
+
+**Common Issues:**
+- **Problem:** [Common issue that might arise]
+- **Solution:** [How to resolve it]
+
+### 3. [Continue for all steps...]
+
+## Verification
+[How do you know you completed this activity correctly? What should the result look like?]
+
+## Troubleshooting
+**Problem:** [Issue that might occur]
+**Solution:** [How to resolve]
+
+**Problem:** [Another issue]
+**Solution:** [How to resolve]
+
+## Related Resources
+- [Link to related SOP]
+- [Link to template or tool]
+- [Link to reference documentation]
+
+## Document Information
+- **Last Updated:** [Date]
+- **Owner:** [Person responsible for keeping this current]
+- **Version:** [Version number]
+```
+
+### Example SOP: Processing a Refund
+
+<AccordionGroup>
+  <Accordion title="View Complete SOP Example">
+    # Process Customer Refund
+
+    ## Purpose
+    This SOP ensures refunds are processed quickly, accurately, and in compliance with company refund policies.
+
+    ## When to Use This
+    Use this procedure when a customer requests a refund for any purchase within 30 days of transaction.
+
+    ## Prerequisites
+    - Customer account information (email or account ID)
+    - Original order number
+    - Reason for refund request
+    - Manager approval (for refunds over $500)
+
+    ## Estimated Time
+    10-15 minutes
+
+    ## Steps
+
+    ### 1. Verify Refund Eligibility
+    1. Look up the order in the admin system using order number
+    2. Check the order date (must be within 30 days)
+    3. Verify the order status is "Delivered" or "Completed"
+    4. Check if a previous refund was already issued (cannot refund twice)
+
+    **Example:**
+    Order #12345 placed on March 1st → Today is March 15th → Eligible (within 30 days)
+
+    **Tips:**
+    - If the order is outside 30 days, check if customer is Premium member (they get 60 days)
+    - Digital products cannot be refunded after download
+
+    ### 2. Obtain Approval (if needed)
+    If refund amount is over $500:
+    1. Send Slack message to your manager with order details
+    2. Include customer reason for refund
+    3. Wait for approval before proceeding
+    4. Document approval in the order notes
+
+    ### 3. Process the Refund
+    1. In the admin system, navigate to Orders > [Order Number]
+    2. Click the "Issue Refund" button
+    3. Enter refund amount (usually full amount)
+    4. Select refund reason from dropdown
+    5. Add notes explaining the situation
+    6. Click "Process Refund"
+    7. Wait for confirmation message (appears in 3-5 seconds)
+
+    **Common Issues:**
+    - **Problem:** "Refund Failed" error message appears
+    - **Solution:** Check if payment method is still valid. If card expired, escalate to Finance team
+
+    ### 4. Notify Customer
+    1. Use the "Refund Confirmation" email template
+    2. Include order number and refund amount
+    3. Explain refund will appear in 5-7 business days
+    4. Send the email
+
+    **Example Email:**
+    ```
+    Subject: Refund Processed for Order #12345
+
+    Hi [Customer Name],
+
+    Your refund of $150.00 for order #12345 has been processed.
+
+    The refund will appear on your original payment method within 5-7 business days.
+
+    If you have any questions, reply to this email.
+
+    Best regards,
+    [Your Name]
+    Customer Support Team
+    ```
+
+    ### 5. Document in CRM
+    1. Create a note in the customer's CRM record
+    2. Note: "Refund processed: $[amount] for order #[number]. Reason: [reason]"
+    3. Add tag: "Refund-Issued"
+    4. Save the note
+
+    ## Verification
+    You've completed this correctly if:
+    - Order status shows "Refunded" in admin system
+    - Customer received confirmation email
+    - CRM note is created
+    - Manager approval is documented (if required)
+
+    ## Troubleshooting
+
+    **Problem:** Payment method no longer valid
+    **Solution:** Escalate to Finance team. They can issue refund via check or bank transfer.
+
+    **Problem:** Customer wants partial refund
+    **Solution:** Only full refunds allowed. If customer wants to keep some items, process full refund then create new order for items they want to keep.
+
+    **Problem:** Refund button is grayed out
+    **Solution:** Order may still be processing. Wait 1 hour and try again. If still grayed out, contact Technical Support.
+
+    ## Related Resources
+    - [Refund Policy Guide](link)
+    - [Refund Email Templates](link)
+    - [Escalation Procedures](link)
+
+    ## Document Information
+    - **Last Updated:** March 15, 2024
+    - **Owner:** Sarah Johnson, Customer Support Manager
+    - **Version:** 2.1
+  </Accordion>
+</AccordionGroup>
+
+## Blueprint Template
+
+Use this template for process blueprints:
+
+```markdown
+# [Process Name] Blueprint
+
+## Process Overview
+[2-3 sentence summary of what this process accomplishes and why it matters]
+
+## Key Participants
+- **[Role Name]:** [What they do in this process]
+- **[Role Name]:** [What they do in this process]
+
+## Process Flow
+
+### Stage 1: [Stage Name]
+**Goal:** [What this stage accomplishes]
+**Duration:** [Typical timeframe]
+**Key Activities:**
+- Activity 1
+- Activity 2
+- Activity 3
+
+**Outputs:** [What this stage produces]
+
+### Stage 2: [Continue for all stages...]
+
+## Decision Points
+
+### Decision: [Key Decision Name]
+**When:** [When in the process this decision happens]
+**Who Decides:** [Role responsible]
+**Criteria:** [How to make the decision]
+**Outcomes:**
+- If [condition] → [what happens next]
+- If [condition] → [what happens next]
+
+## Success Metrics
+- **[Metric Name]:** [Target]
+- **[Metric Name]:** [Target]
+
+## Common Pitfalls
+1. [Common mistake and how to avoid it]
+2. [Common mistake and how to avoid it]
+
+## Related Processes
+- [Process that comes before this one]
+- [Process that comes after this one]
+- [Related parallel process]
+```
+
+## Guide Template
+
+```markdown
+# [Topic] Guide
+
+## Introduction
+[Why this guide exists and what you'll learn]
+
+## Who This Guide is For
+[Target audience and their assumed knowledge level]
+
+## What You'll Learn
+- [Learning objective 1]
+- [Learning objective 2]
+- [Learning objective 3]
+
+## Prerequisites
+[What you need to know or have before starting]
+
+## Section 1: [Fundamentals]
+[Core concepts and terminology]
+
+### [Concept 1]
+[Explanation with examples]
+
+### [Concept 2]
+[Explanation with examples]
+
+## Section 2: [Step-by-Step Process]
+[Detailed walkthrough with examples]
+
+### Example Scenario
+[Real-world example showing the concept in action]
+
+## Section 3: [Best Practices]
+[Tips, tricks, and recommendations from experience]
+
+### Do's
+- [Recommendation]
+- [Recommendation]
+
+### Don'ts
+- [What to avoid and why]
+- [What to avoid and why]
+
+## Section 4: [Common Challenges]
+[Problems people typically encounter and solutions]
+
+## Next Steps
+[What to do after reading this guide]
+
+## Additional Resources
+- [Link to related guide]
+- [Link to reference material]
+- [Link to tool or template]
+```
+
+## Using Visual Aids
+
+### When to Use Screenshots
+
+<CardGroup cols={2}>
+  <Card title="Do Use Screenshots" icon="check">
+    - Complex UI with many options
+    - Specific fields to complete
+    - Non-obvious button locations
+    - Confirmation messages to expect
+  </Card>
+
+  <Card title="Don't Use Screenshots" icon="xmark">
+    - Simple actions ("Click Save")
+    - UIs that change frequently
+    - When text description is clearer
+    - For every single step (too many)
+  </Card>
+</CardGroup>
+
+**Screenshot Best Practices:**
+- Annotate with arrows and labels
+- Crop to show only relevant area
+- Use consistent styling across all screenshots
+- Add captions explaining what the image shows
+- Update regularly when UI changes
+
+### When to Use Diagrams
+
+**Flow Diagrams:** Show process flow and decision points
+
+**Use For:**
+- Process with multiple branches
+- Decision trees
+- Complex logic flows
+
+**Architecture Diagrams:** Show system components and relationships
+
+**Use For:**
+- Technical integrations
+- Data flows
+- System dependencies
+
+**Swim Lane Diagrams:** Show activities across different roles/departments
+
+**Use For:**
+- Cross-functional processes
+- Handoffs between teams
+- Parallel activities
+
+<Tip>
+Keep diagrams simple. If your diagram has more than 15 boxes, it's probably too complex. Break it into multiple diagrams.
+</Tip>
+
+### When to Use Tables
+
+**Use Tables For:**
+- Comparing options
+- Listing specifications
+- Showing RACI assignments
+- Reference data
+
+**Table Best Practices:**
+- Keep tables simple (5-7 columns maximum)
+- Use clear column headers
+- Left-align text, right-align numbers
+- Use zebra striping for readability
+- Make tables responsive on mobile
+
+### When to Use Callout Boxes
+
+<Tabs>
+  <Tab title="Tips">
+    <Tip>
+    Use Tip boxes for helpful suggestions and best practices.
+
+    Example: "Save time by using keyboard shortcuts: Ctrl+S to save"
+    </Tip>
+  </Tab>
+
+  <Tab title="Notes">
+    <Note>
+    Use Note boxes for important information that isn't critical.
+
+    Example: "This feature is only available in the Professional plan"
+    </Note>
+  </Tab>
+
+  <Tab title="Warnings">
+    <Warning>
+    Use Warning boxes for critical information about risks or consequences.
+
+    Example: "This action cannot be undone. Always back up data first."
+    </Warning>
+  </Tab>
+
+  <Tab title="Info">
+    <Info>
+    Use Info boxes for contextual information or background.
+
+    Example: "This process was updated in March 2024 to comply with new regulations"
+    </Info>
+  </Tab>
+</Tabs>
+
+## Keeping Documentation Current
+
+### Version Control
+
+**Every Document Should Include:**
+- Last updated date
+- Version number
+- Document owner
+- Change log (for significant updates)
+
+**Version Numbering:**
+- Major changes (restructure, new section): 1.0 → 2.0
+- Minor changes (new content, updates): 1.0 → 1.1
+- Corrections (typos, small fixes): 1.0.0 → 1.0.1
+
+### Review Schedule
+
+<CardGroup cols={2}>
+  <Card title="High-Change Processes" icon="rotate-fast">
+    **Review:** Monthly
+    **Examples:** Product features, marketing campaigns, new initiatives
+  </Card>
+
+  <Card title="Moderate-Change Processes" icon="rotate">
+    **Review:** Quarterly
+    **Examples:** Sales processes, customer onboarding, standard operations
+  </Card>
+
+  <Card title="Stable Processes" icon="clock">
+    **Review:** Annually
+    **Examples:** Compliance procedures, HR policies, financial processes
+  </Card>
+
+  <Card title="Triggered Reviews" icon="bell">
+    **Review:** When changes occur
+    **Triggers:** System updates, policy changes, process improvements
+  </Card>
+</CardGroup>
+
+### Deprecation Strategy
+
+When documentation becomes outdated:
+
+<Steps>
+  <Step title="Mark as Deprecated">
+    Add clear notice: "This documentation is outdated. See [new doc] instead."
+  </Step>
+
+  <Step title="Set Expiration Date">
+    "This document will be removed on [date]"
+  </Step>
+
+  <Step title="Redirect Links">
+    Update all links pointing to old doc to point to new doc
+  </Step>
+
+  <Step title="Archive (Don't Delete)">
+    Move to archive location for historical reference
+  </Step>
+</Steps>
+
+<Warning>
+Never delete documentation without archiving. Future audits or reference needs may require historical process documentation.
+</Warning>
+
+## Writing Checklist
+
+Before publishing documentation, verify:
+
+**Content**
+- [ ] Purpose is clearly stated upfront
+- [ ] Target audience is identified
+- [ ] All steps are included and in order
+- [ ] No steps are assumed knowledge
+- [ ] Examples are provided where helpful
+- [ ] Edge cases and exceptions are covered
+
+**Clarity**
+- [ ] Jargon and acronyms are defined
+- [ ] Instructions are specific and actionable
+- [ ] Active voice is used throughout
+- [ ] Sentences are concise (under 25 words)
+- [ ] Content is scannable with headings and lists
+
+**Completeness**
+- [ ] Prerequisites are listed
+- [ ] Expected outcomes are described
+- [ ] Troubleshooting guidance is included
+- [ ] Related resources are linked
+- [ ] Contact information for questions is provided
+
+**Visual Design**
+- [ ] Headings create clear hierarchy
+- [ ] Important information is highlighted
+- [ ] Screenshots are annotated and current
+- [ ] Tables and diagrams are readable
+- [ ] White space makes content easy to scan
+
+**Maintenance**
+- [ ] Document owner is assigned
+- [ ] Last updated date is current
+- [ ] Version number is recorded
+- [ ] Review schedule is established
+
+## Common Documentation Mistakes
+
+<AccordionGroup>
+  <Accordion title="Writing for Yourself, Not the Reader">
+    **Mistake:** Assuming readers have your level of knowledge
+
+    **Example:**
+    "Run the ETL job to sync the data warehouse"
+
+    **Problem:** Assumes reader knows what ETL is, where to run it, and how often
+
+    **Fix:**
+    "Each morning at 9 AM, log into the Data Admin panel and click 'Run Data Import' to update the reports with yesterday's sales data."
+  </Accordion>
+
+  <Accordion title="Using Vague Language">
+    **Mistake:** Instructions that can be interpreted multiple ways
+
+    **Examples of Vague Language:**
+    - "Soon" → Within 24 hours
+    - "Several" → 3-5
+    - "Quickly" → Within 2 minutes
+    - "Often" → 2-3 times per week
+    - "Large file" → Files over 10 MB
+
+    **Fix:** Replace vague terms with specific numbers, timeframes, and criteria
+  </Accordion>
+
+  <Accordion title="Skipping the 'Why'">
+    **Mistake:** Only explaining what to do, not why it matters
+
+    **Example:**
+    "Always CC your manager on customer emails"
+
+    **Better:**
+    "Always CC your manager on customer emails so they can jump in if the issue escalates and have context for performance reviews"
+
+    **When to Include Why:**
+    - When the reason isn't obvious
+    - When it prevents common mistakes
+    - When it helps with troubleshooting
+    - When it builds better understanding
+  </Accordion>
+
+  <Accordion title="Death by Screenshot">
+    **Mistake:** Including a screenshot for every single step
+
+    **Problems:**
+    - Makes documentation very long
+    - Screenshots become outdated quickly
+    - Slower to update when UI changes
+    - Harder to scan for specific information
+
+    **Fix:** Only use screenshots for complex UIs or non-obvious actions. For simple actions, text is sufficient.
+  </Accordion>
+
+  <Accordion title="No Examples">
+    **Mistake:** Only providing abstract instructions without concrete examples
+
+    **Abstract:**
+    "Enter the customer reference number in the appropriate field"
+
+    **With Example:**
+    "Enter the customer reference number in the 'Ref ID' field. Example: CUS-2024-001234"
+
+    **Fix:** Include at least one example per major step
+  </Accordion>
+
+  <Accordion title="Never Updating">
+    **Mistake:** Writing documentation once and never revising
+
+    **Result:**
+    - Screenshots show old UI
+    - References to tools that no longer exist
+    - Steps that don't match current process
+    - Users lose trust in documentation
+
+    **Fix:** Establish regular review schedule and assign owner to keep current
+  </Accordion>
+</AccordionGroup>
+
+## Related Resources
+
+<CardGroup cols={2}>
+  <Card title="Organizing Processes" icon="sitemap" href="/best-practices/organizing-processes">
+    Structure processes before documenting them
+  </Card>
+
+  <Card title="Effective RACI" icon="users" href="/best-practices/effective-raci">
+    Document roles and responsibilities clearly
+  </Card>
+
+  <Card title="Version Control" icon="code-branch" href="/best-practices/version-control">
+    Track changes to your documentation
+  </Card>
+
+  <Card title="Sales Process Example" icon="handshake" href="/examples/sales-process">
+    See documentation best practices in action
+  </Card>
+</CardGroup>

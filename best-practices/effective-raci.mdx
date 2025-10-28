@@ -1,0 +1,631 @@
+---
+title: "Effective RACI Assignments"
+description: "Best practices for using RACI to clarify roles, responsibilities, and accountability"
+---
+
+RACI is a powerful tool for clarifying who does what in your processes. Learn how to use RACI effectively to eliminate confusion, reduce bottlenecks, and improve accountability.
+
+## What is RACI?
+
+RACI is an acronym that defines four types of participation in activities:
+
+<CardGroup cols={2}>
+  <Card title="Responsible (R)" icon="person-digging">
+    **Does the work**
+
+    The person(s) who actually perform the activity. They execute the task and complete the work.
+
+    **Example:** Engineer writes the code
+  </Card>
+
+  <Card title="Accountable (A)" icon="circle-check">
+    **Owns the outcome**
+
+    The one person ultimately answerable for the activity being completed correctly. They have final decision-making authority.
+
+    **Example:** Engineering Lead owns delivery
+  </Card>
+
+  <Card title="Consulted (C)" icon="comments">
+    **Provides input**
+
+    People whose opinions are sought before decisions or actions are taken. Two-way communication.
+
+    **Example:** Designer provides UI feedback
+  </Card>
+
+  <Card title="Informed (I)" icon="envelope">
+    **Kept in the loop**
+
+    People who need to know about decisions or actions after they happen. One-way communication.
+
+    **Example:** VP Engineering gets status updates
+  </Card>
+</CardGroup>
+
+## The Golden Rules
+
+<Warning>
+**Rule #1: One and only one Accountable person per activity**
+
+Every activity must have exactly one Accountable person. Multiple Accountable people creates confusion about who truly owns the outcome.
+</Warning>
+
+<Tip>
+**Rule #2: Accountable doesn't mean they do all the work**
+
+The Accountable person ensures work gets done, but may delegate execution to Responsible parties. Think of Accountable as the "owner" and Responsible as the "doer."
+</Tip>
+
+<Note>
+**Rule #3: Consulted and Informed are optional**
+
+Not every activity needs consultation or notification. Only add these roles when truly necessary to avoid over-communication.
+</Note>
+
+## Common RACI Patterns
+
+### Pattern 1: Solo Execution
+
+**Simple activities where one person does it all**
+
+| Activity | Sales Rep | Sales Manager |
+|----------|-----------|---------------|
+| Send follow-up email | A, R | I |
+
+- Sales Rep is both Accountable and Responsible
+- Manager is just Informed
+
+**When to Use:** Simple tasks that don't require collaboration
+
+---
+
+### Pattern 2: Manager + Executor
+
+**Most common pattern for team activities**
+
+| Activity | Account Executive | Sales Manager | Legal | Finance |
+|----------|-------------------|---------------|-------|---------|
+| Negotiate contract | R | A | C | I |
+
+- AE does the work (Responsible)
+- Manager owns the outcome (Accountable)
+- Legal provides input (Consulted)
+- Finance is kept informed (Informed)
+
+**When to Use:** Activities where a manager oversees team member execution
+
+---
+
+### Pattern 3: Cross-Functional Collaboration
+
+**Multiple people contribute to the work**
+
+| Activity | Developer 1 | Developer 2 | Engineering Lead | Designer |
+|----------|-------------|-------------|------------------|----------|
+| Build dashboard feature | R | R | A | C |
+
+- Two developers share execution (both Responsible)
+- Lead owns delivery (Accountable)
+- Designer provides input (Consulted)
+
+**When to Use:** Activities requiring collaboration between multiple contributors
+
+---
+
+### Pattern 4: Expert Consultation
+
+**Subject matter expert provides critical input**
+
+| Activity | PM | Designer | Eng Lead | Legal | Security |
+|----------|-----|----------|----------|-------|----------|
+| Design user permissions | R | R | C | C | C |
+
+- PM and Designer do the work (Responsible)
+- PM owns the outcome (Accountable)
+- Multiple experts consulted (Legal for compliance, Security for vulnerabilities, Engineering for feasibility)
+
+**When to Use:** Activities requiring specialized expertise or approval
+
+## How to Assign RACI Effectively
+
+<Steps>
+  <Step title="Start with Accountable">
+    Ask: "Who is ultimately responsible if this activity fails or succeeds?"
+
+    This should be the person with decision-making authority for the activity.
+
+    **Example:** For "Approve budget," the Department Head is Accountable
+  </Step>
+
+  <Step title="Identify Responsible">
+    Ask: "Who actually does the work?"
+
+    These are the people executing the activity day-to-day.
+
+    **Example:** For "Approve budget," the Budget Analyst prepares the analysis (Responsible), but Department Head makes final call (Accountable)
+  </Step>
+
+  <Step title="Determine Consulted (Sparingly)">
+    Ask: "Who must provide input before this activity can be completed?"
+
+    Only include people whose input is genuinely required, not nice-to-have.
+
+    **Example:** For "Approve budget," Finance and VP must be Consulted
+  </Step>
+
+  <Step title="Identify Informed (Minimally)">
+    Ask: "Who needs to know this was completed?"
+
+    Only include people who truly need notification. Too many Informed parties creates email fatigue.
+
+    **Example:** For "Approve budget," the CFO is Informed
+  </Step>
+
+  <Step title="Validate No Gaps">
+    Ensure every activity has:
+    - Exactly one Accountable (A)
+    - At least one Responsible (R)
+    - Consulted and Informed as needed (optional)
+
+    **Red Flags:**
+    - No Accountable → No ownership
+    - Multiple Accountable → Confusion
+    - No Responsible → No one to do the work
+  </Step>
+</Steps>
+
+## RACI by Role Type
+
+### Individual Contributors
+
+**Typical Assignments:**
+- **Responsible:** Most of the time for their work
+- **Accountable:** For simple, independent tasks
+- **Consulted:** When they have specialized expertise
+- **Informed:** When they're affected by outcomes
+
+**Example: Software Engineer**
+- **A, R:** Write unit tests for their code
+- **R:** Implement new feature (Engineering Lead is A)
+- **C:** Provide input on technical architecture
+- **I:** Notified when product requirements change
+
+---
+
+### Team Leads / Managers
+
+**Typical Assignments:**
+- **Accountable:** For most activities their team executes
+- **Responsible:** For management activities (reviews, approvals)
+- **Consulted:** By other teams on cross-functional work
+- **Informed:** On executive decisions affecting their team
+
+**Example: Engineering Manager**
+- **A:** Feature delivery (engineers are R)
+- **R, A:** Conduct code reviews and approvals
+- **C:** Consulted on product roadmap decisions
+- **I:** Informed when company strategy changes
+
+---
+
+### Executives
+
+**Typical Assignments:**
+- **Accountable:** For strategic, high-stakes decisions
+- **Responsible:** Rarely (they delegate execution)
+- **Consulted:** On major initiatives and decisions
+- **Informed:** On significant outcomes and metrics
+
+**Example: VP of Sales**
+- **A:** Approve pricing for large deals (Sales Manager is R)
+- **R, A:** Set quarterly sales targets
+- **C:** Consulted on product pricing strategy
+- **I:** Informed of all closed deals
+
+---
+
+### Support Roles (Legal, Finance, HR)
+
+**Typical Assignments:**
+- **Consulted:** Most common - provide expertise
+- **Accountable:** For activities in their domain
+- **Informed:** When their expertise area is affected
+- **Responsible:** For specialized tasks
+
+**Example: Legal Counsel**
+- **C:** Consulted on all contracts and agreements
+- **A, R:** Draft and approve legal policies
+- **I:** Informed of potential legal issues
+- **R:** Review marketing claims for compliance (Marketing is A)
+
+## Common RACI Mistakes
+
+<AccordionGroup>
+  <Accordion title="Mistake #1: Multiple Accountable People">
+    **The Problem:**
+    Two or more people marked as Accountable creates confusion about who truly owns the decision.
+
+    **Bad Example:**
+    | Activity | PM | Engineering Lead |
+    |----------|-----|------------------|
+    | Define feature requirements | A | A |
+
+    **Why It's Bad:**
+    When the feature fails, who is responsible? When there's a disagreement, who decides?
+
+    **The Fix:**
+    Pick one person as Accountable. If you can't decide, the activity is poorly defined.
+
+    **Good Example:**
+    | Activity | PM | Engineering Lead |
+    |----------|-----|------------------|
+    | Define feature requirements | A | C |
+    | Implement feature | C | A |
+
+    PM owns what gets built, Engineering Lead owns how it's built.
+  </Accordion>
+
+  <Accordion title="Mistake #2: Everyone is Consulted">
+    **The Problem:**
+    Too many people in the Consulted role slows down execution and creates consensus paralysis.
+
+    **Bad Example:**
+    | Activity | PM | Designer | Eng Lead | Sales | Marketing | Support | Finance | Legal |
+    |----------|-----|----------|----------|-------|-----------|---------|---------|-------|
+    | Choose button color | A, R | C | C | C | C | C | C | C |
+
+    **Why It's Bad:**
+    Getting 7 people's opinions on a minor decision is inefficient and delays work.
+
+    **The Fix:**
+    Only consult people who have truly necessary expertise or decision-making authority.
+
+    **Good Example:**
+    | Activity | PM | Designer | Eng Lead |
+    |----------|-----|----------|----------|
+    | Choose button color | C | A, R | I |
+
+    Designer makes the decision (they're the expert), PM provides input, Engineering is just informed.
+  </Accordion>
+
+  <Accordion title="Mistake #3: Confusing Accountable and Responsible">
+    **The Problem:**
+    Marking the person doing the work as Accountable when their manager should own the outcome.
+
+    **Bad Example:**
+    | Activity | Junior Developer | Engineering Manager |
+    |----------|------------------|---------------------|
+    | Build payment integration | A, R | I |
+
+    **Why It's Bad:**
+    Junior developer doesn't have authority to make decisions or handle issues if something goes wrong.
+
+    **The Fix:**
+    Manager is Accountable for outcomes their team produces, team member is Responsible for execution.
+
+    **Good Example:**
+    | Activity | Junior Developer | Engineering Manager |
+    |----------|------------------|---------------------|
+    | Build payment integration | R | A |
+
+    Manager owns the delivery, developer does the work. If issues arise, manager has authority to address them.
+  </Accordion>
+
+  <Accordion title="Mistake #4: Informed Overload">
+    **The Problem:**
+    Too many people marked as Informed creates notification fatigue.
+
+    **Bad Example:**
+    Every activity has 10+ people marked as Informed, resulting in hundreds of notifications daily.
+
+    **Why It's Bad:**
+    People start ignoring notifications when overwhelmed, missing truly important updates.
+
+    **The Fix:**
+    Only mark people as Informed when they truly need to know. Ask: "What will this person do with this information?"
+
+    **Guidelines:**
+    - Direct manager: Usually Informed
+    - Skip-level manager: Only for significant activities
+    - Peer teams: Only if it affects their work
+    - Executive team: Only for high-stakes activities
+  </Accordion>
+
+  <Accordion title="Mistake #5: No RACI at All">
+    **The Problem:**
+    Defining activities without clarifying who does what.
+
+    **Result:**
+    - "I thought you were doing that?"
+    - Work falls through the cracks
+    - Duplication of effort
+    - Unclear accountability
+
+    **The Fix:**
+    Every activity must have RACI assignments. If you can't assign RACI, the activity is poorly defined.
+  </Accordion>
+
+  <Accordion title="Mistake #6: RACI by Job Title Instead of Role">
+    **The Problem:**
+    Assigning RACI to titles (e.g., "Manager") rather than specific people or roles in context.
+
+    **Bad Example:**
+    "All managers are Accountable"
+
+    **Why It's Bad:**
+    Which manager? If you have multiple managers, this creates the multiple-Accountable problem.
+
+    **The Fix:**
+    Assign RACI to specific roles in the process context.
+
+    **Good Example:**
+    "Hiring Manager is Accountable" (clear role in this specific process)
+  </Accordion>
+</AccordionGroup>
+
+## RACI Decision Tree
+
+Use this flowchart to determine RACI assignments:
+
+<Steps>
+  <Step title="Is this person making the final decision?">
+    **YES** → They are **Accountable (A)**
+
+    **NO** → Go to next question
+  </Step>
+
+  <Step title="Is this person doing the actual work?">
+    **YES** → They are **Responsible (R)**
+
+    **NO** → Go to next question
+  </Step>
+
+  <Step title="Must you get their input before proceeding?">
+    **YES** → They are **Consulted (C)**
+
+    **NO** → Go to next question
+  </Step>
+
+  <Step title="Do they need to know the outcome?">
+    **YES** → They are **Informed (I)**
+
+    **NO** → They don't need a RACI assignment for this activity
+  </Step>
+</Steps>
+
+## RACI Templates by Process Type
+
+### Sales Process RACI
+
+<Tabs>
+  <Tab title="Prospecting">
+    | Activity | SDR | Sales Manager | Marketing |
+    |----------|-----|---------------|-----------|
+    | Research target accounts | A, R | I | I |
+    | Initial outreach | A, R | I | I |
+    | Discovery call | A, R | I | I |
+    | Lead qualification | R | A | I |
+  </Tab>
+
+  <Tab title="Closing">
+    | Activity | AE | Sales Manager | Legal | Finance |
+    |----------|-----|---------------|-------|---------|
+    | Create proposal | A, R | I | - | - |
+    | Negotiate pricing | R | A | - | C |
+    | Draft contract | R | C | A | I |
+    | Close deal | A, R | I | I | I |
+  </Tab>
+</Tabs>
+
+### Project Management RACI
+
+| Activity | PM | Developer | Designer | Stakeholder |
+|----------|-----|-----------|----------|-------------|
+| Define requirements | A, R | C | C | C |
+| Create designs | C | I | A, R | I |
+| Develop features | C | A, R | I | I |
+| Test and QA | R | C | I | I |
+| Launch project | A | R | R | I |
+
+### HR Process RACI
+
+| Activity | Recruiter | Hiring Manager | HR Business Partner | Candidate |
+|----------|-----------|----------------|---------------------|-----------|
+| Post job opening | A, R | C | I | - |
+| Screen resumes | A, R | C | I | - |
+| Conduct interviews | C | A, R | I | R |
+| Make offer decision | C | A | C | - |
+| Extend offer | R | R | A | - |
+
+## Advanced RACI Concepts
+
+### RACI-VS (Adding Verifier and Signatory)
+
+Some organizations add two more roles:
+
+- **V (Verifier):** Checks the work meets acceptance criteria
+- **S (Signatory):** Provides formal approval/signature
+
+**When to Use:** Highly regulated industries or processes requiring formal approval chains
+
+**Example:**
+| Activity | Engineer | QA | Manager | Legal |
+|----------|----------|-----|---------|-------|
+| Update privacy policy | R | V | A | S |
+
+---
+
+### RACI for Automated Activities
+
+**Question:** How do you assign RACI when an activity is automated?
+
+**Answer:** Focus on who's accountable if the automation fails
+
+**Example:**
+| Activity | System | DevOps | Sales Manager |
+|----------|---------|--------|---------------|
+| Send welcome email (automated) | R | A | I |
+
+- System does the work (R)
+- DevOps owns the automation (A)
+- Sales Manager is notified (I)
+
+---
+
+### RACI for Committee Decisions
+
+**Question:** What if a committee makes decisions?
+
+**Answer:** One person in the committee is Accountable for the final call
+
+**Example:**
+| Activity | Committee Chair | Committee Members | Requestor |
+|----------|-----------------|-------------------|-----------|
+| Approve budget request | A | C | R, I |
+
+- Chair makes final decision (A)
+- Members provide input (C)
+- Requestor presents case (R) and is informed of decision (I)
+
+## Testing Your RACI
+
+Use these questions to validate your RACI assignments:
+
+<AccordionGroup>
+  <Accordion title="The Authority Test">
+    **Ask:** "Does the Accountable person have authority to make decisions about this activity?"
+
+    If NO: Reassign Accountable to someone with decision-making power.
+
+    **Example:**
+    Bad: Junior intern is Accountable for budget approval
+    Good: Department head is Accountable for budget approval
+  </Accordion>
+
+  <Accordion title="The Failure Test">
+    **Ask:** "If this activity fails, who gets in trouble?"
+
+    That person should be Accountable.
+
+    **Example:**
+    If a marketing campaign flops, the Marketing Manager is accountable (not the designer who created assets).
+  </Accordion>
+
+  <Accordion title="The Bottleneck Test">
+    **Ask:** "Are there too many Consulted people slowing things down?"
+
+    If YES: Remove Consulted roles that aren't truly necessary. Move them to Informed.
+
+    **Rule of Thumb:** More than 3 Consulted people is usually too many.
+  </Accordion>
+
+  <Accordion title="The Communication Test">
+    **Ask:** "Will every Informed person actually read these notifications?"
+
+    If NO: Remove Informed assignments that create noise.
+
+    **Guideline:** If someone is Informed on more than 50 activities, they'll start ignoring notifications.
+  </Accordion>
+
+  <Accordion title="The Gap Test">
+    **Ask:** "Does every activity have exactly one Accountable and at least one Responsible?"
+
+    If NO: Fix the gaps before proceeding.
+
+    **Red Flags:**
+    - Activity with no Accountable = No ownership
+    - Activity with no Responsible = No execution
+    - Activity with multiple Accountable = Confusion
+  </Accordion>
+</AccordionGroup>
+
+## RACI Implementation Checklist
+
+When adding RACI to your processes:
+
+**Planning Phase**
+- [ ] Identify all roles that interact with this process
+- [ ] Define what each role title means in your organization
+- [ ] Review organizational chart for reporting structures
+- [ ] Understand decision-making authority at each level
+
+**Assignment Phase**
+- [ ] Assign exactly one Accountable per activity
+- [ ] Assign at least one Responsible per activity
+- [ ] Only add Consulted when input is truly required
+- [ ] Only add Informed when notification is truly needed
+- [ ] Document why each RACI assignment was made
+
+**Review Phase**
+- [ ] Review with process participants for accuracy
+- [ ] Test authority levels (does Accountable have power?)
+- [ ] Check for bottlenecks (too many Consulted?)
+- [ ] Validate communication load (too many Informed?)
+- [ ] Get sign-off from all Accountable parties
+
+**Maintenance Phase**
+- [ ] Review RACI quarterly or when roles change
+- [ ] Update when org structure changes
+- [ ] Gather feedback from participants
+- [ ] Adjust based on bottlenecks or confusion
+
+<Tip>
+Schedule a RACI review session with your team. Walk through each activity and discuss who should be assigned to each role. Consensus at the start prevents confusion later.
+</Tip>
+
+## Real-World Examples
+
+### Example 1: Content Publishing
+
+| Activity | Content Writer | Editor | Legal | Marketing Manager |
+|----------|---------------|--------|-------|-------------------|
+| Draft article | A, R | - | - | I |
+| Edit for quality | I | A, R | - | I |
+| Review for legal compliance | I | C | A, R | I |
+| Publish to website | R | C | I | A |
+
+**Why This Works:**
+- Writer owns the draft
+- Editor owns the quality
+- Legal owns compliance
+- Marketing Manager owns publication decision
+- Clear handoffs between stages
+
+---
+
+### Example 2: Software Deployment
+
+| Activity | Developer | QA | DevOps | Engineering Manager | Product Manager |
+|----------|-----------|-----|--------|---------------------|-----------------|
+| Code review | R | - | - | A | I |
+| QA testing | C | A, R | - | I | I |
+| Deploy to staging | C | I | A, R | I | I |
+| Production approval | C | C | C | A | C |
+| Deploy to production | - | I | A, R | I | I |
+
+**Why This Works:**
+- Each stage has clear ownership
+- Multiple parties consulted for production (high-risk decision)
+- Manager makes final call on production deployment
+- Appropriate visibility without over-notification
+
+## Related Resources
+
+<CardGroup cols={2}>
+  <Card title="Sales Process Example" icon="handshake" href="/examples/sales-process">
+    See RACI applied to a complete sales process
+  </Card>
+
+  <Card title="HR Hiring Example" icon="user-plus" href="/examples/hr-hiring">
+    See RACI for cross-functional hiring
+  </Card>
+
+  <Card title="Organizing Processes" icon="sitemap" href="/best-practices/organizing-processes">
+    Structure processes for clarity
+  </Card>
+
+  <Card title="Clear Documentation" icon="file-text" href="/best-practices/clear-documentation">
+    Document roles and responsibilities clearly
+  </Card>
+</CardGroup>

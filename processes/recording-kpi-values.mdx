@@ -1,0 +1,566 @@
+---
+title: "Recording KPI Values"
+description: "Learn how to track and update KPI performance data"
+---
+
+## Why Record KPI Values?
+
+Creating a KPI is just the first step. The real value comes from consistently tracking actual performance over time. Recording KPI values lets you:
+
+- See if you're meeting your targets
+- Spot trends (improving or declining)
+- Identify when corrective action is needed
+- Prove that process improvements are working
+
+<Info>
+Think of KPI tracking like checking your weight when dieting. One weigh-in doesn't tell you much. Tracking over time shows if you're making progress toward your goal.
+</Info>
+
+## Recording Your First Value
+
+<Steps>
+  <Step title="Navigate to Your KPI">
+    Open the core process or activity that contains your KPI.
+
+    Find the KPI in the metrics or performance section.
+  </Step>
+
+  <Step title="Click Add Value or Record Data">
+    Look for a button like:
+    - **"Add Value"**
+    - **"Record Data"**
+    - **"Update"**
+    - **"+"** icon next to the KPI
+
+    Click it to open the data entry form.
+  </Step>
+
+  <Step title="Enter the Date">
+    Select the date this measurement represents.
+
+    **For:**
+    - Daily KPIs: Use the specific day
+    - Weekly KPIs: Use the last day of the week (e.g., Friday)
+    - Monthly KPIs: Use the last day of the month
+    - Quarterly KPIs: Use the last day of the quarter
+
+    Most systems default to today's date.
+  </Step>
+
+  <Step title="Enter the Actual Value">
+    Type in the measured value.
+
+    **Examples:**
+    - First response time: **2.3** (hours)
+    - Customer satisfaction: **4.6** (score)
+    - Conversion rate: **23** (percent)
+    - Time to hire: **45** (days)
+
+    Enter just the number. The system knows the units from your KPI definition.
+  </Step>
+
+  <Step title="Add Notes (Optional)">
+    Include context about this measurement if relevant:
+    - Unusual circumstances
+    - Special events affecting the metric
+    - Reasons for significant changes
+    - Action taken in response
+
+    **Example:** "Response time spiked due to system outage 6/15. Back to normal as of 6/16."
+
+    Notes help future you understand what happened.
+  </Step>
+
+  <Step title="Save the Value">
+    Click **"Save"** or **"Submit"** to record the value.
+
+    The system automatically:
+    - Calculates status (green/yellow/red)
+    - Updates charts and trends
+    - Adds this data point to historical record
+  </Step>
+</Steps>
+
+## Understanding Automatic Status
+
+When you record a value, the system compares it to your thresholds and assigns a status color:
+
+<CardGroup cols={3}>
+  <Card title="Green" icon="circle-check" color="#10b981">
+    **Meeting or exceeding target**
+
+    Keep doing what you're doing
+  </Card>
+  <Card title="Yellow" icon="triangle-exclamation" color="#f59e0b">
+    **In warning zone**
+
+    Pay attention, may need action
+  </Card>
+  <Card title="Red" icon="circle-xmark" color="#ef4444">
+    **Below acceptable level**
+
+    Action required
+  </Card>
+</CardGroup>
+
+**Example:** First Response Time KPI (target: 2 hours)
+- Record **1.5 hours** → Status: **Green** ✅
+- Record **2.8 hours** → Status: **Yellow** ⚠️
+- Record **4.2 hours** → Status: **Red** 🔴
+
+Learn more: [KPI Status Colors](/processes/kpi-status-colors)
+
+## Recording Frequency
+
+Stick to the frequency you defined when creating the KPI:
+
+<AccordionGroup>
+  <Accordion title="Daily KPIs" icon="calendar-day" defaultOpen>
+    **Record every business day**
+
+    **Examples:**
+    - Support ticket response time
+    - Daily sales volume
+    - Website conversion rate
+
+    **Tips:**
+    - Set a recurring reminder
+    - Record at the same time each day
+    - Automate if possible
+
+    **Best time:** End of day when data is complete
+  </Accordion>
+
+  <Accordion title="Weekly KPIs" icon="calendar-week">
+    **Record once per week**
+
+    **Examples:**
+    - Weekly sales pipeline
+    - Average project completion time
+    - Employee engagement scores
+
+    **Tips:**
+    - Choose a consistent day (e.g., every Friday)
+    - Allow time for data to accumulate
+    - Look at weekly trends, not daily fluctuations
+
+    **Best time:** End of week (Friday afternoon)
+  </Accordion>
+
+  <Accordion title="Monthly KPIs" icon="calendar">
+    **Record once per month**
+
+    **Examples:**
+    - Monthly revenue
+    - Customer churn rate
+    - Time to hire
+
+    **Tips:**
+    - Record within first few days of new month
+    - Wait for all month-end data to be final
+    - Compare month-over-month trends
+
+    **Best time:** 1st-5th business day of following month
+  </Accordion>
+
+  <Accordion title="Quarterly KPIs" icon="calendar-days">
+    **Record every 3 months**
+
+    **Examples:**
+    - Quarterly strategic goals
+    - Employee retention rate
+    - Long-term customer satisfaction
+
+    **Tips:**
+    - Record after quarter-end close
+    - Look for long-term patterns
+    - Compare year-over-year
+
+    **Best time:** Within first week after quarter end
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+**Set reminders:** Use calendar reminders or task management tools to prompt you when it's time to record KPI values. Consistency is key to useful data.
+</Tip>
+
+## Where Data Comes From
+
+<Tabs>
+  <Tab title="Manual Calculation">
+    **You calculate the value from source data**
+
+    **Process:**
+    1. Gather relevant data (reports, logs, records)
+    2. Apply your calculation formula
+    3. Enter the result into the system
+
+    **Example:** Calculate average support response time:
+    - Export ticket data from support system
+    - Calculate: Total response time ÷ Number of tickets
+    - Enter average into KPI tracker
+
+    **Best for:** Simple metrics, small data sets, metrics without automated reporting
+  </Tab>
+
+  <Tab title="System Reports">
+    **Pull value from existing system reports**
+
+    **Process:**
+    1. Open the relevant system (CRM, support platform, etc.)
+    2. Run the standard report
+    3. Find the metric value
+    4. Enter into KPI tracker
+
+    **Example:** Open Salesforce, run "Monthly Sales Report," find conversion rate, enter value
+
+    **Best for:** Metrics already calculated by your tools
+  </Tab>
+
+  <Tab title="Automated Integration">
+    **System automatically pulls data**
+
+    **Process:**
+    1. Set up integration between data source and KPI tracker
+    2. Values update automatically
+    3. Review for accuracy periodically
+
+    **Example:** KPI tracker syncs with support system API, pulling response time daily automatically
+
+    **Best for:** High-frequency metrics, large data volumes, reducing manual work
+  </Tab>
+
+  <Tab title="Surveys or Forms">
+    **Collect data through structured feedback**
+
+    **Process:**
+    1. Distribute survey to relevant group
+    2. Collect responses
+    3. Calculate average or aggregate score
+    4. Enter into KPI tracker
+
+    **Example:** Send customer satisfaction survey, calculate average score, record monthly
+
+    **Best for:** Satisfaction metrics, quality scores, feedback-based KPIs
+  </Tab>
+</Tabs>
+
+## Recording Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Be Consistent" icon="equals">
+    Record on the same day and time each period. Consistency makes trends accurate.
+  </Card>
+  <Card title="Be Accurate" icon="bullseye">
+    Double-check calculations. Wrong data leads to wrong decisions.
+  </Card>
+  <Card title="Add Context" icon="note-sticky">
+    Include notes explaining unusual values so future you understands what happened.
+  </Card>
+  <Card title="Don't Cherry-Pick" icon="ban">
+    Record actual performance, not just good periods. Honest data drives improvement.
+  </Card>
+</CardGroup>
+
+## Viewing Historical Data
+
+After recording values over time, you can see trends:
+
+<Tabs>
+  <Tab title="Charts and Graphs">
+    **Visual representation of performance over time**
+
+    **What you'll see:**
+    - Line charts showing trends
+    - Target line for comparison
+    - Green/yellow/red zones
+    - Data points for each period
+
+    **Use for:** Spotting patterns, presenting to stakeholders, quick visual assessment
+  </Tab>
+
+  <Tab title="Data Tables">
+    **List of all recorded values**
+
+    **What you'll see:**
+    - Date of each measurement
+    - Actual value
+    - Status (green/yellow/red)
+    - Notes
+    - Who recorded it
+
+    **Use for:** Detailed analysis, finding specific data points, auditing
+  </Tab>
+
+  <Tab title="Summary Statistics">
+    **Calculated metrics across time periods**
+
+    **What you'll see:**
+    - Average value
+    - Minimum and maximum
+    - Trend direction (improving/declining)
+    - Percent of time in green/yellow/red
+
+    **Use for:** Understanding overall performance, comparing periods
+  </Tab>
+</Tabs>
+
+## Interpreting Trends
+
+<AccordionGroup>
+  <Accordion title="Upward Trend" icon="arrow-trend-up" defaultOpen>
+    **Values consistently increasing over time**
+
+    **If higher is better** (e.g., satisfaction score): ✅ Great! Keep it up.
+
+    **If lower is better** (e.g., response time): ⚠️ Problem. Investigate why.
+
+    **Action:** Understand what's driving the trend and respond accordingly.
+  </Accordion>
+
+  <Accordion title="Downward Trend" icon="arrow-trend-down">
+    **Values consistently decreasing over time**
+
+    **If higher is better** (e.g., sales conversion): ⚠️ Problem. Find root cause.
+
+    **If lower is better** (e.g., defect rate): ✅ Excellent. Document what improved it.
+
+    **Action:** For positive trends, sustain the improvement. For negative, take corrective action.
+  </Accordion>
+
+  <Accordion title="Stable/Flat Trend" icon="minus">
+    **Values staying relatively constant**
+
+    **If in green zone:** ✅ Good. Process is stable and meeting targets.
+
+    **If in yellow/red zone:** ⚠️ Concerning. You're consistently not meeting goals.
+
+    **Action:** If stable in green, maintain. If stable below target, process change needed.
+  </Accordion>
+
+  <Accordion title="Volatile/Erratic" icon="wave-square">
+    **Values jumping up and down with no pattern**
+
+    **Possible causes:**
+    - Inconsistent process execution
+    - External factors affecting measurement
+    - Measurement error
+    - Seasonal variation
+
+    **Action:** Investigate why performance is inconsistent. Look for patterns in notes.
+  </Accordion>
+</AccordionGroup>
+
+## Updating Historical Values
+
+Need to correct a past entry?
+
+<Steps>
+  <Step title="Find the Value">
+    Navigate to the KPI and open the historical data view.
+
+    Find the date/value you need to correct.
+  </Step>
+
+  <Step title="Click Edit">
+    Look for an edit icon or "Edit" button next to the value.
+  </Step>
+
+  <Step title="Update the Value">
+    Change the value to the correct number.
+
+    Add a note explaining the correction.
+
+    **Example:** "Corrected from 2.5 to 3.2. Original entry included test data by mistake."
+  </Step>
+
+  <Step title="Save Changes">
+    Save the updated value.
+
+    Charts and trends automatically recalculate.
+  </Step>
+</Steps>
+
+<Warning>
+**Audit trail:** Some systems track who edits values and when. Don't abuse this to make performance look better than it is. Data integrity matters.
+</Warning>
+
+## Dealing with Missing Data
+
+What if you can't record a value for a period?
+
+<Tabs>
+  <Tab title="Skip It">
+    **Don't record anything for that period**
+
+    **When to use:**
+    - System was down and data isn't available
+    - Process wasn't operating that period
+    - External factors made measurement impossible
+
+    **Effect:** Gap in your chart, but no false data
+
+    **Example:** "Customer satisfaction survey wasn't sent in July due to email system migration."
+  </Tab>
+
+  <Tab title="Estimate">
+    **Make a reasonable estimate and note it**
+
+    **When to use:**
+    - You need a complete dataset for analysis
+    - You can make a reasonable approximation
+    - The period is important for reporting
+
+    **Effect:** Maintains continuity but less accurate
+
+    **Example:** "Estimated based on partial week data. System was offline 2 days."
+
+    Mark estimates clearly in notes.
+  </Tab>
+
+  <Tab title="Carry Forward">
+    **Use previous period's value**
+
+    **When to use:**
+    - Metric doesn't change frequently
+    - Rarely appropriate - use with caution
+
+    **Effect:** Shows stability that may not be real
+
+    Generally not recommended unless specifically appropriate for your metric.
+  </Tab>
+</Tabs>
+
+<Note>
+**Best practice:** It's usually better to have a gap in data than to have inaccurate data. If you must estimate, clearly note it.
+</Note>
+
+## Taking Action on Red Status
+
+When a KPI value is in the red zone:
+
+<Steps>
+  <Step title="Investigate Root Cause">
+    Don't just note it's red. Find out why.
+
+    - Review process execution
+    - Check for unusual circumstances
+    - Talk to team members
+    - Look for patterns in historical data
+  </Step>
+
+  <Step title="Document Your Findings">
+    Add notes to the KPI explaining what you discovered.
+
+    This creates a knowledge base for future reference.
+  </Step>
+
+  <Step title="Take Corrective Action">
+    Based on root cause, implement fixes:
+    - Process improvements
+    - Additional training
+    - Resource adjustments
+    - Tool or system changes
+  </Step>
+
+  <Step title="Monitor Results">
+    Continue tracking to see if your corrective actions improve the metric.
+
+    If not, try a different approach.
+  </Step>
+
+  <Step title="Share Lessons Learned">
+    When you fix a red KPI, share what worked with your team.
+
+    This builds organizational knowledge.
+  </Step>
+</Steps>
+
+## Reporting KPIs
+
+<AccordionGroup>
+  <Accordion title="Daily Standups" icon="users" defaultOpen>
+    **Quick status check for critical metrics**
+
+    - Share current status (green/yellow/red)
+    - Highlight any reds requiring action
+    - Note significant changes from yesterday
+
+    **Keep it brief:** 1-2 minutes per KPI
+  </Accordion>
+
+  <Accordion title="Weekly Team Meetings" icon="calendar-week">
+    **Review trends and discuss patterns**
+
+    - Show weekly trend charts
+    - Discuss any concerns
+    - Celebrate improvements
+    - Plan actions for yellows and reds
+
+    **Allocate:** 5-10 minutes of meeting time
+  </Accordion>
+
+  <Accordion title="Monthly Management Reports" icon="file-chart-line">
+    **Formal reporting to leadership**
+
+    - Summary of all KPIs and status
+    - Month-over-month trends
+    - Explanations for off-target metrics
+    - Actions taken and results
+
+    **Format:** Dashboard or report document
+  </Accordion>
+
+  <Accordion title="Quarterly Business Reviews" icon="presentation">
+    **Strategic review of process performance**
+
+    - Long-term trends (3-12 months)
+    - Achievement of targets
+    - Comparison to benchmarks
+    - Recommendations for process changes
+
+    **Audience:** Senior leadership and stakeholders
+  </Accordion>
+</AccordionGroup>
+
+## Tips for Success
+
+<CardGroup cols={2}>
+  <Card title="Automate When Possible" icon="robot">
+    Reduce manual entry by integrating systems. More time for analysis, less for data entry.
+  </Card>
+  <Card title="Verify Calculations" icon="calculator">
+    Spot-check automated data occasionally to ensure accuracy.
+  </Card>
+  <Card title="Create Dashboards" icon="table-columns">
+    Use visual dashboards showing all KPIs at once for quick status checks.
+  </Card>
+  <Card title="Share Responsibility" icon="users">
+    If you have many KPIs, distribute recording responsibility across team members.
+  </Card>
+</CardGroup>
+
+## KPI Recording Checklist
+
+- [ ] Value recorded on schedule (daily/weekly/monthly)
+- [ ] Correct date selected
+- [ ] Accurate value entered
+- [ ] Notes added for any unusual circumstances
+- [ ] Status (green/yellow/red) reviewed
+- [ ] Red status investigated and action taken
+- [ ] Trends reviewed for patterns
+- [ ] Team notified of significant changes
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="KPI Status Colors" icon="palette" href="/processes/kpi-status-colors">
+    Understand what green, yellow, and red mean
+  </Card>
+  <Card title="Creating KPIs" icon="plus" href="/processes/creating-kpis">
+    Review how to create effective KPIs
+  </Card>
+  <Card title="What Are KPIs?" icon="circle-question" href="/processes/what-are-kpis">
+    Go back to KPI fundamentals
+  </Card>
+</CardGroup>

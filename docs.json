@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Stage3",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,58 +11,221 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Getting Started",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Welcome",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "getting-started/introduction",
+              "getting-started/quick-start",
+              "getting-started/dashboard-overview"
             ]
           },
           {
-            "group": "Customization",
+            "group": "User Roles & Permissions",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "getting-started/understanding-roles",
+              "getting-started/role-capabilities",
+              "getting-started/how-sharing-works"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Navigation",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "getting-started/main-menu",
+              "getting-started/finding-content",
+              "getting-started/notifications"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Process Management",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Understanding Processes",
             "pages": [
-              "api-reference/introduction"
+              "processes/four-level-framework",
+              "processes/what-is-raci",
+              "processes/visual-diagrams"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Creating Processes",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "processes/creating-core-process",
+              "processes/adding-categories",
+              "processes/adding-activities",
+              "processes/assigning-raci"
+            ]
+          },
+          {
+            "group": "Documentation",
+            "pages": [
+              "processes/creating-sops",
+              "processes/blueprints-vs-guides",
+              "processes/creating-blueprints",
+              "processes/creating-guides",
+              "processes/adding-forms"
+            ]
+          },
+          {
+            "group": "Sharing & Collaboration",
+            "pages": [
+              "processes/sharing-processes",
+              "processes/permission-levels",
+              "processes/working-with-shared",
+              "processes/collaboration-best-practices"
+            ]
+          },
+          {
+            "group": "Performance Tracking",
+            "pages": [
+              "processes/what-are-kpis",
+              "processes/creating-kpis",
+              "processes/recording-kpi-values",
+              "processes/kpi-status-colors"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "AI Assistant",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "ai/opening-chat",
+              "ai/ai-capabilities",
+              "ai/having-conversations"
+            ]
+          },
+          {
+            "group": "AI Features",
+            "pages": [
+              "ai/asking-about-processes",
+              "ai/creating-activities",
+              "ai/understanding-team",
+              "ai/searching-documentation"
+            ]
+          },
+          {
+            "group": "Knowledge Base (Admin)",
+            "pages": [
+              "ai/uploading-documents",
+              "ai/managing-knowledge-base",
+              "ai/how-ai-uses-documents"
+            ]
+          },
+          {
+            "group": "Customization (Admin)",
+            "pages": [
+              "ai/what-are-master-prompts",
+              "ai/creating-custom-prompts",
+              "ai/setting-up-api-keys"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Workflows & Tasks",
+        "groups": [
+          {
+            "group": "Understanding Workflows",
+            "pages": [
+              "workflows/templates-vs-instances",
+              "workflows/how-workflows-work",
+              "workflows/evidence-accountability"
+            ]
+          },
+          {
+            "group": "Creating Workflows",
+            "pages": [
+              "workflows/generating-from-guides",
+              "workflows/generating-from-blueprints",
+              "workflows/creating-manual-workflows",
+              "workflows/editing-templates"
+            ]
+          },
+          {
+            "group": "Running Workflows",
+            "pages": [
+              "workflows/starting-workflow",
+              "workflows/completing-tasks",
+              "workflows/uploading-evidence",
+              "workflows/tracking-progress"
+            ]
+          },
+          {
+            "group": "Task Management",
+            "pages": [
+              "tasks/using-my-tasks",
+              "tasks/completing-tasks",
+              "tasks/creating-team-tasks",
+              "tasks/organizing-tasks"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Administration",
+        "groups": [
+          {
+            "group": "Team Management",
+            "pages": [
+              "admin/inviting-members",
+              "admin/managing-roles",
+              "admin/removing-members",
+              "admin/team-settings"
+            ]
+          },
+          {
+            "group": "System Configuration",
+            "pages": [
+              "admin/configuring-ai",
+              "admin/managing-features",
+              "admin/team-preferences"
+            ]
+          },
+          {
+            "group": "Business Assessments",
+            "pages": [
+              "admin/what-are-assessments",
+              "admin/taking-assessment",
+              "admin/assessment-results",
+              "admin/using-results"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Examples & Best Practices",
+        "groups": [
+          {
+            "group": "Real-World Examples",
+            "pages": [
+              "examples/sales-process",
+              "examples/customer-onboarding",
+              "examples/hr-hiring",
+              "examples/product-development"
+            ]
+          },
+          {
+            "group": "Best Practices",
+            "pages": [
+              "best-practices/organizing-processes",
+              "best-practices/effective-raci",
+              "best-practices/clear-documentation",
+              "best-practices/kpi-selection",
+              "best-practices/version-control"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting",
+              "help/getting-support"
             ]
           }
         ]
@@ -71,52 +234,42 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "App Dashboard",
+          "href": "https://hq.stage3.app",
+          "icon": "chart-line"
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@stage3.app"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open App",
+      "href": "https://hq.stage3.app"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/company",
+      "github": "https://github.com/company",
+      "linkedin": "https://linkedin.com/company/company"
     }
   }
 }

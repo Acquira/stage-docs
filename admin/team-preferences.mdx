@@ -1,0 +1,487 @@
+---
+title: "Team Preferences"
+description: "Customize notification defaults, workflow settings, and team-wide preferences"
+---
+
+<Note>
+This feature is available to **Team Admins** and **Team Owners** only.
+</Note>
+
+## Overview
+
+Team Preferences allow you to customize how your team experiences the Business Process Framework. These settings establish defaults for new members and control team-wide behaviors that affect everyone.
+
+<Info>
+Many preferences set here serve as defaults for new team members. Individual members can override some settings in their personal preferences.
+</Info>
+
+## Accessing Team Preferences
+
+<Steps>
+  <Step title="Open Team Settings">
+    Click your team name in the top navigation and select **Team Settings**.
+  </Step>
+
+  <Step title="Navigate to Preferences">
+    In the left sidebar, click **Preferences**.
+  </Step>
+
+  <Step title="Review Sections">
+    Team Preferences are organized into sections:
+    - Notification Defaults
+    - Workflow Settings
+    - KPI Reporting
+    - Time Zone and Locale
+    - Customization Options
+  </Step>
+
+  <Step title="Make Changes">
+    Adjust any preferences as needed and click **Save Changes** at the bottom of each section.
+  </Step>
+</Steps>
+
+## Notification Defaults
+
+Configure default notification settings for new team members. Existing members retain their individual preferences.
+
+### Email Notifications
+
+Control which events trigger email notifications:
+
+<AccordionGroup>
+  <Accordion title="Process Notifications">
+    - **Process assigned to me**: When someone assigns you to a process
+    - **Process updated**: When a process you are following changes
+    - **Process completed**: When a process reaches completion
+    - **Process comment**: When someone comments on your process
+
+    **Default**: All enabled except "Process updated"
+  </Accordion>
+
+  <Accordion title="Workflow Notifications">
+    - **Task assigned**: When a workflow task is assigned to you
+    - **Task due soon**: Reminder 24 hours before task deadline
+    - **Approval required**: When you need to approve a workflow step
+    - **Workflow completed**: When a workflow you initiated completes
+
+    **Default**: All enabled
+  </Accordion>
+
+  <Accordion title="Assessment Notifications">
+    - **Assessment invitation**: When invited to take an assessment
+    - **Assessment completed**: When you complete an assessment
+    - **Results available**: When assessment results are ready
+    - **Scheduled reminder**: Reminders for incomplete assessments
+
+    **Default**: All enabled
+  </Accordion>
+
+  <Accordion title="Team Notifications">
+    - **New team member**: When someone joins your team
+    - **Role changed**: When your role is changed
+    - **Team announcement**: Important team-wide messages
+    - **Mention**: When someone mentions you in a comment
+
+    **Default**: All enabled except "New team member"
+  </Accordion>
+
+  <Accordion title="System Notifications">
+    - **KPI reports**: Weekly or monthly KPI summaries
+    - **Feature updates**: When new features are available
+    - **Maintenance notices**: Scheduled maintenance announcements
+    - **Usage alerts**: When approaching plan limits
+
+    **Default**: All enabled
+  </Accordion>
+</AccordionGroup>
+
+### Notification Frequency
+
+Choose how often to send notifications:
+
+- **Real-time**: Send immediately as events occur (default)
+- **Daily digest**: Bundle notifications into one email daily at 8 AM
+- **Weekly digest**: Send summary every Monday at 8 AM
+- **Custom schedule**: Choose specific days and times
+
+<Tip>
+For teams with high activity, daily or weekly digests reduce email volume while keeping everyone informed.
+</Tip>
+
+### In-App Notifications
+
+Configure which events create in-app notifications:
+
+- **Comments and mentions**: Real-time alerts for direct interactions
+- **Task updates**: Notifications when assigned tasks change
+- **Process changes**: Updates to processes you are involved with
+- **System alerts**: Important platform messages
+
+**Recommendation**: Keep in-app notifications more permissive than email notifications for better responsiveness.
+
+### Notification Delivery Times
+
+Set quiet hours when notifications should not be sent:
+
+- **Respect time zones**: Send notifications based on each member's time zone
+- **Quiet hours**: Default hours when emails are paused (e.g., 8 PM to 7 AM)
+- **Weekend delivery**: Choose whether to send notifications on weekends
+
+<Note>
+Urgent notifications (like critical approvals) may override quiet hours based on priority settings.
+</Note>
+
+## Workflow Settings
+
+Configure default behaviors for workflows across your team.
+
+### Approval Settings
+
+**Default approval timeout**: How long approvers have to respond before escalation
+
+- 24 hours (urgent)
+- 3 days (standard - default)
+- 7 days (flexible)
+- 14 days (relaxed)
+- Custom duration
+
+**Escalation behavior**: What happens when approval times out
+
+- Send reminder notification
+- Auto-escalate to manager
+- Auto-approve
+- Mark workflow as blocked
+
+<Warning>
+Auto-approval on timeout can be convenient but may bypass necessary reviews. Use cautiously.
+</Warning>
+
+### Task Assignment
+
+**Auto-assignment rules**: How tasks are automatically assigned
+
+- **Role-based**: Assign to anyone with a specific role
+- **Round-robin**: Distribute evenly across team members
+- **Workload-balanced**: Assign to member with fewest active tasks
+- **Manual only**: Always require manual assignment (default)
+
+**Assignment notifications**: When assignees are notified
+
+- Immediate (default)
+- End of day digest
+- Weekly summary
+
+### Workflow Execution
+
+**Default execution mode**: How workflow steps are processed
+
+- **Sequential**: Steps execute one after another (default)
+- **Parallel**: Independent steps execute simultaneously
+- **Conditional**: Execution path depends on conditions
+
+**Concurrent task limit**: Maximum tasks one person can have active
+
+- Unlimited (default)
+- 5 tasks
+- 10 tasks
+- 15 tasks
+- Custom limit
+
+<Tip>
+Setting a concurrent task limit prevents team members from being overwhelmed with too many simultaneous responsibilities.
+</Tip>
+
+### Workflow Templates
+
+**Default visibility**: Who can see new workflow templates
+
+- Team-wide (default)
+- Admins only
+- Creator only
+
+**Auto-save frequency**: How often to save workflow progress
+
+- Every change (default)
+- Every 5 minutes
+- Every 15 minutes
+- Manual save only
+
+## KPI Reporting Preferences
+
+Configure how Key Performance Indicators are tracked and reported.
+
+### Reporting Frequency
+
+Choose how often to generate and deliver KPI reports:
+
+- **Weekly**: Every Monday at 9 AM
+- **Bi-weekly**: Every other Monday
+- **Monthly**: First day of each month (default)
+- **Quarterly**: First day of each quarter
+- **Custom schedule**: Specify your own frequency
+
+### Report Recipients
+
+Who receives automated KPI reports:
+
+- **Team Owners**: Always receive reports
+- **Team Admins**: Enabled by default
+- **Team Members**: Disabled by default
+- **Process owners**: Only for their processes
+- **Custom list**: Specify individual recipients
+
+### Default Metrics
+
+Which KPIs to track by default for new processes:
+
+<CardGroup cols={2}>
+  <Card title="Completion Rate" icon="circle-check">
+    Percentage of processes completed on time
+  </Card>
+
+  <Card title="Cycle Time" icon="clock">
+    Average time from process start to completion
+  </Card>
+
+  <Card title="Task Efficiency" icon="gauge-high">
+    Tasks completed vs. tasks overdue
+  </Card>
+
+  <Card title="Workflow Throughput" icon="arrows-spin">
+    Number of workflows completed per period
+  </Card>
+
+  <Card title="Quality Score" icon="star">
+    Assessment scores and process ratings
+  </Card>
+
+  <Card title="Team Utilization" icon="users">
+    Percentage of team capacity being used
+  </Card>
+</CardGroup>
+
+**Default selection**: Completion Rate, Cycle Time, and Task Efficiency
+
+### Comparison Periods
+
+How to display trends in KPI reports:
+
+- **vs. Previous period**: Compare to last week/month/quarter
+- **vs. Same period last year**: Year-over-year comparison
+- **vs. Baseline**: Compare to established baseline target
+- **vs. Team average**: Compare to team-wide performance
+
+<Info>
+Comparison periods require historical data. New teams may not have meaningful comparisons for several weeks or months.
+</Info>
+
+### Report Format
+
+Customize the appearance and content of KPI reports:
+
+- **Include charts**: Visual representations of data (default: enabled)
+- **Include raw data**: Detailed tables of metrics (default: disabled)
+- **Include recommendations**: AI-generated insights (requires AI enabled)
+- **Include action items**: Suggested improvements based on data
+
+## Time Zone and Locale
+
+Configure regional settings for your team.
+
+### Default Time Zone
+
+Set the time zone for displaying dates and times:
+
+- **Team default**: Set one time zone for the entire team
+- **Per-user**: Each member can set their own (default)
+- **Common options**:
+  - UTC
+  - America/New_York (Eastern)
+  - America/Chicago (Central)
+  - America/Los_Angeles (Pacific)
+  - Europe/London
+  - Asia/Tokyo
+
+**Impact**: Affects scheduled workflows, report timestamps, and activity logs
+
+<Tip>
+If your team is distributed globally, allow per-user time zones for better user experience.
+</Tip>
+
+### Date Format
+
+Choose how dates are displayed:
+
+- **MM/DD/YYYY** (US format) - 12/31/2023
+- **DD/MM/YYYY** (International format) - 31/12/2023
+- **YYYY-MM-DD** (ISO format) - 2023-12-31
+
+### Time Format
+
+Choose between 12-hour and 24-hour time:
+
+- **12-hour** (3:30 PM) - default
+- **24-hour** (15:30)
+
+### First Day of Week
+
+Set which day starts the week in calendars:
+
+- **Sunday** (US standard)
+- **Monday** (International standard) - default
+- **Saturday**
+
+### Number Format
+
+Choose decimal and thousands separators:
+
+- **1,234.56** (US format) - default
+- **1.234,56** (European format)
+- **1 234,56** (French format)
+
+## Customization Options
+
+Additional preferences for tailoring the platform to your team.
+
+### Default Views
+
+Set default views for common pages:
+
+- **Process list**: List view or card view (default: list)
+- **Workflow display**: Flowchart or list (default: flowchart)
+- **KPI dashboard**: Charts or tables (default: charts)
+- **Member directory**: Grid or list (default: grid)
+
+### Page Density
+
+Control how much information displays on each page:
+
+- **Comfortable**: More spacing, easier reading (default)
+- **Compact**: More information per screen
+- **Custom**: Set specific spacing preferences
+
+### Theme
+
+Choose the visual theme for your team:
+
+- **Light**: Light background (default)
+- **Dark**: Dark background
+- **Auto**: Match system settings
+- **Custom**: Enterprise plan only
+
+<Note>
+Individual members can override the team theme in their personal preferences.
+</Note>
+
+### Default Process Privacy
+
+Set default visibility for new processes:
+
+- **Team-wide**: Visible to all team members (default)
+- **Private**: Only visible to creator and assignees
+- **Role-based**: Visible to specific roles
+- **Custom**: Creator chooses on creation
+
+### Collaboration Defaults
+
+Configure default collaboration settings:
+
+- **Allow comments**: Team members can comment on processes (default: enabled)
+- **Allow mentions**: Team members can mention others (default: enabled)
+- **Allow file attachments**: Enable document uploads (default: enabled)
+- **Track changes**: Log all edits and updates (default: enabled)
+
+### Search Preferences
+
+Customize search behavior:
+
+- **Search scope**: Current team only or all accessible teams
+- **Include archived**: Show archived content in results (default: disabled)
+- **Result limit**: Number of results per page (default: 25)
+- **Fuzzy matching**: Allow approximate matches (default: enabled)
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Survey Your Team" icon="clipboard-question">
+    Before changing preferences, ask team members about their needs and pain points.
+  </Card>
+
+  <Card title="Change Gradually" icon="stairs">
+    Make incremental changes rather than overhauling all preferences at once.
+  </Card>
+
+  <Card title="Communicate Changes" icon="bullhorn">
+    Notify team members when you change preferences that affect their experience.
+  </Card>
+
+  <Card title="Monitor Impact" icon="magnifying-glass-chart">
+    Track whether preference changes improve engagement and productivity.
+  </Card>
+
+  <Card title="Document Decisions" icon="file-pen">
+    Keep notes on why you chose specific preferences for future reference.
+  </Card>
+
+  <Card title="Review Periodically" icon="calendar-clock">
+    Reassess preferences quarterly as your team evolves.
+  </Card>
+</CardGroup>
+
+## Resetting Preferences
+
+To reset preferences to system defaults:
+
+1. Scroll to the bottom of any preference section
+2. Click **Reset to Defaults**
+3. Confirm the reset action
+4. Save changes
+
+<Warning>
+Resetting preferences affects all team members who have not customized their individual settings. Existing personal preferences are not affected.
+</Warning>
+
+## Troubleshooting
+
+### Changes Not Taking Effect
+
+If preference changes are not applying:
+
+1. Ensure you clicked **Save Changes**
+2. Refresh your browser
+3. Check if individual users have personal overrides
+4. Verify you have Admin or Owner permissions
+
+### Notifications Not Working
+
+If team members are not receiving notifications:
+
+1. Check spam/junk folders
+2. Verify email addresses are correct
+3. Confirm notification preferences are enabled
+4. Check system notification status
+
+### Time Zone Issues
+
+If dates and times appear incorrect:
+
+1. Verify the team default time zone is correct
+2. Check individual user time zone settings
+3. Ensure browser time zone detection is working
+4. Confirm server time is synchronized
+
+## Related Resources
+
+<CardGroup cols={3}>
+  <Card title="Team Settings" icon="gear" href="/admin/team-settings">
+    Configure general team settings
+  </Card>
+
+  <Card title="Managing Features" icon="toggle-on" href="/admin/managing-features">
+    Enable or disable features
+  </Card>
+
+  <Card title="Inviting Members" icon="user-plus" href="/admin/inviting-members">
+    Add new team members
+  </Card>
+</CardGroup>

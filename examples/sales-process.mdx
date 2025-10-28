@@ -1,0 +1,326 @@
+---
+title: "Sales Process Example"
+description: "Complete real-world sales process example with activities, RACI assignments, and KPIs"
+---
+
+This example demonstrates how to structure a comprehensive B2B sales process using the Business Process Framework. Use this as a template for building your own sales processes.
+
+## Process Overview
+
+**Name:** Enterprise B2B Sales Process
+**Owner:** VP of Sales
+**Purpose:** Systematically move prospects from initial contact through contract signature
+
+<Tip>
+This example is designed for a B2B SaaS company with a 30-90 day sales cycle. Adapt the activities and timeframes to match your business model.
+</Tip>
+
+## Activity Categories
+
+<Tabs>
+  <Tab title="Prospecting">
+    ### Prospecting Activities
+
+    Activities focused on identifying and qualifying potential customers.
+
+    | Activity | Description | RACI Assignment | Duration |
+    |----------|-------------|-----------------|----------|
+    | Research Target Accounts | Identify companies matching ICP criteria | **A:** SDR Team Lead<br/>**R:** SDRs<br/>**C:** Marketing | 2 hours |
+    | Initial Outreach | Send personalized email or LinkedIn message | **A:** SDR<br/>**I:** Sales Manager | 30 min |
+    | Discovery Call | 15-minute exploratory conversation | **A:** SDR<br/>**C:** AE (if needed)<br/>**I:** Sales Manager | 15 min |
+    | Lead Scoring | Evaluate lead quality and fit | **A:** SDR<br/>**C:** Marketing Ops<br/>**I:** AE | 15 min |
+
+    **Key Outputs:**
+    - Qualified lead record in CRM
+    - Discovery call notes
+    - Lead score (0-100)
+
+    <Note>
+    SDRs should disqualify poor-fit prospects quickly to focus on high-potential leads.
+    </Note>
+  </Tab>
+
+  <Tab title="Qualification">
+    ### Qualification Activities
+
+    Deep-dive activities to understand prospect needs and fit.
+
+    | Activity | Description | RACI Assignment | Duration |
+    |----------|-------------|-----------------|----------|
+    | Needs Assessment Call | Detailed discussion of pain points and requirements | **A:** Account Executive (AE)<br/>**R:** Solutions Consultant<br/>**I:** SDR, Sales Manager | 45 min |
+    | Technical Discovery | Understand current tech stack and integration needs | **A:** Solutions Consultant<br/>**C:** AE, Product Team<br/>**I:** Customer Success | 60 min |
+    | Budget Confirmation | Validate budget authority and timeline | **A:** AE<br/>**I:** Sales Manager | 30 min |
+    | Stakeholder Mapping | Identify decision makers and influencers | **A:** AE<br/>**C:** SDR | 30 min |
+
+    **Key Outputs:**
+    - BANT qualification checklist (Budget, Authority, Need, Timeline)
+    - Stakeholder map diagram
+    - Technical requirements document
+
+    <Warning>
+    Do not advance to presentation stage without confirming budget and decision-making authority.
+    </Warning>
+  </Tab>
+
+  <Tab title="Presentation">
+    ### Presentation Activities
+
+    Demonstrating value and building the business case.
+
+    | Activity | Description | RACI Assignment | Duration |
+    |----------|-------------|-----------------|----------|
+    | Demo Preparation | Customize demo environment with prospect data | **A:** Solutions Consultant<br/>**C:** AE<br/>**I:** Product Team | 2 hours |
+    | Product Demo | Live demonstration of key features | **A:** Solutions Consultant<br/>**R:** AE<br/>**I:** Sales Manager, Product Marketing | 60 min |
+    | ROI Analysis | Build custom ROI calculator for prospect | **A:** AE<br/>**C:** Solutions Consultant, Finance<br/>**I:** Sales Manager | 3 hours |
+    | Proposal Creation | Draft comprehensive proposal document | **A:** AE<br/>**C:** Solutions Consultant, Legal, Finance<br/>**I:** Sales Manager | 4 hours |
+
+    **Key Outputs:**
+    - Customized demo recording
+    - ROI analysis spreadsheet
+    - Formal proposal document
+
+    <Tip>
+    Include customer success stories and case studies that match the prospect's industry and use case.
+    </Tip>
+  </Tab>
+
+  <Tab title="Closing">
+    ### Closing Activities
+
+    Final negotiation and contract execution.
+
+    | Activity | Description | RACI Assignment | Duration |
+    |----------|-------------|-----------------|----------|
+    | Proposal Review Meeting | Walk through proposal with stakeholders | **A:** AE<br/>**R:** Solutions Consultant<br/>**C:** Sales Manager | 60 min |
+    | Handle Objections | Address concerns and negotiate terms | **A:** AE<br/>**C:** Sales Manager, Legal, Finance | 2 hours |
+    | Contract Negotiation | Finalize pricing, terms, and contract language | **A:** Sales Manager<br/>**R:** AE<br/>**C:** Legal, Finance<br/>**I:** VP Sales | 3 hours |
+    | Contract Execution | Obtain signatures and process paperwork | **A:** AE<br/>**C:** Legal, Finance<br/>**I:** Customer Success | 1 hour |
+    | Handoff to CS | Transfer account details to onboarding team | **A:** AE<br/>**R:** Customer Success Manager<br/>**I:** Solutions Consultant | 30 min |
+
+    **Key Outputs:**
+    - Signed contract
+    - Executed order form
+    - Customer Success handoff document
+
+    <Note>
+    Schedule the CS handoff call within 24 hours of contract signature to maintain momentum.
+    </Note>
+  </Tab>
+</Tabs>
+
+## Sample Workflow
+
+Here's an automated workflow that triggers when a deal reaches the Closing stage:
+
+<Steps>
+  <Step title="Deal Enters Closing Stage">
+    Trigger: Deal stage updated to "Closing" in CRM
+  </Step>
+
+  <Step title="Generate Contract">
+    Auto-generate contract from approved template with deal details
+  </Step>
+
+  <Step title="Assign Review Tasks">
+    - Legal review task assigned to Legal team
+    - Finance review task assigned to Finance team
+    - Both tasks must complete before proceeding
+  </Step>
+
+  <Step title="Send for Signature">
+    Once approved, send via DocuSign to prospect contacts
+  </Step>
+
+  <Step title="Notify Teams">
+    When fully executed:
+    - Notify Customer Success team
+    - Create onboarding project in CS platform
+    - Add deal to revenue reporting
+  </Step>
+</Steps>
+
+## Key Performance Indicators
+
+<CardGroup cols={2}>
+  <Card title="Conversion Rate" icon="percent">
+    **Target:** 25% from Discovery to Qualified
+    **Target:** 60% from Qualified to Proposal
+    **Target:** 40% from Proposal to Closed Won
+
+    *Measures effectiveness at each stage*
+  </Card>
+
+  <Card title="Average Deal Size" icon="dollar-sign">
+    **Target:** $50,000 ACV
+    **Measurement:** Total contract value divided by number of deals
+
+    *Track trend over time to measure upselling effectiveness*
+  </Card>
+
+  <Card title="Sales Cycle Length" icon="clock">
+    **Target:** 45 days (Discovery to Close)
+    **Measurement:** Days between first qualified call and contract signature
+
+    *Identifies bottlenecks in the process*
+  </Card>
+
+  <Card title="Win Rate" icon="trophy">
+    **Target:** 30% overall win rate
+    **Measurement:** Closed Won / (Closed Won + Closed Lost)
+
+    *Primary measure of sales effectiveness*
+  </Card>
+</CardGroup>
+
+### KPI Tracking Schedule
+
+- **Daily:** Pipeline value and deal count by stage
+- **Weekly:** Conversion rates between stages
+- **Monthly:** Win rate, average deal size, sales cycle length
+- **Quarterly:** Trend analysis and target adjustments
+
+## Forms and Templates
+
+This process uses the following forms:
+
+<AccordionGroup>
+  <Accordion title="Discovery Call Notes Template">
+    **Prospect Information**
+    - Company name, size, industry
+    - Contact details and role
+
+    **Current Situation**
+    - What problem are they trying to solve?
+    - What solutions have they tried?
+    - What's working/not working?
+
+    **Desired Outcome**
+    - What does success look like?
+    - What timeline are they working with?
+
+    **BANT Qualification**
+    - Budget: Confirmed/Unconfirmed
+    - Authority: Decision maker identified?
+    - Need: Pain point severity (1-10)
+    - Timeline: Target decision date
+
+    **Next Steps**
+    - Agreed follow-up action
+    - Scheduled meeting date/time
+  </Accordion>
+
+  <Accordion title="Technical Requirements Checklist">
+    **Integration Requirements**
+    - [ ] CRM integration needed
+    - [ ] SSO/SAML authentication
+    - [ ] API access required
+    - [ ] Data import/export needs
+
+    **Security & Compliance**
+    - [ ] SOC 2 Type II required
+    - [ ] GDPR compliance needed
+    - [ ] HIPAA compliance needed
+    - [ ] Custom data retention policies
+
+    **User Requirements**
+    - Number of users: _____
+    - User roles needed: _____
+    - Training requirements: _____
+
+    **Technical Constraints**
+    - Browser requirements
+    - Network/firewall considerations
+    - Data volume estimates
+  </Accordion>
+
+  <Accordion title="Proposal Checklist">
+    **Required Sections**
+    - [ ] Executive summary
+    - [ ] Company overview
+    - [ ] Problem statement
+    - [ ] Proposed solution
+    - [ ] Implementation timeline
+    - [ ] Pricing and terms
+    - [ ] Case studies/references
+    - [ ] ROI analysis
+    - [ ] Next steps
+
+    **Approval Requirements**
+    - [ ] AE review
+    - [ ] Sales Manager approval
+    - [ ] Legal review (if custom terms)
+    - [ ] Finance approval (if custom pricing)
+
+    **Delivery**
+    - [ ] PDF version generated
+    - [ ] Sent via email
+    - [ ] Follow-up meeting scheduled
+  </Accordion>
+</AccordionGroup>
+
+## Blueprint: Handling Price Objections
+
+When a prospect objects to pricing, follow this framework:
+
+<Steps>
+  <Step title="Acknowledge and Clarify">
+    "I understand pricing is an important consideration. Help me understand—is it the total investment, or the pricing structure that concerns you?"
+  </Step>
+
+  <Step title="Revisit Value">
+    Refer back to the ROI analysis and pain points discussed earlier. "Based on our analysis, you're currently losing $X per month to [problem]. Our solution pays for itself in Y months."
+  </Step>
+
+  <Step title="Explore Options">
+    - Offer annual vs monthly pricing
+    - Suggest starting with fewer users/features
+    - Discuss phased implementation
+    - Review financing options if available
+  </Step>
+
+  <Step title="Create Urgency">
+    "We have a quarter-end promotion that expires Friday" or "The current pricing is locked for contracts signed this month."
+  </Step>
+
+  <Step title="Know When to Walk Away">
+    If the prospect doesn't have budget or won't get budget approval, it's better to disqualify than waste time on a deal that won't close.
+  </Step>
+</Steps>
+
+<Note>
+Never discount more than 15% without VP Sales approval. Excessive discounting devalues your product and sets bad precedent for renewals.
+</Note>
+
+## Downloadable Template
+
+Use this process as a starting point for your sales process:
+
+1. **Copy the activity structure** into your Business Process Framework
+2. **Customize the RACI assignments** based on your team structure
+3. **Adjust timelines and stages** to match your sales cycle
+4. **Define your specific KPI targets** based on historical data
+5. **Create your own forms** using the templates as examples
+
+<Tip>
+Start simple with just 10-15 core activities. You can always add more detail as your team adopts the process.
+</Tip>
+
+## Related Examples
+
+<CardGroup cols={2}>
+  <Card title="Customer Onboarding" icon="user-plus" href="/examples/customer-onboarding">
+    See how to hand off from Sales to Customer Success
+  </Card>
+
+  <Card title="Effective RACI" icon="users" href="/best-practices/effective-raci">
+    Learn best practices for RACI assignments
+  </Card>
+
+  <Card title="KPI Selection" icon="chart-line" href="/best-practices/kpi-selection">
+    Choose the right KPIs for your sales process
+  </Card>
+
+  <Card title="Clear Documentation" icon="file-text" href="/best-practices/clear-documentation">
+    Write effective SOPs and blueprints
+  </Card>
+</CardGroup>

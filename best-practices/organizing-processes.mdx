@@ -1,0 +1,734 @@
+---
+title: "Organizing Processes"
+description: "Best practices for structuring complex processes, organizing activities, and maintaining clarity"
+---
+
+Learn how to organize your business processes for maximum clarity, usability, and maintainability. A well-structured process is easier to follow, update, and improve over time.
+
+## Core Principles
+
+<CardGroup cols={2}>
+  <Card title="Start Simple" icon="seedling">
+    Begin with essential activities only. You can always add detail later as the process matures.
+  </Card>
+
+  <Card title="User-Centric" icon="user">
+    Organize processes the way your team thinks about the work, not how the software works.
+  </Card>
+
+  <Card title="Consistent Structure" icon="grid">
+    Use consistent naming conventions and organization patterns across all processes.
+  </Card>
+
+  <Card title="Logical Flow" icon="arrow-right">
+    Arrange activities in the order they're actually performed, not alphabetically.
+  </Card>
+</CardGroup>
+
+## Organizing by Category
+
+### Why Use Categories?
+
+Categories group related activities into logical phases or stages. They help users:
+- Quickly find relevant activities
+- Understand process flow at a glance
+- Focus on one stage at a time
+- Track progress through the process
+
+### Category Organization Approaches
+
+<Tabs>
+  <Tab title="Chronological">
+    **Best for:** Sequential processes with clear phases
+
+    **Example: Sales Process**
+    - Prospecting
+    - Qualification
+    - Presentation
+    - Closing
+    - Post-Sale
+
+    **Advantages:**
+    - Mirrors actual workflow
+    - Easy to understand progression
+    - Natural for time-based processes
+
+    **When to Use:**
+    - Linear processes
+    - Clear beginning and end
+    - Activities follow a sequence
+  </Tab>
+
+  <Tab title="Functional">
+    **Best for:** Processes involving multiple departments
+
+    **Example: Product Launch**
+    - Product Management
+    - Engineering
+    - Marketing
+    - Sales Enablement
+    - Customer Support
+
+    **Advantages:**
+    - Clear ownership by department
+    - Easy to assign to teams
+    - Parallel work visible
+
+    **When to Use:**
+    - Cross-functional initiatives
+    - Multiple teams working simultaneously
+    - Department-specific responsibilities
+  </Tab>
+
+  <Tab title="Thematic">
+    **Best for:** Processes with recurring themes or types of work
+
+    **Example: Customer Onboarding**
+    - Technical Setup
+    - Training & Education
+    - User Adoption
+    - Success Validation
+
+    **Advantages:**
+    - Groups similar work together
+    - Flexible for non-linear processes
+    - Easy to find related activities
+
+    **When to Use:**
+    - Complex processes without strict sequence
+    - Multiple parallel workstreams
+    - Processes with recurring patterns
+  </Tab>
+
+  <Tab title="Priority-Based">
+    **Best for:** Processes where order is less important than priority
+
+    **Example: Incident Response**
+    - Critical Actions (First 15 min)
+    - Stabilization (First hour)
+    - Investigation (First 24 hours)
+    - Resolution & Prevention
+
+    **Advantages:**
+    - Emphasizes urgency
+    - Clear time-based expectations
+    - Focuses on outcomes
+
+    **When to Use:**
+    - Time-sensitive processes
+    - Emergency or crisis management
+    - When speed matters more than sequence
+  </Tab>
+</Tabs>
+
+### Category Naming Best Practices
+
+<AccordionGroup>
+  <Accordion title="Use Clear, Descriptive Names">
+    **Good Examples:**
+    - "Lead Generation" (not "Phase 1")
+    - "Technical Implementation" (not "Dev Stuff")
+    - "Quality Assurance" (not "Testing")
+
+    **Why It Matters:**
+    Clear names help users find activities quickly without referring to documentation.
+  </Accordion>
+
+  <Accordion title="Be Consistent Across Processes">
+    **Example: Use "Discovery" Everywhere**
+    - Sales Process: "Discovery"
+    - Product Development: "Discovery"
+    - Customer Success: "Discovery"
+
+    **Why It Matters:**
+    Consistency helps users transfer knowledge between processes and reduces cognitive load.
+  </Accordion>
+
+  <Accordion title="Use Action-Oriented Language When Appropriate">
+    **Good Examples:**
+    - "Qualifying Leads" (not "Qualification")
+    - "Building Features" (not "Build Phase")
+    - "Launching to Market" (not "Launch")
+
+    **Why It Matters:**
+    Active language makes the work feel more tangible and actionable.
+  </Accordion>
+
+  <Accordion title="Keep Names Concise">
+    **Good Examples:**
+    - "Onboarding" (not "Customer Onboarding and Initial Setup")
+    - "Testing" (not "Quality Assurance and Validation Testing")
+
+    **Why It Matters:**
+    Short names are easier to scan and work better in UI elements.
+
+    **Exception:** Add detail when disambiguation is needed
+    - "Technical Onboarding" vs "Business Onboarding"
+  </Accordion>
+</AccordionGroup>
+
+## Activity Organization
+
+### How Many Activities?
+
+<CardGroup cols={2}>
+  <Card title="Simple Process" icon="list">
+    **5-15 activities**
+
+    Perfect for straightforward workflows that one person or team executes.
+
+    Example: Expense reimbursement
+  </Card>
+
+  <Card title="Moderate Process" icon="list-ol">
+    **15-30 activities**
+
+    Good for cross-functional processes with clear stages.
+
+    Example: Employee onboarding
+  </Card>
+
+  <Card title="Complex Process" icon="diagram-project">
+    **30-50 activities**
+
+    Large processes with multiple phases and many participants.
+
+    Example: Product development lifecycle
+  </Card>
+
+  <Card title="Enterprise Process" icon="building">
+    **50+ activities**
+
+    Enterprise-wide processes spanning multiple departments and systems.
+
+    Example: M&A integration process
+
+    **Tip:** Consider breaking into sub-processes
+  </Card>
+</CardGroup>
+
+<Warning>
+If your process has more than 50 activities, strongly consider breaking it into multiple related processes. Large processes are hard to understand and maintain.
+</Warning>
+
+### Activity Granularity
+
+**Too Granular (Bad):**
+```
+1. Open email client
+2. Click "New Email"
+3. Enter recipient email address
+4. Enter subject line
+5. Type message
+6. Click Send button
+```
+
+**Too Vague (Bad):**
+```
+1. Communicate with customer
+```
+
+**Just Right (Good):**
+```
+1. Send welcome email to customer with onboarding materials
+```
+
+<Tip>
+**Rule of Thumb:** Each activity should represent a meaningful unit of work that takes 15 minutes to 4 hours. If it's shorter, consider combining activities. If it's longer, consider breaking it down.
+</Tip>
+
+### Activity Naming Conventions
+
+Use consistent verb + noun structure:
+
+<Tabs>
+  <Tab title="Action Verbs">
+    **Use strong, specific verbs:**
+
+    **Good:**
+    - Review proposal with legal team
+    - Conduct customer interview
+    - Analyze sales data
+    - Create budget forecast
+    - Approve purchase requisition
+
+    **Avoid:**
+    - Do proposal stuff
+    - Handle customer
+    - Look at data
+    - Budget things
+    - Check requisition
+  </Tab>
+
+  <Tab title="Be Specific">
+    **Add context for clarity:**
+
+    **Vague:**
+    - Send email
+    - Schedule meeting
+    - Create document
+
+    **Specific:**
+    - Send proposal email to decision maker
+    - Schedule kickoff meeting with project team
+    - Create technical requirements document
+
+    **Why:** Specificity reduces ambiguity and helps people know exactly what to do.
+  </Tab>
+
+  <Tab title="Include Outcomes When Helpful">
+    **Sometimes the "why" matters:**
+
+    **Basic:**
+    - Review contract
+
+    **With Outcome:**
+    - Review contract for legal compliance
+
+    **When to Add Outcomes:**
+    - Complex activities
+    - Activities where the purpose isn't obvious
+    - Activities with quality criteria
+  </Tab>
+
+  <Tab title="Consistent Length">
+    **Keep activity names similar in length:**
+
+    **Inconsistent:**
+    - Call
+    - Send comprehensive proposal document to all stakeholders
+    - Review
+    - Conduct detailed technical architecture planning session
+
+    **Consistent:**
+    - Call prospect to qualify need
+    - Send proposal to stakeholders
+    - Review contract terms
+    - Plan technical architecture
+
+    **Why:** Makes scanning easier and looks more professional.
+  </Tab>
+</Tabs>
+
+## When to Split Processes
+
+### Signs You Need Multiple Processes
+
+<AccordionGroup>
+  <Accordion title="Different Owners">
+    **Indicator:** Two distinct parts of the work have different process owners
+
+    **Example:**
+    - "Sales Process" (Owner: VP Sales)
+    - "Order Fulfillment Process" (Owner: VP Operations)
+
+    **Why Split:** Different owners means different accountability and likely different teams executing the work.
+  </Accordion>
+
+  <Accordion title="Different Cadences">
+    **Indicator:** Parts of the process run on different schedules
+
+    **Example:**
+    - "Product Planning" (Quarterly)
+    - "Sprint Execution" (Bi-weekly)
+
+    **Why Split:** Different timeframes make it hard to track progress holistically.
+  </Accordion>
+
+  <Accordion title="Different Stakeholder Groups">
+    **Indicator:** Different groups of people care about different parts
+
+    **Example:**
+    - "Sales Qualification" (Sales team)
+    - "Customer Onboarding" (Success team)
+
+    **Why Split:** Each team needs their own view without unnecessary activities from other teams.
+  </Accordion>
+
+  <Accordion title="Reusable Components">
+    **Indicator:** Part of the process is used by multiple other processes
+
+    **Example:**
+    - "Contract Approval" is used by Sales, Procurement, Partnerships, Legal
+
+    **Why Split:** Create a reusable sub-process that multiple parent processes can reference.
+  </Accordion>
+
+  <Accordion title="Process Becomes Unwieldy">
+    **Indicator:** More than 50 activities, or process documentation is 20+ pages
+
+    **Example:**
+    - Split "Product Development" into:
+      - "Product Discovery"
+      - "Design & Prototyping"
+      - "Engineering & QA"
+      - "Product Launch"
+
+    **Why Split:** Easier to understand, document, and improve smaller processes.
+  </Accordion>
+</AccordionGroup>
+
+### How to Split: The Parent-Child Pattern
+
+When splitting a large process:
+
+<Steps>
+  <Step title="Create Parent Process">
+    High-level process showing major phases as activities
+
+    **Example: "Customer Lifecycle"**
+    - Lead Generation
+    - Sales Process → (links to child process)
+    - Customer Onboarding → (links to child process)
+    - Ongoing Support → (links to child process)
+    - Renewal/Expansion → (links to child process)
+  </Step>
+
+  <Step title="Create Child Processes">
+    Detailed processes for each major phase
+
+    **Example: "Sales Process" (child of Customer Lifecycle)**
+    - Contains all detailed sales activities
+    - Owned by VP Sales
+    - Links back to parent process
+  </Step>
+
+  <Step title="Link Them Together">
+    Use clear references and links between parent and child processes
+
+    **In Parent Process:**
+    "For detailed sales activities, see the Sales Process"
+
+    **In Child Process:**
+    "This process is part of the Customer Lifecycle"
+  </Step>
+
+  <Step title="Define Handoffs">
+    Clearly specify how work transfers between processes
+
+    **Example:**
+    - Sales Process outputs: Signed contract, customer info
+    - Customer Onboarding inputs: Signed contract, customer info
+    - Handoff activity: "Transfer account to Customer Success"
+  </Step>
+</Steps>
+
+## When to Combine Processes
+
+### Signs You Should Combine
+
+<Tip>
+Sometimes you'll find multiple small processes that should be combined into one.
+</Tip>
+
+**Combine when:**
+
+1. **Same Owner & Team**
+   - If the same person/team executes both processes, consider combining
+   - Exception: If the processes run at different times/cadences
+
+2. **Tightly Coupled**
+   - Process B always starts immediately when Process A ends
+   - No other processes can happen between them
+   - Same stakeholders involved in both
+
+3. **Too Many Tiny Processes**
+   - You have 10+ processes with only 3-5 activities each
+   - Creates management overhead
+   - Hard to see the big picture
+
+4. **Artificial Splits**
+   - Processes were split for no good reason
+   - Split doesn't reflect how work actually flows
+   - Users constantly need to reference both processes
+
+<Warning>
+Don't combine processes just to reduce the total number. Each process should represent a meaningful unit of work with clear purpose and ownership.
+</Warning>
+
+## Organizing for Different User Types
+
+Consider how different roles will use the process:
+
+<Tabs>
+  <Tab title="Executors">
+    **Who:** People doing the work day-to-day
+
+    **What They Need:**
+    - Clear, step-by-step activities
+    - Obvious next actions
+    - Quick access to tools and templates
+    - Context for why each activity matters
+
+    **Organization Tip:**
+    Organize chronologically so they can follow the process sequentially.
+  </Tab>
+
+  <Tab title="Managers">
+    **Who:** People overseeing process execution
+
+    **What They Need:**
+    - High-level overview of stages
+    - Visibility into bottlenecks
+    - KPIs and metrics
+    - RACI for accountability
+
+    **Organization Tip:**
+    Start with summary view, allow drill-down into details.
+  </Tab>
+
+  <Tab title="Executives">
+    **Who:** Senior leaders reviewing process efficiency
+
+    **What They Need:**
+    - Strategic purpose and goals
+    - Key performance indicators
+    - Resource requirements
+    - Connection to business outcomes
+
+    **Organization Tip:**
+    Lead with outcomes and metrics, minimize operational detail.
+  </Tab>
+
+  <Tab title="New Employees">
+    **Who:** People learning the process for the first time
+
+    **What They Need:**
+    - Clear explanations of terminology
+    - Context and background
+    - Examples of good execution
+    - Links to training materials
+
+    **Organization Tip:**
+    Include onboarding-friendly documentation with glossary and examples.
+  </Tab>
+</Tabs>
+
+## Examples: Good vs Poor Organization
+
+### Example 1: Sales Process
+
+<Tabs>
+  <Tab title="Poorly Organized">
+    **No Categories, Random Order:**
+
+    1. Send proposal
+    2. Research prospect
+    3. Close deal
+    4. First call
+    5. Follow up
+    6. Demo product
+    7. Qualify lead
+    8. Handle objections
+    9. Get contact info
+    10. Create proposal
+
+    **Problems:**
+    - No logical flow
+    - Can't see stages
+    - Unclear what comes first
+    - Hard to track progress
+  </Tab>
+
+  <Tab title="Well Organized">
+    **Category: Prospecting**
+    1. Research target accounts
+    2. Initial outreach
+    3. Discovery call
+
+    **Category: Qualification**
+    4. Needs assessment call
+    5. Stakeholder mapping
+    6. Budget confirmation
+
+    **Category: Presentation**
+    7. Product demo
+    8. Create custom proposal
+    9. Present proposal
+
+    **Category: Closing**
+    10. Handle objections
+    11. Negotiate terms
+    12. Close deal
+
+    **Benefits:**
+    - Clear progression
+    - Easy to see current stage
+    - Logical groupings
+    - Understandable to anyone
+  </Tab>
+</Tabs>
+
+### Example 2: Employee Onboarding
+
+<Tabs>
+  <Tab title="Poorly Organized">
+    **Too Many Activities:**
+
+    1. Send offer letter
+    2. Get signature on offer letter
+    3. File offer letter
+    4. Create employee record
+    5. Enter employee in HRIS
+    6. Set up email account
+    7. Set up Slack account
+    8. Set up GitHub account
+    9. Order laptop
+    10. Order monitor
+    11. Order keyboard
+    12. Order mouse
+    ... (40 more micro-activities)
+
+    **Problems:**
+    - Too granular
+    - Overwhelming detail
+    - Loses sight of big picture
+    - Hard to maintain
+  </Tab>
+
+  <Tab title="Well Organized">
+    **Category: Pre-Start (Week Before)**
+    1. Complete offer process and paperwork
+    2. Set up IT accounts and equipment
+    3. Prepare workspace and materials
+    4. Schedule first-week meetings
+
+    **Category: Week 1 (First Week)**
+    5. Conduct orientation and company overview
+    6. Complete HR and compliance training
+    7. Set up workstation and access
+    8. Introduce to team and assign buddy
+
+    **Category: First 30 Days**
+    9. Complete role-specific training
+    10. Review key processes and tools
+    11. Set 90-day goals with manager
+    12. Conduct 30-day check-in
+
+    **Benefits:**
+    - Appropriate level of detail
+    - Clear timeframes
+    - Logical progression
+    - Manageable scope
+  </Tab>
+</Tabs>
+
+## Checklist: Well-Organized Process
+
+Use this checklist when reviewing your process organization:
+
+**Structure**
+- [ ] Categories have clear, descriptive names
+- [ ] Activities are grouped logically within categories
+- [ ] Process flows in a logical sequence
+- [ ] 10-30 activities per process (or documented reason for more)
+
+**Clarity**
+- [ ] Activity names use consistent verb + noun structure
+- [ ] Activity names are specific and actionable
+- [ ] No jargon or acronyms without explanation
+- [ ] Purpose of each activity is clear
+
+**Usability**
+- [ ] Users can easily find activities they're looking for
+- [ ] Related activities are grouped together
+- [ ] Process owner is clearly identified
+- [ ] Target audience is defined
+
+**Maintainability**
+- [ ] Process isn't overly granular or overly vague
+- [ ] Process doesn't duplicate other processes
+- [ ] Process scope is well-defined
+- [ ] Process has clear start and end points
+
+**Documentation**
+- [ ] Process has a clear description of purpose
+- [ ] Key terms are defined
+- [ ] Examples or templates are provided where helpful
+- [ ] Process is linked to related processes
+
+<Tip>
+Review your process organization every 6 months. As your business evolves, your process organization may need to evolve too.
+</Tip>
+
+## Common Mistakes to Avoid
+
+<AccordionGroup>
+  <Accordion title="Organizing for the Software, Not the User">
+    **Mistake:** Organizing categories based on how the software works rather than how users think
+
+    **Example:**
+    - "Database Activities"
+    - "API Activities"
+    - "UI Activities"
+
+    **Better:**
+    - "Account Setup"
+    - "User Training"
+    - "Go-Live Support"
+
+    **Fix:** Think about the user's mental model, not technical implementation.
+  </Accordion>
+
+  <Accordion title="Too Many Categories">
+    **Mistake:** Creating a category for every 2-3 activities
+
+    **Example:** Process with 15 activities split into 10 categories
+
+    **Better:** 3-5 well-defined categories with multiple activities each
+
+    **Fix:** Each category should represent a meaningful phase or theme with at least 3-5 activities.
+  </Accordion>
+
+  <Accordion title="Inconsistent Abstraction Levels">
+    **Mistake:** Mixing high-level and detailed activities in the same process
+
+    **Example:**
+    1. Conduct market research (high-level)
+    2. Open Excel (too detailed)
+    3. Create go-to-market strategy (high-level)
+    4. Click Save button (too detailed)
+
+    **Fix:** Keep all activities at the same level of abstraction.
+  </Accordion>
+
+  <Accordion title="Missing Handoffs">
+    **Mistake:** Process ends but doesn't specify what happens next
+
+    **Example:** Sales process ends with "Close Deal" but doesn't mention handoff to Customer Success
+
+    **Fix:** Final activity should be the handoff to the next process or clear end state.
+  </Accordion>
+
+  <Accordion title="Organizing Alphabetically">
+    **Mistake:** Sorting activities alphabetically for "tidiness"
+
+    **Example:**
+    1. Approve budget
+    2. Close deal
+    3. Demo product
+    4. Qualify lead
+
+    **Fix:** Always organize in the order activities are performed, not alphabetically.
+  </Accordion>
+</AccordionGroup>
+
+## Related Resources
+
+<CardGroup cols={2}>
+  <Card title="Sales Process Example" icon="handshake" href="/examples/sales-process">
+    See a well-organized sales process
+  </Card>
+
+  <Card title="Effective RACI" icon="users" href="/best-practices/effective-raci">
+    Assign clear ownership for activities
+  </Card>
+
+  <Card title="Clear Documentation" icon="file-text" href="/best-practices/clear-documentation">
+    Document your processes effectively
+  </Card>
+
+  <Card title="Version Control" icon="code-branch" href="/best-practices/version-control">
+    Manage process changes over time
+  </Card>
+</CardGroup>

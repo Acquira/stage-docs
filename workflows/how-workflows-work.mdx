@@ -1,0 +1,232 @@
+---
+title: "How Workflows Work"
+description: "Learn the workflow lifecycle, task dependencies, and workflow states"
+---
+
+## What is a Workflow?
+
+A workflow is a series of tasks that must be completed in a specific order to accomplish a business process. Think of it like a recipe: each step builds on the previous one to create the final result.
+
+## The Workflow Lifecycle
+
+<Steps>
+  <Step title="Template Created">
+    An admin creates a workflow template with all the tasks, dependencies, and assignments defined.
+  </Step>
+
+  <Step title="Instance Generated">
+    When work needs to be done, an instance is created from the template. This could be triggered by:
+    - A business acquisition starting
+    - An employee joining
+    - A quarterly review cycle
+    - Manual creation by an admin
+  </Step>
+
+  <Step title="Tasks Become Available">
+    Tasks with no dependencies become available immediately. Team members can see and start working on them.
+  </Step>
+
+  <Step title="Work Progresses">
+    As tasks are completed, dependent tasks unlock and become available. The workflow moves forward step by step.
+  </Step>
+
+  <Step title="Workflow Completes">
+    When all tasks are marked complete, the workflow automatically moves to "Completed" state.
+  </Step>
+
+  <Step title="Historical Record">
+    The completed workflow remains in the system as a historical record, including all evidence and timestamps.
+  </Step>
+</Steps>
+
+## Understanding Task Dependencies
+
+Task dependencies control the order in which work gets done. A task can't start until its dependent tasks are finished.
+
+### Dependency Example: Employee Onboarding
+
+<Frame>
+  <img src="/images/workflows/task-dependencies.png" alt="Task Dependency Diagram" />
+</Frame>
+
+<Note>
+**Placeholder**: Visual diagram showing task dependencies in onboarding workflow
+</Note>
+
+```
+Task 1: Send offer letter
+  ↓
+Task 2: Receive signed offer (depends on Task 1)
+  ↓
+Task 3: Order laptop (depends on Task 2)
+  ↓
+Task 4: Set up email account (depends on Task 2)
+  ↓
+Task 5: First day orientation (depends on Tasks 3 & 4)
+```
+
+<Info>
+When Task 2 is completed, both Task 3 and Task 4 become available at the same time because they both depend only on Task 2.
+</Info>
+
+## Task Assignments
+
+Tasks can be assigned in several ways:
+
+<CardGroup cols={2}>
+  <Card title="Role-Based Assignment" icon="user-group">
+    Task assigned to a role like "HR Manager" or "Operations Lead." Whoever holds that role sees the task.
+  </Card>
+
+  <Card title="Specific Person" icon="user">
+    Task assigned directly to an individual team member by name.
+  </Card>
+
+  <Card title="Department Assignment" icon="building">
+    Task assigned to an entire department. Anyone in that department can claim or complete it.
+  </Card>
+
+  <Card title="Dynamic Assignment" icon="rotate">
+    Assignment changes based on context (e.g., "Assigned to the acquisition's Project Manager").
+  </Card>
+</CardGroup>
+
+## Workflow States
+
+Every workflow instance is in one of four states:
+
+### Draft
+
+<Accordion title="Draft State">
+  - Workflow is being set up but not yet active
+  - Tasks are not yet available to team members
+  - Admins can still make changes
+  - No work is being tracked
+
+  **When you'll see this**: Rarely. Most workflows move directly from template to Active state.
+</Accordion>
+
+### Active
+
+<Accordion title="Active State">
+  - Workflow is currently running
+  - Tasks are available to assigned team members
+  - Work is being completed
+  - Progress is being tracked
+
+  **When you'll see this**: This is the normal working state. Most of your workflows will be Active.
+</Accordion>
+
+### Completed
+
+<Accordion title="Completed State">
+  - All tasks have been marked complete
+  - Workflow is finished
+  - No more work can be done
+  - Preserved as historical record
+
+  **When you'll see this**: After you finish all tasks in a workflow, it automatically moves to Completed.
+</Accordion>
+
+### Cancelled
+
+<Accordion title="Cancelled State">
+  - Workflow was stopped before completion
+  - Might be cancelled because it's no longer needed
+  - Incomplete tasks remain incomplete
+  - Preserved as historical record
+
+  **When you'll see this**: Occasionally, when a project is abandoned or circumstances change (e.g., acquisition falls through).
+</Accordion>
+
+## Task States Within Workflows
+
+Individual tasks within a workflow also have states:
+
+| Task State | What It Means |
+|-----------|---------------|
+| **Pending** | Task exists but dependencies aren't met yet |
+| **Available** | Task is ready to be started (all dependencies met) |
+| **In Progress** | Someone has started working on the task |
+| **Completed** | Task is finished and evidence is uploaded |
+| **Blocked** | Task can't proceed due to an issue |
+
+<Frame>
+  <img src="/images/workflows/task-states.png" alt="Task State Flow" />
+</Frame>
+
+<Note>
+**Placeholder**: Diagram showing task state transitions
+</Note>
+
+## Workflow Progress Indicators
+
+You can track workflow progress in several ways:
+
+<CardGroup cols={3}>
+  <Card title="Task Completion %" icon="percent">
+    Shows what percentage of tasks are complete (e.g., "7 of 15 tasks complete - 47%")
+  </Card>
+
+  <Card title="Visual Progress Bar" icon="chart-bar">
+    A progress bar that fills as tasks are completed
+  </Card>
+
+  <Card title="Estimated Completion" icon="calendar-clock">
+    Based on task due dates and current progress
+  </Card>
+</CardGroup>
+
+## How Tasks Flow Through a Workflow
+
+<Steps>
+  <Step title="Task is Created">
+    Task exists in "Pending" state, waiting for dependencies.
+  </Step>
+
+  <Step title="Dependencies Met">
+    All required tasks are complete. Task moves to "Available."
+  </Step>
+
+  <Step title="Work Begins">
+    Assigned person opens the task and starts working. Task moves to "In Progress."
+  </Step>
+
+  <Step title="Work Completed">
+    Person uploads evidence and marks task complete. Task moves to "Completed."
+  </Step>
+
+  <Step title="Dependent Tasks Unlock">
+    Any tasks that depended on this task now become "Available."
+  </Step>
+</Steps>
+
+## Key Takeaways
+
+<Tip>
+**Sequential Flow**: Workflows ensure work happens in the right order through dependencies.
+</Tip>
+
+<Tip>
+**Clear Assignment**: Every task knows who should do it, eliminating confusion.
+</Tip>
+
+<Tip>
+**Automatic Progress**: As you complete tasks, the workflow automatically progresses and unlocks the next steps.
+</Tip>
+
+<Warning>
+You can't complete a task until all its dependencies are finished. This is by design to maintain quality and order.
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Learn About Evidence" icon="file-check" href="/workflows/evidence-accountability">
+    Understand why and how to upload evidence for completed tasks
+  </Card>
+
+  <Card title="Start Your First Workflow" icon="play" href="/workflows/starting-workflow">
+    Step-by-step guide to beginning a workflow
+  </Card>
+</CardGroup>

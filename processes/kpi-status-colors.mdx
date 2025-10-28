@@ -1,0 +1,564 @@
+---
+title: "KPI Status Colors"
+description: "Understanding the green, yellow, and red status indicators"
+---
+
+## The Traffic Light System
+
+KPI status colors work like traffic lights: green means go (everything's fine), yellow means caution (watch out), and red means stop (take action). This visual system lets you assess process health at a glance.
+
+<Info>
+Color-coding makes it easy to spot problems quickly without reading through numbers and reports. Your eyes naturally go to red, alerting you to what needs attention.
+</Info>
+
+## The Three Colors
+
+<CardGroup cols={3}>
+  <Card title="Green" icon="circle-check" color="#10b981">
+    **Meeting or exceeding target**
+
+    Performance is where it should be
+  </Card>
+  <Card title="Yellow" icon="triangle-exclamation" color="#f59e0b">
+    **Warning zone**
+
+    Not yet critical, but attention needed
+  </Card>
+  <Card title="Red" icon="circle-xmark" color="#ef4444">
+    **Below acceptable level**
+
+    Immediate action required
+  </Card>
+</CardGroup>
+
+## How Status Is Determined
+
+The system automatically assigns a color based on:
+
+1. **Your recorded value** (the actual measurement)
+2. **Your defined thresholds** (the boundaries between green/yellow/red)
+3. **Your measurement direction** (whether higher or lower is better)
+
+You set these thresholds when creating the KPI. The system does the rest automatically.
+
+## Status for "Lower Is Better" Metrics
+
+For metrics where smaller numbers are better (like response time or error rate):
+
+<Steps>
+  <Step title="Green Status">
+    **Value is at or below target**
+
+    You're meeting or exceeding your goal.
+
+    **Example:** First Response Time
+    - Target: 2 hours
+    - Recorded: 1.5 hours
+    - Status: **Green** ✅
+
+    Keep up the good work!
+  </Step>
+
+  <Step title="Yellow Status">
+    **Value is above target but below red threshold**
+
+    Performance is slipping but not yet critical.
+
+    **Example:** First Response Time
+    - Target: 2 hours
+    - Yellow threshold: 2-3 hours
+    - Recorded: 2.7 hours
+    - Status: **Yellow** ⚠️
+
+    Pay attention. Trend toward red if nothing changes.
+  </Step>
+
+  <Step title="Red Status">
+    **Value exceeds red threshold**
+
+    Performance is unacceptable. Action required.
+
+    **Example:** First Response Time
+    - Red threshold: Over 3 hours
+    - Recorded: 4.2 hours
+    - Status: **Red** 🔴
+
+    Investigate immediately and take corrective action.
+  </Step>
+</Steps>
+
+## Status for "Higher Is Better" Metrics
+
+For metrics where larger numbers are better (like satisfaction scores or sales):
+
+<Steps>
+  <Step title="Green Status">
+    **Value is at or above target**
+
+    You're meeting or exceeding your goal.
+
+    **Example:** Customer Satisfaction Score
+    - Target: 4.5 out of 5
+    - Recorded: 4.7
+    - Status: **Green** ✅
+
+    Excellent performance!
+  </Step>
+
+  <Step title="Yellow Status">
+    **Value is below target but above red threshold**
+
+    Performance is declining but recoverable.
+
+    **Example:** Customer Satisfaction Score
+    - Target: 4.5
+    - Yellow threshold: 4.0-4.4
+    - Recorded: 4.2
+    - Status: **Yellow** ⚠️
+
+    Need improvement to reach target.
+  </Step>
+
+  <Step title="Red Status">
+    **Value falls below red threshold**
+
+    Performance is critically low. Urgent action needed.
+
+    **Example:** Customer Satisfaction Score
+    - Red threshold: Below 4.0
+    - Recorded: 3.8
+    - Status: **Red** 🔴
+
+    Customers are dissatisfied. Address immediately.
+  </Step>
+</Steps>
+
+## Setting Your Thresholds
+
+<AccordionGroup>
+  <Accordion title="Choose Meaningful Boundaries" icon="map-pin" defaultOpen>
+    Thresholds should represent real performance levels, not arbitrary numbers.
+
+    **Good approach:**
+    - Green: Performance that meets business needs
+    - Yellow: Performance that's acceptable short-term but needs attention
+    - Red: Performance that causes real problems
+
+    **Poor approach:**
+    - Green: Perfect performance (rarely achieved)
+    - Yellow: Anything not perfect
+    - Red: Catastrophic failure only
+
+    Make yellow a true early warning, not just "slightly below perfect."
+  </Accordion>
+
+  <Accordion title="Leave Room for Yellow" icon="ruler">
+    Yellow zone should be wide enough to be useful but not so wide it loses meaning.
+
+    **Example: Support Response Time**
+    - Target: 2 hours
+    - Green: ≤2 hours
+    - Yellow: 2-4 hours (gives 2-hour buffer)
+    - Red: >4 hours
+
+    **Why this works:** You have time to notice the yellow and improve before hitting red.
+
+    **Bad example:**
+    - Target: 2 hours
+    - Green: ≤2 hours
+    - Yellow: 2-2.1 hours (only 6 minutes of warning)
+    - Red: >2.1 hours
+
+    This yellow is too narrow to be useful.
+  </Accordion>
+
+  <Accordion title="Base on Impact" icon="exclamation">
+    Red threshold should represent performance that actually causes problems.
+
+    **Questions to ask:**
+    - At what point do customers complain?
+    - When does this affect other processes?
+    - Where is the compliance or contractual limit?
+    - What level requires management escalation?
+
+    **Example:** If your SLA promises 4-hour response, your red threshold should be at or before 4 hours, not 8 hours.
+  </Accordion>
+
+  <Accordion title="Consider Industry Standards" icon="building">
+    Look at benchmarks for your industry and process type.
+
+    **Research:**
+    - What do competitors achieve?
+    - What are industry best practices?
+    - What do customers expect?
+    - What's realistically achievable?
+
+    Don't set thresholds in a vacuum.
+  </Accordion>
+</AccordionGroup>
+
+## Threshold Examples by Metric Type
+
+<Tabs>
+  <Tab title="Time-Based Metrics">
+    **Lower is better**
+
+    **Example: Time to Hire**
+    - Target: 30 days
+    - Green: ≤30 days
+    - Yellow: 31-45 days
+    - Red: >45 days
+
+    **Example: Average Handle Time**
+    - Target: 8 minutes
+    - Green: ≤8 minutes
+    - Yellow: 8-12 minutes
+    - Red: >12 minutes
+
+    **Guideline:** Yellow typically 25-50% above target; red 50-100% above target
+  </Tab>
+
+  <Tab title="Quality Scores">
+    **Higher is better**
+
+    **Example: Customer Satisfaction (1-5 scale)**
+    - Target: 4.5
+    - Green: ≥4.5
+    - Yellow: 4.0-4.4
+    - Red: less than 4.0
+
+    **Example: Process Accuracy (%)**
+    - Target: 98%
+    - Green: ≥98%
+    - Yellow: 95-97%
+    - Red: less than 95%
+
+    **Guideline:** Thresholds based on meaningful quality drops
+  </Tab>
+
+  <Tab title="Percentage Metrics">
+    **Higher is better (for conversion, retention, etc.)**
+
+    **Example: Sales Conversion Rate**
+    - Target: 25%
+    - Green: ≥25%
+    - Yellow: 20-24%
+    - Red: less than 20%
+
+    **Example: First Call Resolution**
+    - Target: 80%
+    - Green: ≥80%
+    - Yellow: 70-79%
+    - Red: less than 70%
+
+    **Guideline:** Yellow typically 5-10 percentage points below target
+  </Tab>
+
+  <Tab title="Volume Metrics">
+    **Can be "higher is better" or "target range"**
+
+    **Example: Sales Pipeline (higher is better)**
+    - Target: $2,000,000
+    - Green: ≥$2M
+    - Yellow: $1.5M-$2M
+    - Red: less than $1.5M
+
+    **Example: Inventory Level (target range)**
+    - Target range: 1,000-1,500 units
+    - Green: 1,000-1,500
+    - Yellow: 800-999 or 1,501-1,700
+    - Red: less than 800 or greater than 1,700
+
+    **Guideline:** Base on operational impact of being too high or too low
+  </Tab>
+</Tabs>
+
+## Understanding Team Scorecards
+
+When you have multiple KPIs, you'll see them together in a scorecard or dashboard:
+
+<AccordionGroup>
+  <Accordion title="All Green" icon="circle-check" defaultOpen>
+    **All KPIs in green zone**
+
+    **Meaning:** Process is performing well across all dimensions
+
+    **Action:**
+    - Maintain current practices
+    - Document what's working
+    - Consider raising targets for continuous improvement
+    - Share best practices with other teams
+
+    **Communication:** "Process is healthy. No issues to report."
+  </Accordion>
+
+  <Accordion title="Some Yellow" icon="triangle-exclamation">
+    **One or more KPIs in yellow zone**
+
+    **Meaning:** Process is mostly healthy but needs attention in specific areas
+
+    **Action:**
+    - Monitor yellows closely
+    - Identify why those metrics are slipping
+    - Implement corrective actions
+    - Prevent yellows from becoming reds
+
+    **Communication:** "Process is stable with some areas needing attention."
+  </Accordion>
+
+  <Accordion title="Some Red" icon="exclamation-triangle">
+    **One or more KPIs in red zone**
+
+    **Meaning:** Process has serious issues requiring immediate action
+
+    **Action:**
+    - Investigate root cause of reds immediately
+    - Implement fixes as top priority
+    - Communicate to stakeholders
+    - Monitor daily until back in green
+
+    **Communication:** "Process has critical issues. Taking corrective action."
+  </Accordion>
+
+  <Accordion title="Mostly Red" icon="circle-xmark">
+    **Multiple or all KPIs in red zone**
+
+    **Meaning:** Process is failing and may need significant changes
+
+    **Action:**
+    - Escalate to management
+    - Consider whether process needs redesign
+    - Allocate resources to address
+    - Daily updates on improvement efforts
+
+    **Communication:** "Process requires immediate intervention and may need redesign."
+  </Accordion>
+</AccordionGroup>
+
+## Reading Trends with Colors
+
+Don't just look at current color. Look at the trend:
+
+<Tabs>
+  <Tab title="Improving Trend">
+    **Colors moving from red → yellow → green**
+
+    **Great news!** Your process improvements are working.
+
+    **Action:**
+    - Document what you changed
+    - Sustain the improvements
+    - Share lessons learned
+    - Consider if practices can apply elsewhere
+
+    **Example timeline:**
+    - Month 1: Red (4.5 hrs)
+    - Month 2: Yellow (2.8 hrs)
+    - Month 3: Green (1.9 hrs)
+  </Tab>
+
+  <Tab title="Declining Trend">
+    **Colors moving from green → yellow → red**
+
+    **Warning!** Performance is deteriorating.
+
+    **Action:**
+    - Investigate what changed
+    - Review if something broke in the process
+    - Check if resources or support decreased
+    - Take action before hitting red if possible
+
+    **Example timeline:**
+    - Month 1: Green (1.8 hrs)
+    - Month 2: Yellow (2.5 hrs)
+    - Month 3: Red (4.1 hrs)
+  </Tab>
+
+  <Tab title="Stable">
+    **Same color for extended period**
+
+    **If stable green:** Good. Process is consistently meeting targets.
+
+    **If stable yellow/red:** Concerning. Process is consistently underperforming.
+
+    **Action:**
+    - For stable green: Maintain, or consider stretch goals
+    - For stable yellow/red: Process changes needed, current approach isn't working
+
+    **Example:**
+    - 6 months straight in yellow
+    - Means temporary fixes aren't enough
+    - Need fundamental process improvement
+  </Tab>
+
+  <Tab title="Volatile">
+    **Colors jumping between green, yellow, red unpredictably**
+
+    **Concerning.** Indicates inconsistent execution or external factors.
+
+    **Action:**
+    - Investigate why performance is inconsistent
+    - Look for patterns (day of week, who's working, etc.)
+    - Standardize process execution
+    - Identify and control variables
+
+    **Example:**
+    - Week 1: Green
+    - Week 2: Red
+    - Week 3: Green
+    - Week 4: Yellow
+  </Tab>
+</Tabs>
+
+## What to Do for Each Color
+
+<CardGroup cols={3}>
+  <Card title="Green" icon="circle-check" color="#10b981">
+    **Actions:**
+    - Continue current practices
+    - Document what works
+    - Share with team
+    - Consider stretch goals
+
+    **Frequency:** Review weekly
+  </Card>
+  <Card title="Yellow" icon="triangle-exclamation" color="#f59e0b">
+    **Actions:**
+    - Monitor closely
+    - Identify causes
+    - Plan improvements
+    - Prevent decline to red
+
+    **Frequency:** Review daily
+  </Card>
+  <Card title="Red" icon="circle-xmark" color="#ef4444">
+    **Actions:**
+    - Investigate immediately
+    - Take corrective action
+    - Communicate to team
+    - Escalate if needed
+
+    **Frequency:** Review multiple times daily
+  </Card>
+</CardGroup>
+
+## Adjusting Thresholds
+
+Sometimes you need to change your thresholds:
+
+<AccordionGroup>
+  <Accordion title="When Performance Consistently Exceeds Target" icon="arrow-trend-up" defaultOpen>
+    **Situation:** You're always in green, target seems too easy.
+
+    **Action:** Raise the target and adjust thresholds to drive continuous improvement.
+
+    **Example:**
+    - **Old:** Target 4 hours, Green ≤4 hrs
+    - **New:** Target 2 hours, Green ≤2 hrs
+
+    This keeps the team challenged and improving.
+  </Accordion>
+
+  <Accordion title="When Target Was Unrealistic" icon="bullseye">
+    **Situation:** You're always red despite good performance.
+
+    **Action:** Lower the target to something achievable (if justified).
+
+    **Important:** Only do this if the target was genuinely unrealistic, not just because it's hard to meet.
+
+    **Ask first:** Is there an actual barrier preventing better performance, or do we just need to try harder?
+  </Accordion>
+
+  <Accordion title="When Business Requirements Change" icon="building">
+    **Situation:** External factors (customer SLAs, regulations, competitive pressure) change expectations.
+
+    **Action:** Adjust thresholds to reflect new requirements.
+
+    **Example:** Customer SLA changes from 4-hour to 2-hour response. Update your thresholds accordingly.
+  </Accordion>
+
+  <Accordion title="When You Learn More" icon="graduation-cap">
+    **Situation:** After tracking for a while, you realize your thresholds don't reflect real performance levels.
+
+    **Action:** Refine based on what you've learned.
+
+    **Example:** You thought yellow should be 2-3 hours, but you've learned 2-2.5 hours is fine, and only >2.5 hours causes problems. Adjust accordingly.
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+**Don't manipulate thresholds to make performance look better.** Thresholds should reflect real business needs, not be adjusted to game the system. That defeats the purpose of KPIs.
+</Warning>
+
+## Communicating with Colors
+
+Colors make communication faster and clearer:
+
+<Tabs>
+  <Tab title="Executive Reports">
+    "Customer Support is **green** across all metrics. Sales is **green** except for conversion rate which is **yellow** and improving. Operations has one **red** KPI (fulfillment time) which we're actively addressing."
+
+    Executives get the full picture in seconds.
+  </Tab>
+
+  <Tab title="Team Meetings">
+    "Let's review our scorecard. We have 4 greens, 2 yellows, and 1 red. The red is our response time, which spiked yesterday due to the system outage. Let's focus on that."
+
+    Team knows immediately where to focus discussion.
+  </Tab>
+
+  <Tab title="Email Updates">
+    Subject: "Weekly KPI Update: 5 Green, 1 Yellow, 0 Red"
+
+    Recipients know status before even opening the email.
+  </Tab>
+</Tabs>
+
+## Visual Dashboard Example
+
+A typical KPI dashboard might look like:
+
+| KPI | Current Value | Target | Status | Trend |
+|-----|---------------|--------|--------|-------|
+| First Response Time | 1.8 hrs | 2 hrs | 🟢 Green | ⬇️ Improving |
+| Resolution Time | 6.2 hrs | 8 hrs | 🟢 Green | ➡️ Stable |
+| Customer Satisfaction | 4.3 | 4.5 | 🟡 Yellow | ⬇️ Declining |
+| Ticket Backlog | 45 | 30 | 🔴 Red | ⬆️ Worsening |
+| First Contact Resolution | 78% | 80% | 🟡 Yellow | ⬆️ Improving |
+
+At a glance, you know:
+- Two metrics are performing well
+- Two need attention
+- One requires immediate action
+- Trends show which way things are heading
+
+## Tips for Success
+
+<CardGroup cols={2}>
+  <Card title="Review Regularly" icon="calendar">
+    Check status daily for critical KPIs, weekly for others. Colors are only useful if you look at them.
+  </Card>
+  <Card title="Act on Reds" icon="bolt">
+    Red status must trigger action, every time. If you ignore reds, the system loses value.
+  </Card>
+  <Card title="Don't Ignore Yellows" icon="triangle-exclamation">
+    Yellows are warnings. Address them before they become reds.
+  </Card>
+  <Card title="Celebrate Greens" icon="party-horn">
+    Acknowledge when the team achieves green status. Positive reinforcement matters.
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Recording KPI Values" icon="pen-to-square" href="/processes/recording-kpi-values">
+    Learn how to track values that generate these colors
+  </Card>
+  <Card title="Creating KPIs" icon="plus" href="/processes/creating-kpis">
+    Create KPIs with proper thresholds
+  </Card>
+  <Card title="What Are KPIs?" icon="circle-question" href="/processes/what-are-kpis">
+    Review KPI fundamentals
+  </Card>
+</CardGroup>

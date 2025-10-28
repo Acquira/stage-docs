@@ -1,0 +1,472 @@
+---
+title: "Creating Manual Workflows"
+description: "Build workflow templates from scratch without using AI generation"
+---
+
+<Warning>
+**Admin Feature**: This feature is only available to users with admin permissions. If you don't see this option, contact your system administrator.
+</Warning>
+
+## When to Create Workflows Manually
+
+Manual workflow creation gives you complete control over every detail. Use this approach when:
+
+<CardGroup cols={2}>
+  <Card title="No Existing Documentation" icon="file-slash">
+    You're creating a workflow for a process that isn't documented yet
+  </Card>
+
+  <Card title="Simple Workflows" icon="list">
+    The workflow has only a few tasks and AI generation would be overkill
+  </Card>
+
+  <Card title="Unique Processes" icon="sparkles">
+    The process is highly specific to your organization and wouldn't match any template
+  </Card>
+
+  <Card title="Maximum Control" icon="sliders">
+    You want precise control over every task, dependency, and assignment
+  </Card>
+</CardGroup>
+
+## Creating a Workflow Template
+
+<Steps>
+  <Step title="Navigate to Workflow Templates">
+    Go to **Settings** > **Workflow Templates** in the main navigation.
+
+    <Frame>
+      <img src="/images/workflows/workflow-templates-nav.png" alt="Navigation to Workflow Templates" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot showing navigation path
+    </Note>
+  </Step>
+
+  <Step title="Click 'Create New Template'">
+    Click the **Create New Template** button in the top right corner.
+
+    This opens the workflow template builder.
+  </Step>
+
+  <Step title="Name Your Workflow">
+    Enter a clear, descriptive name for your workflow template:
+
+    - **Good**: "Employee Onboarding - Full-Time Employees"
+    - **Bad**: "Onboarding" or "Workflow 1"
+
+    Add a description that explains when this workflow should be used.
+
+    <Frame>
+      <img src="/images/workflows/name-workflow.png" alt="Workflow naming screen" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot of workflow name and description fields
+    </Note>
+  </Step>
+
+  <Step title="Set Workflow Category">
+    Assign the workflow to a category to help organize your template library:
+
+    - HR & People
+    - Operations
+    - Finance
+    - Acquisition
+    - Custom categories
+  </Step>
+
+  <Step title="Add Tasks">
+    Start adding tasks to your workflow (detailed in next section).
+  </Step>
+
+  <Step title="Define Task Order">
+    Arrange tasks in the order they should appear in the workflow.
+  </Step>
+
+  <Step title="Set Task Dependencies">
+    Define which tasks must be completed before others can start.
+  </Step>
+
+  <Step title="Configure Default Assignments">
+    Assign tasks to roles or specific people.
+  </Step>
+
+  <Step title="Save Template">
+    Click **Save Template** to add it to your template library.
+
+    The template is now ready to use for creating workflow instances.
+  </Step>
+</Steps>
+
+## Adding Tasks to Your Workflow
+
+<Steps>
+  <Step title="Click 'Add Task'">
+    In the workflow builder, click the **Add Task** button.
+
+    <Frame>
+      <img src="/images/workflows/add-task-button.png" alt="Add Task button" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot showing Add Task button in workflow builder
+    </Note>
+  </Step>
+
+  <Step title="Enter Task Name">
+    Give the task a clear, action-oriented name:
+
+    - **Good**: "Send offer letter to candidate"
+    - **Bad**: "Offer letter" or "Step 3"
+
+    Use action verbs: Send, Review, Create, Schedule, Complete, Upload, Verify, etc.
+  </Step>
+
+  <Step title="Write Task Description">
+    Provide detailed instructions for completing the task:
+
+    **Example:**
+    ```
+    Send the formal offer letter to the candidate via email.
+
+    Include:
+    - Salary and benefits summary
+    - Start date
+    - Reporting manager
+    - Link to employee handbook
+
+    Use the "Offer Letter Template" in the HR shared drive.
+    ```
+
+    <Tip>
+    Write descriptions as if you're explaining the task to someone doing it for the first time. Include what, why, and how.
+    </Tip>
+  </Step>
+
+  <Step title="Set Task Priority">
+    Choose the priority level:
+
+    - **High**: Critical tasks that must be done first or are time-sensitive
+    - **Medium**: Important tasks with moderate urgency (default)
+    - **Low**: Tasks that are helpful but not urgent
+  </Step>
+
+  <Step title="Add Estimated Duration">
+    How long should this task take to complete?
+
+    - 15 minutes
+    - 1 hour
+    - 2 days
+    - 1 week
+
+    This helps with workflow timeline planning.
+  </Step>
+
+  <Step title="Assign to Role or Person">
+    Who should complete this task?
+
+    - **Role**: "HR Manager", "Operations Lead", "Finance Director"
+    - **Specific Person**: "Sarah Chen", "John Smith"
+    - **Department**: "HR Team", "Operations"
+
+    <Info>
+    Using roles instead of specific people makes templates more flexible. You can override assignments when creating instances.
+    </Info>
+  </Step>
+
+  <Step title="Specify Evidence Requirements">
+    What evidence should be uploaded to prove task completion?
+
+    - Screenshot of email sent
+    - Signed document (PDF)
+    - Completed form
+    - Photo of setup
+    - Confirmation number
+
+    Be specific about what evidence is needed.
+  </Step>
+
+  <Step title="Save Task">
+    Click **Save Task** to add it to the workflow.
+
+    Repeat this process to add all tasks to your workflow.
+  </Step>
+</Steps>
+
+## Setting Task Order
+
+Tasks appear in your workflow in the order you create them, but you can reorder them:
+
+<CardGroup cols={2}>
+  <Card title="Drag and Drop" icon="arrows-up-down">
+    Click and drag tasks to reorder them in the list
+  </Card>
+
+  <Card title="Use Order Numbers" icon="hashtag">
+    Manually set task numbers (1, 2, 3, etc.) to define order
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/workflows/reorder-tasks.png" alt="Reordering tasks interface" />
+</Frame>
+
+<Note>
+**Placeholder**: Screenshot showing drag-and-drop task reordering
+</Note>
+
+<Info>
+Task order is different from dependencies. Order is how tasks appear in the list. Dependencies control when tasks can actually be started.
+</Info>
+
+## Defining Task Dependencies
+
+Dependencies control the workflow's logic - which tasks must finish before others can start.
+
+<Steps>
+  <Step title="Select a Task">
+    Click on the task you want to add dependencies to.
+  </Step>
+
+  <Step title="Click 'Add Dependency'">
+    In the task detail panel, click **Add Dependency**.
+  </Step>
+
+  <Step title="Choose Dependent Tasks">
+    Select which task(s) must be completed before this task can start:
+
+    **Example:**
+    - Task: "Schedule first day orientation"
+    - Depends on: "Receive signed offer letter" AND "Create email account"
+
+    This task won't become available until both dependencies are complete.
+  </Step>
+
+  <Step title="Set Dependency Type">
+    Choose how dependencies work:
+
+    - **All Must Complete** (AND): All selected tasks must finish
+    - **Any Can Complete** (OR): Only one selected task must finish
+
+    Most workflows use "All Must Complete."
+  </Step>
+
+  <Step title="Save Dependencies">
+    Click **Save** to apply the dependencies to the task.
+  </Step>
+</Steps>
+
+### Dependency Examples
+
+<AccordionGroup>
+  <Accordion title="Simple Linear Dependency">
+    ```
+    Task 1: Send contract
+      ↓
+    Task 2: Receive signed contract (depends on Task 1)
+      ↓
+    Task 3: Process payment (depends on Task 2)
+    ```
+
+    Each task depends on the one before it. Classic sequential workflow.
+  </Accordion>
+
+  <Accordion title="Parallel Dependencies">
+    ```
+    Task 1: Offer accepted
+      ↓
+    Task 2: Order laptop (depends on Task 1)
+    Task 3: Create email account (depends on Task 1)
+      ↓
+    Task 4: Send welcome email (depends on Tasks 2 & 3)
+    ```
+
+    Tasks 2 and 3 can happen simultaneously after Task 1. Task 4 waits for both.
+  </Accordion>
+
+  <Accordion title="OR Dependencies">
+    ```
+    Task 1: Get approval from Director OR VP
+    Task 2A: Director approves
+    Task 2B: VP approves
+      ↓
+    Task 3: Proceed with project (depends on 2A OR 2B)
+    ```
+
+    Task 3 can start when either Task 2A or Task 2B completes. Useful for approval workflows.
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+Avoid circular dependencies! Task A can't depend on Task B if Task B depends on Task A. The system will prevent you from creating these.
+</Warning>
+
+## Setting Default Assignments
+
+Assign tasks to roles or people who typically handle them:
+
+<CardGroup cols={2}>
+  <Card title="Role-Based (Recommended)" icon="user-group">
+    - Flexible across team changes
+    - Works for multiple instances
+    - Example: "HR Manager", "Operations Lead"
+  </Card>
+
+  <Card title="Person-Based" icon="user">
+    - Used for very specific responsibilities
+    - Must update if person changes roles
+    - Example: "Sarah Chen", "John Smith"
+  </Card>
+</CardGroup>
+
+<Tip>
+Use role-based assignments in templates. You can always override with specific people when creating a workflow instance.
+</Tip>
+
+## Workflow Template Settings
+
+Configure additional template settings:
+
+<AccordionGroup>
+  <Accordion title="Template Visibility">
+    Control who can see and use this template:
+
+    - **Everyone**: All users can create instances
+    - **Admins Only**: Only admins can use this template
+    - **Specific Teams**: Only certain departments or teams
+  </Accordion>
+
+  <Accordion title="Auto-Start Rules">
+    Define when workflow instances should be automatically created:
+
+    - When a new employee is hired
+    - When a new acquisition begins
+    - On specific dates (quarterly reviews, annual audits)
+    - When certain conditions are met
+  </Accordion>
+
+  <Accordion title="Notification Settings">
+    Configure how users are notified about tasks:
+
+    - Email notifications when tasks become available
+    - Reminders before due dates
+    - Alerts when workflows are blocked
+  </Accordion>
+
+  <Accordion title="Approval Requirements">
+    Require manager approval before tasks are marked complete:
+
+    - All tasks require approval
+    - Only high-priority tasks
+    - Specific critical tasks
+  </Accordion>
+</AccordionGroup>
+
+## Testing Your Workflow
+
+Before deploying a workflow template, test it:
+
+<Steps>
+  <Step title="Create a Test Instance">
+    From the template, click **Create Test Instance**.
+  </Step>
+
+  <Step title="Assign to Yourself">
+    Assign all tasks to yourself for testing.
+  </Step>
+
+  <Step title="Walk Through Each Task">
+    Complete each task as if you were doing it for real:
+
+    - Are instructions clear?
+    - Do dependencies work correctly?
+    - Can you complete tasks in the right order?
+    - Are evidence requirements reasonable?
+  </Step>
+
+  <Step title="Check for Issues">
+    Look for:
+
+    - Confusing task descriptions
+    - Missing dependencies
+    - Tasks that should be combined or split
+    - Incorrect assignments
+  </Step>
+
+  <Step title="Refine Template">
+    Go back to the template and make improvements based on your test.
+  </Step>
+
+  <Step title="Test Again">
+    Create another test instance and verify your changes fixed the issues.
+  </Step>
+</Steps>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Start Simple">
+    Create a basic workflow first with core tasks only. Add complexity (dependencies, detailed descriptions) after you've tested the basic flow.
+  </Accordion>
+
+  <Accordion title="Use Clear Task Names">
+    Task names should be self-explanatory action items:
+
+    - ✅ "Review financial statements for accuracy"
+    - ❌ "Financial review"
+  </Accordion>
+
+  <Accordion title="Write Detailed Descriptions">
+    Include enough information that someone unfamiliar with the process could complete the task:
+
+    - What to do
+    - Why it matters
+    - How to do it
+    - What resources are needed
+    - What to deliver as evidence
+  </Accordion>
+
+  <Accordion title="Don't Over-Depend">
+    Only create dependencies that are truly required. Over-depending tasks makes workflows inflexible and hard to manage.
+  </Accordion>
+
+  <Accordion title="Involve Process Owners">
+    Get input from people who actually do the work. They'll know details you might miss.
+  </Accordion>
+
+  <Accordion title="Version Your Templates">
+    When making significant changes, create a new version rather than editing the active template. This preserves historical workflows.
+  </Accordion>
+</AccordionGroup>
+
+## Common Mistakes to Avoid
+
+<Warning>
+**Too Many Dependencies**: Creating dependencies for every single task makes the workflow rigid. Only depend tasks when truly necessary.
+</Warning>
+
+<Warning>
+**Vague Task Descriptions**: "Complete onboarding" isn't helpful. "Send new hire paperwork packet via DocuSign and confirm receipt" is clear and actionable.
+</Warning>
+
+<Warning>
+**Overly Granular Tasks**: Breaking "Send email" into 10 micro-tasks creates busywork. Find the right balance of task granularity.
+</Warning>
+
+<Warning>
+**Forgetting Evidence**: If you don't specify evidence requirements, tasks will be marked complete without proof. Be explicit about what evidence is needed.
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Edit Workflow Templates" icon="pen-to-square" href="/workflows/editing-templates">
+    Learn how to modify and improve existing templates
+  </Card>
+
+  <Card title="Start a Workflow Instance" icon="play" href="/workflows/starting-workflow">
+    Create and run a workflow instance from your new template
+  </Card>
+</CardGroup>

@@ -1,0 +1,620 @@
+---
+title: "Product Development Example"
+description: "Complete agile product development process with activities, sprints, and engineering KPIs"
+---
+
+This example demonstrates a modern product development process using agile methodologies. Use this as a template for building products iteratively with cross-functional teams.
+
+## Process Overview
+
+**Name:** Agile Product Development Process
+**Owner:** VP of Product
+**Purpose:** Build and ship valuable product features iteratively with high quality
+
+<Tip>
+This example uses 2-week sprints with a Scrum-inspired approach. Adapt the cadence and ceremonies to match your team's needs.
+</Tip>
+
+## Development Cycle Overview
+
+<Steps>
+  <Step title="Discovery (Ongoing)">
+    Research, ideation, and validation of product opportunities
+  </Step>
+
+  <Step title="Design (1-2 sprints)">
+    User experience design, technical architecture, and specifications
+  </Step>
+
+  <Step title="Build (2-6 sprints)">
+    Development, code review, and unit testing
+  </Step>
+
+  <Step title="Test (1 sprint, parallel with Build)">
+    QA testing, bug fixes, and performance validation
+  </Step>
+
+  <Step title="Launch (1 sprint)">
+    Beta testing, documentation, rollout, and monitoring
+  </Step>
+</Steps>
+
+## Activity Categories
+
+<Tabs>
+  <Tab title="Discovery">
+    ### Discovery Activities
+
+    Understanding user needs and validating opportunities.
+
+    | Activity | Description | RACI Assignment | Duration |
+    |----------|-------------|-----------------|----------|
+    | User Research | Conduct interviews, surveys, analytics review | **A:** Product Manager (PM)<br/>**R:** UX Researcher<br/>**C:** Designer<br/>**I:** Engineering Lead | 1 week |
+    | Problem Definition | Document user problems and opportunity size | **A:** PM<br/>**C:** UX Researcher, Engineering Lead<br/>**I:** VP Product | 2 days |
+    | Competitive Analysis | Research competitor solutions and positioning | **A:** PM<br/>**C:** Product Marketing<br/>**I:** VP Product | 3 days |
+    | Ideation Workshop | Generate and evaluate solution concepts | **A:** PM<br/>**R:** Design, Engineering, Sales, Support<br/>**I:** VP Product | 4 hours |
+    | Solution Validation | Test concepts with users (prototypes, mockups) | **A:** UX Researcher<br/>**R:** Designer<br/>**C:** PM<br/>**I:** Engineering Lead | 1 week |
+    | Business Case | Build ROI model and get approval to proceed | **A:** PM<br/>**C:** Finance, VP Product<br/>**I:** Executive Team | 3 days |
+
+    **Key Outputs:**
+    - Product requirements document (PRD)
+    - User research findings
+    - Validated solution concept
+    - Approved business case
+
+    <Note>
+    Invest adequate time in discovery. Building the wrong thing efficiently is still a failure. Validate before building.
+    </Note>
+  </Tab>
+
+  <Tab title="Design">
+    ### Design Phase (1-2 sprints)
+
+    Creating detailed designs and technical specifications.
+
+    | Activity | Description | RACI Assignment | Duration |
+    |----------|-------------|-----------------|----------|
+    | User Flow Mapping | Define user journeys through the feature | **A:** Designer<br/>**C:** PM, UX Researcher<br/>**I:** Engineering Lead | 2 days |
+    | Wireframing | Create low-fidelity layouts and structure | **A:** Designer<br/>**C:** PM<br/>**I:** Engineering Lead | 3 days |
+    | High-Fidelity Design | Create pixel-perfect mockups | **A:** Designer<br/>**C:** PM<br/>**I:** Engineering Lead, Brand Team | 1 week |
+    | Design Review | Present designs to stakeholders | **A:** Designer<br/>**R:** PM<br/>**C:** Engineering, Sales, Support<br/>**I:** VP Product | 1 hour |
+    | Technical Architecture | Define system design and data models | **A:** Engineering Lead<br/>**R:** Senior Engineers<br/>**C:** PM, DevOps<br/>**I:** CTO | 1 week |
+    | API Design | Specify API contracts and endpoints | **A:** Backend Lead<br/>**C:** Frontend Lead, Mobile Lead<br/>**I:** Engineering Lead | 3 days |
+    | Database Schema | Design data models and migrations | **A:** Backend Lead<br/>**C:** Engineering Lead, DBA<br/>**I:** DevOps | 2 days |
+    | Story Writing | Break work into user stories with acceptance criteria | **A:** PM<br/>**C:** Engineering Lead, Designer<br/>**I:** QA Lead | 1 week |
+    | Estimation Session | Team estimates effort for each story | **A:** Engineering Lead<br/>**R:** Engineering Team<br/>**C:** PM<br/>**I:** VP Engineering | 2 hours |
+
+    **Key Outputs:**
+    - High-fidelity designs in Figma
+    - Technical architecture document
+    - API specifications (OpenAPI/Swagger)
+    - Estimated and prioritized backlog
+    - Database schema and migration scripts
+
+    <Tip>
+    Include engineers in design reviews early. Technical constraints often influence design decisions, and early collaboration prevents costly rework.
+    </Tip>
+  </Tab>
+
+  <Tab title="Build">
+    ### Build Phase (2-6 sprints)
+
+    Development in 2-week sprint increments.
+
+    **Per-Sprint Activities:**
+
+    | Activity | Description | RACI Assignment | Duration |
+    |----------|-------------|-----------------|----------|
+    | Sprint Planning | Select stories for sprint, commit to scope | **A:** Engineering Lead<br/>**R:** Engineering Team<br/>**C:** PM, Designer<br/>**I:** QA Lead | 2 hours |
+    | Daily Standup | 15-min sync on progress and blockers | **A:** Engineering Lead<br/>**R:** Engineering Team<br/>**I:** PM | 15 min daily |
+    | Development | Write code following standards and patterns | **A:** Individual Engineers<br/>**C:** Engineering Lead<br/>**I:** PM | Daily |
+    | Code Review | Review all code before merging to main | **A:** Senior Engineers<br/>**R:** Code Author<br/>**I:** Engineering Lead | 1 hour per PR |
+    | Unit Testing | Write tests for new code (80%+ coverage target) | **A:** Individual Engineers<br/>**C:** Engineering Lead<br/>**I:** QA Lead | Parallel with Dev |
+    | Design QA | Verify implementation matches designs | **A:** Designer<br/>**C:** PM<br/>**I:** Engineering Lead | 30 min per story |
+    | Sprint Demo | Show completed work to stakeholders | **A:** Engineering Team<br/>**R:** PM<br/>**C:** Designer, QA<br/>**I:** VP Product, VP Engineering | 1 hour |
+    | Sprint Retrospective | Reflect on process and identify improvements | **A:** Engineering Lead<br/>**R:** Engineering Team<br/>**C:** PM, Designer, QA | 1 hour |
+
+    **Key Outputs (per sprint):**
+    - Working software deployed to staging
+    - Automated tests (unit, integration, e2e)
+    - Updated documentation
+    - Sprint report (velocity, completed stories, burndown)
+
+    <Warning>
+    Do not carry over more than 20% of stories from one sprint to the next. High carryover indicates poor estimation or scope creep.
+    </Warning>
+
+    **Development Standards:**
+    - All code reviewed by at least one other engineer
+    - All public APIs documented with examples
+    - Unit test coverage minimum 80%
+    - No critical or high-severity bugs in merged code
+    - Passes automated linting and formatting checks
+  </Tab>
+
+  <Tab title="Test">
+    ### Test Phase (Parallel with Build)
+
+    QA testing starting when first features are code-complete.
+
+    | Activity | Description | RACI Assignment | Duration |
+    |----------|-------------|-----------------|----------|
+    | Test Plan Creation | Define test strategy and test cases | **A:** QA Lead<br/>**C:** PM, Engineering Lead<br/>**I:** Designer | 2 days |
+    | Test Case Writing | Write detailed test scenarios | **A:** QA Engineers<br/>**C:** QA Lead<br/>**I:** PM | 3 days |
+    | Functional Testing | Manual testing of features and flows | **A:** QA Engineers<br/>**C:** QA Lead<br/>**I:** PM, Engineering Lead | Ongoing |
+    | Integration Testing | Test interactions between components | **A:** QA Engineers<br/>**R:** Backend Engineers<br/>**C:** QA Lead | 2 days |
+    | Performance Testing | Load testing and performance validation | **A:** QA Engineer (Performance)<br/>**C:** DevOps, Backend Lead<br/>**I:** Engineering Lead | 3 days |
+    | Security Testing | Security scan and vulnerability assessment | **A:** Security Engineer<br/>**C:** Engineering Lead<br/>**I:** CISO | 2 days |
+    | Accessibility Testing | WCAG compliance and screen reader testing | **A:** QA Engineer (A11y)<br/>**C:** Designer<br/>**I:** QA Lead | 2 days |
+    | Bug Triage | Prioritize and assign bugs to engineers | **A:** QA Lead<br/>**R:** Engineering Lead<br/>**C:** PM<br/>**I:** VP Engineering | 30 min daily |
+    | Regression Testing | Verify existing features still work | **A:** QA Engineers<br/>**C:** QA Lead<br/>**I:** Engineering Lead | 3 days |
+
+    **Key Outputs:**
+    - Comprehensive test plan
+    - Test case library (manual and automated)
+    - Bug reports with steps to reproduce
+    - Test execution reports
+    - Sign-off for release
+
+    <Note>
+    Start testing early in the build phase. Waiting until all development is complete creates a bottleneck and delays launch.
+    </Note>
+  </Tab>
+
+  <Tab title="Launch">
+    ### Launch Phase (1 sprint)
+
+    Beta testing, documentation, and controlled rollout.
+
+    | Activity | Description | RACI Assignment | Duration |
+    |----------|-------------|-----------------|----------|
+    | Beta Testing | Limited release to internal users or pilot customers | **A:** PM<br/>**R:** QA Lead<br/>**C:** Engineering Lead, Support<br/>**I:** VP Product | 1 week |
+    | Documentation Writing | User guides, help articles, API docs | **A:** Technical Writer<br/>**C:** PM, Engineering<br/>**I:** Support Team | 1 week |
+    | Release Notes | Document new features and changes | **A:** PM<br/>**C:** Engineering Lead, Technical Writer<br/>**I:** Product Marketing | 2 days |
+    | Training Materials | Create videos, tutorials, webinars | **A:** Product Marketing<br/>**R:** PM<br/>**C:** Designer<br/>**I:** Customer Success | 1 week |
+    | Support Prep | Train support team on new features | **A:** PM<br/>**R:** Support Team Lead<br/>**C:** Engineering Lead<br/>**I:** Customer Success | 2 hours |
+    | Launch Communication | Announce feature to customers | **A:** Product Marketing<br/>**C:** PM<br/>**I:** Sales, Customer Success | 1 day |
+    | Phased Rollout | Gradual release with monitoring (0% → 25% → 50% → 100%) | **A:** DevOps<br/>**R:** Engineering Lead<br/>**C:** PM<br/>**I:** VP Engineering | 3 days |
+    | Launch Monitoring | Watch error rates, performance, usage | **A:** Engineering Lead<br/>**R:** DevOps<br/>**C:** PM<br/>**I:** QA Lead | 1 week |
+    | Post-Launch Review | Assess launch success and gather feedback | **A:** PM<br/>**R:** Engineering Lead, Designer, QA Lead<br/>**C:** VP Product<br/>**I:** Executive Team | 1 hour |
+
+    **Key Outputs:**
+    - Feature launched to 100% of users
+    - Complete documentation published
+    - Support team trained and ready
+    - Launch metrics dashboards
+    - Post-launch retrospective notes
+
+    <Tip>
+    Use feature flags for phased rollouts. If issues arise, you can disable the feature instantly without deploying code changes.
+    </Tip>
+  </Tab>
+</Tabs>
+
+## Sprint Ceremonies
+
+<CardGroup cols={2}>
+  <Card title="Sprint Planning" icon="calendar">
+    **Frequency:** Every 2 weeks (Monday morning)
+    **Duration:** 2 hours
+    **Attendees:** Engineering team, PM, Designer, QA Lead
+
+    **Agenda:**
+    1. Review sprint goal
+    2. Discuss top priority stories
+    3. Team commits to stories for sprint
+    4. Break down stories into tasks
+  </Card>
+
+  <Card title="Daily Standup" icon="comments">
+    **Frequency:** Every day (morning)
+    **Duration:** 15 minutes
+    **Attendees:** Engineering team, PM
+
+    **Three Questions:**
+    1. What did I complete yesterday?
+    2. What will I work on today?
+    3. Any blockers?
+  </Card>
+
+  <Card title="Sprint Review/Demo" icon="presentation">
+    **Frequency:** Every 2 weeks (Friday afternoon)
+    **Duration:** 1 hour
+    **Attendees:** Engineering, PM, Designer, QA, stakeholders
+
+    **Agenda:**
+    1. Demo completed stories
+    2. Gather feedback
+    3. Discuss what didn't get done and why
+  </Card>
+
+  <Card title="Sprint Retrospective" icon="magnifying-glass">
+    **Frequency:** Every 2 weeks (after demo)
+    **Duration:** 1 hour
+    **Attendees:** Engineering team, PM, Designer, QA
+
+    **Agenda:**
+    1. What went well?
+    2. What could improve?
+    3. Action items for next sprint
+  </Card>
+</CardGroup>
+
+<Note>
+Keep ceremonies timeboxed. Respect the team's time by starting on schedule and ending on schedule.
+</Note>
+
+## Key Performance Indicators
+
+<CardGroup cols={2}>
+  <Card title="Sprint Velocity" icon="gauge">
+    **Target:** Stable within ±15% sprint-to-sprint
+    **Measurement:** Story points completed per sprint
+
+    Use for forecasting, not comparing teams
+  </Card>
+
+  <Card title="Sprint Commitment" icon="bullseye">
+    **Target:** 85%+ of committed stories completed
+    **Measurement:** Completed stories / Committed stories
+
+    Indicates estimation and scope management maturity
+  </Card>
+
+  <Card title="Code Quality - Bug Rate" icon="bug">
+    **Target:** Less than 5 bugs per 100 story points
+    **Measurement:** Production bugs / Story points shipped
+
+    Measure of engineering quality and testing effectiveness
+  </Card>
+
+  <Card title="Code Quality - Test Coverage" icon="shield">
+    **Target:** 80%+ unit test coverage
+    **Measurement:** Lines covered / Total lines (automated)
+
+    Prevent regressions and enable confident refactoring
+  </Card>
+
+  <Card title="Deployment Frequency" icon="rocket">
+    **Target:** Daily deployments to production
+    **Measurement:** Number of production deploys per day
+
+    Indicates mature CI/CD and small batch sizes
+  </Card>
+
+  <Card title="Lead Time" icon="clock">
+    **Target:** less than 2 weeks (code commit to production)
+    **Measurement:** Time from first commit to production deployment
+
+    Measures delivery efficiency
+  </Card>
+
+  <Card title="Change Failure Rate" icon="triangle-exclamation">
+    **Target:** less than 5% of deployments cause incidents
+    **Measurement:** Failed deployments / Total deployments
+
+    Quality of releases and testing effectiveness
+  </Card>
+
+  <Card title="MTTR" icon="wrench">
+    **Target:** less than 1 hour (mean time to recovery)
+    **Measurement:** Time from incident detection to resolution
+
+    Incident response effectiveness
+  </Card>
+</CardGroup>
+
+### Engineering Metrics Dashboard
+
+**Sprint Health:**
+- Current sprint burndown chart
+- Story completion status (To Do, In Progress, Done)
+- Velocity trend (last 6 sprints)
+- Sprint goal progress
+
+**Code Quality:**
+- Test coverage percentage
+- Code review turnaround time
+- Number of open pull requests
+- Static analysis violations
+
+**Production Health:**
+- Deployment frequency (last 30 days)
+- Change failure rate (last 30 days)
+- Mean time to recovery
+- Production error rate
+
+<Warning>
+Do not use velocity to compare teams or measure individual performance. Velocity is a planning tool, not a performance metric.
+</Warning>
+
+## Blueprints
+
+<AccordionGroup>
+  <Accordion title="Blueprint: User Story Template">
+    **Title:** [Short description of the feature]
+
+    **User Story:**
+    As a [type of user]
+    I want [an action or feature]
+    So that [benefit or value]
+
+    **Acceptance Criteria:**
+    - [ ] Given [context], when [action], then [expected result]
+    - [ ] Given [context], when [action], then [expected result]
+    - [ ] Given [context], when [action], then [expected result]
+
+    **Design:**
+    - Link to Figma design
+    - Link to user flow diagram
+
+    **Technical Notes:**
+    - API endpoints needed
+    - Database changes required
+    - External dependencies
+    - Performance considerations
+
+    **Testing Notes:**
+    - Key test scenarios
+    - Edge cases to validate
+    - Browser/device coverage
+
+    **Estimated Effort:** X story points
+
+    **Dependencies:**
+    - Story #123 must be completed first
+    - Waiting on API from Team B
+
+    **Definition of Done:**
+    - [ ] Code complete and reviewed
+    - [ ] Unit tests written (80%+ coverage)
+    - [ ] Integration tests passing
+    - [ ] QA tested and signed off
+    - [ ] Design QA approved
+    - [ ] Documentation updated
+    - [ ] Deployed to staging
+  </Accordion>
+
+  <Accordion title="Blueprint: Code Review Checklist">
+    **Functionality**
+    - [ ] Code implements requirements correctly
+    - [ ] Edge cases handled appropriately
+    - [ ] Error handling is comprehensive
+    - [ ] No obvious bugs
+
+    **Code Quality**
+    - [ ] Code is readable and well-organized
+    - [ ] Functions are appropriately sized
+    - [ ] Variable and function names are clear
+    - [ ] No commented-out code
+    - [ ] No console.log or debug statements
+
+    **Testing**
+    - [ ] Unit tests included and passing
+    - [ ] Tests cover happy path and edge cases
+    - [ ] Test coverage meets minimum threshold
+    - [ ] Integration tests updated if needed
+
+    **Performance**
+    - [ ] No obvious performance issues
+    - [ ] Database queries optimized
+    - [ ] Appropriate caching used
+    - [ ] Large operations are async
+
+    **Security**
+    - [ ] Input validation implemented
+    - [ ] SQL injection prevented
+    - [ ] XSS vulnerabilities addressed
+    - [ ] Authentication/authorization correct
+    - [ ] Secrets not hardcoded
+
+    **Documentation**
+    - [ ] Public APIs documented
+    - [ ] Complex logic has comments
+    - [ ] README updated if needed
+    - [ ] Breaking changes noted
+
+    **Best Practices**
+    - [ ] Follows team coding standards
+    - [ ] No duplication of existing code
+    - [ ] Dependencies are appropriate
+    - [ ] Backwards compatibility maintained
+
+    **Approval:**
+    - 🟢 Approve (ready to merge)
+    - 🟡 Approve with comments (minor issues)
+    - 🔴 Request changes (must address before merge)
+  </Accordion>
+
+  <Accordion title="Blueprint: Bug Report Template">
+    **Bug Title:** [Clear, specific description]
+
+    **Severity:**
+    - 🔴 Critical: System down, data loss, security issue
+    - 🟠 High: Major feature broken, workaround exists
+    - 🟡 Medium: Minor feature broken, cosmetic issue
+    - 🟢 Low: Nice-to-have, future enhancement
+
+    **Environment:**
+    - Product version: _____
+    - Environment: Production / Staging / Development
+    - Browser: _____ (version)
+    - Operating System: _____
+    - Device: Desktop / Mobile / Tablet
+
+    **Steps to Reproduce:**
+    1. Go to [page/feature]
+    2. Click [button/element]
+    3. Enter [data]
+    4. Observe [unexpected behavior]
+
+    **Expected Behavior:**
+    [What should happen]
+
+    **Actual Behavior:**
+    [What actually happens]
+
+    **Screenshots/Videos:**
+    [Attach visuals]
+
+    **Error Messages:**
+    ```
+    [Paste any error messages or console logs]
+    ```
+
+    **Workaround:**
+    [If any workaround exists, describe it]
+
+    **Additional Context:**
+    - Frequency: Always / Sometimes / Rarely
+    - First observed: [Date]
+    - Number of affected users: _____
+    - Related tickets: #_____, #_____
+
+    **Assigned To:** _____
+    **Target Fix Version:** _____
+  </Accordion>
+
+  <Accordion title="Blueprint: Post-Launch Review">
+    **Feature:** [Feature name]
+    **Launch Date:** _____
+    **Team:** [PM, Engineering Lead, Designer, QA Lead]
+
+    **Launch Goals**
+    - Goal 1: [Original goal and target]
+    - Goal 2: [Original goal and target]
+    - Goal 3: [Original goal and target]
+
+    **Results (First 30 Days)**
+    - Adoption rate: _____%
+    - Usage frequency: _____
+    - User satisfaction: _____ / 5
+    - Support tickets: _____
+    - Bugs reported: _____
+
+    **What Went Well**
+    1. _____
+    2. _____
+    3. _____
+
+    **What Could Improve**
+    1. _____
+    2. _____
+    3. _____
+
+    **Unexpected Learnings**
+    - _____
+    - _____
+
+    **User Feedback Themes**
+    - Positive: _____
+    - Negative: _____
+    - Feature requests: _____
+
+    **Technical Performance**
+    - Page load time: _____ ms (target: _____ ms)
+    - Error rate: _____%
+    - API response time: _____ ms
+    - Uptime: _____%
+
+    **Action Items**
+    - [ ] Item 1 (Owner, Priority)
+    - [ ] Item 2 (Owner, Priority)
+    - [ ] Item 3 (Owner, Priority)
+
+    **Iteration Plan**
+    - Quick wins for next sprint: _____
+    - Longer-term improvements: _____
+    - Features to deprecate: _____
+
+    **Conclusion:**
+    - 🟢 Success: Met goals, iterate and improve
+    - 🟡 Mixed: Some goals met, significant work needed
+    - 🔴 Miss: Goals not met, pivot or kill
+  </Accordion>
+</AccordionGroup>
+
+## Development Workflow Diagram
+
+<Steps>
+  <Step title="1. Pick Story from Backlog">
+    Engineer selects highest-priority story from "Ready for Dev" column
+  </Step>
+
+  <Step title="2. Create Feature Branch">
+    `git checkout -b feature/story-123-add-export-feature`
+  </Step>
+
+  <Step title="3. Develop & Test Locally">
+    - Write code
+    - Write unit tests
+    - Run local test suite
+    - Manual testing in local environment
+  </Step>
+
+  <Step title="4. Create Pull Request">
+    - Push branch to remote
+    - Create PR with description and screenshots
+    - Link to story/ticket
+    - Request review from 1-2 engineers
+  </Step>
+
+  <Step title="5. Code Review">
+    - Reviewer provides feedback
+    - Author addresses comments
+    - Iterate until approval
+  </Step>
+
+  <Step title="6. Automated Checks">
+    CI/CD pipeline runs automatically:
+    - Linting and formatting
+    - Unit tests
+    - Integration tests
+    - Security scans
+    - Build verification
+  </Step>
+
+  <Step title="7. Merge to Main">
+    Once approved and checks pass, merge to main branch
+  </Step>
+
+  <Step title="8. Deploy to Staging">
+    Automatic deployment to staging environment for QA testing
+  </Step>
+
+  <Step title="9. QA Testing">
+    QA team validates feature in staging environment
+  </Step>
+
+  <Step title="10. Deploy to Production">
+    After QA approval, deploy to production (phased rollout)
+  </Step>
+
+  <Step title="11. Monitor & Verify">
+    Watch metrics and error logs for 24 hours post-deployment
+  </Step>
+</Steps>
+
+<Tip>
+Use trunk-based development with short-lived feature branches. Merge to main frequently (at least daily) to reduce merge conflicts and integration issues.
+</Tip>
+
+## Related Resources
+
+<CardGroup cols={2}>
+  <Card title="Customer Onboarding" icon="user-plus" href="/examples/customer-onboarding">
+    How Customer Success documents product features
+  </Card>
+
+  <Card title="Organizing Processes" icon="sitemap" href="/best-practices/organizing-processes">
+    Structure complex development processes
+  </Card>
+
+  <Card title="KPI Selection" icon="chart-line" href="/best-practices/kpi-selection">
+    Choose the right engineering metrics
+  </Card>
+
+  <Card title="Version Control" icon="code-branch" href="/best-practices/version-control">
+    Version control best practices for processes
+  </Card>
+</CardGroup>

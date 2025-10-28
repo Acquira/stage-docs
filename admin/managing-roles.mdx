@@ -1,0 +1,243 @@
+---
+title: "Managing User Roles"
+description: "Learn how to change team member roles and understand role responsibilities"
+---
+
+<Note>
+This feature is available to **Team Admins** and **Team Owners** only.
+</Note>
+
+## Overview
+
+User roles determine what team members can do within your organization. As an administrator, you can change roles to match team members' responsibilities and level of trust within your organization.
+
+## Understanding Role Hierarchy
+
+The Business Process Framework has four role levels:
+
+<CardGroup cols={2}>
+  <Card title="Team Owner" icon="crown">
+    **Full Control**
+
+    Complete access to all team features, settings, and administrative functions. Can manage billing, delete the team, and assign/remove other owners.
+  </Card>
+
+  <Card title="Team Admin" icon="user-shield">
+    **Administrative Access**
+
+    Can manage team members, configure settings, and access all processes. Cannot manage billing or delete the team.
+  </Card>
+
+  <Card title="Team Member" icon="user">
+    **Standard Access**
+
+    Can create and manage processes, participate in workflows, and view team KPIs. Cannot change team settings or manage members.
+  </Card>
+
+  <Card title="Guest" icon="user-clock">
+    **Limited Access**
+
+    Can only access specific processes they are assigned to. Cannot view team-wide information or create new processes.
+  </Card>
+</CardGroup>
+
+## How to Change User Roles
+
+<Steps>
+  <Step title="Navigate to Team Members">
+    Go to **Team Settings** > **Members** to view your team roster.
+  </Step>
+
+  <Step title="Locate the Team Member">
+    Find the member whose role you want to change in the members list.
+  </Step>
+
+  <Step title="Click the Role Dropdown">
+    Click on the current role displayed next to the member's name. A dropdown menu will appear with available roles.
+  </Step>
+
+  <Step title="Select New Role">
+    Choose the new role from the dropdown menu.
+  </Step>
+
+  <Step title="Confirm the Change">
+    A confirmation dialog will appear. Review the role change and click **Confirm** to proceed.
+  </Step>
+</Steps>
+
+The role change takes effect immediately, and the team member's permissions are updated in real time.
+
+<Warning>
+Changing roles affects what a team member can access and do. Notify the member when you change their role so they understand their new permissions.
+</Warning>
+
+## Role Responsibilities and Permissions
+
+### Team Owner Capabilities
+
+Team Owners have unrestricted access to:
+
+- All administrative functions
+- Billing and subscription management
+- Adding and removing members
+- Assigning and removing Owner roles
+- Deleting the team
+- Configuring AI and integrations
+- Managing all processes and workflows
+- Accessing all KPIs and reports
+
+### Team Admin Capabilities
+
+Team Admins can:
+
+- Invite and remove team members
+- Change roles (except cannot create/remove Owners)
+- Configure team settings and preferences
+- Enable/disable features
+- Manage all processes
+- View all KPIs and reports
+- Configure AI settings
+
+Team Admins cannot:
+
+- Access billing information
+- Delete the team
+- Assign or remove Owner roles
+
+### Team Member Capabilities
+
+Team Members can:
+
+- Create and manage their own processes
+- Participate in workflows
+- Take assessments
+- View team-wide KPIs
+- Collaborate with other members
+- Use AI features
+
+Team Members cannot:
+
+- Change team settings
+- Invite or remove members
+- Access administrative functions
+- Configure system-wide settings
+
+### Guest Capabilities
+
+Guests can:
+
+- View processes they are assigned to
+- Complete assigned tasks
+- Take specific assessments they are invited to
+- Collaborate on assigned processes
+
+Guests cannot:
+
+- View team-wide information
+- Create new processes
+- Access processes they are not assigned to
+- View team KPIs
+
+## Promoting Team Members
+
+When promoting a team member to a higher role, consider:
+
+<Accordion title="Has the member demonstrated responsibility?">
+Ensure they have consistently used the platform appropriately and followed team guidelines.
+</Accordion>
+
+<Accordion title="Do they need the elevated permissions?">
+Only promote when the role matches their actual job responsibilities. Avoid unnecessary elevated access.
+</Accordion>
+
+<Accordion title="Have you communicated expectations?">
+Before promoting someone to Admin or Owner, discuss what you expect from them in their new role.
+</Accordion>
+
+<Accordion title="Do they understand the risks?">
+Higher roles have access to sensitive information and can make consequential changes. Ensure they understand the responsibility.
+</Accordion>
+
+## Demoting Team Members
+
+Demoting a team member should be handled carefully:
+
+<Warning>
+Demoting a team member may affect their ability to complete their work. Ensure you have discussed this change with them or have a valid reason for the change.
+</Warning>
+
+Before demoting:
+
+1. **Review their current responsibilities**: Ensure they do not need their current permissions for their work
+2. **Communicate the change**: If appropriate, let them know their role is changing and why
+3. **Transfer ownership**: If they own processes or data, reassign ownership before demoting
+4. **Verify access needs**: Confirm they will still have access to what they need in their new role
+
+## Role Change Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Follow the Principle of Least Privilege" icon="lock">
+    Give team members the minimum level of access they need to do their work effectively.
+  </Card>
+
+  <Card title="Document Role Decisions" icon="file-lines">
+    Keep track of why you assigned specific roles to team members, especially for administrative positions.
+  </Card>
+
+  <Card title="Review Roles Regularly" icon="rotate">
+    Periodically audit team member roles to ensure they still match current responsibilities.
+  </Card>
+
+  <Card title="Communicate Changes" icon="bullhorn">
+    Always notify team members when their role changes, even for promotions.
+  </Card>
+
+  <Card title="Have Multiple Owners" icon="users">
+    Ensure at least two team members have Owner access to prevent lockout situations.
+  </Card>
+
+  <Card title="Train New Admins" icon="graduation-cap">
+    When promoting someone to Admin or Owner, provide guidance on their new responsibilities.
+  </Card>
+</CardGroup>
+
+## Special Considerations
+
+### Owner Role Changes
+
+<Warning>
+Be extremely careful when assigning or removing Owner roles. Owners can delete the team, manage billing, and make irreversible changes.
+</Warning>
+
+- Only Team Owners can assign or remove Owner roles
+- You cannot remove the Owner role from yourself if you are the last Owner
+- Consider having 2-3 Owners for redundancy
+
+### Bulk Role Changes
+
+If you need to change roles for multiple team members:
+
+1. Plan the changes in advance
+2. Communicate with affected members
+3. Make changes during off-peak hours if possible
+4. Verify each change after completion
+
+<Tip>
+If you need to change many roles at once, consider whether your team structure or processes need adjustment.
+</Tip>
+
+## Related Resources
+
+<CardGroup cols={3}>
+  <Card title="Inviting Members" icon="user-plus" href="/admin/inviting-members">
+    Learn how to invite new team members
+  </Card>
+
+  <Card title="Removing Members" icon="user-minus" href="/admin/removing-members">
+    Understand how to remove team members
+  </Card>
+
+  <Card title="Team Settings" icon="gear" href="/admin/team-settings">
+    Configure your team preferences
+  </Card>
+</CardGroup>

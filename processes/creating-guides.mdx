@@ -1,0 +1,522 @@
+---
+title: "Creating Activity Guides"
+description: "Learn how to create step-by-step guides for individual activities"
+---
+
+## What Are Activity Guides?
+
+Activity guides are detailed, step-by-step instructions for completing a specific activity. They're the "how-to" documentation that helps team members perform tasks correctly and consistently.
+
+Think of guides as recipes. They provide clear, sequential steps that anyone can follow to achieve the same result.
+
+<Info>
+Guides are attached to individual activities, not categories. For category-level documentation, use blueprints instead.
+
+Learn more: [Blueprints vs Guides](/processes/blueprints-vs-guides)
+</Info>
+
+## When to Create Guides
+
+Create guides for activities that:
+
+<CardGroup cols={2}>
+  <Card title="Are Complex" icon="gears">
+    Multi-step tasks where mistakes are costly or common
+  </Card>
+  <Card title="Use Systems" icon="computer">
+    Activities requiring navigation through software or specific tools
+  </Card>
+  <Card title="Need Consistency" icon="equals">
+    Tasks that must be done the same way every time for quality or compliance
+  </Card>
+  <Card title="Train New Staff" icon="graduation-cap">
+    Activities that new team members need to learn
+  </Card>
+</CardGroup>
+
+<Warning>
+**Don't create guides for obvious tasks.** Activities like "Approve document" or "Reply to email" that are self-explanatory don't need guides. Focus on activities that benefit from detailed instruction.
+</Warning>
+
+## Creating Your First Guide
+
+<Steps>
+  <Step title="Navigate to Your Activity">
+    Open the core process and find the activity you want to document.
+
+    Click on the activity to open its detail view.
+  </Step>
+
+  <Step title="Find the Guide Section">
+    Look for a "Guide," "Instructions," or "How-To" section in the activity details.
+
+    You may see a tab or button labeled "Create Guide."
+  </Step>
+
+  <Step title="Click Create Guide">
+    Click the **"Create Guide"** or **"Add Instructions"** button.
+
+    This opens the guide editor.
+  </Step>
+
+  <Step title="Add a Title">
+    Your guide title should match the activity name or clearly reference it.
+
+    **Examples:**
+    - "How to Screen Resumes"
+    - "Sending Client Proposals - Step by Step"
+    - "Processing Refund Requests"
+
+    Keep titles clear and descriptive.
+  </Step>
+
+  <Step title="Write Step-by-Step Instructions">
+    Break down the activity into clear, sequential steps. Each step should be one action.
+
+    Number your steps and start each with an action verb.
+
+    Use the rich text editor to format your steps clearly.
+  </Step>
+
+  <Step title="Add Visual Aids">
+    Include screenshots, videos, or diagrams that show what to do.
+
+    Visual aids make guides faster to follow and reduce errors.
+  </Step>
+
+  <Step title="Include Tips and Warnings">
+    Add helpful tips, common mistakes to avoid, and troubleshooting advice.
+
+    This makes your guide more practical and useful.
+  </Step>
+
+  <Step title="Review and Save">
+    Walk through your guide as if you're doing the activity for the first time. Is anything unclear?
+
+    Click **"Save"** to publish your guide.
+  </Step>
+</Steps>
+
+## Guide Structure Template
+
+Use this template for consistent, easy-to-follow guides:
+
+```markdown
+# [Activity Name] Guide
+
+## Overview
+[One sentence: What this activity accomplishes]
+
+## Prerequisites
+[What needs to be in place before starting]
+
+## Estimated Time
+[How long this typically takes]
+
+## Tools Needed
+[List of systems, templates, or resources required]
+
+## Step-by-Step Instructions
+
+### Step 1: [Action]
+[Detailed instructions for step 1]
+[Screenshot or visual if needed]
+
+### Step 2: [Action]
+[Detailed instructions for step 2]
+[Screenshot or visual if needed]
+
+### Step 3: [Action]
+[Continue for all steps...]
+
+## Decision Points
+[If/then scenarios or choices to make]
+
+## Tips & Best Practices
+[Helpful advice for doing this well]
+
+## Common Mistakes to Avoid
+[Errors people frequently make]
+
+## Troubleshooting
+[What to do when things go wrong]
+
+## Related Resources
+[Links to forms, templates, related guides]
+```
+
+## Writing Great Step-by-Step Instructions
+
+<AccordionGroup>
+  <Accordion title="Rule 1: One Action Per Step" icon="1" defaultOpen>
+    Each step should be one discrete action. Don't combine multiple actions.
+
+    **Good:**
+    - Step 1: Open the CRM
+    - Step 2: Navigate to the Contacts tab
+    - Step 3: Click "Add New Contact"
+
+    **Bad:**
+    - Step 1: Open the CRM, go to Contacts, and add a new contact
+
+    Breaking steps down makes them easier to follow.
+  </Accordion>
+
+  <Accordion title="Rule 2: Start with Action Verbs" icon="play">
+    Begin each step with a clear action verb that tells people what to do.
+
+    **Good action verbs:**
+    - Click, Select, Enter, Type, Choose, Navigate, Open, Close, Save, Review, Confirm, Verify
+
+    **Example:**
+    - "Click the 'Submit' button in the bottom-right corner"
+    - "Enter the customer's email address in the 'Email' field"
+    - "Select 'Priority: High' from the dropdown menu"
+  </Accordion>
+
+  <Accordion title="Rule 3: Be Specific" icon="bullseye">
+    Provide exact details. Don't assume people will figure it out.
+
+    **Vague:**
+    - "Update the document"
+
+    **Specific:**
+    - "Update the 'Client Name' field in the contract template with the client's legal business name (check spelling in Salesforce)"
+
+    Specificity prevents errors and questions.
+  </Accordion>
+
+  <Accordion title="Rule 4: Include Location Details" icon="location-dot">
+    Tell people exactly where to find buttons, fields, or options.
+
+    **Better:**
+    - "Click the 'Save' button"
+
+    **Best:**
+    - "Click the blue 'Save' button in the bottom-right corner of the screen"
+
+    Location details help people find things faster.
+  </Accordion>
+
+  <Accordion title="Rule 5: Explain Decision Points" icon="code-branch">
+    When there are choices or conditions, clearly explain what to do.
+
+    **Example:**
+    > **Step 4: Determine Priority Level**
+    > - If the ticket mentions "urgent," "emergency," or "down," select "Priority: Critical"
+    > - If the ticket mentions a deadline within 24 hours, select "Priority: High"
+    > - All other tickets: select "Priority: Normal"
+
+    Use if/then logic to cover different scenarios.
+  </Accordion>
+</AccordionGroup>
+
+## Adding Visual Elements
+
+Visual aids make guides much more effective:
+
+<CardGroup cols={3}>
+  <Card title="Screenshots" icon="image">
+    Capture screens showing exactly what buttons to click or forms to fill out
+  </Card>
+  <Card title="Annotations" icon="pen">
+    Add arrows, circles, or highlights to draw attention to specific areas
+  </Card>
+  <Card title="Screen Recordings" icon="video">
+    Record your screen while performing the activity for complex procedures
+  </Card>
+  <Card title="Flowcharts" icon="diagram-project">
+    Show decision trees or branching logic visually
+  </Card>
+  <Card title="Before/After" icon="right-left">
+    Show what the result should look like when done correctly
+  </Card>
+  <Card title="Templates" icon="file">
+    Include sample outputs or filled examples
+  </Card>
+</CardGroup>
+
+### Screenshot Best Practices
+
+<Tabs>
+  <Tab title="What to Capture">
+    ✅ Entire screen or window for context
+    ✅ The button, field, or area the user needs to interact with
+    ✅ Enough surrounding interface to orient the user
+    ✅ Confirmation messages or results
+  </Tab>
+
+  <Tab title="How to Annotate">
+    ✅ Use red circles or arrows to highlight key areas
+    ✅ Add numbered labels matching your step numbers
+    ✅ Include text callouts for important notes
+    ✅ Keep annotations clean and minimal
+  </Tab>
+
+  <Tab title="What to Avoid">
+    ❌ Capturing sensitive data (customer info, passwords)
+    ❌ Screenshots that are too small to read
+    ❌ Outdated screenshots from old system versions
+    ❌ Too many annotations that clutter the image
+  </Tab>
+</Tabs>
+
+## Complete Guide Example
+
+Here's a full example of a well-written activity guide:
+
+<AccordionGroup>
+  <Accordion title="Example: Processing a Customer Refund" icon="money-bill-transfer" defaultOpen>
+    **Activity:** Process Customer Refund Request
+
+    ---
+
+    ## Overview
+    This guide covers how to process approved refund requests through our payment system and notify the customer.
+
+    ## Prerequisites
+    - Refund has been approved by customer service manager
+    - Approval email is in the refund ticket
+    - Original payment method is still valid
+
+    ## Estimated Time
+    5-10 minutes
+
+    ## Tools Needed
+    - Stripe Dashboard access
+    - Zendesk ticket system access
+    - Refund notification email template
+
+    ---
+
+    ## Step-by-Step Instructions
+
+    ### Step 1: Verify Refund Approval
+    Open the Zendesk ticket and confirm that:
+    - Manager has commented "APPROVED" in the ticket
+    - Refund amount is clearly stated
+    - Customer account is in good standing
+
+    **Don't proceed without approval.**
+
+    ### Step 2: Open Stripe Dashboard
+    1. Navigate to dashboard.stripe.com
+    2. Log in with your company credentials
+    3. Select "Payments" from the left sidebar
+
+    [Screenshot showing Stripe dashboard with sidebar highlighted]
+
+    ### Step 3: Find the Original Payment
+    1. In the search bar, enter the customer's email or order number
+    2. Click on the matching payment in the results
+    3. Verify the payment details match the refund request:
+       - Customer name
+       - Amount
+       - Date
+       - Product/service purchased
+
+    ### Step 4: Issue the Refund
+    1. Click the "Refund" button in the top-right of the payment details page
+    2. Enter the refund amount (full or partial as approved)
+    3. In the "Reason" dropdown, select the appropriate reason:
+       - "Requested by customer" (most common)
+       - "Duplicate charge"
+       - "Fraudulent"
+    4. In the notes field, enter the Zendesk ticket number (format: #12345)
+    5. Click "Refund [amount]" to confirm
+
+    [Screenshot showing refund form with fields highlighted]
+
+    **The refund will be processed immediately. You cannot undo this action.**
+
+    ### Step 5: Copy the Refund ID
+    After the refund processes, Stripe displays a confirmation screen with a refund ID (format: re_1234567890).
+
+    Copy this ID. You'll need it for the customer notification.
+
+    ### Step 6: Update the Zendesk Ticket
+    1. Return to the Zendesk ticket
+    2. Change the ticket status to "Solved"
+    3. Add an internal note with:
+       - Refund amount
+       - Stripe refund ID
+       - Date processed
+       - Your name
+
+    **Example:**
+    > "Refund processed: $49.99
+    > Stripe refund ID: re_1234567890
+    > Date: June 15, 2024
+    > Processed by: Sarah J."
+
+    ### Step 7: Notify the Customer
+    1. In Zendesk, click "Apply Macro"
+    2. Select "Refund Processed Notification"
+    3. The email template auto-fills with:
+       - Customer name
+       - Refund amount
+       - Estimated arrival time (5-10 business days)
+    4. Add the Stripe refund ID to the email where indicated
+    5. Review the email for accuracy
+    6. Click "Send"
+
+    ---
+
+    ## Decision Points
+
+    **What if the original payment method was deleted?**
+    - Stripe will attempt to refund to the card automatically
+    - If it fails, contact the customer for current payment details
+    - Document the situation in the ticket and escalate to your manager
+
+    **What if the customer wants a refund to a different payment method?**
+    - This isn't possible through Stripe
+    - Escalate to accounting for a manual check or ACH transfer
+    - Add "ACCOUNTING" tag to the ticket
+
+    **What if the refund amount exceeds the original charge?**
+    - This should never happen. Do not process.
+    - Notify your manager immediately. This may indicate fraud.
+
+    ---
+
+    ## Tips & Best Practices
+
+    ✅ Always verify approval before processing. Unauthorized refunds can't be reversed.
+
+    ✅ Double-check the refund amount. Typos can cause issues.
+
+    ✅ Process refunds within 24 hours of approval for better customer satisfaction.
+
+    ✅ Add the Stripe refund ID to Zendesk. Customers often call asking for status, and you'll need this to look it up.
+
+    ---
+
+    ## Common Mistakes to Avoid
+
+    ❌ **Processing without approval:** Always get manager approval first
+
+    ❌ **Wrong amount:** A $49.99 vs. $499.90 mistake is costly and hard to fix
+
+    ❌ **Forgetting to notify customer:** Customer will call asking when they'll get their money
+
+    ❌ **Not documenting in Zendesk:** Other team members need to see what happened
+
+    ---
+
+    ## Troubleshooting
+
+    **Problem:** "Refund button is grayed out"
+    - **Solution:** Payment may still be processing or already refunded. Check the payment status. If unclear, contact Stripe support.
+
+    **Problem:** "Error: Charge has been disputed"
+    - **Solution:** Don't process the refund. Contact your manager. Disputed charges follow a different process.
+
+    **Problem:** "Customer says they didn't receive refund after 10 days"
+    - **Solution:** Look up the Stripe refund ID, check status, contact customer's bank if needed. See "Late Refund Follow-up Guide."
+
+    ---
+
+    ## Related Resources
+    - [Refund Policy Documentation](#)
+    - [Stripe Support Contact Info](#)
+    - [Escalation Procedures](#)
+    - [Late Refund Follow-up Guide](#)
+
+  </Accordion>
+</AccordionGroup>
+
+## Guide Writing Tips
+
+<CardGroup cols={2}>
+  <Card title="Test Your Guide" icon="vial">
+    Have someone unfamiliar with the task follow your guide. Where do they get confused?
+  </Card>
+  <Card title="Use Simple Language" icon="comment">
+    Write at an 8th-grade reading level. Avoid jargon and complex terminology.
+  </Card>
+  <Card title="Be Consistent" icon="equals">
+    Use the same terms throughout. Don't call something a "button" in one step and an "icon" in another.
+  </Card>
+  <Card title="Update Regularly" icon="rotate">
+    When systems change or processes improve, update your guides immediately.
+  </Card>
+</CardGroup>
+
+## Common Guide Mistakes
+
+<Warning>
+**Assuming Knowledge**
+
+Don't assume people know where things are or how systems work. Be explicit about every step, even if it seems obvious to you.
+</Warning>
+
+<Warning>
+**Combining Too Many Actions**
+
+Keep steps atomic. One step = one action. Combining multiple actions into one step causes confusion.
+</Warning>
+
+<Warning>
+**Vague Instructions**
+
+"Update the file" doesn't tell someone what to update or how. Be specific about fields, values, and locations.
+</Warning>
+
+<Warning>
+**Outdated Screenshots**
+
+Screenshots from old system versions confuse users. Update screenshots when interfaces change.
+</Warning>
+
+## Forms in Guides
+
+Some activities require forms to be completed. You can attach forms directly to your guides.
+
+<Steps>
+  <Step title="Create or Upload Form">
+    Create a fillable form or upload a form template (PDF, Word, etc.)
+  </Step>
+  <Step title="Attach to Guide">
+    Link the form in your guide, or use the system's form attachment feature if available
+  </Step>
+  <Step title="Reference in Instructions">
+    In your step-by-step instructions, tell users when and how to complete the form
+
+    **Example:** "Step 5: Complete the Budget Request Form (attached below) with all required fields"
+  </Step>
+</Steps>
+
+Learn more: [Adding Forms to Guides](/processes/adding-forms)
+
+## Guide Checklist
+
+Before considering your guide complete:
+
+- [ ] Clear title matching the activity
+- [ ] Overview explaining what the activity accomplishes
+- [ ] Prerequisites and tools listed
+- [ ] Estimated time included
+- [ ] Step-by-step instructions with action verbs
+- [ ] One action per step
+- [ ] Decision points explained
+- [ ] Screenshots or visuals included
+- [ ] Tips and common mistakes documented
+- [ ] Troubleshooting section included
+- [ ] Related resources linked
+- [ ] Tested by someone unfamiliar with the task
+- [ ] Grammar and spelling checked
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Adding Forms" icon="file-contract" href="/processes/adding-forms">
+    Learn how to attach forms to your guides
+  </Card>
+  <Card title="Creating Blueprints" icon="map" href="/processes/creating-blueprints">
+    Add category-level documentation
+  </Card>
+  <Card title="Sharing Processes" icon="share-nodes" href="/processes/sharing-processes">
+    Share your guides with team members
+  </Card>
+</CardGroup>

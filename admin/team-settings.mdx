@@ -1,0 +1,365 @@
+---
+title: "Team Settings"
+description: "Configure your team profile, preferences, and features"
+---
+
+<Note>
+This feature is available to **Team Admins** and **Team Owners** only.
+</Note>
+
+## Overview
+
+Team Settings is your central hub for configuring how your team operates within the Business Process Framework. Here you can manage your team profile, set preferences, and customize features to match your organization's needs.
+
+## Accessing Team Settings
+
+<Steps>
+  <Step title="Open Team Menu">
+    Click on your team name in the top navigation bar.
+  </Step>
+
+  <Step title="Select Team Settings">
+    From the dropdown menu, click **Team Settings**.
+  </Step>
+
+  <Step title="Navigate Settings Sections">
+    Use the left sidebar to access different settings categories:
+    - General
+    - Members
+    - AI Configuration
+    - Features
+    - Preferences
+    - Billing (Owners only)
+  </Step>
+</Steps>
+
+## Team Profile Settings
+
+### Team Name
+
+Your team name is displayed throughout the application and helps members identify which team they are working in.
+
+- **Editing**: Click the edit icon next to your team name
+- **Requirements**: 3-50 characters, alphanumeric and spaces allowed
+- **Visibility**: Visible to all team members
+
+<Tip>
+Choose a team name that clearly identifies your organization or department to avoid confusion if members belong to multiple teams.
+</Tip>
+
+### Team Description
+
+Provide context about your team's purpose and scope.
+
+- **Use cases**: Describe your team's mission, the types of processes you manage, or who should join
+- **Visibility**: Visible to all team members
+- **Length**: Up to 500 characters
+
+### Team Logo
+
+Upload a custom logo to personalize your team's identity.
+
+- **Supported formats**: PNG, JPG, SVG
+- **Recommended size**: 200x200 pixels
+- **Maximum file size**: 2MB
+- **Usage**: Displayed in navigation and on team pages
+
+### Team Settings Information
+
+View important information about your team:
+
+- **Created date**: When the team was established
+- **Team ID**: Unique identifier for support purposes
+- **Current plan**: Your subscription tier
+- **Member count**: Total active team members
+
+## Team Preferences
+
+### Default Time Zone
+
+Set the time zone used for displaying dates and times throughout the application.
+
+- **Affects**: Scheduled workflows, report timestamps, activity logs
+- **Per-user override**: Individual members can set their own time zone preference
+- **Common usage**: Set to your headquarters location or most common member time zone
+
+### Date Format
+
+Choose how dates are displayed:
+
+- **MM/DD/YYYY** (US format)
+- **DD/MM/YYYY** (International format)
+- **YYYY-MM-DD** (ISO format)
+
+### Notification Defaults
+
+Configure default notification preferences for new team members:
+
+<AccordionGroup>
+  <Accordion title="Email Notifications">
+    - Process assignments
+    - Workflow approvals required
+    - Assessment invitations
+    - Weekly KPI summaries
+    - Team announcements
+  </Accordion>
+
+  <Accordion title="In-App Notifications">
+    - Comments and mentions
+    - Task updates
+    - Process changes
+    - System alerts
+  </Accordion>
+
+  <Accordion title="Digest Options">
+    - Real-time notifications
+    - Daily digest (8 AM)
+    - Weekly digest (Monday 8 AM)
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+These are default settings for new members. Existing members retain their individual notification preferences.
+</Note>
+
+### Workflow Settings
+
+Configure how workflows operate across your team:
+
+- **Default approval timeout**: How long before approval requests escalate (1-30 days)
+- **Auto-assignment**: Enable automatic task assignment based on roles
+- **Sequential vs. parallel**: Default workflow execution mode
+- **Notification frequency**: How often to remind about pending tasks
+
+### KPI Reporting
+
+Set preferences for KPI tracking and reporting:
+
+- **Reporting frequency**: Weekly, monthly, or quarterly
+- **Report delivery**: Who receives automated KPI reports
+- **Default metrics**: Which KPIs to track by default for new processes
+- **Comparison periods**: How to display trends (vs. previous period, vs. baseline, etc.)
+
+## Feature Toggles
+
+Enable or disable specific features for your team:
+
+<CardGroup cols={2}>
+  <Card title="AI Assistant" icon="robot">
+    Enable AI-powered process assistance and recommendations
+  </Card>
+
+  <Card title="Assessments" icon="clipboard-list">
+    Allow team members to take business assessments
+  </Card>
+
+  <Card title="Advanced Workflows" icon="diagram-project">
+    Enable complex multi-step workflows with conditional logic
+  </Card>
+
+  <Card title="API Access" icon="plug">
+    Allow integration with external systems via API
+  </Card>
+
+  <Card title="Guest Access" icon="user-clock">
+    Permit guest users with limited access
+  </Card>
+
+  <Card title="Custom Branding" icon="palette">
+    Customize colors and logos (Enterprise plan)
+  </Card>
+</CardGroup>
+
+See [Managing Features](/admin/managing-features) for detailed information about each feature.
+
+## Privacy and Security
+
+### Data Retention
+
+Configure how long to retain different types of data:
+
+- **Activity logs**: 30, 60, 90 days, or indefinitely
+- **Archived processes**: 6 months, 1 year, or indefinitely
+- **Assessment results**: 1 year, 3 years, or indefinitely
+
+<Warning>
+Reducing retention periods will permanently delete older data. Ensure you have exported any necessary information before shortening retention periods.
+</Warning>
+
+### Team Visibility
+
+Control what information is visible across your team:
+
+- **Member directory**: Show all team members to everyone
+- **Process visibility**: Default visibility for new processes (team-wide or private)
+- **KPI transparency**: Who can view team-wide KPIs
+- **Assessment results**: Who can see individual assessment results
+
+### Two-Factor Authentication
+
+<Accordion title="Require 2FA for All Members">
+When enabled, all team members must set up two-factor authentication to access the team.
+
+**Benefits**:
+- Enhanced security for sensitive business data
+- Compliance with security policies
+- Protection against account compromise
+
+**Considerations**:
+- Members must have access to a 2FA device (phone, authenticator app)
+- May require support for setting up 2FA
+- Grace period of 7 days for existing members to enable
+</Accordion>
+
+## Customization Options
+
+### Custom Fields
+
+Create custom fields to capture team-specific information:
+
+- **Process metadata**: Add fields relevant to your industry or workflow
+- **Member attributes**: Track additional information about team members
+- **Assessment categories**: Customize assessment groupings
+
+### Templates
+
+Configure default templates for your team:
+
+- **Process templates**: Pre-configured process structures
+- **Workflow templates**: Reusable workflow patterns
+- **Report templates**: Standardized reporting formats
+
+### Labels and Tags
+
+Set up team-wide labels and tags for organization:
+
+- **Process categories**: Define custom categories for your processes
+- **Priority levels**: Customize priority labels
+- **Status options**: Add custom status values
+- **Department tags**: Tag content by department or function
+
+<Tip>
+Standardizing labels and tags across your team makes it easier to find and organize content.
+</Tip>
+
+## Integration Settings
+
+### Connected Services
+
+View and manage external integrations:
+
+- **Slack**: Team notifications and updates
+- **Microsoft Teams**: Integration with Teams channels
+- **Google Workspace**: Calendar and Drive integration
+- **Zapier**: Connect to 5,000+ apps
+
+### Webhooks
+
+Configure webhooks to send data to external systems:
+
+- **Process events**: Trigger webhooks when processes are created or updated
+- **Workflow events**: Send notifications on workflow state changes
+- **Assessment events**: Receive data when assessments are completed
+
+### API Keys
+
+Generate and manage API keys for custom integrations:
+
+<Warning>
+API keys provide programmatic access to your team's data. Store them securely and rotate them regularly.
+</Warning>
+
+## Billing Settings (Owners Only)
+
+<Note>
+Only Team Owners can access billing settings.
+</Note>
+
+### Subscription Management
+
+- **Current plan**: View your active subscription tier
+- **Usage**: Monitor your team's usage against plan limits
+- **Upgrade/downgrade**: Change your subscription level
+- **Payment method**: Update credit card or payment information
+
+### Invoices and Receipts
+
+- **Billing history**: View past invoices
+- **Download receipts**: Export invoices for accounting
+- **Update billing email**: Change where invoices are sent
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Review Settings Regularly" icon="calendar-check">
+    Audit your team settings quarterly to ensure they still match your needs.
+  </Card>
+
+  <Card title="Document Custom Configurations" icon="file-lines">
+    Keep notes on why you configured settings in specific ways for future reference.
+  </Card>
+
+  <Card title="Communicate Changes" icon="bullhorn">
+    Notify your team when you make significant changes to settings that affect their experience.
+  </Card>
+
+  <Card title="Test Before Enforcing" icon="flask">
+    When enabling new features or restrictions, test with a small group first.
+  </Card>
+
+  <Card title="Balance Security and Usability" icon="scale-balanced">
+    Implement security measures that protect data without creating excessive friction.
+  </Card>
+
+  <Card title="Standardize When Possible" icon="ruler">
+    Use consistent settings across teams in your organization for easier management.
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+### Cannot Access Settings
+
+If you cannot access Team Settings:
+
+- Verify you have Admin or Owner permissions
+- Check if you are logged into the correct team
+- Try refreshing your browser
+- Clear your browser cache and cookies
+
+### Changes Not Saving
+
+If your settings changes are not persisting:
+
+- Check your internet connection
+- Ensure you clicked the **Save** button
+- Look for error messages or validation warnings
+- Try making one change at a time
+
+### Settings Reverted
+
+If settings revert to previous values:
+
+- Verify no other admin changed the settings
+- Check the activity log for recent changes
+- Contact support if settings change unexpectedly
+
+<Info>
+All settings changes are logged in the team activity log, which you can access from the Settings page.
+</Info>
+
+## Related Resources
+
+<CardGroup cols={3}>
+  <Card title="Managing Features" icon="toggle-on" href="/admin/managing-features">
+    Learn about feature flags and toggles
+  </Card>
+
+  <Card title="Configuring AI" icon="robot" href="/admin/configuring-ai">
+    Set up AI integration
+  </Card>
+
+  <Card title="Team Preferences" icon="sliders" href="/admin/team-preferences">
+    Detailed preference options
+  </Card>
+</CardGroup>

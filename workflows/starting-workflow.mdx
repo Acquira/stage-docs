@@ -1,0 +1,489 @@
+---
+title: "Starting a Workflow"
+description: "Learn how workflows are assigned and how to start working on them"
+---
+
+## How Workflows Are Assigned to You
+
+Workflows can be assigned to you in several ways:
+
+<CardGroup cols={2}>
+  <Card title="Role Assignment" icon="user-group">
+    You receive a workflow because you hold a role (e.g., "Project Manager" or "HR Lead")
+  </Card>
+
+  <Card title="Direct Assignment" icon="user-tag">
+    An admin or manager directly assigns a specific workflow to you by name
+  </Card>
+
+  <Card title="Department Assignment" icon="building">
+    Workflow is assigned to your entire department, and you claim it
+  </Card>
+
+  <Card title="Auto-Assignment" icon="robot">
+    Workflows are automatically assigned based on rules (e.g., when you join a project)
+  </Card>
+</CardGroup>
+
+## Finding Your Assigned Workflows
+
+<Steps>
+  <Step title="Navigate to My Workflows">
+    Click **My Workflows** in the main navigation menu.
+
+    <Frame>
+      <img src="/images/workflows/my-workflows-nav.png" alt="My Workflows navigation" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot showing My Workflows in navigation menu
+    </Note>
+  </Step>
+
+  <Step title="View Your Workflow List">
+    You'll see all workflows currently assigned to you:
+
+    - Active workflows you're working on
+    - Not yet started workflows
+    - Recently completed workflows
+
+    <Frame>
+      <img src="/images/workflows/workflow-list.png" alt="Workflow list view" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot of My Workflows list showing multiple workflows
+    </Note>
+  </Step>
+
+  <Step title="Filter Your Workflows">
+    Use filters to find specific workflows:
+
+    - **Status**: Active, Not Started, Completed
+    - **Priority**: High, Medium, Low
+    - **Category**: HR, Operations, Finance, Acquisition
+    - **Date Range**: Created this week, this month, etc.
+  </Step>
+
+  <Step title="Sort Your Workflows">
+    Sort by:
+    - Due date (urgent first)
+    - Priority (high first)
+    - Name (alphabetical)
+    - Progress (least complete first)
+  </Step>
+</Steps>
+
+## Understanding Your Workflow List
+
+Each workflow in your list shows key information at a glance:
+
+<Frame>
+  <img src="/images/workflows/workflow-card.png" alt="Workflow card details" />
+</Frame>
+
+<Note>
+**Placeholder**: Screenshot of a single workflow card with annotations
+</Note>
+
+### Workflow Card Details
+
+| Element | What It Shows |
+|---------|---------------|
+| **Workflow Name** | The name of the workflow (e.g., "Employee Onboarding - Sarah Chen") |
+| **Progress Bar** | Visual indicator of completion (e.g., 5 of 15 tasks complete) |
+| **Status Badge** | Active, Not Started, or Completed |
+| **Priority Indicator** | High, Medium, or Low priority |
+| **Due Date** | When the workflow should be completed |
+| **Your Task Count** | How many tasks are assigned specifically to you |
+| **Available Tasks** | Tasks you can start working on right now |
+
+## Starting a Workflow Instance
+
+<Steps>
+  <Step title="Click on the Workflow">
+    From your workflow list, click on the workflow you want to start.
+
+    This opens the workflow detail view.
+  </Step>
+
+  <Step title="Review Workflow Overview">
+    Take a moment to understand the workflow:
+
+    - **Purpose**: What this workflow accomplishes
+    - **Total Tasks**: How many tasks are in the workflow
+    - **Your Tasks**: Which tasks are assigned to you
+    - **Timeline**: Expected completion date
+    - **Key Milestones**: Major checkpoints
+
+    <Frame>
+      <img src="/images/workflows/workflow-overview.png" alt="Workflow overview screen" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot of workflow overview page
+    </Note>
+  </Step>
+
+  <Step title="Review Task List">
+    Scroll down to see all tasks in the workflow:
+
+    - Tasks are listed in order
+    - Your tasks are highlighted
+    - Task status is shown (Available, Pending, Completed)
+    - Dependencies are indicated
+
+    <Tip>
+    Look for tasks marked **Available** - these are tasks you can start right now.
+    </Tip>
+  </Step>
+
+  <Step title="Start Your First Task">
+    Click on an available task to open it and begin work.
+
+    You can only work on tasks that:
+    - Are assigned to you
+    - Have no incomplete dependencies
+    - Haven't been completed yet
+  </Step>
+</Steps>
+
+## Understanding Your Task List Within a Workflow
+
+When you open a workflow, you'll see all its tasks. Here's how to read the task list:
+
+### Task Status Indicators
+
+<CardGroup cols={3}>
+  <Card title="Available" icon="play-circle">
+    **Green**: Ready to start. All dependencies are met.
+  </Card>
+
+  <Card title="Pending" icon="clock">
+    **Gray**: Waiting for dependencies to complete.
+  </Card>
+
+  <Card title="In Progress" icon="spinner">
+    **Blue**: Currently being worked on by you or a teammate.
+  </Card>
+
+  <Card title="Completed" icon="circle-check">
+    **Green with checkmark**: Finished with evidence uploaded.
+  </Card>
+
+  <Card title="Blocked" icon="ban">
+    **Red**: Cannot proceed due to an issue.
+  </Card>
+
+  <Card title="Not Your Task" icon="user-slash">
+    **Faded**: Assigned to someone else.
+  </Card>
+</CardGroup>
+
+### Task Assignment Badges
+
+<Accordion title="Your Tasks">
+  Tasks assigned to you show **"Assigned to You"** badge prominently. These are your responsibility.
+</Accordion>
+
+<Accordion title="Team Tasks">
+  Tasks assigned to your team or department show **"Team Task"** badge. Anyone on the team can claim and complete these.
+</Accordion>
+
+<Accordion title="Other People's Tasks">
+  Tasks assigned to others show their name. You can view these but can't complete them.
+</Accordion>
+
+### Priority Indicators
+
+Tasks display priority levels that help you decide what to work on first:
+
+- **High Priority**: Red flag - Critical tasks that should be done immediately
+- **Medium Priority**: Orange flag - Important tasks with normal urgency
+- **Low Priority**: Gray flag - Nice-to-have tasks with flexibility
+
+## Task Dependency Indicators
+
+Dependencies determine when tasks become available. The task list shows dependencies clearly:
+
+<Frame>
+  <img src="/images/workflows/task-dependencies-view.png" alt="Task dependencies in workflow" />
+</Frame>
+
+<Note>
+**Placeholder**: Screenshot showing tasks with dependency indicators
+</Note>
+
+<Accordion title="No Dependencies">
+  Task can be started immediately (if assigned to you).
+
+  Shows: Green **"Ready to Start"** indicator
+</Accordion>
+
+<Accordion title="Dependencies Met">
+  All required tasks are complete. This task is now available.
+
+  Shows: Green **"Available"** indicator
+</Accordion>
+
+<Accordion title="Waiting on Dependencies">
+  Shows which tasks must be completed first.
+
+  Shows: **"Waiting on: Task 3, Task 5"**
+</Accordion>
+
+<Accordion title="You're Blocking Others">
+  When you expand a task, you can see if other tasks depend on it.
+
+  Shows: **"3 tasks waiting for this to complete"**
+
+  This helps you prioritize - completing this task unblocks teammates.
+</Accordion>
+
+## Workflow Progress Tracking
+
+Track overall workflow progress from the workflow overview:
+
+<CardGroup cols={3}>
+  <Card title="Task Completion %" icon="percent">
+    "11 of 20 tasks complete - 55%"
+  </Card>
+
+  <Card title="Visual Progress Bar" icon="chart-bar">
+    Colored bar showing completion percentage
+  </Card>
+
+  <Card title="Estimated Completion" icon="calendar-clock">
+    Projected completion date based on current progress
+  </Card>
+</CardGroup>
+
+### Progress by Section
+
+Some workflows are organized into sections or phases:
+
+```
+Phase 1: Pre-Onboarding (100% complete)
+  ✓ Task 1: Send offer letter
+  ✓ Task 2: Receive signed offer
+  ✓ Task 3: Order equipment
+
+Phase 2: First Day Setup (75% complete)
+  ✓ Task 4: Create email account
+  ✓ Task 5: Set up workstation
+  ⧗ Task 6: Security badge setup
+
+Phase 3: Training (0% complete)
+  ⊗ Task 7: Schedule orientation
+  ⊗ Task 8: Assign training modules
+  ⊗ Task 9: Complete Day 1 training
+```
+
+<Info>
+Legend:
+- ✓ = Complete
+- ⧗ = In Progress
+- ⊗ = Not Started (dependencies met)
+- ⊙ = Pending (waiting on dependencies)
+</Info>
+
+## Starting Work on Your First Task
+
+<Steps>
+  <Step title="Identify an Available Task">
+    Look for tasks marked **Available** and assigned to you.
+  </Step>
+
+  <Step title="Click the Task">
+    Click the task to open its detail view.
+
+    <Frame>
+      <img src="/images/workflows/task-detail.png" alt="Task detail view" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot of task detail panel
+    </Note>
+  </Step>
+
+  <Step title="Read Task Details">
+    Review the task carefully:
+    - What needs to be done
+    - Why it matters
+    - How to do it
+    - What evidence is required
+  </Step>
+
+  <Step title="Click 'Start Task'">
+    Click the **Start Task** button to mark it as in progress.
+
+    This:
+    - Updates the task status to "In Progress"
+    - Notifies relevant stakeholders
+    - Starts tracking time (if enabled)
+  </Step>
+
+  <Step title="Complete the Work">
+    Do the work described in the task.
+
+    Refer back to the task description as needed.
+  </Step>
+
+  <Step title="Upload Evidence">
+    When finished, upload evidence of completion (documents, screenshots, photos).
+
+    [Learn more about uploading evidence](/workflows/uploading-evidence)
+  </Step>
+
+  <Step title="Mark Complete">
+    Click **Mark Complete** to finish the task.
+
+    The task moves to "Completed" status and any dependent tasks may become available.
+  </Step>
+</Steps>
+
+## Working with Team Tasks
+
+Some tasks are assigned to your entire team rather than to you specifically. Here's how to handle them:
+
+<Steps>
+  <Step title="Find Team Tasks">
+    Look for tasks with **"Team Task"** badge in the workflow.
+  </Step>
+
+  <Step title="Claim the Task">
+    Click **Claim Task** to assign it to yourself.
+
+    This removes it from other team members' task lists and makes you responsible for completion.
+
+    <Tip>
+    Claiming tasks prevents duplicate work and ensures clear ownership.
+    </Tip>
+  </Step>
+
+  <Step title="Complete as Normal">
+    Once claimed, complete the task like any other task assigned directly to you.
+  </Step>
+</Steps>
+
+## What If You Can't Complete a Task?
+
+Sometimes you can't complete a task as expected. Here's what to do:
+
+<AccordionGroup>
+  <Accordion title="Task is Blocked">
+    If you encounter an issue that prevents completion:
+
+    1. Click **Mark as Blocked**
+    2. Describe the issue in a comment
+    3. Tag relevant people who can help
+    4. The task status changes to "Blocked"
+    5. Workflow owner is notified
+
+    **Example**: "Cannot complete - vendor hasn't responded to contract request. Tagged @sarah for follow-up."
+  </Accordion>
+
+  <Accordion title="Task Needs Clarification">
+    If task instructions are unclear:
+
+    1. Click **Add Comment**
+    2. Ask your question
+    3. Tag the workflow owner or admin
+    4. Wait for response before proceeding
+
+    **Example**: "@admin The task says 'configure system settings' but doesn't specify which settings. Can you clarify?"
+  </Accordion>
+
+  <Accordion title="Task Assigned Incorrectly">
+    If you receive a task that shouldn't be assigned to you:
+
+    1. Click **Request Reassignment**
+    2. Explain why it's not yours
+    3. Suggest who should own it
+    4. Admin will reassign
+
+    **Example**: "This task requires Finance approval, which I don't have authority for. Should be assigned to @finance-director."
+  </Accordion>
+
+  <Accordion title="Task Can't Be Done Yet">
+    If you realize a task is missing dependencies:
+
+    1. Add a comment explaining the issue
+    2. Tag the workflow admin
+    3. Continue with other available tasks
+
+    **Example**: "Can't schedule orientation until equipment arrives (Task 5). That task isn't complete yet."
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices for Starting Workflows
+
+<AccordionGroup>
+  <Accordion title="Review Before Starting">
+    Always review the entire workflow before starting tasks. Understanding the big picture helps you:
+    - Prioritize effectively
+    - Anticipate upcoming tasks
+    - Prepare resources you'll need
+  </Accordion>
+
+  <Accordion title="Start with Available Tasks">
+    Don't skip available tasks to work on future tasks. Dependencies exist for a reason - they ensure work happens in the right order.
+  </Accordion>
+
+  <Accordion title="Communicate Blockers Early">
+    If you see potential blockers, raise them immediately. Don't wait until you're actually stuck.
+  </Accordion>
+
+  <Accordion title="Update Progress Regularly">
+    Mark tasks complete as soon as you finish them. This:
+    - Keeps the team informed
+    - Unlocks dependent tasks
+    - Maintains accurate timeline projections
+  </Accordion>
+
+  <Accordion title="Upload Evidence Immediately">
+    Don't batch evidence uploads. Upload as you complete each task to avoid forgetting details.
+  </Accordion>
+</AccordionGroup>
+
+## Tips for Managing Multiple Workflows
+
+If you're working on several workflows simultaneously:
+
+<CardGroup cols={2}>
+  <Card title="Prioritize by Due Date" icon="calendar">
+    Work on workflows with nearest due dates first
+  </Card>
+
+  <Card title="Batch Similar Tasks" icon="layer-group">
+    If you have similar tasks across workflows, do them together
+  </Card>
+
+  <Card title="Block Focus Time" icon="clock">
+    Set aside dedicated time for workflow tasks to avoid context switching
+  </Card>
+
+  <Card title="Use Dashboard View" icon="table-columns">
+    View all your tasks across all workflows in one consolidated list
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Learn to Complete Tasks" icon="check-circle" href="/workflows/completing-tasks">
+    Step-by-step guide to completing workflow tasks
+  </Card>
+
+  <Card title="Upload Evidence" icon="upload" href="/workflows/uploading-evidence">
+    Learn how to upload evidence for your completed tasks
+  </Card>
+
+  <Card title="Track Your Progress" icon="chart-line" href="/workflows/tracking-progress">
+    Monitor workflow progress and task completion
+  </Card>
+
+  <Card title="Use My Tasks" icon="list-check" href="/tasks/using-my-tasks">
+    See all your tasks across all workflows in one place
+  </Card>
+</CardGroup>

@@ -1,0 +1,296 @@
+---
+title: "Searching Documentation"
+description: "Learn how to use the AI to find information across all your documentation"
+---
+
+The AI assistant can search through all your documentation instantly, finding information across blueprints, guides, SOPs, and knowledge base documents. No more hunting through folders or scrolling through long documents.
+
+## What the AI Can Search
+
+The AI has access to:
+
+- Process blueprints
+- Standard Operating Procedures (SOPs)
+- User guides and manuals
+- Knowledge base documents (uploaded by admins)
+- Activity documentation
+- Best practice guides
+
+<Info>
+The AI searches all these sources simultaneously and can provide information from multiple documents in a single response.
+</Info>
+
+## Simple Search Queries
+
+Just ask for what you need in plain language:
+
+```
+"Find information about password reset procedures"
+
+"What do our documents say about handling customer complaints?"
+
+"Show me guidelines for social media posting"
+
+"Where can I find the vacation request policy?"
+```
+
+## Getting Specific Information
+
+The more specific your question, the more targeted the answer:
+
+<CardGroup cols={2}>
+  <Card title="Broad Search" icon="magnifying-glass">
+    "What's our policy on expenses?"
+
+    Returns: General expense information
+  </Card>
+
+  <Card title="Specific Search" icon="bullseye">
+    "What's the maximum daily meal allowance for domestic travel?"
+
+    Returns: Exact policy detail
+  </Card>
+</CardGroup>
+
+## Cross-Referencing Documentation
+
+The AI can connect information from multiple sources:
+
+```
+You: "What's the complete process for handling a product return?"
+
+AI: "Let me pull together information from several sources:
+
+From the Customer Service SOP:
+- Initial return request should be logged in the system within 24 hours
+- Customer service validates the return eligibility
+
+From the Returns Process Blueprint:
+- Approved returns get a Return Authorization (RA) number
+- Shipping label is generated automatically
+
+From the Warehouse Operations Guide:
+- Returned items are inspected within 48 hours of receipt
+- Inspection results determine refund amount
+
+From the Finance Policy:
+- Refunds are processed within 5 business days of inspection approval
+
+Would you like details on any specific step?"
+```
+
+<Tip>
+The AI remembers context. You can ask "Tell me more about the inspection process" and it will know you're referring to the return inspection mentioned above.
+</Tip>
+
+## Finding Policy Information
+
+Ask about policies and guidelines:
+
+<AccordionGroup>
+  <Accordion title="Time Off Policies">
+    **You:** "How many vacation days do employees get?"
+
+    **AI:** "According to the Employee Handbook (Section 4.2):
+    - 0-2 years: 10 days per year
+    - 2-5 years: 15 days per year
+    - 5+ years: 20 days per year
+
+    Vacation days accrue monthly and can be carried over up to 5 days per year."
+  </Accordion>
+
+  <Accordion title="Approval Thresholds">
+    **You:** "What's the approval threshold for hiring new staff?"
+
+    **AI:** "From the Hiring Process SOP:
+
+    Department managers can approve:
+    - Replacement hires (budgeted positions)
+
+    Director approval required for:
+    - New positions up to $75K salary
+
+    Executive team approval required for:
+    - New positions over $75K salary
+    - Any position requiring budget increase"
+  </Accordion>
+
+  <Accordion title="Compliance Requirements">
+    **You:** "What are the data security requirements for customer information?"
+
+    **AI:** "Based on the Data Security Policy and Customer Data Handling Guide:
+
+    Required protections:
+    - All customer data must be encrypted at rest and in transit
+    - Access limited to role-based permissions only
+    - Regular security audits quarterly
+
+    Prohibited actions:
+    - Storing customer data on personal devices
+    - Sharing credentials
+    - Downloading customer lists without approval"
+  </Accordion>
+</AccordionGroup>
+
+## Finding Procedures and Steps
+
+Get step-by-step instructions from documentation:
+
+```
+You: "How do I submit a purchase request?"
+
+AI: "From the Procurement SOP, here's the purchase request process:
+
+Step 1: Gather Requirements
+- Itemize what you need
+- Get 3 quotes (for purchases over $1,000)
+- Confirm budget availability with your manager
+
+Step 2: Submit Request
+- Log into the procurement system
+- Complete the PR form (Form PR-100)
+- Attach quotes and justification
+
+Step 3: Approval Routing
+- Under $5,000: Manager approval only
+- $5,000-$25,000: Manager + Director approval
+- Over $25,000: Manager + Director + Finance approval
+
+Step 4: Wait for Approval
+- You'll receive email notifications at each approval stage
+- Average approval time: 3-5 business days
+
+Would you like details on any specific step?"
+```
+
+## Discovering Related Information
+
+The AI can suggest related documentation you might not have thought of:
+
+```
+You: "Tell me about onboarding new employees"
+
+AI: "I found several relevant documents about employee onboarding:
+
+Primary Resources:
+- New Employee Onboarding Process (main blueprint)
+- IT Setup Guide for New Hires
+- First Week Checklist
+
+Related Resources:
+- Manager's Guide to Onboarding
+- Remote Employee Setup Procedures
+- Onboarding Success Metrics
+
+Which area would you like to explore first?"
+```
+
+<Tip>
+If the AI suggests multiple documents, ask it to summarize each one so you can decide which is most relevant to your needs.
+</Tip>
+
+## Comparing Information
+
+Ask the AI to compare information from different sources:
+
+```
+You: "What's the difference between the contractor agreement process
+and the vendor agreement process?"
+
+AI: "Here's a comparison based on the Legal Processes Guide:
+
+Contractor Agreements:
+- Used for: Individual service providers
+- Typical duration: Project-based or up to 1 year
+- Approval: Hiring manager + Legal review
+- Key terms: Work scope, deliverables, payment schedule
+
+Vendor Agreements:
+- Used for: Companies providing goods/services
+- Typical duration: 1-3 years with renewal options
+- Approval: Department head + Legal + Procurement
+- Key terms: Service levels, pricing, liability, termination
+
+Both require: Background checks, insurance verification, and
+compliance with company policies."
+```
+
+## Finding Examples and Templates
+
+Look for templates, examples, and best practices:
+
+- "Show me an example of a project charter"
+- "What's the template for quarterly reports?"
+- "Are there examples of good customer follow-up emails?"
+- "What's the recommended format for meeting notes?"
+
+## Source Attribution
+
+The AI tells you where information comes from:
+
+<Note>
+When the AI provides information, it includes the source document name. This helps you:
+- Verify the information
+- Find the full document if needed
+- Know how current the information is
+- Understand the context
+</Note>
+
+Example:
+```
+AI: "According to the Remote Work Policy (updated March 2024),
+employees can work remotely up to 3 days per week..."
+```
+
+## When Documents Conflict
+
+If the AI finds conflicting information, it will tell you:
+
+```
+You: "What's the expense report deadline?"
+
+AI: "I found two different timelines in the documentation:
+
+Expense Policy (updated Jan 2024):
+- Submit within 30 days of expense
+
+Manager Handbook (updated June 2023):
+- Submit within 60 days of expense
+
+The Expense Policy is more recent and likely the current standard.
+I recommend confirming with Finance or your manager."
+```
+
+## Knowledge Base Documents
+
+If your admin has uploaded documents to the knowledge base, the AI can search those too:
+
+```
+You: "What does our industry research say about customer retention?"
+
+AI: "From the Q4 2024 Industry Research Report in the knowledge base:
+
+Key findings on customer retention:
+- Industry average retention rate: 68%
+- Top performers achieve 85%+ retention
+- Main retention drivers: Customer service quality (40%),
+  Product reliability (30%), Pricing (20%), Other (10%)
+
+The report recommends focusing on customer service training
+as the highest-impact retention strategy."
+```
+
+<Info>
+Knowledge base documents are uploaded and managed by system administrators. If you can't find something, ask your admin if the document has been added to the knowledge base.
+</Info>
+
+## What's Next?
+
+Explore other AI features:
+
+- [Creating activities with AI](/ai/creating-activities)
+- [Understanding your team](/ai/understanding-team)
+- [Asking about processes](/ai/asking-about-processes)
+
+Or learn about admin features:
+- [Uploading documents to the knowledge base](/ai/uploading-documents) (Admin)

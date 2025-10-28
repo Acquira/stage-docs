@@ -1,0 +1,252 @@
+---
+title: "What Are Master Prompts?"
+description: "Understand how master prompts customize the AI assistant's behavior (Admin feature)"
+---
+
+<Note>
+This is an **administrator-only feature**. Only users with admin privileges can create and manage master prompts.
+</Note>
+
+## Master Prompts Explained Simply
+
+Think of a master prompt as instructions you give the AI about how to behave and what to focus on. It's like giving guidelines to a new team member about how your organization works and what matters most.
+
+<Info>
+A master prompt doesn't change what the AI knows. Instead, it shapes how the AI uses that knowledge and how it communicates with your team.
+</Info>
+
+## What Master Prompts Do
+
+Master prompts tell the AI:
+
+- **Tone and style** - How formal or casual to be
+- **Priorities** - What information to emphasize
+- **Approach** - How to structure answers
+- **Awareness** - Special considerations for your organization
+- **Boundaries** - What to avoid or handle carefully
+
+### Example Without Master Prompt
+
+```
+User: "How do I submit an expense report?"
+
+AI: "To submit an expense report, follow these steps:
+1. Gather your receipts
+2. Complete the expense form
+3. Submit for approval
+4. Wait for processing"
+```
+
+### Example With Custom Master Prompt
+
+```
+User: "How do I submit an expense report?"
+
+AI: "I'll help you submit your expense report through our
+Concur system. Here's what you need:
+
+1. Log into Concur (link in your email from IT)
+2. Click 'New Report' and select your department
+3. Upload receipts (required for anything over $25)
+4. Your manager Sarah will get it for approval
+5. Finance processes reports every Friday
+
+Need help with Concur? The Finance team has drop-in
+hours Tuesdays 2-4pm.
+
+Tip: Submit by Thursday to get reimbursed the same week!"
+```
+
+The master prompt added:
+- Specific system name (Concur)
+- Manager's name
+- Dollar threshold detail
+- Processing schedule
+- Helpful resources
+- Practical tip
+
+## Why Use Master Prompts?
+
+<CardGroup cols={2}>
+  <Card title="Organization-Specific Guidance" icon="building">
+    Include company-specific details, systems, and processes that make answers more relevant.
+  </Card>
+
+  <Card title="Consistent Communication" icon="comments">
+    Ensure the AI always communicates in a way that matches your culture.
+  </Card>
+
+  <Card title="Emphasize Priorities" icon="star">
+    Highlight what matters most to your organization, like compliance, customer service, or efficiency.
+  </Card>
+
+  <Card title="Provide Context" icon="lightbulb">
+    Give the AI background about your industry, challenges, or special circumstances.
+  </Card>
+</CardGroup>
+
+## Common Use Cases
+
+<AccordionGroup>
+  <Accordion title="Industry-Specific Terminology">
+    **Use case:** Healthcare organization wants medical terminology
+
+    **Master prompt includes:**
+    - Use healthcare industry terms
+    - Reference HIPAA compliance in relevant contexts
+    - Emphasize patient privacy in all responses
+    - Format clinical process information clearly
+  </Accordion>
+
+  <Accordion title="Company Culture Alignment">
+    **Use case:** Startup wants casual, friendly communication
+
+    **Master prompt includes:**
+    - Use conversational, friendly tone
+    - Reference company values (innovation, collaboration, transparency)
+    - Encourage experimentation and learning
+    - Avoid overly formal language
+  </Accordion>
+
+  <Accordion title="Compliance and Safety Focus">
+    **Use case:** Manufacturing company prioritizes safety
+
+    **Master prompt includes:**
+    - Always mention safety considerations first
+    - Reference relevant safety protocols
+    - Highlight PPE requirements
+    - Emphasize compliance with OSHA standards
+  </Accordion>
+
+  <Accordion title="System and Tool References">
+    **Use case:** Company uses specific software systems
+
+    **Master prompt includes:**
+    - Reference Salesforce for CRM questions
+    - Mention Workday for HR and payroll
+    - Point to Confluence for documentation
+    - Include links to system login pages
+  </Accordion>
+</AccordionGroup>
+
+## What Master Prompts Are NOT
+
+<Warning>
+**Master prompts are not:**
+
+- A way to add new information (use the knowledge base for that)
+- A replacement for documentation
+- Guaranteed to change every AI response
+- A way to restrict AI capabilities
+- Permanent and unchangeable (you can update them anytime)
+</Warning>
+
+Master prompts guide behavior, they don't replace content.
+
+## Single vs. Multiple Master Prompts
+
+You can create different master prompts for different purposes:
+
+### Global Master Prompt
+One prompt that applies to all AI conversations
+- Best for general organizational guidance
+- Sets overall tone and priorities
+- Simplest to manage
+
+### Context-Specific Prompts
+Different prompts for different situations
+- Different prompts for different departments
+- Specialized prompts for specific processes
+- More complex but more tailored
+
+<Tip>
+Start with one global master prompt. Add specialized prompts only when you have specific needs that differ significantly from the general approach.
+</Tip>
+
+## Real-World Examples
+
+### Example 1: Professional Services Firm
+
+```
+Master prompt emphasis:
+- Client confidentiality always
+- Reference timekeeping system (ClickTime)
+- Include billing implications when relevant
+- Professional, formal tone
+- Mention project codes for expense tracking
+```
+
+Result: AI naturally includes these elements in responses about projects, time tracking, and expenses.
+
+### Example 2: Remote-First Tech Company
+
+```
+Master prompt emphasis:
+- Assume remote work context
+- Reference async communication preferences
+- Time zone awareness in scheduling
+- Tools: Slack, Zoom, Notion, GitHub
+- Emphasize documentation and written communication
+```
+
+Result: AI provides remote-friendly guidance and references the right tools.
+
+### Example 3: Customer Service Organization
+
+```
+Master prompt emphasis:
+- Customer satisfaction is top priority
+- Reference SLA requirements
+- Include escalation paths
+- Empathetic, helpful tone
+- Mention available support hours
+```
+
+Result: AI focuses on customer impact and service standards.
+
+## How Master Prompts Work Technically
+
+When a user asks a question:
+
+1. The AI receives the user's question
+2. The master prompt is automatically included as context
+3. The AI considers both the question and the master prompt guidance
+4. The AI responds following the master prompt guidelines
+
+<Info>
+Users don't see the master prompt. It works behind the scenes to shape responses.
+</Info>
+
+## Testing and Refining
+
+Master prompts can be updated based on how well they work:
+
+1. **Create** an initial master prompt
+2. **Test** with common questions
+3. **Observe** how responses change
+4. **Refine** the prompt to improve results
+5. **Update** as your organization evolves
+
+<Tip>
+Ask team members to try the AI after you create a master prompt. Their feedback will help you refine it.
+</Tip>
+
+## Benefits of Good Master Prompts
+
+Well-crafted master prompts lead to:
+
+- More relevant answers that match your organization
+- Faster user understanding (less explaining context)
+- Consistent communication style
+- Better integration with your tools and systems
+- Increased user confidence in AI responses
+
+## What's Next?
+
+Ready to create your first master prompt?
+
+- [Creating custom master prompts](/ai/creating-custom-prompts)
+- [Setting up API keys](/ai/setting-up-api-keys)
+
+Or learn about other admin features:
+- [Uploading documents to knowledge base](/ai/uploading-documents)

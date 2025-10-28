@@ -1,0 +1,763 @@
+---
+title: "Troubleshooting"
+description: "Solutions to common issues and technical problems with the Business Process Framework"
+---
+
+Find solutions to common issues you may encounter while using the Business Process Framework. If you don't find your issue here, [contact support](/help/getting-support).
+
+## Login & Access Issues
+
+<AccordionGroup>
+  <Accordion title="I can't log in - 'Invalid credentials' error">
+    **Possible Causes & Solutions:**
+
+    **1. Incorrect Password**
+    - Verify Caps Lock is off
+    - Check for extra spaces before/after username or password
+    - Try typing password in a text editor first to verify it
+    - [Reset your password](/help/faq#i-forgot-my-password-how-do-i-reset-it)
+
+    **2. Account Not Yet Provisioned**
+    - New employees: Check if IT has created your account
+    - Contact your system administrator
+    - Account creation can take 24-48 hours
+
+    **3. Account Locked**
+    - After 5 failed login attempts, accounts lock for 30 minutes
+    - Wait 30 minutes and try again
+    - Or contact support for immediate unlock
+
+    **4. Using Wrong Login Method**
+    - Does your company use SSO? Click "Sign in with SSO" instead
+    - Check with IT about which login method to use
+
+    **5. Browser Autofill Issue**
+    - Clear saved credentials from browser
+    - Try typing credentials manually
+    - Try a different browser or incognito mode
+  </Accordion>
+
+  <Accordion title="SSO login isn't working">
+    **Troubleshooting SSO Issues:**
+
+    **1. Wrong Email Domain**
+    - Use your company email address (not personal email)
+    - SSO only works with authorized email domains
+
+    **2. Not Redirecting to SSO Provider**
+    - Clear browser cache and cookies
+    - Try a different browser
+    - Check if popup blocker is preventing redirect
+
+    **3. SSO Error After Redirect**
+    - Verify you're logged into your company SSO (Google, Microsoft, Okta, etc.)
+    - Try logging out of SSO provider, then back in
+    - Check SSO provider status page for outages
+
+    **4. "Not Authorized" Error**
+    - Your company admin may not have granted you access
+    - Contact your system administrator
+    - Your account may need to be added to the SSO app
+
+    **5. Works on Desktop but Not Mobile**
+    - Install your company's authenticator app if required
+    - Some SSO providers require specific mobile configuration
+    - Contact IT for mobile SSO setup help
+
+    **Still Not Working?**
+    - Screenshot the error message
+    - Note which SSO provider you're using (Google, Microsoft, etc.)
+    - [Contact support](/help/getting-support) with this information
+  </Accordion>
+
+  <Accordion title="'Session Expired' keeps appearing">
+    **Why This Happens:**
+    For security, sessions expire after a period of inactivity.
+
+    **Default Session Timeout:**
+    - 8 hours of inactivity
+    - 24 hours maximum (even if active)
+
+    **Solutions:**
+
+    **1. Re-authenticate**
+    - Click "Log in again" when prompted
+    - Your work is auto-saved (unless noted otherwise)
+
+    **2. Enable "Remember Me"**
+    - Check "Remember Me" at login
+    - Extends session to 30 days (less secure)
+    - Not recommended on shared computers
+
+    **3. Keep Browser Tab Active**
+    - Browser activity keeps session alive
+    - Don't close browser for extended periods
+
+    **4. Check for Clock Skew**
+    - Ensure your computer's clock is accurate
+    - Significant time differences can cause session issues
+    - Enable automatic time sync in OS settings
+
+    **If Expiring Too Frequently:**
+    - Your organization may have stricter session policies
+    - Contact your administrator about session settings
+    - May be required for compliance reasons
+  </Accordion>
+
+  <Accordion title="I have access but can't see certain processes">
+    **Possible Reasons:**
+
+    **1. Permission Restrictions**
+    - Process may be restricted to certain roles or departments
+    - Contact process owner to request access
+    - Your manager can usually grant access
+
+    **2. Process is Archived**
+    - Archived processes don't show by default
+    - Enable "Show Archived" filter in process list
+    - Archived processes are read-only
+
+    **3. Process is Draft**
+    - Draft processes only visible to owner and collaborators
+    - Won't appear in search until published
+    - Ask process owner to add you as collaborator
+
+    **4. Wrong Organization Account**
+    - Verify you're logged into correct organization
+    - Check URL: should be yourcompany.processframework.com
+    - Some users have accounts in multiple organizations
+
+    **5. Search Filter Active**
+    - Check if filters are limiting results
+    - Clear all filters and search again
+    - Try browsing instead of searching
+
+    **Verification Steps:**
+    1. Ask a colleague if they can see the process
+    2. If they can: It's a permission issue
+    3. If they can't: Process may not exist or wrong name
+  </Accordion>
+</AccordionGroup>
+
+## Performance Issues
+
+<AccordionGroup>
+  <Accordion title="Pages loading slowly">
+    **Quick Fixes:**
+
+    **1. Check Internet Connection**
+    - Test connection speed at [fast.com](https://fast.com)
+    - Minimum recommended: 10 Mbps download
+    - Try disconnecting from VPN temporarily
+
+    **2. Clear Browser Cache**
+    - Chrome: Settings → Privacy → Clear browsing data
+    - Firefox: Settings → Privacy → Clear Data
+    - Safari: Develop → Empty Caches
+    - Select "Cached images and files"
+
+    **3. Close Unnecessary Tabs**
+    - Too many browser tabs consume memory
+    - Close tabs you're not using
+    - Restart browser
+
+    **4. Check System Resources**
+    - Open Task Manager (Windows) or Activity Monitor (Mac)
+    - Check if CPU or memory is maxed out
+    - Close memory-intensive applications
+
+    **5. Update Browser**
+    - Use latest version of Chrome, Firefox, Safari, or Edge
+    - Outdated browsers have performance issues
+    - Enable automatic updates
+
+    **6. Disable Browser Extensions**
+    - Some extensions interfere with performance
+    - Try incognito/private mode (extensions disabled)
+    - If faster, disable extensions one by one to find culprit
+
+    **7. Try Different Browser**
+    - Test with a different browser
+    - If faster: Problem is browser-specific
+    - Recommended: Chrome or Edge for best performance
+
+    **Still Slow?**
+    - Check [status page](https://status.processframework.com) for known issues
+    - Contact support if problem persists
+    - Provide browser, OS, and internet speed details
+  </Accordion>
+
+  <Accordion title="Videos or images won't load">
+    **Troubleshooting Steps:**
+
+    **1. Check Browser Settings**
+    - Ensure images are enabled
+    - Check if content blockers are active
+    - Disable ad blockers temporarily
+
+    **2. Clear Cache**
+    - Old cached files may be corrupted
+    - Clear browser cache completely
+    - Hard refresh page (Ctrl+Shift+R or Cmd+Shift+R)
+
+    **3. Check File Size**
+    - Large files (>10 MB) may timeout on slow connections
+    - Try on faster internet connection
+    - Mobile: Switch to WiFi instead of cellular
+
+    **4. Browser Compatibility**
+    - Ensure browser supports modern video formats
+    - Update to latest browser version
+    - Try different browser
+
+    **5. CDN Issues**
+    - Images/videos served from CDN (content delivery network)
+    - Occasionally CDN has regional issues
+    - Try accessing from different location (VPN)
+    - Check status page
+
+    **6. Firewall/Security Software**
+    - Corporate firewall may block media content
+    - Try on personal device outside corporate network
+    - Contact IT about allowlisting media domain
+
+    **Workaround:**
+    - Right-click image/video → "Open in new tab"
+    - If still fails, file may be corrupted
+    - Report to process owner
+  </Accordion>
+
+  <Accordion title="Search is slow or not returning results">
+    **Search Performance Issues:**
+
+    **1. Index Rebuilding**
+    - Search index rebuilds after major updates
+    - Can take 30-60 minutes
+    - Check back later
+
+    **2. Too Broad Search**
+    - Very generic terms return thousands of results
+    - Use more specific keywords
+    - Use filters to narrow search
+
+    **3. Special Characters**
+    - Remove special characters from search
+    - Use alphanumeric only
+    - Quote phrases for exact match: "customer onboarding"
+
+    **4. Browser Autocomplete**
+    - Disable browser autocomplete
+    - Can interfere with search suggestions
+    - Type query and press Enter instead of selecting suggestion
+
+    **Search Not Working At All:**
+
+    **1. Check Status Page**
+    - Search service may be down
+    - Visit status.processframework.com
+
+    **2. Use Browse Instead**
+    - Navigate via departments/categories
+    - Use filters instead of search
+    - Check recently updated processes
+
+    **3. Contact Support**
+    - If search is completely broken
+    - Provide example search terms that don't work
+    - Screenshot any error messages
+  </Accordion>
+
+  <Accordion title="Mobile app is crashing">
+    **Mobile Troubleshooting:**
+
+    **1. Force Close and Reopen**
+    - iOS: Swipe up from bottom, swipe up on app
+    - Android: Recent apps button, swipe away app
+    - Reopen app
+
+    **2. Update App**
+    - Check app store for updates
+    - Update to latest version
+    - Older versions may have stability issues
+
+    **3. Restart Device**
+    - Power off device completely
+    - Wait 10 seconds
+    - Power back on
+
+    **4. Clear App Cache**
+    - iOS: Delete and reinstall app (saves your data)
+    - Android: Settings → Apps → Process Framework → Clear Cache
+
+    **5. Check Storage Space**
+    - Ensure device has at least 1 GB free space
+    - Delete unused apps or files
+    - Low storage causes crashes
+
+    **6. Check OS Version**
+    - iOS: Requires iOS 14 or later
+    - Android: Requires Android 9 or later
+    - Update OS if possible
+
+    **7. Report Crash**
+    - Note what you were doing when crash occurred
+    - Submit crash report when prompted
+    - Contact support with device model and OS version
+
+    **Workaround:**
+    - Use mobile web browser instead of app
+    - Visit yourcompany.processframework.com
+    - Mobile site works on all devices
+  </Accordion>
+</AccordionGroup>
+
+## Editing & Saving Issues
+
+<AccordionGroup>
+  <Accordion title="Changes not saving">
+    **Troubleshooting Save Issues:**
+
+    **1. Check for Error Messages**
+    - Look for red error notification at top of page
+    - Read error message for specific problem
+    - Address validation errors
+
+    **2. Verify Edit Permission**
+    - Ensure you have edit rights to this process
+    - Look for "Edit" button - if missing, you don't have permission
+    - Contact process owner for access
+
+    **3. Check Internet Connection**
+    - Auto-save requires active connection
+    - Check connection indicator (top right corner)
+    - If offline, work is saved locally and syncs when reconnected
+
+    **4. Concurrent Editing**
+    - Another user may be editing same process
+    - System prevents conflicting saves
+    - Wait for other user to finish
+    - Or coordinate to edit different sections
+
+    **5. Session Expired**
+    - Long editing sessions may expire
+    - Save frequently or refresh session
+    - If expired, copy your changes, log in, paste back
+
+    **6. Browser Issues**
+    - Try hard refresh (Ctrl+Shift+R or Cmd+Shift+R)
+    - Clear browser cache
+    - Try different browser
+
+    **7. Maximum Size Reached**
+    - Processes have size limits (rare)
+    - Too many activities or large attachments
+    - Contact support to increase limit
+
+    **Recovery:**
+    - Check browser console (F12) for error details
+    - Look for auto-saved draft
+    - Contact support if work is lost
+  </Accordion>
+
+  <Accordion title="Can't upload files or attachments">
+    **Upload Troubleshooting:**
+
+    **1. File Size Too Large**
+    - Maximum file size: 25 MB per file
+    - Compress large files before uploading
+    - Use cloud storage links for very large files
+
+    **2. File Type Blocked**
+    - Allowed types: PDF, DOCX, XLSX, PPTX, PNG, JPG, MP4
+    - Executable files (.exe, .sh) blocked for security
+    - Convert file to allowed format
+
+    **3. Browser Issues**
+    - Clear browser cache
+    - Disable browser extensions
+    - Try incognito mode
+    - Try different browser
+
+    **4. Upload Timeout**
+    - Slow internet can cause timeouts
+    - Wait for upload to complete (don't navigate away)
+    - Try on faster connection
+    - Upload files one at a time
+
+    **5. Storage Quota Exceeded**
+    - Your organization may have storage limits
+    - Contact administrator to increase quota
+    - Delete old/unused files
+
+    **6. Special Characters in Filename**
+    - Rename file to remove special characters
+    - Use only letters, numbers, hyphens, underscores
+    - Avoid: ! @ # $ % ^ & * ( ) < > ? / \ |
+
+    **Workaround:**
+    - Upload to Google Drive, Dropbox, or SharePoint
+    - Link to file instead of uploading
+    - Share link in process documentation
+  </Accordion>
+
+  <Accordion title="'Permission denied' error when editing">
+    **Why This Happens:**
+    You're trying to edit something you don't have permission to change.
+
+    **Scenarios:**
+
+    **1. Published Process**
+    - Only process owner can edit published processes
+    - Request owner to make you a collaborator
+    - Or submit change request to owner
+
+    **2. Locked by Another User**
+    - Someone else is currently editing
+    - Wait for them to finish (usually auto-unlocks after 30 min)
+    - Contact user to coordinate
+
+    **3. Read-Only Access**
+    - You have view-only permission
+    - Contact process owner to upgrade to edit access
+    - Or create a copy to edit your own version
+
+    **4. Archived Process**
+    - Archived processes are read-only
+    - Must unarchive before editing
+    - Only owner/admin can unarchive
+
+    **5. Insufficient Role**
+    - Your user role doesn't allow editing
+    - Contributors can edit drafts but not published
+    - Request role upgrade from administrator
+
+    **Checking Your Permission:**
+    1. Open the process
+    2. Look for "Edit" button
+    3. If missing: You don't have edit access
+    4. Click process name → "Info" to see who owns it
+
+    **Requesting Access:**
+    1. Note the process owner name
+    2. Send them a message or email
+    3. Explain why you need edit access
+    4. Owner can add you in Settings → Collaborators
+  </Accordion>
+
+  <Accordion title="Can't delete an activity or process">
+    **Deletion Issues:**
+
+    **1. Permission Required**
+    - Only process owner or admin can delete
+    - Verify your role has deletion rights
+    - Contact owner if you need something deleted
+
+    **2. Process is Published**
+    - Published processes can't be deleted (only archived)
+    - Archive instead: Settings → Archive Process
+    - Prevents accidental deletion of active processes
+
+    **3. Activity Has Dependencies**
+    - Activities with tasks can't be deleted
+    - Must complete or reassign tasks first
+    - Or delete the entire workflow
+
+    **4. Referenced by Other Processes**
+    - Process linked from other processes
+    - Update links first
+    - Or use archive (links still work)
+
+    **5. Active Workflows**
+    - Can't delete process with active workflows
+    - Complete or cancel workflows first
+    - Or wait for workflows to finish
+
+    **Safe Deletion Steps:**
+    1. Check for active workflows or tasks
+    2. Update any links from other processes
+    3. Archive instead of delete (reversible)
+    4. Only delete if absolutely certain
+
+    **Recovery:**
+    - Deleted items move to "Trash" for 30 days
+    - Restore from trash if deleted by mistake
+    - After 30 days, deletion is permanent
+  </Accordion>
+</AccordionGroup>
+
+## Workflow & Task Issues
+
+<AccordionGroup>
+  <Accordion title="Workflow is stuck - tasks won't progress">
+    **Common Causes:**
+
+    **1. Blocked Task**
+    - Check if task is marked as "Blocked"
+    - Resolve blocker before proceeding
+    - Unblock: Open task → "Mark as Unblocked"
+
+    **2. Missing Approval**
+    - Check if task requires approval
+    - Contact approver to complete approval
+    - View task details to see who must approve
+
+    **3. Dependency Not Complete**
+    - Task may depend on another task finishing first
+    - Check workflow diagram for dependencies
+    - Complete prerequisite tasks
+
+    **4. No Assignee**
+    - Task may be unassigned
+    - Assign to someone: Open task → "Assign to"
+    - Tasks without assignees don't progress
+
+    **5. Assignee on Leave**
+    - Check if assignee is out of office
+    - Reassign to someone else
+    - Or mark task as blocked until they return
+
+    **6. System Error**
+    - Check for error icon on workflow
+    - Click error for details
+    - May need admin intervention
+
+    **Moving Forward:**
+    1. Identify which task is stuck
+    2. Check task status and blockers
+    3. Resolve issues or reassign
+    4. Contact workflow owner if unclear
+  </Accordion>
+
+  <Accordion title="Not receiving task notifications">
+    **Notification Troubleshooting:**
+
+    **1. Check Notification Settings**
+    - Profile → Notification Settings
+    - Ensure notifications are enabled
+    - Check notification preferences (email, in-app, mobile)
+
+    **2. Check Email Settings**
+    - Look in spam/junk folder
+    - Add noreply@processframework.com to contacts
+    - Check email filters/rules
+
+    **3. Email Address Incorrect**
+    - Profile → Account Settings
+    - Verify email address is correct
+    - Update if wrong
+
+    **4. Volume Too High**
+    - System may throttle if too many notifications
+    - Check "Digest" settings (batches notifications)
+    - Reduce notification frequency
+
+    **5. Notification Delay**
+    - Emails can take 5-10 minutes
+    - Check in-app notifications (instant)
+    - Mobile push may be faster
+
+    **6. Organization Settings**
+    - Admin may have disabled certain notifications
+    - Contact administrator
+    - May be intentional to reduce noise
+
+    **Testing:**
+    - Have someone assign you a test task
+    - Check if notification arrives
+    - If not, problem with your settings
+    - If yes, problem was temporary
+
+    **Workaround:**
+    - Check "My Tasks" page regularly instead of waiting for notifications
+    - Bookmark task list for quick access
+    - Set up calendar reminders for important deadlines
+  </Accordion>
+
+  <Accordion title="AI Assistant not responding">
+    **AI Troubleshooting:**
+
+    **1. Check System Status**
+    - Visit status.processframework.com
+    - AI service may be temporarily down
+    - Check back in 15-30 minutes
+
+    **2. Query Too Complex**
+    - Very complex queries may timeout
+    - Break into smaller questions
+    - Simplify and retry
+
+    **3. Rate Limiting**
+    - Too many queries in short time
+    - Wait 1 minute and retry
+    - Spread queries out
+
+    **4. Browser Issues**
+    - Refresh page
+    - Clear cache
+    - Try incognito mode
+    - Try different browser
+
+    **5. Network Issues**
+    - AI requires stable internet connection
+    - Check connection speed
+    - Try different network
+
+    **6. Feature Disabled**
+    - Your organization may have disabled AI
+    - Contact administrator
+    - May be turned off for certain processes
+
+    **Alternative:**
+    - Use help documentation instead
+    - Search knowledge base
+    - Contact support for help
+
+    **Reporting:**
+    - If AI gives incorrect answers, report it
+    - Use "Report Issue" button in chat
+    - Helps improve AI accuracy
+  </Accordion>
+</AccordionGroup>
+
+## Integration Issues
+
+<AccordionGroup>
+  <Accordion title="Calendar sync not working">
+    **Calendar Sync Issues:**
+
+    **1. Not Connected**
+    - Check Settings → Integrations
+    - Verify calendar is connected
+    - Reconnect if needed
+
+    **2. Permission Issues**
+    - Calendar app needs permission to create events
+    - Check calendar app permissions
+    - Re-authorize if needed
+
+    **3. Sync Delay**
+    - Changes take 5-15 minutes to sync
+    - Not instant
+    - Force sync: Settings → Integrations → Sync Now
+
+    **4. Calendar Full**
+    - Some calendar apps have limits
+    - Check calendar storage
+    - Archive old events
+
+    **5. Wrong Calendar**
+    - Check which calendar is connected
+    - May be syncing to wrong calendar
+    - Change in Settings → Integrations
+
+    **Troubleshooting Steps:**
+    1. Disconnect calendar
+    2. Clear browser cache
+    3. Reconnect calendar
+    4. Grant all requested permissions
+    5. Test with new task
+
+    **Supported Calendars:**
+    - Google Calendar
+    - Microsoft Outlook/365
+    - Apple iCloud Calendar
+  </Accordion>
+
+  <Accordion title="CRM integration not syncing">
+    **CRM Sync Issues:**
+
+    **1. Check Connection**
+    - Settings → Integrations → CRM
+    - Verify status shows "Connected"
+    - If not, reconnect
+
+    **2. API Limits**
+    - CRM APIs have rate limits
+    - Sync may be delayed during peak usage
+    - Check CRM service status
+
+    **3. Field Mapping Issues**
+    - Data may not map between systems
+    - Check field mapping settings
+    - Contact admin to adjust mapping
+
+    **4. Permission Issues**
+    - CRM account may lack permissions
+    - Need admin level access for full sync
+    - Check CRM user permissions
+
+    **5. Data Conflicts**
+    - Conflicting data prevents sync
+    - Check sync log for errors
+    - Resolve conflicts manually
+
+    **Supported CRMs:**
+    - Salesforce
+    - HubSpot
+    - Microsoft Dynamics
+    - Zoho CRM
+    - Pipedrive
+
+    **For Support:**
+    - Export sync error log
+    - Provide CRM type and version
+    - Contact support with details
+  </Accordion>
+</AccordionGroup>
+
+## When to Contact Support
+
+Contact support if:
+
+- Issue persists after trying troubleshooting steps
+- You receive error codes or technical error messages
+- Issue affects multiple users or is widespread
+- You need urgent assistance with critical process
+- Data appears to be lost or corrupted
+- Security or privacy concern
+
+See: [Getting Support](/help/getting-support)
+
+## System Requirements
+
+**Supported Browsers:**
+- Chrome 90+ (recommended)
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+**Internet Speed:**
+- Minimum: 5 Mbps
+- Recommended: 10+ Mbps
+
+**Mobile:**
+- iOS 14+ (iPhone/iPad)
+- Android 9+ (phones/tablets)
+
+**Screen Resolution:**
+- Minimum: 1280x720
+- Recommended: 1920x1080 or higher
+
+<Note>
+Older browsers and devices may work but aren't officially supported. For best experience, keep software updated.
+</Note>
+
+## Related Resources
+
+<CardGroup cols={2}>
+  <Card title="FAQ" icon="question" href="/help/faq">
+    Frequently asked questions
+  </Card>
+
+  <Card title="Getting Support" icon="headset" href="/help/getting-support">
+    How to contact support team
+  </Card>
+
+  <Card title="User Guides" icon="book" href="/guides/overview">
+    Learn how to use all features
+  </Card>
+
+  <Card title="System Status" icon="signal" href="https://status.processframework.com">
+    Check current system status
+  </Card>
+</CardGroup>

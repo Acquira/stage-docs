@@ -1,0 +1,294 @@
+---
+title: "Generating Workflows from Guides"
+description: "Use AI to automatically generate workflow templates from your process guides"
+---
+
+<Warning>
+**Admin Feature**: This feature is only available to users with admin permissions. If you don't see this option, contact your system administrator.
+</Warning>
+
+## What is AI Workflow Generation?
+
+AI workflow generation analyzes your existing process guides (SOPs, playbooks, procedures) and automatically creates structured workflow templates with tasks, dependencies, and assignments.
+
+Instead of manually creating 20+ tasks for a complex process, you can upload your guide and let AI do the heavy lifting.
+
+## Benefits
+
+<CardGroup cols={2}>
+  <Card title="Save Time" icon="clock">
+    Turn a 2-hour template creation process into a 10-minute review session
+  </Card>
+
+  <Card title="Maintain Consistency" icon="check-double">
+    AI follows your existing documentation exactly, ensuring workflows match your SOPs
+  </Card>
+
+  <Card title="Reduce Errors" icon="shield-check">
+    Eliminate mistakes from manual task entry and dependency setup
+  </Card>
+
+  <Card title="Easy Updates" icon="rotate">
+    When guides change, regenerate workflows to stay current
+  </Card>
+</CardGroup>
+
+## How to Generate a Workflow from a Guide
+
+<Steps>
+  <Step title="Navigate to Workflow Templates">
+    Go to **Settings** > **Workflow Templates** in the main navigation.
+  </Step>
+
+  <Step title="Click 'Generate from Guide'">
+    Click the **Generate from Guide** button in the top right corner.
+
+    <Frame>
+      <img src="/images/workflows/generate-from-guide-button.png" alt="Generate from Guide button" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot showing the button location
+    </Note>
+  </Step>
+
+  <Step title="Select Your Process Guide">
+    Choose the guide you want to convert into a workflow. You can:
+    - Select from existing guides in your library
+    - Upload a new document (PDF, Word, or text file)
+
+    <Frame>
+      <img src="/images/workflows/select-guide.png" alt="Guide selection interface" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot of guide selection screen
+    </Note>
+  </Step>
+
+  <Step title="Configure Generation Settings">
+    Set preferences for how AI should interpret your guide:
+
+    - **Task Granularity**: How detailed should tasks be? (High detail vs. summary steps)
+    - **Auto-assign Roles**: Should AI assign tasks to roles based on context?
+    - **Detect Dependencies**: Should AI automatically create task dependencies?
+
+    <Info>
+    For your first time, use the default settings. You can always regenerate with different settings.
+    </Info>
+  </Step>
+
+  <Step title="Review AI-Generated Preview">
+    AI shows you a preview of the generated workflow:
+
+    - Number of tasks created
+    - Task titles and descriptions
+    - Suggested dependencies
+    - Recommended role assignments
+
+    <Frame>
+      <img src="/images/workflows/ai-preview.png" alt="AI-generated workflow preview" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot of preview screen showing generated tasks
+    </Note>
+  </Step>
+
+  <Step title="Edit Generated Tasks">
+    Review and modify the AI-generated tasks:
+
+    - Click any task to edit its details
+    - Add or remove tasks
+    - Adjust dependencies
+    - Change assignments
+    - Reorder tasks
+
+    <Tip>
+    AI is very good but not perfect. Always review the generated workflow carefully, especially dependencies.
+    </Tip>
+  </Step>
+
+  <Step title="Name and Save Template">
+    Give your workflow template a clear, descriptive name:
+
+    - **Good**: "Employee Onboarding - Full Process"
+    - **Bad**: "Workflow 1" or "Onboarding"
+
+    Click **Save as Template** to add it to your template library.
+  </Step>
+
+  <Step title="Test the Workflow">
+    Create a test instance from your new template to verify:
+
+    - All tasks are present
+    - Dependencies work correctly
+    - Assignments make sense
+    - Task descriptions are clear
+  </Step>
+</Steps>
+
+## Reviewing AI-Generated Tasks
+
+When reviewing the AI output, pay special attention to:
+
+### Task Completeness
+
+<Accordion title="Are all steps from your guide included?">
+  - Compare the generated task list to your original guide
+  - Look for any skipped or combined steps
+  - Ensure critical tasks weren't omitted
+</Accordion>
+
+### Task Clarity
+
+<Accordion title="Are task descriptions clear and actionable?">
+  - Each task should have a clear action verb (e.g., "Send", "Review", "Create")
+  - Descriptions should include enough context to complete the task
+  - Remove any vague or ambiguous language
+</Accordion>
+
+### Dependencies
+
+<Accordion title="Do task dependencies make logical sense?">
+  - Can a task truly start when its dependencies say it can?
+  - Are there circular dependencies (Task A depends on Task B, which depends on Task A)?
+  - Are independent tasks marked as dependent?
+</Accordion>
+
+### Assignments
+
+<Accordion title="Are tasks assigned to the right roles?">
+  - Does the assigned role have the skills to complete the task?
+  - Are tasks evenly distributed, or is one role overloaded?
+  - Should some tasks be assigned to specific people instead of roles?
+</Accordion>
+
+## Editing Generated Workflows
+
+After generation, you can edit any aspect of the workflow:
+
+<CardGroup cols={2}>
+  <Card title="Add Tasks" icon="plus">
+    Click **Add Task** to insert steps AI might have missed
+  </Card>
+
+  <Card title="Modify Tasks" icon="pen">
+    Click any task to edit title, description, assignment, or dependencies
+  </Card>
+
+  <Card title="Reorder Tasks" icon="arrows-up-down">
+    Drag and drop tasks to change their order in the workflow
+  </Card>
+
+  <Card title="Delete Tasks" icon="trash">
+    Remove unnecessary or duplicate tasks AI created
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/workflows/edit-workflow.png" alt="Workflow editing interface" />
+</Frame>
+
+<Note>
+**Placeholder**: Screenshot of workflow editor with task list and edit options
+</Note>
+
+## Saving as a Template
+
+Once you're satisfied with the workflow:
+
+1. Click **Save as Template**
+2. Enter a descriptive template name
+3. Add tags or categories to help organize it
+4. Set template visibility (who can use this template)
+5. Click **Save**
+
+Your new template is now available to create workflow instances.
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Start with Well-Written Guides">
+    AI quality depends on your input quality. Use guides that are:
+    - Clear and well-organized
+    - Written in step-by-step format
+    - Include role information where relevant
+    - Specify dependencies or order explicitly
+  </Accordion>
+
+  <Accordion title="Review Before Deploying">
+    Never deploy an AI-generated workflow without human review. Always:
+    - Test with a sample instance
+    - Have a subject matter expert review it
+    - Get feedback from people who will use it
+  </Accordion>
+
+  <Accordion title="Iterate and Improve">
+    Your first AI-generated workflow might not be perfect:
+    - Use it in a real scenario
+    - Collect feedback from users
+    - Regenerate or manually update based on learnings
+  </Accordion>
+
+  <Accordion title="Keep Guides Updated">
+    When you update your process guides:
+    - Regenerate the workflow template
+    - Compare new vs. old versions
+    - Update the template or create a new version
+  </Accordion>
+</AccordionGroup>
+
+## Common Issues and Solutions
+
+<AccordionGroup>
+  <Accordion title="AI Created Too Many Tasks">
+    **Solution**: Regenerate with "Task Granularity" set to lower detail, or manually combine related tasks after generation.
+  </Accordion>
+
+  <Accordion title="AI Missed Important Steps">
+    **Solution**: Your guide might not have those steps written clearly. Manually add the missing tasks or improve your guide and regenerate.
+  </Accordion>
+
+  <Accordion title="Dependencies Are Wrong">
+    **Solution**: This is common. Manually review and adjust all dependencies. AI struggles with complex multi-path dependencies.
+  </Accordion>
+
+  <Accordion title="Assignments Don't Match Our Org">
+    **Solution**: AI assigns based on generic roles. Update assignments to match your specific organizational structure.
+  </Accordion>
+</AccordionGroup>
+
+## What AI Can and Cannot Do
+
+### AI Can:
+
+- Extract sequential steps from written procedures
+- Identify common role assignments (e.g., "HR Manager", "Operations")
+- Detect obvious dependencies (e.g., "After step 3, complete step 4")
+- Create task descriptions from guide content
+- Suggest reasonable task order
+
+### AI Cannot:
+
+- Know your specific organizational structure
+- Understand unstated dependencies or tribal knowledge
+- Guarantee perfect task granularity for your needs
+- Account for exceptions or edge cases not in the guide
+- Validate that the guide itself is correct
+
+<Warning>
+AI is a powerful tool to accelerate workflow creation, but human expertise and review are essential for quality and accuracy.
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Generate from Blueprints" icon="sitemap" href="/workflows/generating-from-blueprints">
+    Learn how to generate workflows from business process blueprints
+  </Card>
+
+  <Card title="Edit Workflow Templates" icon="pen-to-square" href="/workflows/editing-templates">
+    Master the workflow template editor
+  </Card>
+</CardGroup>

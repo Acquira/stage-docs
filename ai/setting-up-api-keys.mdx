@@ -1,0 +1,392 @@
+---
+title: "Setting Up OpenAI API Keys"
+description: "Learn how to configure OpenAI API access for the AI assistant (Admin feature)"
+---
+
+<Note>
+This is an **administrator-only feature**. Only users with admin privileges can configure API keys.
+</Note>
+
+The AI assistant uses OpenAI's API to provide intelligent responses. Before your team can use the AI features, you need to connect your OpenAI API key.
+
+## What You'll Need
+
+Before starting, you'll need:
+
+- An OpenAI account (create at [platform.openai.com](https://platform.openai.com))
+- Billing information set up in your OpenAI account
+- API access enabled
+- Administrator access to your Business Process Framework
+
+<Info>
+OpenAI charges for API usage based on the number of tokens (words) processed. Typical costs are very reasonable for business use, often just a few dollars per month for small to medium teams.
+</Info>
+
+## Getting Your OpenAI API Key
+
+<Steps>
+  <Step title="Create an OpenAI account">
+    Go to [platform.openai.com](https://platform.openai.com) and sign up or log in.
+  </Step>
+
+  <Step title="Set up billing">
+    Navigate to **Settings** > **Billing** and add your payment method.
+
+    OpenAI requires billing information before you can use the API.
+  </Step>
+
+  <Step title="Create an API key">
+    Go to **API keys** section (or visit [platform.openai.com/api-keys](https://platform.openai.com/api-keys)).
+
+    Click **Create new secret key**.
+  </Step>
+
+  <Step title="Name your key">
+    Give it a descriptive name like "Business Process Framework Production" so you can identify it later.
+  </Step>
+
+  <Step title="Copy your key">
+    Copy the API key immediately. OpenAI only shows it once!
+
+    It looks like: `sk-proj-abc123...xyz789`
+  </Step>
+
+  <Step title="Store it securely">
+    Save the key in a secure location temporarily. You'll enter it in the next section.
+  </Step>
+</Steps>
+
+<Warning>
+**Important:** Never share your API key publicly or commit it to code repositories. Treat it like a password. If exposed, revoke it immediately and create a new one.
+</Warning>
+
+## Adding Your API Key to the Application
+
+<Steps>
+  <Step title="Navigate to AI Settings">
+    From the admin panel, select **AI Settings** then **API Configuration**.
+  </Step>
+
+  <Step title="Enter your API key">
+    Paste your OpenAI API key into the **API Key** field.
+  </Step>
+
+  <Step title="Select your model">
+    Choose which OpenAI model to use:
+    - **GPT-4o** (recommended) - Latest, most capable model
+    - **GPT-4-turbo** - Fast and high quality
+    - **GPT-3.5-turbo** - Budget option, good for simple queries
+  </Step>
+
+  <Step title="Test the connection">
+    Click **Test Connection** to verify the key works.
+
+    You should see a success message.
+  </Step>
+
+  <Step title="Save configuration">
+    Click **Save** to activate the AI assistant for your organization.
+  </Step>
+</Steps>
+
+## Choosing the Right Model
+
+<CardGroup cols={3}>
+  <Card title="GPT-4o" icon="star">
+    **Best for:** Most organizations
+
+    **Pros:**
+    - Highest quality responses
+    - Best understanding of complex questions
+    - Great at following instructions
+
+    **Cons:**
+    - Higher cost per request
+
+    **Cost:** ~$0.01 per 1,000 words
+  </Card>
+
+  <Card title="GPT-4-turbo" icon="gauge-high">
+    **Best for:** High-volume usage
+
+    **Pros:**
+    - Fast responses
+    - Good quality
+    - More affordable
+
+    **Cons:**
+    - Slightly less capable than GPT-4o
+
+    **Cost:** ~$0.005 per 1,000 words
+  </Card>
+
+  <Card title="GPT-3.5-turbo" icon="dollar-sign">
+    **Best for:** Budget-conscious testing
+
+    **Pros:**
+    - Very affordable
+    - Fast
+    - Good for simple questions
+
+    **Cons:**
+    - Less sophisticated understanding
+    - May miss nuances
+
+    **Cost:** ~$0.001 per 1,000 words
+  </Card>
+</CardGroup>
+
+<Tip>
+Start with GPT-4o for the best user experience. You can always switch to a different model later if you want to optimize costs.
+</Tip>
+
+## Understanding Costs
+
+OpenAI charges based on usage:
+
+### How Pricing Works
+
+- Charged per "token" (roughly ¾ of a word)
+- Costs apply to both questions and answers
+- Longer conversations cost more
+- Complex requests cost more than simple ones
+
+### Typical Usage Examples
+
+```
+Simple question + answer:
+"Who approves expense reports?"
+"Sarah Johnson, the Finance Manager, approves expense reports."
+
+Cost: ~$0.0001 (less than 1 cent)
+
+---
+
+Complex question + detailed answer:
+"Explain the complete hiring process including all approval steps,
+timelines, and required documents."
+
+[AI provides comprehensive 500-word answer with all details]
+
+Cost: ~$0.01 (one cent)
+
+---
+
+Extended conversation (10 messages back and forth):
+
+Cost: ~$0.05-0.10 (5-10 cents)
+```
+
+### Monthly Cost Estimates
+
+<AccordionGroup>
+  <Accordion title="Small Team (10 users)">
+    **Assumption:** Each user asks ~20 questions per month
+
+    **Total questions:** 200/month
+
+    **Estimated cost:** $2-5/month
+
+    (Assumes mix of simple and complex questions with GPT-4o)
+  </Accordion>
+
+  <Accordion title="Medium Team (50 users)">
+    **Assumption:** Each user asks ~30 questions per month
+
+    **Total questions:** 1,500/month
+
+    **Estimated cost:** $15-30/month
+
+    (Active usage with detailed responses)
+  </Accordion>
+
+  <Accordion title="Large Team (200 users)">
+    **Assumption:** Each user asks ~25 questions per month
+
+    **Total questions:** 5,000/month
+
+    **Estimated cost:** $50-100/month
+
+    (High volume but not all users active daily)
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+These are estimates. Actual costs depend on question complexity, document uploads, and conversation length. Monitor your OpenAI dashboard for exact usage.
+</Info>
+
+## Monitoring Usage and Costs
+
+Keep track of your API usage:
+
+<Steps>
+  <Step title="Check OpenAI dashboard">
+    Log into [platform.openai.com](https://platform.openai.com) and go to **Usage**.
+  </Step>
+
+  <Step title="View usage metrics">
+    See:
+    - Daily/monthly token usage
+    - Cost breakdown
+    - Requests per day
+    - Cost trends
+  </Step>
+
+  <Step title="Set usage limits (optional)">
+    In OpenAI settings, you can set:
+    - Monthly spending limits
+    - Usage alerts
+    - Hard caps to prevent overages
+  </Step>
+
+  <Step title="Review regularly">
+    Check monthly to ensure costs align with expectations.
+  </Step>
+</Steps>
+
+<Tip>
+Set up email alerts in your OpenAI account to notify you when spending reaches certain thresholds (e.g., $25, $50, $100).
+</Tip>
+
+## Security Best Practices
+
+Protect your API key and account:
+
+<CardGroup cols={2}>
+  <Card title="Rotate Keys Periodically" icon="rotate">
+    Change your API key every 3-6 months as a security practice.
+  </Card>
+
+  <Card title="Use Project-Specific Keys" icon="key">
+    Create separate keys for production, testing, and development if applicable.
+  </Card>
+
+  <Card title="Monitor for Unusual Activity" icon="chart-line">
+    Watch for unexpected spikes in usage that might indicate unauthorized access.
+  </Card>
+
+  <Card title="Revoke Compromised Keys" icon="ban">
+    If you suspect a key is exposed, revoke it immediately and create a new one.
+  </Card>
+</CardGroup>
+
+## Revoking and Rotating Keys
+
+If you need to change your API key:
+
+<Steps>
+  <Step title="Create a new key in OpenAI">
+    Generate a new API key in your OpenAI account before revoking the old one.
+  </Step>
+
+  <Step title="Update the application">
+    Replace the old key with the new key in AI Settings > API Configuration.
+  </Step>
+
+  <Step title="Test the new key">
+    Verify the new key works with the Test Connection button.
+  </Step>
+
+  <Step title="Revoke the old key">
+    In OpenAI, revoke the old key to prevent its use.
+  </Step>
+</Steps>
+
+<Warning>
+If you revoke a key before updating it in the application, the AI assistant will stop working immediately. Always update the application with the new key first.
+</Warning>
+
+## Troubleshooting
+
+### "Invalid API Key" Error
+
+**Causes:**
+- Key was entered incorrectly (missing characters)
+- Key was revoked in OpenAI
+- Key is from wrong OpenAI account
+
+**Solution:**
+- Double-check the key for typos
+- Verify the key exists and is active in OpenAI
+- Generate a new key if needed
+
+### "Insufficient Quota" Error
+
+**Causes:**
+- OpenAI account has no billing set up
+- Spending limit reached
+- Payment method failed
+
+**Solution:**
+- Add billing information in OpenAI
+- Increase spending limits
+- Update payment method
+
+### "Connection Failed" Error
+
+**Causes:**
+- Network connectivity issues
+- OpenAI API temporarily down
+- Firewall blocking OpenAI domains
+
+**Solution:**
+- Check internet connection
+- Check [status.openai.com](https://status.openai.com) for outages
+- Ensure OpenAI API domains are not blocked
+
+### Slow Responses
+
+**Causes:**
+- High OpenAI API load
+- Large document processing
+- Complex queries
+
+**Solution:**
+- Usually temporary, wait and retry
+- Consider switching to GPT-4-turbo for faster responses
+- Break complex questions into simpler parts
+
+## Testing Your Setup
+
+After configuration, test thoroughly:
+
+<AccordionGroup>
+  <Accordion title="Basic Test">
+    Ask the AI: "What can you help me with?"
+
+    Expected: The AI explains its capabilities
+  </Accordion>
+
+  <Accordion title="Process Knowledge Test">
+    Ask about a documented process: "What are the steps in [your process]?"
+
+    Expected: The AI describes the process accurately
+  </Accordion>
+
+  <Accordion title="Team Knowledge Test">
+    Ask: "Who is the [role title] on our team?"
+
+    Expected: The AI identifies the correct person
+  </Accordion>
+
+  <Accordion title="Knowledge Base Test">
+    If you've uploaded documents, ask a question that should be answered from those documents.
+
+    Expected: The AI references the uploaded document
+  </Accordion>
+</AccordionGroup>
+
+If all tests pass, your AI assistant is ready for your team!
+
+## What's Next?
+
+Now that your API is configured:
+
+- [Create master prompts](/ai/creating-custom-prompts) to customize AI behavior
+- [Upload documents](/ai/uploading-documents) to expand AI knowledge
+- Announce to your team that the AI assistant is available
+- Monitor usage and gather feedback
+
+Learn more about AI features:
+- [What are master prompts?](/ai/what-are-master-prompts)
+- [How AI uses documents](/ai/how-ai-uses-documents)

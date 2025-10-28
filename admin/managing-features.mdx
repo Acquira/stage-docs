@@ -1,0 +1,443 @@
+---
+title: "Managing Features"
+description: "Enable, disable, and configure features for your team"
+---
+
+<Note>
+This feature is available to **Team Admins** and **Team Owners** only.
+</Note>
+
+## Overview
+
+Feature management allows you to control which capabilities are available to your team. You can enable features as your team grows and is ready to adopt new capabilities, or disable features that do not align with your workflow.
+
+## Understanding Feature Flags
+
+Feature flags are toggles that enable or disable specific functionality:
+
+- **Why use feature flags?** They let you customize the platform to match your team's needs
+- **When to enable features?** When your team is ready to adopt new capabilities
+- **When to disable features?** To simplify the interface or prevent misuse
+- **Impact**: Disabled features are hidden from all team members
+
+<Tip>
+Start with essential features enabled and gradually adopt advanced capabilities as your team becomes comfortable with the platform.
+</Tip>
+
+## Accessing Feature Management
+
+<Steps>
+  <Step title="Navigate to Team Settings">
+    Click on your team name and select **Team Settings** from the dropdown.
+  </Step>
+
+  <Step title="Go to Features">
+    In the left sidebar, click **Features** to view all available features.
+  </Step>
+
+  <Step title="View Feature Status">
+    Features are displayed with their current status (enabled or disabled) and a description of what they do.
+  </Step>
+
+  <Step title="Enable or Disable Features">
+    Click the toggle switch next to any feature to enable or disable it. Changes take effect immediately.
+  </Step>
+</Steps>
+
+## Available Features
+
+<CardGroup cols={2}>
+  <Card title="AI Assistant" icon="robot">
+    **What it does**: Provides AI-powered assistance for process documentation, recommendations, and insights.
+
+    **Requirements**: OpenAI API key configured
+
+    **Best for**: Teams wanting intelligent automation and suggestions
+
+    **Considerations**: Incurs usage costs via OpenAI
+  </Card>
+
+  <Card title="Business Assessments" icon="clipboard-list">
+    **What it does**: Enables 13 comprehensive business assessments to evaluate different aspects of your operations.
+
+    **Requirements**: None
+
+    **Best for**: Teams wanting structured business analysis
+
+    **Considerations**: Assessments require time to complete
+  </Card>
+
+  <Card title="Advanced Workflows" icon="diagram-project">
+    **What it does**: Unlocks complex multi-step workflows with conditional logic, parallel processing, and advanced routing.
+
+    **Requirements**: Team Member role or higher
+
+    **Best for**: Teams with complex approval processes
+
+    **Considerations**: Requires training on workflow builder
+  </Card>
+
+  <Card title="API Access" icon="plug">
+    **What it does**: Enables REST API for integrating with external systems and custom applications.
+
+    **Requirements**: Developer knowledge recommended
+
+    **Best for**: Teams with custom integration needs
+
+    **Considerations**: Requires API key management
+  </Card>
+
+  <Card title="Guest Access" icon="user-clock">
+    **What it does**: Allows inviting external guests with limited access to specific processes.
+
+    **Requirements**: None
+
+    **Best for**: Collaborating with contractors, clients, or partners
+
+    **Considerations**: Manage guest permissions carefully
+  </Card>
+
+  <Card title="Custom Branding" icon="palette">
+    **What it does**: Customize colors, logos, and visual appearance of the platform.
+
+    **Requirements**: Enterprise plan
+
+    **Best for**: Large organizations wanting brand consistency
+
+    **Considerations**: Changes affect all team members
+  </Card>
+
+  <Card title="Process Templates" icon="clone">
+    **What it does**: Create and share reusable process templates across your team.
+
+    **Requirements**: None
+
+    **Best for**: Teams with standardized processes
+
+    **Considerations**: Templates require maintenance
+  </Card>
+
+  <Card title="KPI Dashboards" icon="chart-line">
+    **What it does**: Visual dashboards for tracking key performance indicators across processes.
+
+    **Requirements**: Active processes with KPIs configured
+
+    **Best for**: Data-driven teams tracking performance
+
+    **Considerations**: Requires KPI setup for meaningful data
+  </Card>
+
+  <Card title="Document Management" icon="folder-open">
+    **What it does**: Upload, organize, and version-control documents attached to processes.
+
+    **Requirements**: None
+
+    **Best for**: Teams managing extensive documentation
+
+    **Considerations**: Storage limits apply based on plan
+  </Card>
+
+  <Card title="Notifications & Alerts" icon="bell">
+    **What it does**: Configurable email and in-app notifications for process updates and assignments.
+
+    **Requirements**: None
+
+    **Best for**: All teams (recommended to keep enabled)
+
+    **Considerations**: Users can customize their preferences
+  </Card>
+
+  <Card title="Activity Tracking" icon="clock-rotate-left">
+    **What it does**: Detailed audit log of all team activities, changes, and access.
+
+    **Requirements**: None
+
+    **Best for**: Compliance and accountability
+
+    **Considerations**: Generates significant data over time
+  </Card>
+
+  <Card title="Data Export" icon="download">
+    **What it does**: Export processes, assessments, and reports to CSV, PDF, or JSON formats.
+
+    **Requirements**: None
+
+    **Best for**: Teams needing external reporting or backups
+
+    **Considerations**: Large exports may take time to generate
+  </Card>
+</CardGroup>
+
+## When to Enable Features
+
+### Recommended Core Features
+
+Enable these features for most teams:
+
+- **Notifications & Alerts**: Essential for team communication
+- **Activity Tracking**: Important for accountability
+- **Data Export**: Useful for reporting and backups
+- **Process Templates**: Saves time for repetitive processes
+
+### Features for Growing Teams
+
+Consider enabling when your team expands:
+
+- **Guest Access**: When you need external collaborators
+- **KPI Dashboards**: When you have established processes to measure
+- **Document Management**: When documentation becomes extensive
+
+### Advanced Features
+
+Enable when you have specific needs:
+
+- **API Access**: When you need custom integrations
+- **Advanced Workflows**: When approval processes become complex
+- **Custom Branding**: When brand consistency is important
+
+### AI-Powered Features
+
+Enable when you are ready for AI assistance:
+
+- **AI Assistant**: When you have configured OpenAI and want intelligent suggestions
+- **Business Assessments**: When you want structured business analysis
+
+<Info>
+You can enable and disable features at any time. There is no penalty for experimenting with features to see if they fit your workflow.
+</Info>
+
+## When to Disable Features
+
+Consider disabling features when:
+
+### Simplifying the Interface
+
+- **Unused features**: Disable features your team never uses
+- **Overwhelming options**: Reduce complexity for new teams
+- **Focus**: Help team members focus on core capabilities
+
+### Controlling Costs
+
+- **AI Assistant**: Disable if AI costs are too high
+- **API Access**: Disable if not actively used to reduce security surface
+
+### Preventing Misuse
+
+- **Guest Access**: Disable if external access poses security concerns
+- **Data Export**: Temporarily disable during sensitive periods
+- **Advanced Workflows**: Disable if being used incorrectly
+
+### Compliance Requirements
+
+- **Activity Tracking**: Keep enabled for audit compliance (not recommended to disable)
+- **Data Export**: May need to disable in regulated industries
+
+<Warning>
+Disabling features does not delete existing data. For example, disabling Guest Access does not remove existing guests. You must manually remove guests if needed.
+</Warning>
+
+## Feature Dependencies
+
+Some features depend on others:
+
+<AccordionGroup>
+  <Accordion title="AI Assistant Dependencies">
+    **Requires**:
+    - OpenAI API key configured (see [Configuring AI](/admin/configuring-ai))
+    - Available OpenAI credits
+
+    **Enables**:
+    - AI-powered process suggestions
+    - Automated assessment recommendations
+    - Intelligent workflow routing
+  </Accordion>
+
+  <Accordion title="Advanced Workflows Dependencies">
+    **Requires**:
+    - Basic workflow understanding
+    - At least one Team Member role user
+
+    **Enables**:
+    - Conditional branching
+    - Parallel task execution
+    - Complex approval chains
+  </Accordion>
+
+  <Accordion title="KPI Dashboards Dependencies">
+    **Requires**:
+    - Active processes with KPIs defined
+    - Historical data for meaningful trends
+
+    **Enables**:
+    - Visual performance tracking
+    - Trend analysis
+    - Comparative reporting
+  </Accordion>
+
+  <Accordion title="Custom Branding Dependencies">
+    **Requires**:
+    - Enterprise plan subscription
+    - Logo and color scheme assets
+
+    **Enables**:
+    - White-label appearance
+    - Brand-consistent interface
+    - Custom email templates
+  </Accordion>
+</AccordionGroup>
+
+## Feature-Specific Configurations
+
+After enabling certain features, you may need additional configuration:
+
+### AI Assistant
+
+1. Configure OpenAI API key
+2. Select default AI model
+3. Set usage limits
+4. Customize system prompts
+
+See [Configuring AI](/admin/configuring-ai) for details.
+
+### Advanced Workflows
+
+1. Enable workflow builder for appropriate roles
+2. Create workflow templates
+3. Train team members on workflow creation
+4. Set approval timeouts and escalation rules
+
+### Custom Branding
+
+1. Upload your company logo
+2. Define primary and accent colors
+3. Configure email header/footer
+4. Preview changes before applying
+
+### API Access
+
+1. Generate API keys
+2. Review API documentation
+3. Set up webhooks (optional)
+4. Configure rate limits
+
+<Tip>
+After enabling a new feature, communicate the change to your team and provide basic training or documentation on how to use it.
+</Tip>
+
+## Impact of Feature Changes
+
+### Enabling Features
+
+When you enable a feature:
+
+- It becomes immediately available to all eligible team members
+- Team members may see new menu items or options
+- You may need to configure additional settings
+- No existing data is affected
+
+### Disabling Features
+
+When you disable a feature:
+
+- It is immediately hidden from all team members
+- Existing data created with that feature remains intact
+- In-progress activities using that feature may be interrupted
+- The feature can be re-enabled at any time
+
+<Warning>
+Disabling a feature while team members are actively using it may cause confusion or loss of unsaved work. Communicate planned feature changes in advance.
+</Warning>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Start Simple" icon="seedling">
+    Begin with core features and expand as your team grows and learns the platform.
+  </Card>
+
+  <Card title="Communicate Changes" icon="megaphone">
+    Notify your team before enabling or disabling features that affect their workflow.
+  </Card>
+
+  <Card title="Monitor Usage" icon="chart-mixed">
+    Use analytics to understand which features are actually being used by your team.
+  </Card>
+
+  <Card title="Review Quarterly" icon="calendar">
+    Periodically assess which features add value and which can be disabled.
+  </Card>
+
+  <Card title="Train Team Members" icon="chalkboard-user">
+    When enabling complex features, provide training or documentation to your team.
+  </Card>
+
+  <Card title="Consider Costs" icon="money-bill">
+    Be mindful that some features (like AI Assistant) incur additional costs.
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+### Feature Not Appearing After Enabling
+
+If a feature does not appear after you enable it:
+
+1. **Refresh the page**: Your browser may be caching the old interface
+2. **Check permissions**: Some features are role-specific
+3. **Verify dependencies**: Ensure required dependencies are met
+4. **Clear browser cache**: Force a complete reload of the application
+
+### Feature Enabled But Not Working
+
+If an enabled feature is not functioning:
+
+1. **Check configuration**: Some features require additional setup
+2. **Review error messages**: Look for specific error notifications
+3. **Verify plan limits**: Ensure your subscription includes the feature
+4. **Check activity log**: Look for errors in the team activity log
+
+### Cannot Disable Feature
+
+If you cannot disable a feature:
+
+- **System features**: Some core features cannot be disabled
+- **Active dependencies**: Features in use by active processes may be locked
+- **Permission issues**: Verify you have Admin or Owner access
+
+<Info>
+If you experience issues with feature management, check the team activity log for detailed error messages or contact support.
+</Info>
+
+## Plan-Specific Features
+
+Some features are only available on specific subscription plans:
+
+| Feature | Starter | Professional | Enterprise |
+|---------|---------|--------------|------------|
+| AI Assistant | Limited | Full | Full |
+| Business Assessments | 3 types | 13 types | 13 types |
+| Advanced Workflows | No | Yes | Yes |
+| API Access | No | Yes | Yes |
+| Guest Access | 2 guests | 10 guests | Unlimited |
+| Custom Branding | No | No | Yes |
+| Activity Tracking | 30 days | 90 days | Unlimited |
+
+<Note>
+To access features not included in your current plan, upgrade your subscription from **Team Settings** > **Billing**.
+</Note>
+
+## Related Resources
+
+<CardGroup cols={3}>
+  <Card title="Team Settings" icon="gear" href="/admin/team-settings">
+    Configure general team settings
+  </Card>
+
+  <Card title="Configuring AI" icon="robot" href="/admin/configuring-ai">
+    Set up AI features
+  </Card>
+
+  <Card title="Team Preferences" icon="sliders" href="/admin/team-preferences">
+    Customize team preferences
+  </Card>
+</CardGroup>

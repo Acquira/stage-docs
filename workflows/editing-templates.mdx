@@ -1,0 +1,514 @@
+---
+title: "Editing Workflow Templates"
+description: "Modify and improve existing workflow templates to keep processes current"
+---
+
+<Warning>
+**Admin Feature**: This feature is only available to users with admin permissions. If you don't see this option, contact your system administrator.
+</Warning>
+
+## When to Edit Workflow Templates
+
+You should edit workflow templates when:
+
+<CardGroup cols={2}>
+  <Card title="Process Changes" icon="arrows-rotate">
+    Your business process has evolved and the workflow needs updating
+  </Card>
+
+  <Card title="User Feedback" icon="comments">
+    Team members report confusing tasks or missing steps
+  </Card>
+
+  <Card title="Optimization" icon="gauge-high">
+    You've identified ways to make the workflow more efficient
+  </Card>
+
+  <Card title="Error Correction" icon="triangle-exclamation">
+    You've discovered mistakes or gaps in the template
+  </Card>
+</CardGroup>
+
+## Finding Templates to Edit
+
+<Steps>
+  <Step title="Navigate to Workflow Templates">
+    Go to **Settings** > **Workflow Templates**.
+
+    <Frame>
+      <img src="/images/workflows/templates-library.png" alt="Workflow templates library" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot of workflow templates list
+    </Note>
+  </Step>
+
+  <Step title="Search or Filter">
+    Find the template you want to edit:
+
+    - Search by name
+    - Filter by category
+    - Sort by usage, date created, or name
+  </Step>
+
+  <Step title="Click Template Name">
+    Click on the template to open its details view.
+  </Step>
+
+  <Step title="Click 'Edit Template'">
+    Click the **Edit Template** button to enter edit mode.
+
+    <Frame>
+      <img src="/images/workflows/edit-template-button.png" alt="Edit Template button" />
+    </Frame>
+
+    <Note>
+    **Placeholder**: Screenshot showing Edit Template button location
+    </Note>
+  </Step>
+</Steps>
+
+## Editing Template Details
+
+### Updating Template Information
+
+<Accordion title="Template Name">
+  - Click the template name to edit it
+  - Use clear, descriptive names
+  - Include version numbers if you maintain multiple versions (e.g., "Employee Onboarding v2.0")
+</Accordion>
+
+<Accordion title="Description">
+  - Update the template description to reflect current purpose
+  - Include when this template should be used
+  - Note any recent changes or important details
+</Accordion>
+
+<Accordion title="Category">
+  - Change the category if the template's purpose has shifted
+  - Categories help organize your template library
+</Accordion>
+
+<Accordion title="Tags">
+  - Add or remove tags to improve searchability
+  - Examples: "onboarding", "finance", "quarterly", "acquisition"
+</Accordion>
+
+## Adding Tasks to Existing Templates
+
+<Steps>
+  <Step title="Click 'Add Task'">
+    In the template editor, click **Add Task** where you want the new task to appear.
+  </Step>
+
+  <Step title="Enter Task Details">
+    Fill in all task information:
+    - Task name
+    - Description
+    - Priority
+    - Estimated duration
+    - Assignment
+    - Evidence requirements
+  </Step>
+
+  <Step title="Position the Task">
+    Drag and drop the new task to the correct position in the workflow order.
+  </Step>
+
+  <Step title="Set Dependencies">
+    Define any dependencies for the new task:
+    - What tasks must be completed before this one?
+    - Are there tasks that depend on this new task?
+  </Step>
+
+  <Step title="Save Changes">
+    Click **Save** to add the task to the template.
+  </Step>
+</Steps>
+
+<Tip>
+When adding tasks to existing workflows, think carefully about dependencies. New tasks might affect the workflow's critical path and timeline.
+</Tip>
+
+## Modifying Existing Tasks
+
+Click on any task in the template to edit its details:
+
+<CardGroup cols={2}>
+  <Card title="Task Name & Description" icon="pen">
+    Clarify unclear instructions or update outdated information
+  </Card>
+
+  <Card title="Priority Level" icon="exclamation">
+    Adjust if task importance has changed
+  </Card>
+
+  <Card title="Estimated Duration" icon="clock">
+    Update based on actual completion times
+  </Card>
+
+  <Card title="Assignment" icon="user-check">
+    Change role or person responsible
+  </Card>
+
+  <Card title="Dependencies" icon="diagram-project">
+    Add, remove, or modify task dependencies
+  </Card>
+
+  <Card title="Evidence Requirements" icon="file-circle-check">
+    Update what evidence is needed
+  </Card>
+</CardGroup>
+
+### Making Task Descriptions More Helpful
+
+Transform vague task descriptions into clear, actionable instructions:
+
+**Before:**
+```
+Review financial documents
+```
+
+**After:**
+```
+Review and verify all financial documents for accuracy:
+
+1. Compare balance sheet to bank statements
+2. Verify all revenue transactions have supporting invoices
+3. Check expense categorization for accuracy
+4. Confirm no duplicate entries exist
+5. Flag any discrepancies for the Finance Director
+
+Upload completed verification checklist as evidence.
+```
+
+<Info>
+Good task descriptions answer: What should I do? Why does it matter? How do I do it? What do I deliver?
+</Info>
+
+## Removing Tasks from Templates
+
+<Steps>
+  <Step title="Select the Task">
+    Click on the task you want to remove.
+  </Step>
+
+  <Step title="Check Dependencies">
+    Before deleting, check if other tasks depend on this one:
+
+    - The system will show a warning if dependencies exist
+    - You'll need to update or remove those dependencies first
+  </Step>
+
+  <Step title="Click 'Delete Task'">
+    Click the **Delete** icon or button for the task.
+  </Step>
+
+  <Step title="Confirm Deletion">
+    Confirm you want to permanently remove the task.
+
+    <Warning>
+    Deleting a task from a template doesn't affect existing workflow instances - only future instances created from this template.
+    </Warning>
+  </Step>
+</Steps>
+
+## Reordering Tasks
+
+Change the order tasks appear in the workflow:
+
+<CardGroup cols={2}>
+  <Card title="Drag and Drop" icon="hand-pointer">
+    Click and drag tasks to reorder them in the list
+  </Card>
+
+  <Card title="Manual Numbering" icon="list-ol">
+    Enter specific order numbers for precise control
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/workflows/reorder-tasks-editor.png" alt="Reordering tasks in editor" />
+</Frame>
+
+<Note>
+**Placeholder**: Screenshot showing drag-and-drop reordering
+</Note>
+
+<Info>
+Remember: Task order (how they appear) is different from dependencies (when they can start). Reordering tasks doesn't change their dependencies.
+</Info>
+
+## Updating Task Dependencies
+
+Dependencies are critical to workflow logic. Update them carefully:
+
+### Adding New Dependencies
+
+<Steps>
+  <Step title="Select the Task">
+    Click the task that should depend on another task.
+  </Step>
+
+  <Step title="Click 'Add Dependency'">
+    In the task detail panel, click **Add Dependency**.
+  </Step>
+
+  <Step title="Choose Prerequisites">
+    Select which task(s) must complete before this task can start.
+  </Step>
+
+  <Step title="Set Dependency Logic">
+    Choose AND (all must complete) or OR (any can complete).
+  </Step>
+
+  <Step title="Save">
+    Click **Save** to apply the new dependency.
+  </Step>
+</Steps>
+
+### Removing Dependencies
+
+<Steps>
+  <Step title="Select the Task">
+    Click the task with dependencies you want to remove.
+  </Step>
+
+  <Step title="View Dependencies">
+    See the list of tasks this task depends on.
+  </Step>
+
+  <Step title="Click 'Remove'">
+    Click the **X** or **Remove** button next to the dependency.
+  </Step>
+
+  <Step title="Confirm">
+    Confirm you want to remove the dependency.
+  </Step>
+</Steps>
+
+### Visualizing Dependencies
+
+<Frame>
+  <img src="/images/workflows/dependency-graph.png" alt="Visual dependency graph" />
+</Frame>
+
+<Note>
+**Placeholder**: Screenshot of visual dependency graph showing task relationships
+</Note>
+
+Many workflow editors provide a visual dependency graph. Use this to:
+
+- See the workflow's critical path
+- Identify bottleneck tasks
+- Spot circular dependencies
+- Understand workflow complexity
+
+## Version Control for Workflows
+
+When making significant changes to templates, consider version control:
+
+### Creating a New Version
+
+<Steps>
+  <Step title="Duplicate Template">
+    Instead of editing the current template, click **Duplicate Template**.
+  </Step>
+
+  <Step title="Name New Version">
+    Name it with a version number: "Employee Onboarding v2.0"
+  </Step>
+
+  <Step title="Make Changes">
+    Edit the new version with your improvements.
+  </Step>
+
+  <Step title="Test New Version">
+    Create test instances to verify the new version works correctly.
+  </Step>
+
+  <Step title="Set as Active">
+    Mark the new version as the active template for future instances.
+  </Step>
+
+  <Step title="Archive Old Version">
+    Keep the old version archived for historical reference.
+  </Step>
+</Steps>
+
+### When to Version vs Edit
+
+| Scenario | Version (Duplicate) | Edit (Modify) |
+|----------|---------------------|---------------|
+| Minor fixes (typos, clarifications) | ❌ | ✅ |
+| Adding 1-2 tasks | ❌ | ✅ |
+| Major restructuring | ✅ | ❌ |
+| Changing process flow | ✅ | ❌ |
+| Testing experimental changes | ✅ | ❌ |
+| Removing multiple tasks | ✅ | ❌ |
+
+<Tip>
+When in doubt, create a new version. It's safer and preserves the existing template in case you need to roll back.
+</Tip>
+
+## Impact of Template Changes
+
+Understanding what happens when you edit templates:
+
+<AccordionGroup>
+  <Accordion title="Active Workflow Instances (Already Running)">
+    **Not Affected**
+
+    Changes to templates don't affect workflows that are already in progress. Those workflows continue using the template version they were created from.
+
+    This ensures consistency - you won't disrupt work already underway.
+  </Accordion>
+
+  <Accordion title="Future Workflow Instances">
+    **Use New Version**
+
+    All new instances created from the template after your changes will use the updated version.
+
+    This is how improvements propagate to future work.
+  </Accordion>
+
+  <Accordion title="Completed Workflow Instances">
+    **Historical Record Preserved**
+
+    Completed workflows remain exactly as they were completed, even if the template changes later.
+
+    This maintains an accurate historical record for audits and reference.
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+If you need to apply changes to active instances, you'll need to manually update those instances individually. The system won't auto-update in-progress work.
+</Info>
+
+## Best Practices for Editing Templates
+
+<AccordionGroup>
+  <Accordion title="Gather Feedback First">
+    Before making changes:
+    - Ask users what's confusing or missing
+    - Review completed instances to see where people struggled
+    - Collect data on task completion times
+    - Identify patterns in evidence uploads
+  </Accordion>
+
+  <Accordion title="Make Changes in Batches">
+    Don't edit templates constantly. Batch related changes together:
+    - Collect feedback over several weeks
+    - Make all improvements at once
+    - Test thoroughly
+    - Deploy the updated template
+
+    This prevents template churn and confusion.
+  </Accordion>
+
+  <Accordion title="Communicate Changes">
+    When you update a template, notify users who work with it:
+    - Send an email summarizing changes
+    - Highlight new or modified tasks
+    - Explain why changes were made
+    - Offer training if changes are significant
+  </Accordion>
+
+  <Accordion title="Test Before Deploying">
+    Always test edited templates:
+    - Create a test instance
+    - Walk through the entire workflow
+    - Verify dependencies work correctly
+    - Confirm task descriptions are clear
+    - Check that evidence requirements are reasonable
+  </Accordion>
+
+  <Accordion title="Document Change History">
+    Keep a record of template changes:
+    - What changed
+    - Why it changed
+    - Who made the change
+    - When it was deployed
+
+    This helps when troubleshooting or understanding process evolution.
+  </Accordion>
+</AccordionGroup>
+
+## Common Template Issues and Fixes
+
+<AccordionGroup>
+  <Accordion title="Tasks Taking Longer Than Expected">
+    **Problem**: Estimated task durations are too short.
+
+    **Fix**: Review actual completion times from instances and update estimates to be realistic.
+  </Accordion>
+
+  <Accordion title="Tasks Frequently Marked Complete Without Evidence">
+    **Problem**: Evidence requirements aren't clear or are too burdensome.
+
+    **Fix**: Clarify exactly what evidence is needed and why. Make requirements reasonable.
+  </Accordion>
+
+  <Accordion title="Workflows Frequently Get Blocked">
+    **Problem**: Dependencies are too strict or tasks are poorly sequenced.
+
+    **Fix**: Review dependency structure. Can some tasks run in parallel? Are all dependencies truly necessary?
+  </Accordion>
+
+  <Accordion title="Users Confused by Task Descriptions">
+    **Problem**: Instructions are vague or assume too much knowledge.
+
+    **Fix**: Rewrite descriptions to be step-by-step. Add examples, links to resources, and expected outcomes.
+  </Accordion>
+
+  <Accordion title="Template Not Used Consistently">
+    **Problem**: Template doesn't match actual work practices.
+
+    **Fix**: Involve process owners in redesigning the template to reflect reality, not ideals.
+  </Accordion>
+</AccordionGroup>
+
+## Advanced Template Features
+
+### Conditional Tasks
+
+<Accordion title="Tasks That Appear Only in Certain Scenarios">
+  Some platforms support conditional tasks that only appear if certain conditions are met.
+
+  **Example**: "If acquisition value > $5M, complete extended due diligence"
+
+  Check with your admin if this feature is available.
+</Accordion>
+
+### Task Templates Within Workflows
+
+<Accordion title="Reusable Task Definitions">
+  Create standardized task definitions that can be reused across multiple workflow templates.
+
+  **Example**: A "Standard Legal Review" task that's identical in 10 different workflows.
+
+  Update the task once, and all workflows inherit the change.
+</Accordion>
+
+### Automated Task Assignments
+
+<Accordion title="Dynamic Assignment Rules">
+  Set up rules that automatically assign tasks based on:
+  - Workflow context (e.g., who initiated the workflow)
+  - Data fields (e.g., acquisition location)
+  - Workload balancing
+  - Expertise matching
+</Accordion>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Start Using Workflows" icon="play" href="/workflows/starting-workflow">
+    Learn how to create and start workflow instances
+  </Card>
+
+  <Card title="Generate from Guides" icon="wand-magic-sparkles" href="/workflows/generating-from-guides">
+    Use AI to create workflows from documentation
+  </Card>
+</CardGroup>

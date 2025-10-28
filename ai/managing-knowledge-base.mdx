@@ -1,0 +1,326 @@
+---
+title: "Managing the Knowledge Base"
+description: "Learn how to organize, update, and maintain your AI knowledge base (Admin feature)"
+---
+
+<Note>
+This is an **administrator-only feature**. Only users with admin privileges can manage knowledge base documents.
+</Note>
+
+## Viewing Your Knowledge Base
+
+Access the knowledge base management interface from the admin panel:
+
+**Admin Panel > AI Settings > Knowledge Base**
+
+Here you'll see all uploaded documents with:
+
+- Document title and description
+- Upload date and last modified date
+- File type and size
+- Status (Active, Disabled, Processing)
+- Number of times referenced by AI
+- Category and tags
+
+## Document Status
+
+Each document has a status indicator:
+
+<CardGroup cols={3}>
+  <Card title="Active" icon="circle-check">
+    Available to the AI and users can query it
+  </Card>
+
+  <Card title="Disabled" icon="circle-pause">
+    Uploaded but not available to AI
+  </Card>
+
+  <Card title="Processing" icon="circle-notch">
+    Being processed and not yet available
+  </Card>
+</CardGroup>
+
+## Enabling and Disabling Documents
+
+You can control which documents the AI can access without deleting them.
+
+<Steps>
+  <Step title="Locate the document">
+    Find the document in your knowledge base list.
+  </Step>
+
+  <Step title="Toggle availability">
+    Click the toggle switch in the "Available to AI" column.
+  </Step>
+
+  <Step title="Confirm the change">
+    The status updates immediately. Disabled documents remain in your knowledge base but the AI won't reference them.
+  </Step>
+</Steps>
+
+### When to Disable Documents
+
+Disable documents when:
+
+- The information is temporarily outdated but you plan to update it
+- You're working on a new version and want to prevent confusion
+- The document is seasonal and not currently relevant
+- You want to test AI responses without certain information
+
+<Tip>
+Disabling is better than deleting when you might need the document again. You can re-enable it instantly.
+</Tip>
+
+## Updating Documents
+
+When policies or information change, update the knowledge base:
+
+<Steps>
+  <Step title="Disable the old version">
+    Turn off the outdated document so the AI stops referencing it.
+  </Step>
+
+  <Step title="Upload the new version">
+    Upload the updated document following the [upload process](/ai/uploading-documents).
+  </Step>
+
+  <Step title="Verify the update">
+    Test by asking the AI a question that should be answered by the new information.
+  </Step>
+
+  <Step title="Archive the old version">
+    You can delete the old version or keep it disabled for historical reference.
+  </Step>
+</Steps>
+
+<Info>
+Include version numbers or dates in document titles to track updates:
+- "Employee Handbook 2024"
+- "Remote Work Policy v3.0"
+- "Travel Expense Policy (Updated March 2024)"
+</Info>
+
+## Organizing Your Knowledge Base
+
+### Using Categories
+
+Categories help organize documents by type:
+
+<AccordionGroup>
+  <Accordion title="Default Categories">
+    - Policies & Procedures
+    - Training & Education
+    - Industry Research
+    - Technical Documentation
+    - Templates & Tools
+    - Compliance & Legal
+    - General Information
+  </Accordion>
+
+  <Accordion title="Custom Categories">
+    Create custom categories that match your organization:
+    - Department-specific: "Sales Resources", "Engineering Docs"
+    - Function-specific: "Customer Success", "Operations"
+    - Project-specific: "Product Launch 2024", "Office Relocation"
+  </Accordion>
+</AccordionGroup>
+
+To change a document's category:
+
+1. Click the document title to open details
+2. Select a new category from the dropdown
+3. Save changes
+
+### Using Tags
+
+Tags provide flexible organization beyond categories:
+
+```
+Example tagging strategy:
+
+Document: "Employee Remote Work Policy 2024"
+Tags: HR, policy, remote-work, 2024, covid-response
+
+Document: "Sales Compensation Plan"
+Tags: sales, compensation, commission, 2024, confidential
+
+Document: "Customer Onboarding Best Practices"
+Tags: customer-success, onboarding, best-practices, training
+```
+
+<Tip>
+Use consistent tag naming conventions. Decide on plural vs. singular ("policy" vs. "policies") and stick with it.
+</Tip>
+
+## Searching and Filtering
+
+Find documents quickly using the knowledge base filters:
+
+**Filter by Status:**
+- Active documents only
+- Disabled documents only
+- Currently processing
+
+**Filter by Category:**
+- Select one or more categories
+
+**Filter by Tags:**
+- Click tags to filter
+- Multiple tags work as AND (document must have all tags)
+
+**Search by Name:**
+- Type keywords to filter document titles and descriptions
+
+## Viewing Document Usage
+
+Track how often the AI references each document:
+
+- **Reference Count** - How many times the AI has cited this document
+- **Last Referenced** - When the AI last used this document
+- **Common Queries** - What questions triggered this document (if available)
+
+This helps you understand:
+
+- Which documents are most valuable
+- Which documents might be outdated or unnecessary
+- What information users are seeking
+
+<Info>
+High reference counts indicate valuable content. Documents with zero references might need better organization, more relevant content, or could be removed.
+</Info>
+
+## Deleting Documents
+
+Permanently remove documents from the knowledge base:
+
+<Warning>
+Deleting a document is permanent and cannot be undone. The AI will no longer be able to reference this information.
+</Warning>
+
+<Steps>
+  <Step title="Select the document">
+    Find the document you want to delete.
+  </Step>
+
+  <Step title="Click the delete button">
+    Click the trash icon or "Delete" button.
+  </Step>
+
+  <Step title="Confirm deletion">
+    Review the warning and confirm you want to permanently delete the document.
+  </Step>
+
+  <Step title="Verify removal">
+    The document is immediately removed from the AI's knowledge base.
+  </Step>
+</Steps>
+
+### Before Deleting
+
+Ask yourself:
+
+- Is this information truly obsolete?
+- Could we disable instead of delete?
+- Do we have the original file backed up elsewhere?
+- Might we need this information for historical reference?
+
+## Bulk Actions
+
+Manage multiple documents at once:
+
+1. **Select multiple documents** using checkboxes
+2. **Choose an action:**
+   - Enable all selected
+   - Disable all selected
+   - Change category
+   - Add tags
+   - Delete selected
+
+<Tip>
+Use bulk actions when updating categories, disabling seasonal content, or cleaning up outdated documents.
+</Tip>
+
+## Storage Management
+
+Monitor your knowledge base storage:
+
+- **Current Usage**: How much space you're using
+- **Total Capacity**: Your organization's storage limit
+- **Largest Files**: Which documents consume most space
+
+If approaching storage limits:
+
+1. Review and delete truly obsolete documents
+2. Compress large PDFs
+3. Remove duplicate or redundant files
+4. Contact support about increasing capacity
+
+## Maintaining Document Quality
+
+Regular maintenance keeps the knowledge base useful:
+
+<Steps>
+  <Step title="Monthly Review">
+    Check for outdated documents and update information.
+  </Step>
+
+  <Step title="Quarterly Audit">
+    Review usage statistics and remove unused documents.
+  </Step>
+
+  <Step title="Annual Cleanup">
+    Reorganize categories, consolidate tags, and verify all content is current.
+  </Step>
+
+  <Step title="Continuous Updates">
+    Update documents immediately when policies or information changes.
+  </Step>
+</Steps>
+
+## Version Control Best Practices
+
+Keep track of document versions:
+
+<CardGroup cols={2}>
+  <Card title="Include Dates in Titles" icon="calendar">
+    "Travel Policy (Updated March 2024)"
+
+    Makes it obvious which version is current
+  </Card>
+
+  <Card title="Use Version Numbers" icon="code-branch">
+    "Employee Handbook v3.2"
+
+    Clear versioning system
+  </Card>
+</CardGroup>
+
+When uploading a new version:
+
+1. Add the new version with clear title
+2. Disable the old version immediately
+3. Keep old version for 30 days before deleting (in case of questions)
+4. Update document description to note what changed
+
+## Document Naming Conventions
+
+Consistent naming helps everyone:
+
+```
+Good naming pattern:
+[Department] - [Document Type] - [Topic] - [Year/Version]
+
+Examples:
+"HR - Policy - Remote Work - 2024"
+"Sales - Guide - Lead Qualification - v2.1"
+"IT - SOP - Password Reset - 2024"
+"Finance - Template - Expense Report - Current"
+```
+
+## What's Next?
+
+Learn more about the knowledge base:
+
+- [How the AI uses documents](/ai/how-ai-uses-documents)
+- [Uploading new documents](/ai/uploading-documents)
+- [Creating custom master prompts](/ai/creating-custom-prompts)

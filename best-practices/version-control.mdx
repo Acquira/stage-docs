@@ -1,0 +1,749 @@
+---
+title: "Version Control Best Practices"
+description: "Managing process changes, tracking versions, and collaborating effectively on process improvements"
+---
+
+Version control ensures you can track changes to your processes over time, restore previous versions if needed, and collaborate effectively with your team. Learn how to manage process evolution systematically.
+
+## Why Version Control Matters
+
+<CardGroup cols={2}>
+  <Card title="Audit Trail" icon="clock-rotate-left">
+    See who changed what, when, and why. Critical for compliance and troubleshooting
+  </Card>
+
+  <Card title="Safe Experimentation" icon="flask">
+    Try improvements knowing you can always revert to the previous version
+  </Card>
+
+  <Card title="Collaboration" icon="users">
+    Multiple people can work on processes without conflicts or overwrites
+  </Card>
+
+  <Card title="Learning" icon="graduation-cap">
+    Understand why processes evolved by reviewing change history
+  </Card>
+</CardGroup>
+
+## When to Create a New Version
+
+<Tabs>
+  <Tab title="Major Version">
+    ### Major Version (1.0 → 2.0)
+
+    **Create When:**
+    - Complete process restructure
+    - Major philosophical or approach changes
+    - New category structure
+    - Significant additions/removals (>30% of activities)
+
+    **Examples:**
+    - Switching from waterfall to agile development
+    - Merging two processes into one
+    - Adding compliance requirements that change everything
+    - Complete rewrite based on process improvement project
+
+    **Change Log:**
+    Document major changes in detail with rationale
+
+    **Communication:**
+    Notify all stakeholders, conduct training if needed
+
+    <Warning>
+    Major version changes may require retraining and significant documentation updates.
+    </Warning>
+  </Tab>
+
+  <Tab title="Minor Version">
+    ### Minor Version (1.0 → 1.1)
+
+    **Create When:**
+    - Adding new activities (10-30% change)
+    - Modifying existing activities significantly
+    - Changing RACI assignments broadly
+    - Updating KPI targets or definitions
+    - Adding new categories
+
+    **Examples:**
+    - Adding 5 new activities to 20-activity process
+    - Changing approval workflows
+    - Introducing new roles to RACI matrix
+    - Updating forms and templates
+
+    **Change Log:**
+    List what changed and why
+
+    **Communication:**
+    Email summary to process participants
+
+    <Note>
+    Minor versions are improvements to existing structure, not fundamental changes.
+    </Note>
+  </Tab>
+
+  <Tab title="Patch Version">
+    ### Patch Version (1.0.0 → 1.0.1)
+
+    **Create When:**
+    - Fixing typos or errors
+    - Clarifying instructions
+    - Updating screenshots
+    - Correcting data or links
+    - Small RACI adjustments
+
+    **Examples:**
+    - Fixing spelling mistakes
+    - Updating outdated screenshots
+    - Correcting contact information
+    - Clarifying ambiguous wording
+
+    **Change Log:**
+    Brief note of correction
+
+    **Communication:**
+    No announcement needed (unless it's a critical fix)
+
+    <Tip>
+    Batch small fixes and release them together rather than creating many tiny versions.
+    </Tip>
+  </Tab>
+
+  <Tab title="Don't Version">
+    ### When NOT to Create a New Version
+
+    **Don't version these changes:**
+    - Formatting adjustments
+    - Cosmetic changes (colors, fonts)
+    - Adding examples without changing steps
+    - Reordering without changing content
+    - Updates to timestamps or "last modified" dates
+
+    **Why Not:**
+    These don't affect how the process is executed
+
+    **Instead:**
+    Make the change without incrementing version number
+
+    <Note>
+    Only version changes that affect process execution or understanding.
+    </Note>
+  </Tab>
+</Tabs>
+
+## Version Numbering System
+
+### Semantic Versioning
+
+Use a three-part version number: **MAJOR.MINOR.PATCH**
+
+**Example: Version 2.3.1**
+- **2** = Major version (significant restructure)
+- **3** = Minor version (3rd set of improvements to v2)
+- **1** = Patch (1st bug fix to v2.3)
+
+### Version Progression Examples
+
+<AccordionGroup>
+  <Accordion title="New Process Creation">
+    **Start:** 1.0
+
+    A new process always begins at version 1.0 (not 0.1 or 1.0.0)
+  </Accordion>
+
+  <Accordion title="Small Improvements">
+    1.0 → 1.1 → 1.2 → 1.3
+
+    Each minor improvement increments the minor version
+  </Accordion>
+
+  <Accordion title="Bug Fixes">
+    1.2 → 1.2.1 → 1.2.2
+
+    Patches increment the third number without changing minor version
+  </Accordion>
+
+  <Accordion title="Major Overhaul">
+    1.9 → 2.0
+
+    Major changes jump to next major version, resetting minor and patch to 0
+  </Accordion>
+
+  <Accordion title="Combined Changes">
+    **Scenario:** You make bug fixes and improvements together
+
+    1.2.1 → 1.3
+
+    When combining patch and minor changes, increment to next minor version (patches are already included)
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+Keep version numbers simple. Don't overthink it. The goal is clarity, not precision.
+</Tip>
+
+## Writing Effective Change Logs
+
+### Change Log Template
+
+```markdown
+# Process Name - Change Log
+
+## Version 2.1 (2024-03-15)
+
+### Added
+- New activity: "Quality Assurance Review" after development
+- KPI: "Bug rate per 100 story points"
+- Form: "QA Sign-off Checklist"
+
+### Changed
+- Updated RACI for "Code Review" - now requires two reviewers
+- Increased time estimate for "Design Review" from 30 min to 60 min
+- Revised "Definition of Done" checklist with security requirements
+
+### Removed
+- Deprecated activity: "Manual Deployment" (now automated)
+
+### Fixed
+- Corrected approval workflow diagram
+- Fixed broken link to technical documentation
+
+### Notes
+- This update implements findings from Q4 process improvement project
+- Training session scheduled for 3/20/2024
+- All teams must adopt by 4/1/2024
+
+---
+
+## Version 2.0 (2024-01-10)
+
+### Major Changes
+- Complete restructure from waterfall to agile methodology
+- New category structure: Discovery, Design, Build, Test, Launch
+- Sprint-based execution model introduced
+
+[Continue for previous versions...]
+```
+
+### Change Log Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Use Action Verbs" icon="bolt">
+    - Added [thing]
+    - Changed [thing]
+    - Removed [thing]
+    - Fixed [thing]
+    - Deprecated [thing]
+  </Card>
+
+  <Card title="Be Specific" icon="magnifying-glass">
+    **Vague:** "Updated activities"
+    **Specific:** "Added 3 activities to Quality Assurance category"
+  </Card>
+
+  <Card title="Include Context" icon="circle-info">
+    Explain WHY changes were made when it's not obvious
+
+    "Added daily standup to improve team communication after missed dependencies in Q3"
+  </Card>
+
+  <Card title="Link to Rationale" icon="link">
+    Reference the meeting, ticket, or project that drove the change
+
+    "See process improvement initiative #456"
+  </Card>
+</CardGroup>
+
+<Note>
+Keep change logs in reverse chronological order (newest first) so users see recent changes immediately.
+</Note>
+
+## Collaboration Best Practices
+
+### Editing Workflows
+
+<Steps>
+  <Step title="Propose Changes">
+    Don't edit production processes directly. Create a draft or proposal first.
+
+    **Options:**
+    - Draft version in separate document
+    - Comments/suggestions in review tool
+    - Formal change request
+  </Step>
+
+  <Step title="Get Review">
+    Have changes reviewed by:
+    - Process owner (required)
+    - Subject matter experts (for technical accuracy)
+    - Regular process users (for usability)
+    - Compliance/legal (if applicable)
+
+    **Minimum:** Process owner approval required
+  </Step>
+
+  <Step title="Test Changes">
+    For significant changes:
+    - Pilot with small team first
+    - Run parallel with old process temporarily
+    - Gather feedback before full rollout
+
+    **Example:** Test new approval workflow with one department for 2 weeks
+  </Step>
+
+  <Step title="Publish New Version">
+    Once approved:
+    - Update version number
+    - Add change log entry
+    - Update "last modified" date and author
+    - Notify stakeholders
+  </Step>
+
+  <Step title="Deprecate Old Version">
+    Mark previous version as deprecated but keep accessible for reference period (30-90 days)
+  </Step>
+</Steps>
+
+### Avoiding Edit Conflicts
+
+**Problem:** Two people edit the same process simultaneously, creating conflicts
+
+**Solutions:**
+
+<AccordionGroup>
+  <Accordion title="Lock While Editing">
+    **Method:** System prevents simultaneous editing
+
+    **Pros:** No conflicts possible
+    **Cons:** One person blocked if another has it open
+
+    **Best For:** Small teams, infrequent edits
+  </Accordion>
+
+  <Accordion title="Change Proposals">
+    **Method:** Editors propose changes, owner merges them
+
+    **Pros:** Multiple people can propose changes
+    **Cons:** Owner bottleneck
+
+    **Best For:** Processes with high change volume
+  </Accordion>
+
+  <Accordion title="Scheduled Maintenance Windows">
+    **Method:** Designate specific times for edits (e.g., Friday afternoons)
+
+    **Pros:** Predictable, no conflicts
+    **Cons:** Delays urgent updates
+
+    **Best For:** Stable processes with planned updates
+  </Accordion>
+
+  <Accordion title="Section Ownership">
+    **Method:** Different people own different sections
+
+    **Pros:** Parallel editing without conflicts
+    **Cons:** Need clear boundaries
+
+    **Best For:** Large processes with natural divisions
+  </Accordion>
+</AccordionGroup>
+
+### Review Checklists
+
+**Before Publishing a New Version:**
+
+**Content Review**
+- [ ] All changes are accurate and complete
+- [ ] No typos or grammatical errors
+- [ ] Links and references work correctly
+- [ ] Screenshots are current
+- [ ] Examples reflect current state
+
+**Technical Review**
+- [ ] Process is technically feasible
+- [ ] Tool/system capabilities support the process
+- [ ] Integrations and dependencies are accurate
+- [ ] RACI assignments are realistic
+
+**Compliance Review**
+- [ ] Meets regulatory requirements (if applicable)
+- [ ] Follows company policies
+- [ ] Security and privacy considerations addressed
+- [ ] Audit trail requirements met
+
+**Usability Review**
+- [ ] Instructions are clear and actionable
+- [ ] Process flow is logical
+- [ ] Appropriate level of detail
+- [ ] Users can find what they need
+
+**Change Management**
+- [ ] Change log is updated
+- [ ] Version number incremented correctly
+- [ ] Stakeholders notified
+- [ ] Training scheduled (if needed)
+
+<Tip>
+Use a formal checklist for major versions to ensure nothing is missed. Minor versions can use a simplified checklist.
+</Tip>
+
+## Restoring Previous Versions
+
+### When to Roll Back
+
+**Consider restoring a previous version when:**
+- New version has critical errors
+- Process changes caused unexpected problems
+- Compliance issues discovered
+- Team feedback indicates the changes aren't working
+- Results are worse than with previous version
+
+<Warning>
+Rolling back should be rare. If you're frequently reverting changes, your review process needs improvement.
+</Warning>
+
+### How to Roll Back
+
+<Steps>
+  <Step title="Assess the Situation">
+    - What specific problems does the new version have?
+    - Can they be quickly fixed, or is rollback necessary?
+    - How urgently do you need to act?
+  </Step>
+
+  <Step title="Communicate the Plan">
+    Notify all process users:
+    - We're reverting to version X.X
+    - Here's why (brief explanation)
+    - Here's what happens next
+    - Timeline for fix and re-release
+  </Step>
+
+  <Step title="Restore Previous Version">
+    - Mark current version as "Deprecated - Do Not Use"
+    - Republish previous version as current
+    - Update version notes explaining the rollback
+  </Step>
+
+  <Step title="Fix Issues">
+    - Address the problems in the reverted version
+    - Test thoroughly before republishing
+    - Document what went wrong for future learning
+  </Step>
+
+  <Step title="Release Fixed Version">
+    - Publish corrected version with new version number
+    - Explain what was fixed
+    - Thank team for patience
+  </Step>
+</Steps>
+
+### Version History Retention
+
+**How Long to Keep Old Versions:**
+
+<CardGroup cols={2}>
+  <Card title="Current Version" icon="check">
+    **Keep:** Forever (obviously)
+
+    This is the active process everyone uses
+  </Card>
+
+  <Card title="Previous Version" icon="clock">
+    **Keep:** 90 days after superseded
+
+    Easy access in case you need to reference or revert
+  </Card>
+
+  <Card title="Historical Versions" icon="archive">
+    **Keep:** 2-7 years (depends on compliance needs)
+
+    Archive but don't delete (may need for audits)
+  </Card>
+
+  <Card title="Draft/Test Versions" icon="trash">
+    **Keep:** 30 days after release or rejection
+
+    Delete once no longer needed
+  </Card>
+</CardGroup>
+
+<Note>
+Compliance requirements may mandate longer retention. Consult with legal/compliance teams for regulated processes.
+</Note>
+
+## Handling Process Deprecation
+
+### When to Deprecate a Process
+
+**Deprecate when:**
+- Process is being replaced by a new process
+- Process is no longer needed (business change)
+- Process has been merged into another process
+- Tool/system that enabled process is being retired
+
+### Deprecation Workflow
+
+<Steps>
+  <Step title="Announce Deprecation">
+    **Notice Period:** Minimum 30 days before removal
+
+    **Announcement Should Include:**
+    - What's being deprecated and when
+    - Why it's being deprecated
+    - What replaces it (if anything)
+    - What users need to do
+    - Who to contact with questions
+
+    **Example:**
+    "The Legacy Sales Process (v3.2) will be deprecated on 5/1/2024 and replaced by the Modern Sales Process (v1.0). All teams must transition by 4/15/2024. Training sessions available 3/20-4/10."
+  </Step>
+
+  <Step title="Mark as Deprecated">
+    Add prominent notice to the process:
+
+    ```
+    ⚠️ DEPRECATED - This process is no longer maintained
+    Deprecated: March 1, 2024
+    Replacement: [Link to new process]
+    Support ends: May 1, 2024
+    ```
+
+    Make it impossible to miss
+  </Step>
+
+  <Step title="Support Transition">
+    - Provide migration guide
+    - Offer training on replacement
+    - Answer questions
+    - Monitor adoption of new process
+    - Provide grace period for stragglers
+  </Step>
+
+  <Step title="Archive (Don't Delete)">
+    After deprecation period:
+    - Move to archive section
+    - Keep accessible but not in main navigation
+    - Maintain for historical reference
+    - Document archive date and reason
+  </Step>
+</Steps>
+
+<Warning>
+Never delete a process without archiving. You may need it for audit trails, legal holds, or historical reference.
+</Warning>
+
+## Communication Strategies
+
+### Who to Notify About Changes
+
+<Tabs>
+  <Tab title="Major Versions">
+    **Notify:**
+    - All process participants (required)
+    - Process owner (required)
+    - Department heads (required)
+    - Related process owners (suggested)
+    - Executive team (for strategic processes)
+
+    **Method:**
+    - Email announcement
+    - Team meeting presentation
+    - Training sessions
+    - Slack/Teams announcement
+    - Update in all-hands meeting
+
+    **Timeline:**
+    Announce 2-4 weeks before implementation
+  </Tab>
+
+  <Tab title="Minor Versions">
+    **Notify:**
+    - All process participants (required)
+    - Process owner (required)
+    - Department heads (FYI)
+
+    **Method:**
+    - Email announcement
+    - Slack/Teams message
+    - Process platform notification
+
+    **Timeline:**
+    Announce 1 week before implementation
+  </Tab>
+
+  <Tab title="Patch Versions">
+    **Notify:**
+    - Process participants (optional)
+    - Process owner (FYI)
+
+    **Method:**
+    - Process platform notification
+    - Update log
+
+    **Timeline:**
+    No advance notice needed (notify when published)
+  </Tab>
+</Tabs>
+
+### Effective Change Announcements
+
+**Template for Change Announcement:**
+
+```markdown
+Subject: [Process Name] Updated to v2.1
+
+Hi team,
+
+We've updated the [Process Name] to version 2.1. Here's what changed:
+
+**Key Changes:**
+1. Added quality assurance checkpoint before launch
+2. Updated approval workflow to include Security review
+3. New template for project kickoff meetings
+
+**Why We Made These Changes:**
+Based on Q4 retrospective feedback, we identified the need for earlier security review and more structured kickoffs.
+
+**What You Need to Do:**
+- Review the updated process by [date]
+- Attend training session on [date] (optional but recommended)
+- Use the new template for projects starting after [date]
+
+**Resources:**
+- [Link to updated process]
+- [Link to training recording]
+- [Link to new templates]
+
+**Questions?**
+Contact [Process Owner] or reply to this email.
+
+Thanks,
+[Your Name]
+```
+
+<Tip>
+Keep announcements brief and action-oriented. Link to details rather than putting everything in the email.
+</Tip>
+
+## Version Control Mistakes to Avoid
+
+<AccordionGroup>
+  <Accordion title="Not Versioning at All">
+    **Problem:** Making changes without tracking versions
+
+    **Result:**
+    - No audit trail
+    - Can't revert changes
+    - Confusion about which version is current
+    - Compliance issues
+
+    **Fix:** Implement version numbering from day one
+  </Accordion>
+
+  <Accordion title="Version Number Chaos">
+    **Problem:** Inconsistent versioning system
+
+    **Examples:**
+    - v1, v2, v2.1, v2.1a, v2.1-final, v2.1-final-FINAL
+
+    **Fix:** Choose a versioning system (semantic versioning) and stick to it
+  </Accordion>
+
+  <Accordion title="No Change Log">
+    **Problem:** Incrementing version number without documenting changes
+
+    **Result:**
+    - Users don't know what changed
+    - Can't understand why changes were made
+    - Difficult to troubleshoot issues
+
+    **Fix:** Always document what changed and why
+  </Accordion>
+
+  <Accordion title="Skipping Review">
+    **Problem:** Publishing changes without review
+
+    **Result:**
+    - Errors make it into production
+    - Changes conflict with other processes
+    - Compliance violations
+
+    **Fix:** Require process owner approval at minimum
+  </Accordion>
+
+  <Accordion title="Overversioning">
+    **Problem:** Creating new version for every tiny change
+
+    **Examples:**
+    - v1.0.1: Fixed typo in step 3
+    - v1.0.2: Fixed typo in step 5
+    - v1.0.3: Updated screenshot
+
+    **Result:** Version number inflation, change fatigue
+
+    **Fix:** Batch small fixes into single version update
+  </Accordion>
+
+  <Accordion title="No Deprecation Notice">
+    **Problem:** Replacing a process without warning
+
+    **Result:**
+    - Team members still use old process
+    - Confusion about which process to follow
+    - Training gaps
+
+    **Fix:** Always provide deprecation notice and transition period
+  </Accordion>
+</AccordionGroup>
+
+## Version Control Checklist
+
+**Before Creating a New Version:**
+- [ ] Changes are substantial enough to warrant new version
+- [ ] Version number follows semantic versioning convention
+- [ ] Change log entry is complete and clear
+- [ ] Process owner has reviewed and approved
+- [ ] Subject matter experts have reviewed (if needed)
+- [ ] Testing completed for major changes
+- [ ] Communication plan is ready
+- [ ] Training materials updated (if needed)
+- [ ] Previous version is archived appropriately
+
+**When Publishing:**
+- [ ] Version number updated in process metadata
+- [ ] Change log published
+- [ ] Stakeholders notified
+- [ ] Previous version marked as deprecated (with transition period)
+- [ ] Documentation links updated
+- [ ] Training scheduled (if needed)
+
+**After Publishing:**
+- [ ] Monitor for issues or confusion
+- [ ] Respond to questions quickly
+- [ ] Track adoption of new version
+- [ ] Gather feedback for future improvements
+- [ ] Archive previous version after transition period
+
+<Tip>
+Create a standard checklist in your process management system to ensure these steps are never skipped.
+</Tip>
+
+## Related Resources
+
+<CardGroup cols={2}>
+  <Card title="Clear Documentation" icon="file-text" href="/best-practices/clear-documentation">
+    Write effective process documentation
+  </Card>
+
+  <Card title="Organizing Processes" icon="sitemap" href="/best-practices/organizing-processes">
+    Structure processes for clarity
+  </Card>
+
+  <Card title="KPI Selection" icon="chart-line" href="/best-practices/kpi-selection">
+    Track process improvement with metrics
+  </Card>
+
+  <Card title="Product Development Example" icon="code" href="/examples/product-development">
+    See version control in action
+  </Card>
+</CardGroup>
