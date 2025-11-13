@@ -5,197 +5,167 @@ description: "Stay informed with notifications and manage your notification pref
 
 ## Understanding Notifications
 
-Notifications keep you updated about what's happening in the Business Process Framework. They tell you about new content, changes to processes, comments, and important updates.
+Notifications keep you updated about what's happening in Stage3. They tell you about tasks, shared resources, team activities, and important updates.
 
-Think of notifications as your personal assistant, tapping you on the shoulder when something needs your attention.
+Think of notifications as your personal assistant, letting you know when something needs your attention.
 
 ## The Notification Bell
 
 The bell icon in the top right corner is your notification center.
 
 **Visual Indicators**
-- **Red dot**: You have unread notifications
-- **Number badge**: Shows how many unread notifications
+- **Badge or dot**: You have unread notifications
 - **No indicator**: All caught up!
 
 **Opening Notifications**
 - Click the bell icon to open your notification panel
-- Notifications appear in a dropdown
+- Notifications appear in a panel
 - Most recent notifications at the top
-- Scroll to see older notifications
+- Easy to scan and review
 
 <Tip>
-On mobile devices, the notification panel opens in a full-screen view for easier reading.
+When you're all caught up, you'll see "No notifications" with the message "You're all caught up! Check back later for new updates."
 </Tip>
 
 ## Types of Notifications
 
-You'll receive different types of notifications based on your activity and role:
+Stage3 sends notifications for these activities:
 
 <CardGroup cols={2}>
-  <Card title="Sharing Notifications" icon="share-nodes">
-    When someone shares a process with you or changes your access level.
+  <Card title="Task Assigned" icon="list-check">
+    When a task is assigned to you or your assignment changes.
   </Card>
 
-  <Card title="Comment Notifications" icon="comment">
-    When someone comments on a process you own, follow, or participated in.
+  <Card title="Task Due Soon" icon="clock">
+    Reminders when tasks you're assigned to are approaching their due date.
   </Card>
 
-  <Card title="Mention Notifications" icon="at">
-    When someone @mentions you in a comment or discussion.
+  <Card title="Task Completed" icon="circle-check">
+    When tasks you're involved with are marked as complete.
   </Card>
 
-  <Card title="Update Notifications" icon="rotate">
-    When processes you follow or own are edited or updated.
+  <Card title="Task Comment" icon="comment">
+    When someone comments on a task you're assigned to or participating in.
   </Card>
 
-  <Card title="Approval Notifications" icon="circle-check">
-    When a process you need to review or approve is ready (Admins and Owners).
+  <Card title="Task Attachment" icon="paperclip">
+    When files or attachments are added to your tasks.
   </Card>
 
-  <Card title="System Notifications" icon="bell">
+  <Card title="Resource Shared" icon="share-nodes">
+    When someone shares a resource with you or changes your access.
+  </Card>
+
+  <Card title="Invitation Accepted" icon="user-plus">
+    When team members accept invitations or join your workspace.
+  </Card>
+
+  <Card title="System Notification" icon="bell">
     Important announcements, maintenance updates, and system messages.
   </Card>
 </CardGroup>
 
-## Reading and Managing Notifications
+## The Notifications Panel
 
-### Viewing Notification Details
+Access your notifications by clicking the bell icon in the top right corner.
+
+### Panel Features
+
+**Search Notifications**
+- Use the search bar at the top to find specific notifications
+- Type keywords to filter results
+- Great for finding older notifications
+
+**Filter Options**
+- **All types**: Dropdown to filter by notification type
+- **Unread only**: Toggle to show only unread notifications
+
+**Empty State**
+When you have no notifications, you'll see:
+- Bell icon
+- "No notifications" message
+- "You're all caught up! Check back later for new updates."
+
+<Info>
+The notification panel provides a clean, organized view of all your notifications in one place.
+</Info>
+
+## Managing Notifications
+
+### Reading Notifications
 
 Each notification includes:
-- **Icon**: Identifies the notification type
+- **Type indicator**: Shows what kind of notification it is
 - **Title**: What happened
 - **Description**: Additional context
 - **Timestamp**: When it occurred
-- **Actor**: Who triggered it (if applicable)
 
 **Click any notification** to:
-- Go directly to the relevant process or content
+- Go directly to the relevant task or content
 - See the full context
 - Take action if needed
 
-### Marking as Read
+### Filtering Notifications
 
-Notifications you've read are marked automatically, but you can also:
+**By Type**
+- Click the "All types" dropdown
+- Select a specific type to see only those notifications
+- Options include: Task Assigned, Resource Shared, System Notification, etc.
 
-**Mark Individual as Read**
-- Click the notification to mark it read
-- Or click the checkmark icon on the notification
+**By Read Status**
+- Toggle "Unread only" to see just unread notifications
+- Turn it off to see all notifications
 
-**Mark All as Read**
-- Click "Mark all as read" at the top of the panel
-- Clears all unread badges
-- Great for catching up after being away
-
-**Unread Filter**
-- Toggle between "All" and "Unread" views
-- Focus on what you haven't seen yet
-
-<Info>
-Read notifications remain in your panel for 30 days before being automatically archived.
-</Info>
-
-## Notification Categories
-
-Notifications are grouped into categories for easier management:
-
-<AccordionGroup>
-  <Accordion title="Activity - Processes You Follow">
-    Updates to processes you've explicitly followed or created:
-    - Content edits
-    - New comments
-    - Status changes
-    - Sharing changes
-
-    **Following Processes**
-    - Open any process
-    - Click the "Follow" button
-    - Receive notifications about updates
-    - Unfollow anytime
-  </Accordion>
-
-  <Accordion title="Mentions - Your Attention Needed">
-    Direct notifications where someone specifically mentioned you:
-    - @mentions in comments
-    - Assigned tasks or reviews
-    - Direct questions
-
-    **Why Mentions Matter**
-    These usually require your response or action. Check these first!
-  </Accordion>
-
-  <Accordion title="Shared - Content Access">
-    Notifications about shared content:
-    - New processes shared with you
-    - Permission level changes
-    - Removed access (rare)
-    - Folder shares
-
-    **What to Do**
-    Review new shared content when convenient. Not always urgent.
-  </Accordion>
-
-  <Accordion title="Workspace - Team Updates">
-    Organization-wide notifications:
-    - New team members
-    - Policy changes
-    - Feature announcements
-    - Maintenance schedules
-
-    **Stay Informed**
-    These keep you updated about workspace changes.
-  </Accordion>
-</AccordionGroup>
-
-## Email Notifications
-
-In addition to in-app notifications, you can receive emails:
-
-**Default Email Notifications**
-By default, you'll receive emails for:
-- @mentions (always sent)
-- Processes shared with you
-- Comments on your processes
-- Important system announcements
-
-**Email Frequency Options**
-- **Real-time**: Immediate email for each notification
-- **Daily Digest**: One email per day with summary
-- **Weekly Digest**: One email per week with summary
-- **Off**: No email notifications (in-app only)
-
-<Warning>
-Turning off email notifications means you must check the app regularly to stay updated. Don't miss important updates!
-</Warning>
+<Tip>
+Use filters to quickly find what you're looking for, especially if you have many notifications.
+</Tip>
 
 ## Notification Preferences
 
-Customize what notifications you receive and how:
+Customize how you receive notifications by clicking the "Preferences" button in the notification panel.
+
+### How Preferences Work
+
+For each notification type, you can control:
+- **Email**: Receive notifications via email (toggle on/off)
+- **In-App**: See notifications in the application (toggle on/off)
+
+**Available Notification Types**
+
+1. **Invitation Accepted** - Team member invitations
+2. **Resource Shared** - Shared files and resources
+3. **Task Assigned** - Task assignments
+4. **Task Due Soon** - Due date reminders
+5. **System Notification** - System announcements
+6. **Task Completed** - Task completion updates
+7. **Task Comment** - Comments on tasks
+8. **Task Attachment** - File attachments
+
+### Setting Your Preferences
 
 <Steps>
-  <Step title="Open settings">
-    Click your profile picture in the top right, then select "Settings" or "Preferences".
+  <Step title="Open notification preferences">
+    Click the bell icon, then click the "Preferences" button in the top right.
   </Step>
 
-  <Step title="Find notification settings">
-    Look for the "Notifications" section in the settings menu.
+  <Step title="Review notification types">
+    Scroll through the list of notification types. Each shows Email and In-App toggles.
   </Step>
 
-  <Step title="Customize by type">
-    For each notification type, choose:
-    - In-app notifications (on/off)
-    - Email notifications (on/off)
-    - Email frequency (real-time, digest, off)
+  <Step title="Toggle preferences">
+    For each notification type:
+    - Turn Email on/off to control email notifications
+    - Turn In-App on/off to control in-app notifications
   </Step>
 
-  <Step title="Set quiet hours">
-    Optionally set times when you don't want to receive notifications (like evenings and weekends).
-  </Step>
-
-  <Step title="Save changes">
-    Click "Save" or "Update Preferences" to apply your settings.
+  <Step title="Save your changes">
+    Click "Save Preferences" at the bottom to apply your settings.
   </Step>
 </Steps>
+
+<Note>
+All toggles are on by default. Turn off notifications you don't want to receive.
+</Note>
 
 ## Recommended Settings by Role
 
@@ -204,124 +174,101 @@ Different roles might prefer different notification settings:
 ### For Members
 
 **Suggested Settings**
-- **Shared content**: Email real-time
-- **Mentions**: Email real-time
-- **Comments**: In-app only
-- **Updates**: Daily digest
-- **Workspace news**: Weekly digest
+- **Task Assigned**: Email + In-App
+- **Task Due Soon**: Email + In-App
+- **Task Comment**: In-App only
+- **Resource Shared**: Email + In-App
+- **System Notification**: In-App only
 
 **Why This Works**
-You get immediate alerts for things needing your attention, but aren't overwhelmed by every change.
+You get immediate alerts for tasks that need your attention, but avoid email overload from less urgent updates.
 
-### For Admins
+### For Administrators
 
 **Suggested Settings**
-- **Shared content**: Email real-time
-- **Mentions**: Email real-time
-- **Comments**: Email real-time
-- **Updates**: In-app only
-- **Process approvals**: Email real-time
+- **Task Assigned**: Email + In-App
+- **Task Due Soon**: Email + In-App
+- **Task Comment**: Email + In-App
+- **Task Completed**: In-App only
+- **Resource Shared**: Email + In-App
+- **System Notification**: Email + In-App
 
 **Why This Works**
-You need to know quickly when someone needs your input or when your processes are being discussed.
+You need to stay informed about team activities and task progress, with email alerts for important items.
 
 ### For Owners
 
 **Suggested Settings**
-- **User activity**: Daily digest
-- **System alerts**: Email real-time
-- **Workspace changes**: Email real-time
-- **Mentions**: Email real-time
-- **Regular updates**: Weekly digest
+- **Invitation Accepted**: Email + In-App
+- **System Notification**: Email + In-App
+- **Task Assigned**: In-App only
+- **Resource Shared**: In-App only
 
 **Why This Works**
-You need immediate alerts for critical items, but summaries for routine activity to avoid overwhelm.
+You focus on system-level notifications and team management, while staying aware of tasks through in-app notifications.
 
 <Tip>
-Start with defaults and adjust over time. After a week, you'll know if you're getting too many or too few notifications.
+Start with all notifications on and adjust after a few days. You'll quickly learn which ones you need and which ones create noise.
 </Tip>
 
-## Desktop and Mobile Notifications
+## Email Notifications
 
-Beyond email, you can enable browser and mobile notifications:
+When email notifications are enabled for a type, you'll receive emails for those events.
 
-### Browser Notifications
+**Email Content**
+- Clear subject line describing the notification
+- Summary of what happened
+- Link to view details in the application
+- Information about who triggered the action (when applicable)
 
-**Enabling Browser Notifications**
-1. Click "Enable Notifications" when prompted
-2. Or enable in your browser settings for the site
-3. Allow notifications when your browser asks
+**Managing Email Notifications**
+- Turn off email for notification types you don't need
+- Keep email on for urgent items like Task Assigned and Task Due Soon
+- Check your spam folder if you're not receiving emails
 
-**What You'll See**
-- Pop-up notifications on your desktop
-- Even when the app isn't open
-- Click to go directly to the item
+<Warning>
+Turning off email notifications means you must check the application regularly to stay updated. Make sure you don't miss important updates!
+</Warning>
 
-**Disabling**
-- Block in your browser settings
-- Or disable in your app preferences
+## In-App Notifications
 
-<Note>
-Browser notifications work best when you keep a browser tab open for the application.
-</Note>
+In-app notifications appear within the Stage3 application.
 
-### Mobile App Notifications
+**How They Work**
+- Appear in the notification bell dropdown
+- Visible when you're logged into the application
+- Can be filtered and searched
+- Stay in your notification panel until you review them
 
-If your organization has a mobile app:
-
-**Push Notifications**
-- Receive notifications on your phone or tablet
-- Even when the app is closed
-- Tap to open the relevant content
-
-**Managing Mobile Notifications**
-- Control in your device's settings
-- Or in the mobile app preferences
-- Same options as desktop (in-app, email, push)
-
-## Do Not Disturb Mode
-
-Need to focus without interruptions? Use Do Not Disturb:
-
-**Turning On DND**
-1. Click your profile picture
-2. Select "Do Not Disturb"
-3. Choose duration (1 hour, 4 hours, until tomorrow, custom)
-
-**What Happens**
-- No in-app notification popups
-- No email notifications (queued for later)
-- No browser notifications
-- Notification bell still collects notifications silently
-
-**When It Ends**
-- Notifications resume automatically
-- You'll receive a summary of what you missed
-- Critical notifications may still come through
+**Benefits of In-App**
+- No email clutter
+- All notifications in one organized place
+- Easy to search and filter
+- Context-rich with direct links
 
 <Info>
-Do Not Disturb is perfect for deep focus work or when you're presenting/in meetings.
+In-app notifications are ideal for updates you want to see but don't need immediate email alerts for.
 </Info>
 
 ## Managing Notification Overload
 
-Getting too many notifications? Here's how to fix it:
+Getting too many notifications? Here's how to adjust:
 
 <CardGroup cols={2}>
-  <Card title="Switch to Digests" icon="envelope">
-    Instead of real-time emails, get one daily or weekly summary. Reduces email clutter significantly.
+  <Card title="Turn Off Email for Some Types" icon="envelope-open">
+    Keep email for urgent items (Task Assigned, Task Due Soon) but use in-app only for others.
   </Card>
 
-  <Card title="Unfollow Processes" icon="eye-slash">
-    If you're following processes you don't need updates about, unfollow them to reduce noise.
+  <Card title="Disable Low-Priority Notifications" icon="bell-slash">
+    Turn off both email and in-app for notification types you don't need, like Task Attachment if attachments aren't relevant to your work.
   </Card>
 
-  <Card title="Adjust Comment Settings" icon="comment-slash">
-    You don't need every comment notification. Set comments to in-app only or digest mode.
+  <Card title="Use Filters" icon="filter">
+    In the notification panel, use "Unread only" to focus on what you haven't seen yet.
   </Card>
 
-  <Card title="Filter by Importance" icon="filter">
-    Focus on mentions and shared content. These usually need action. Other notifications can wait.
+  <Card title="Check Regularly" icon="clock">
+    Set specific times to check notifications rather than reacting to every alert.
   </Card>
 </CardGroup>
 
@@ -330,77 +277,73 @@ Getting too many notifications? Here's how to fix it:
 <AccordionGroup>
   <Accordion title="Not receiving any notifications">
     Check these settings:
-    1. Notification preferences in your account settings
-    2. Email notifications aren't going to spam
-    3. Browser notifications are allowed
-    4. Your email address is correct in your profile
-    5. Do Not Disturb isn't enabled
+    1. Open Notification Preferences and verify toggles are on
+    2. Check that email notifications aren't going to spam
+    3. Verify your email address is correct in your profile
+    4. Make sure you have tasks or activities that would generate notifications
   </Accordion>
 
   <Accordion title="Receiving too many notifications">
     Ways to reduce notifications:
-    1. Switch from real-time to digest emails
-    2. Unfollow processes you don't need to track
-    3. Turn off comment notifications
-    4. Disable browser notifications
-    5. Only keep @mention notifications on
+    1. Turn off email for less urgent notification types
+    2. Disable in-app notifications you don't need
+    3. Keep only critical notifications (Task Assigned, Task Due Soon) with email enabled
+    4. Review and adjust after a few days of use
   </Accordion>
 
   <Accordion title="Missing important notifications">
     Make sure:
-    1. @mention notifications are enabled
-    2. Shared content notifications are on
+    1. Task Assigned has both email and in-app enabled
+    2. Task Due Soon is turned on
     3. Check your spam folder for emails
-    4. You're not in Do Not Disturb mode
-    5. Your role has access to see the content
+    4. Verify you're assigned to the tasks in question
   </Accordion>
 
-  <Accordion title="Old notifications won't clear">
+  <Accordion title="Email notifications not arriving">
     Try:
-    1. Click "Mark all as read"
-    2. Refresh your browser
-    3. Clear browser cache
-    4. Log out and log back in
-    5. Contact support if issue persists
+    1. Check spam/junk folder
+    2. Verify email address in your profile is correct
+    3. Confirm email toggle is on in Notification Preferences
+    4. Contact your system administrator if issue persists
   </Accordion>
 </AccordionGroup>
 
 ## Notification Best Practices
 
 **Check Notifications Regularly**
-Make it a habit to check notifications once or twice per day, even if you use email digests.
+Make it a habit to check the notification bell at least once or twice per day.
 
-**Prioritize Mentions**
-When you have notifications, check @mentions first. These usually need your response.
+**Prioritize Task Notifications**
+Focus on Task Assigned and Task Due Soon notifications first, as these usually require action.
 
-**Use Quiet Hours**
-Set quiet hours for evenings and weekends so you can disconnect. Work-life balance matters!
+**Customize to Your Workflow**
+Everyone works differently. Adjust your preferences to match how you work best.
 
-**Don't Ignore All Notifications**
-While it's tempting to disable everything, you'll miss important updates. Find a balance that works for you.
+**Don't Disable Everything**
+While it's tempting to turn off all notifications, you'll miss important updates. Find a balance.
 
-**Clean Up Periodically**
-Every few weeks, review what you're following and unfollow processes you no longer need to track.
+**Review and Adjust**
+After a week of use, review your preferences and adjust based on what's working.
 
 <Tip>
-Treat notifications like email. Set specific times to check them rather than reacting to every alert immediately.
+Treat notifications like email. Set specific times to check them rather than being constantly distracted by every alert.
 </Tip>
 
-## Notification Settings Summary
+## Quick Reference: Notification Types
 
-Quick reference table of what you can control:
-
-| Notification Type | In-App | Email | Browser Push | Mobile Push |
-|-------------------|--------|-------|--------------|-------------|
-| @Mentions | ✅ | ✅ | ✅ | ✅ |
-| Comments | ✅ | ✅ | ✅ | ✅ |
-| Shared content | ✅ | ✅ | ✅ | ✅ |
-| Process updates | ✅ | ✅ | ❌ | ❌ |
-| Workspace news | ✅ | ✅ | ❌ | ❌ |
-| System alerts | ✅ | ✅ | ✅ | ✅ |
+| Notification Type | What It Means | Recommended Setting |
+|-------------------|---------------|---------------------|
+| Task Assigned | A task was assigned to you | Email + In-App |
+| Task Due Soon | Task deadline approaching | Email + In-App |
+| Task Completed | Task marked as complete | In-App only |
+| Task Comment | Someone commented on a task | In-App only |
+| Task Attachment | File added to task | In-App only |
+| Resource Shared | Resource shared with you | Email + In-App |
+| Invitation Accepted | Team member joined | In-App only |
+| System Notification | System announcement | Email + In-App |
 
 <Note>
-Not all organizations enable all notification channels. What you see depends on your workspace configuration.
+These are suggested settings. Adjust based on your role and work style.
 </Note>
 
 ## Next Steps
@@ -408,23 +351,23 @@ Not all organizations enable all notification channels. What you see depends on 
 You've completed the Getting Started guide! Here's where to go next:
 
 <CardGroup cols={2}>
-  <Card title="Explore Features" icon="compass">
-    Now that you know the basics, explore advanced features at your own pace.
+  <Card title="Explore Your Dashboard" icon="chart-line" href="/getting-started/dashboard-overview">
+    Learn how to use your dashboard effectively
   </Card>
 
-  <Card title="Start Using Processes" icon="rocket">
-    Jump in and start using the application. The best way to learn is by doing!
+  <Card title="Manage Tasks" icon="list-check" href="/tasks/using-my-tasks">
+    Dive into task management features
   </Card>
 
-  <Card title="Help Documentation" icon="book">
-    Browse the full help documentation for detailed guides on specific features.
+  <Card title="Use AI Chat" icon="robot" href="/getting-started/quick-start">
+    Get help using the AI assistant
   </Card>
 
-  <Card title="Contact Support" icon="life-ring">
-    Questions? Reach out to your workspace Owner or support team for help.
+  <Card title="Quick Start Guide" icon="rocket" href="/getting-started/quick-start">
+    Review the basics anytime
   </Card>
 </CardGroup>
 
 <Tip>
-Remember: You can always return to this Getting Started guide anytime. Bookmark it for quick reference!
+Remember: You can always return to this Getting Started guide anytime. The notification system helps you stay on top of your work without overwhelming you.
 </Tip>

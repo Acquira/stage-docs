@@ -29,15 +29,7 @@ Tracking workflow progress helps you:
 
 <Steps>
   <Step title="Open the Workflow">
-    Navigate to **My Workflows** and click on the workflow you want to track.
-
-    <Frame>
-      <img src="/images/workflows/workflow-overview-progress.png" alt="Workflow overview with progress" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of workflow overview showing progress indicators
-    </Note>
+    Navigate to **Process Framework > My Workflows** and click on the workflow you want to track.
   </Step>
 
   <Step title="View Progress Dashboard">
@@ -53,11 +45,11 @@ Tracking workflow progress helps you:
   <Step title="Review Detailed Task List">
     Scroll down to see all tasks with their individual statuses:
 
-    - Completed tasks (green checkmark)
-    - In progress tasks (blue spinner)
-    - Available tasks (green play button)
-    - Pending tasks (gray clock)
-    - Blocked tasks (red warning)
+    - Completed tasks
+    - In progress tasks
+    - New / Available tasks
+    - Pending tasks (waiting on dependencies)
+    - Blocked tasks
   </Step>
 </Steps>
 
@@ -79,14 +71,6 @@ Percentage is calculated based on **number of tasks**, not time or effort. A 5-m
 
 ### Visual Progress Bar
 
-<Frame>
-  <img src="/images/workflows/progress-bar.png" alt="Workflow progress bar" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot of progress bar with color segments
-</Note>
-
 The progress bar shows completion status visually:
 
 - **Green segment**: Completed tasks
@@ -102,7 +86,7 @@ Hover over the bar to see exact numbers for each status.
 
   - 8 Completed
   - 2 In Progress
-  - 3 Available
+  - 3 New
   - 5 Pending
   - 2 Blocked
 </Card>
@@ -136,8 +120,6 @@ Understanding task statuses helps you interpret progress:
 ### Completed
 
 <Accordion title="Task is Finished">
-  ✅ **Green with Checkmark**
-
   - Work is done
   - Evidence is uploaded
   - Task is marked complete
@@ -153,8 +135,6 @@ Understanding task statuses helps you interpret progress:
 ### In Progress
 
 <Accordion title="Someone is Actively Working">
-  🔵 **Blue with Spinner**
-
   - Task has been started
   - Assigned person is working on it
   - Work is underway but not finished
@@ -165,11 +145,9 @@ Understanding task statuses helps you interpret progress:
   - Time elapsed since starting
 </Accordion>
 
-### Available
+### New / Available
 
 <Accordion title="Ready to Be Started">
-  🟢 **Green with Play Button**
-
   - All dependencies are met
   - Assigned person can start anytime
   - No blockers
@@ -180,8 +158,6 @@ Understanding task statuses helps you interpret progress:
 ### Pending
 
 <Accordion title="Waiting on Dependencies">
-  ⚪ **Gray with Clock**
-
   - Task exists but can't start yet
   - Dependencies aren't complete
   - Will become Available once dependencies finish
@@ -192,8 +168,6 @@ Understanding task statuses helps you interpret progress:
 ### Blocked
 
 <Accordion title="Cannot Proceed Due to Issue">
-  🔴 **Red with Warning Icon**
-
   - Task cannot be completed due to a problem
   - Needs intervention to unblock
   - Someone has flagged an issue
@@ -208,32 +182,32 @@ Understanding task statuses helps you interpret progress:
 
 Many workflows organize tasks into phases or sections:
 
-<Frame>
-  <img src="/images/workflows/progress-by-phase.png" alt="Progress broken down by phase" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot showing workflow phases with individual progress bars
-</Note>
-
 ### Example: Employee Onboarding Phases
 
-```
 Phase 1: Pre-Onboarding (100% complete)
-  ├─ ✓ Send offer letter
-  ├─ ✓ Receive signed offer
-  └─ ✓ Order equipment
+
+Task 1: Send offer letter
+
+Task 2: Receive signed offer
+
+Task 3: Order equipment
 
 Phase 2: First Day Setup (66% complete)
-  ├─ ✓ Create email account
-  ├─ ✓ Set up workstation
-  └─ ⧗ Assign security badge [IN PROGRESS]
+
+Task 4: Create email account
+
+Task 5: Set up workstation
+
+Task 6: Assign security badge [IN PROGRESS]
 
 Phase 3: Week 1 Training (0% complete)
-  ├─ ⊗ Schedule orientation [AVAILABLE]
-  ├─ ⊙ Complete HR paperwork [PENDING]
-  └─ ⊙ Assign training modules [PENDING]
-```
+
+Task 7: Schedule orientation [AVAILABLE]
+
+Task 8: Complete HR paperwork [PENDING]
+
+Task 9: Assign training modules [PENDING]
+
 
 This view helps you see:
 - Which phases are complete
@@ -284,14 +258,6 @@ Blocked tasks often create a domino effect. If Task 5 is blocked, all tasks that
 
 The critical path is the sequence of tasks that determines the minimum time to complete the workflow.
 
-<Frame>
-  <img src="/images/workflows/critical-path.png" alt="Critical path highlighted in workflow" />
-</Frame>
-
-<Note>
-**Placeholder**: Diagram showing critical path through workflow with parallel tasks
-</Note>
-
 ### Why Critical Path Matters
 
 <AccordionGroup>
@@ -318,15 +284,7 @@ View all your tasks across all workflows in one place:
 
 <Steps>
   <Step title="Go to My Tasks">
-    Click **My Tasks** in the main navigation.
-
-    <Frame>
-      <img src="/images/workflows/my-tasks-dashboard.png" alt="My Tasks dashboard view" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of My Tasks consolidated view
-    </Note>
+    Click **Tasks & Work > My Tasks** in the main navigation sidebar.
   </Step>
 
   <Step title="View All Your Tasks">
@@ -379,14 +337,6 @@ Many systems provide progress reports for workflows:
     Progress over time compared to expected trajectory
   </Card>
 </CardGroup>
-
-<Frame>
-  <img src="/images/workflows/progress-report.png" alt="Workflow progress report" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot of progress report with charts and metrics
-</Note>
 
 ### Using Reports Effectively
 
@@ -503,95 +453,101 @@ When providing workflow updates to managers or stakeholders:
 ### Update Templates
 
 <Accordion title="Weekly Status Update">
-  ```
-  Workflow: [Name]
-  Overall Progress: [X%] ([Y] of [Z] tasks complete)
-  Status: [On Track / At Risk / Behind]
+Workflow: [Name] Overall Progress: [X%] ([Y] of [Z] tasks complete) Status: [On Track / At Risk / Behind]
 
-  Completed This Week:
-  - [Task 1]
-  - [Task 2]
-  - [Task 3]
+Completed This Week:
 
-  In Progress:
-  - [Task 4] - [Person Name] - [Expected completion date]
+[Task 1]
 
-  Blockers:
-  - [Description of any blocked tasks]
+[Task 2]
 
-  Next Week:
-  - [Planned tasks]
-  ```
+[Task 3]
+
+In Progress:
+
+[Task 4] - [Person Name] - [Expected completion date]
+
+Blockers:
+
+[Description of any blocked tasks]
+
+Next Week:
+
+[Planned tasks]
+
 </Accordion>
 
 <Accordion title="Quick Daily Update">
-  ```
-  [Workflow Name] Update:
-  - Completed [X] tasks today
-  - [Y] tasks in progress
-  - [Z] tasks available for tomorrow
-  - [Any blockers or issues]
-  ```
+[Workflow Name] Update:
+
+Completed [X] tasks today
+
+[Y] tasks in progress
+
+[Z] tasks available for tomorrow
+
+[Any blockers or issues]
+
 </Accordion>
 
 ## Best Practices for Progress Tracking
 
 <AccordionGroup>
-  <Accordion title="Check Progress Daily">
-    Make it a daily habit to:
-    - Review your workflows
-    - Check for newly available tasks
-    - Identify and address blockers
-    - Update task statuses
+<Accordion title="Check Progress Daily">
+  Make it a daily habit to:
+  - Review your workflows
+  - Check for newly available tasks
+  - Identify and address blockers
+  - Update task statuses
 
-    Spend 5-10 minutes each morning reviewing progress.
-  </Accordion>
+  Spend 5-10 minutes each morning reviewing progress.
+</Accordion>
 
-  <Accordion title="Update Status in Real-Time">
-    Mark tasks complete as you finish them. Don't batch updates at end of day or week.
+<Accordion title="Update Status in Real-Time">
+  Mark tasks complete as you finish them. Don't batch updates at end of day or week.
 
-    Real-time updates provide:
-    - Accurate progress for stakeholders
-    - Immediate unlocking of dependent tasks
-    - Better timeline projections
-  </Accordion>
+  Real-time updates provide:
+  - Accurate progress for stakeholders
+  - Immediate unlocking of dependent tasks
+  - Better timeline projections
+</Accordion>
 
-  <Accordion title="Address Blockers Immediately">
-    When you encounter a blocker:
-    - Mark the task as blocked right away
-    - Document why it's blocked
-    - Notify relevant people
-    - Don't wait for someone to ask
+<Accordion title="Address Blockers Immediately">
+  When you encounter a blocker:
+  - Mark the task as blocked right away
+  - Document why it's blocked
+  - Notify relevant people
+  - Don't wait for someone to ask
 
-    Fast blocker resolution = faster workflows.
-  </Accordion>
+  Fast blocker resolution = faster workflows.
+</Accordion>
 
-  <Accordion title="Celebrate Milestones">
-    When you complete a major phase or reach a milestone:
-    - Acknowledge the accomplishment
-    - Thank team members who contributed
-    - Share the progress with stakeholders
+<Accordion title="Celebrate Milestones">
+  When you complete a major phase or reach a milestone:
+  - Acknowledge the accomplishment
+  - Thank team members who contributed
+  - Share the progress with stakeholders
 
-    Recognition maintains momentum and motivation.
-  </Accordion>
+  Recognition maintains momentum and motivation.
+</Accordion>
 </AccordionGroup>
 
 ## Next Steps
 
 <CardGroup cols={2}>
-  <Card title="Complete Tasks" icon="check-circle" href="/workflows/completing-tasks">
-    Learn how to complete tasks and mark them as done
-  </Card>
+<Card title="Complete Tasks" icon="check-circle" href="/workflows/completing-tasks">
+  Learn how to complete tasks and mark them as done
+</Card>
 
-  <Card title="Upload Evidence" icon="upload" href="/workflows/uploading-evidence">
-    Provide documentation for completed work
-  </Card>
+<Card title="Upload Evidence" icon="upload" href="/workflows/uploading-evidence">
+  Provide documentation for completed work
+</Card>
 
-  <Card title="Use My Tasks" icon="list-check" href="/tasks/using-my-tasks">
-    View all your tasks across workflows in one place
-  </Card>
+<Card title="Use My Tasks" icon="list-check" href="/tasks/using-my-tasks">
+  View all your tasks across all workflows in one place
+</Card>
 
-  <Card title="Organize Tasks" icon="folders" href="/tasks/organizing-tasks">
-    Use tags, priorities, and categories effectively
-  </Card>
+<Card title="Organize Tasks" icon="folders" href="/tasks/organizing-tasks">
+  Use tags, priorities, and categories effectively
+</Card>
 </CardGroup>

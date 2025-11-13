@@ -200,7 +200,7 @@ Good documentation is the foundation of consistent execution. Learn how to write
 
   <Card title="Use Visual Hierarchy" icon="layer-group">
     Use formatting to show importance:
-    - Bold for key terms
+    - **Bold** for key terms
     - *Italics* for emphasis
     - `Code formatting` for technical terms
     - Callout boxes for important notes
@@ -334,128 +334,122 @@ Use this template for writing effective SOPs:
 - **Last Updated:** [Date]
 - **Owner:** [Person responsible for keeping this current]
 - **Version:** [Version number]
+Example SOP: Processing a Refund
+<AccordionGroup> <Accordion title="View Complete SOP Example"> # Process Customer Refund
+
+## Purpose
+This SOP ensures refunds are processed quickly, accurately, and in compliance with company refund policies.
+
+## When to Use This
+Use this procedure when a customer requests a refund for any purchase within 30 days of transaction.
+
+## Prerequisites
+- Customer account information (email or account ID)
+- Original order number
+- Reason for refund request
+- Manager approval (for refunds over $500)
+
+## Estimated Time
+10-15 minutes
+
+## Steps
+
+### 1. Verify Refund Eligibility
+1. Look up the order in the admin system using order number
+2. Check the order date (must be within 30 days)
+3. Verify the order status is "Delivered" or "Completed"
+4. Check if a previous refund was already issued (cannot refund twice)
+
+**Example:**
+Order #12345 placed on March 1st → Today is March 15th → Eligible (within 30 days)
+
+**Tips:**
+- If the order is outside 30 days, check if customer is Premium member (they get 60 days)
+- Digital products cannot be refunded after download
+
+### 2. Obtain Approval (if needed)
+If refund amount is over $500:
+1. Send Slack message to your manager with order details
+2. Include customer reason for refund
+3. Wait for approval before proceeding
+4. Document approval in the order notes
+
+### 3. Process the Refund
+1. In the admin system, navigate to Orders > [Order Number]
+2. Click the "Issue Refund" button
+3. Enter refund amount (usually full amount)
+4. Select refund reason from dropdown
+5. Add notes explaining the situation
+6. Click "Process Refund"
+7. Wait for confirmation message (appears in 3-5 seconds)
+
+**Common Issues:**
+- **Problem:** "Refund Failed" error message appears
+- **Solution:** Check if payment method is still valid. If card expired, escalate to Finance team
+
+### 4. Notify Customer
+1. Use the "Refund Confirmation" email template
+2. Include order number and refund amount
+3. Explain refund will appear in 5-7 business days
+4. Send the email
+
+**Example Email:**
+```
+Subject: Refund Processed for Order #12345
+
+Hi [Customer Name],
+
+Your refund of $150.00 for order #12345 has been processed.
+
+The refund will appear on your original payment method within 5-7 business days.
+
+If you have any questions, reply to this email.
+
+Best regards,
+[Your Name]
+Customer Support Team
 ```
 
-### Example SOP: Processing a Refund
+### 5. Document in CRM
+1. Create a note in the customer's CRM record
+2. Note: "Refund processed: $[amount] for order #[number]. Reason: [reason]"
+3. Add tag: "Refund-Issued"
+4. Save the note
 
-<AccordionGroup>
-  <Accordion title="View Complete SOP Example">
-    # Process Customer Refund
+## Verification
+You've completed this correctly if:
+- Order status shows "Refunded" in admin system
+- Customer received confirmation email
+- CRM note is created
+- Manager approval is documented (if required)
 
-    ## Purpose
-    This SOP ensures refunds are processed quickly, accurately, and in compliance with company refund policies.
+## Troubleshooting
 
-    ## When to Use This
-    Use this procedure when a customer requests a refund for any purchase within 30 days of transaction.
+**Problem:** Payment method no longer valid
+**Solution:** Escalate to Finance team. They can issue refund via check or bank transfer.
 
-    ## Prerequisites
-    - Customer account information (email or account ID)
-    - Original order number
-    - Reason for refund request
-    - Manager approval (for refunds over $500)
+**Problem:** Customer wants partial refund
+**Solution:** Only full refunds allowed. If customer wants to keep some items, process full refund then create new order for items they want to keep.
 
-    ## Estimated Time
-    10-15 minutes
+**Problem:** Refund button is grayed out
+**Solution:** Order may still be processing. Wait 1 hour and try again. If still grayed out, contact Technical Support.
 
-    ## Steps
+## Related Resources
+- [Refund Policy Guide](link)
+- [Refund Email Templates](link)
+- [Escalation Procedures](link)
 
-    ### 1. Verify Refund Eligibility
-    1. Look up the order in the admin system using order number
-    2. Check the order date (must be within 30 days)
-    3. Verify the order status is "Delivered" or "Completed"
-    4. Check if a previous refund was already issued (cannot refund twice)
+## Document Information
+- **Last Updated:** March 15, 2024
+- **Owner:** Sarah Johnson, Customer Support Manager
+- **Version:** 2.1
+</Accordion> </AccordionGroup>
 
-    **Example:**
-    Order #12345 placed on March 1st → Today is March 15th → Eligible (within 30 days)
-
-    **Tips:**
-    - If the order is outside 30 days, check if customer is Premium member (they get 60 days)
-    - Digital products cannot be refunded after download
-
-    ### 2. Obtain Approval (if needed)
-    If refund amount is over $500:
-    1. Send Slack message to your manager with order details
-    2. Include customer reason for refund
-    3. Wait for approval before proceeding
-    4. Document approval in the order notes
-
-    ### 3. Process the Refund
-    1. In the admin system, navigate to Orders > [Order Number]
-    2. Click the "Issue Refund" button
-    3. Enter refund amount (usually full amount)
-    4. Select refund reason from dropdown
-    5. Add notes explaining the situation
-    6. Click "Process Refund"
-    7. Wait for confirmation message (appears in 3-5 seconds)
-
-    **Common Issues:**
-    - **Problem:** "Refund Failed" error message appears
-    - **Solution:** Check if payment method is still valid. If card expired, escalate to Finance team
-
-    ### 4. Notify Customer
-    1. Use the "Refund Confirmation" email template
-    2. Include order number and refund amount
-    3. Explain refund will appear in 5-7 business days
-    4. Send the email
-
-    **Example Email:**
-    ```
-    Subject: Refund Processed for Order #12345
-
-    Hi [Customer Name],
-
-    Your refund of $150.00 for order #12345 has been processed.
-
-    The refund will appear on your original payment method within 5-7 business days.
-
-    If you have any questions, reply to this email.
-
-    Best regards,
-    [Your Name]
-    Customer Support Team
-    ```
-
-    ### 5. Document in CRM
-    1. Create a note in the customer's CRM record
-    2. Note: "Refund processed: $[amount] for order #[number]. Reason: [reason]"
-    3. Add tag: "Refund-Issued"
-    4. Save the note
-
-    ## Verification
-    You've completed this correctly if:
-    - Order status shows "Refunded" in admin system
-    - Customer received confirmation email
-    - CRM note is created
-    - Manager approval is documented (if required)
-
-    ## Troubleshooting
-
-    **Problem:** Payment method no longer valid
-    **Solution:** Escalate to Finance team. They can issue refund via check or bank transfer.
-
-    **Problem:** Customer wants partial refund
-    **Solution:** Only full refunds allowed. If customer wants to keep some items, process full refund then create new order for items they want to keep.
-
-    **Problem:** Refund button is grayed out
-    **Solution:** Order may still be processing. Wait 1 hour and try again. If still grayed out, contact Technical Support.
-
-    ## Related Resources
-    - [Refund Policy Guide](link)
-    - [Refund Email Templates](link)
-    - [Escalation Procedures](link)
-
-    ## Document Information
-    - **Last Updated:** March 15, 2024
-    - **Owner:** Sarah Johnson, Customer Support Manager
-    - **Version:** 2.1
-  </Accordion>
-</AccordionGroup>
-
-## Blueprint Template
-
+Blueprint Template
 Use this template for process blueprints:
 
-```markdown
+Markdown
+
 # [Process Name] Blueprint
 
 ## Process Overview
@@ -501,11 +495,9 @@ Use this template for process blueprints:
 - [Process that comes before this one]
 - [Process that comes after this one]
 - [Related parallel process]
-```
+Guide Template
+Markdown
 
-## Guide Template
-
-```markdown
 # [Topic] Guide
 
 ## Introduction
@@ -558,314 +550,287 @@ Use this template for process blueprints:
 - [Link to related guide]
 - [Link to reference material]
 - [Link to tool or template]
-```
+Using Visual Aids
+When to Use Screenshots
+<CardGroup cols={2}> <Card title="Do Use Screenshots" icon="check"> - Complex UI with many options - Specific fields to complete - Non-obvious button locations - Confirmation messages to expect </Card>
 
-## Using Visual Aids
+<Card title="Don't Use Screenshots" icon="xmark"> - Simple actions ("Click Save") - UIs that change frequently - When text description is clearer - For every single step (too many) </Card> </CardGroup>
 
-### When to Use Screenshots
+Screenshot Best Practices:
 
-<CardGroup cols={2}>
-  <Card title="Do Use Screenshots" icon="check">
-    - Complex UI with many options
-    - Specific fields to complete
-    - Non-obvious button locations
-    - Confirmation messages to expect
-  </Card>
+Annotate with arrows and labels
 
-  <Card title="Don't Use Screenshots" icon="xmark">
-    - Simple actions ("Click Save")
-    - UIs that change frequently
-    - When text description is clearer
-    - For every single step (too many)
-  </Card>
-</CardGroup>
+Crop to show only relevant area
 
-**Screenshot Best Practices:**
-- Annotate with arrows and labels
-- Crop to show only relevant area
-- Use consistent styling across all screenshots
-- Add captions explaining what the image shows
-- Update regularly when UI changes
+Use consistent styling across all screenshots
 
-### When to Use Diagrams
+Add captions explaining what the image shows
 
-**Flow Diagrams:** Show process flow and decision points
+Update regularly when UI changes
 
-**Use For:**
-- Process with multiple branches
-- Decision trees
-- Complex logic flows
+When to Use Diagrams
+Flow Diagrams: Show process flow and decision points
 
-**Architecture Diagrams:** Show system components and relationships
+Use For:
 
-**Use For:**
-- Technical integrations
-- Data flows
-- System dependencies
+Process with multiple branches
 
-**Swim Lane Diagrams:** Show activities across different roles/departments
+Decision trees
 
-**Use For:**
-- Cross-functional processes
-- Handoffs between teams
-- Parallel activities
+Complex logic flows
 
-<Tip>
-Keep diagrams simple. If your diagram has more than 15 boxes, it's probably too complex. Break it into multiple diagrams.
+Architecture Diagrams: Show system components and relationships
+
+Use For:
+
+Technical integrations
+
+Data flows
+
+System dependencies
+
+Swim Lane Diagrams: Show activities across different roles/departments
+
+Use For:
+
+Cross-functional processes
+
+Handoffs between teams
+
+Parallel activities
+
+<Tip> Keep diagrams simple. If your diagram has more than 15 boxes, it's probably too complex. Break it into multiple diagrams. </Tip>
+
+When to Use Tables
+Use Tables For:
+
+Comparing options
+
+Listing specifications
+
+Showing RACI assignments
+
+Reference data
+
+Table Best Practices:
+
+Keep tables simple (5-7 columns maximum)
+
+Use clear column headers
+
+Left-align text, right-align numbers
+
+Use zebra striping for readability
+
+Make tables responsive on mobile
+
+When to Use Callout Boxes
+<Tabs> <Tab title="Tips"> <Tip> Use Tip boxes for helpful suggestions and best practices.
+
+Example: "Save time by using keyboard shortcuts: Ctrl+S to save"
 </Tip>
+</Tab>
 
-### When to Use Tables
+<Tab title="Notes"> <Note> Use Note boxes for important information that isn't critical.
 
-**Use Tables For:**
-- Comparing options
-- Listing specifications
-- Showing RACI assignments
-- Reference data
+Example: "This feature is only available in the Professional plan"
+</Note>
+</Tab>
 
-**Table Best Practices:**
-- Keep tables simple (5-7 columns maximum)
-- Use clear column headers
-- Left-align text, right-align numbers
-- Use zebra striping for readability
-- Make tables responsive on mobile
+<Tab title="Warnings"> <Warning> Use Warning boxes for critical information about risks or consequences.
 
-### When to Use Callout Boxes
+Example: "This action cannot be undone. Always back up data first."
+</Warning>
+</Tab>
 
-<Tabs>
-  <Tab title="Tips">
-    <Tip>
-    Use Tip boxes for helpful suggestions and best practices.
+<Tab title="Info"> <Info> Use Info boxes for contextual information or background.
 
-    Example: "Save time by using keyboard shortcuts: Ctrl+S to save"
-    </Tip>
-  </Tab>
+Example: "This process was updated in March 2024 to comply with new regulations"
+</Info>
+</Tab> </Tabs>
 
-  <Tab title="Notes">
-    <Note>
-    Use Note boxes for important information that isn't critical.
+Keeping Documentation Current
+Version Control
+Every Document Should Include:
 
-    Example: "This feature is only available in the Professional plan"
-    </Note>
-  </Tab>
+Last updated date
 
-  <Tab title="Warnings">
-    <Warning>
-    Use Warning boxes for critical information about risks or consequences.
+Version number
 
-    Example: "This action cannot be undone. Always back up data first."
-    </Warning>
-  </Tab>
+Document owner
 
-  <Tab title="Info">
-    <Info>
-    Use Info boxes for contextual information or background.
+Change log (for significant updates)
 
-    Example: "This process was updated in March 2024 to comply with new regulations"
-    </Info>
-  </Tab>
-</Tabs>
+Version Numbering:
 
-## Keeping Documentation Current
+Major changes (restructure, new section): 1.0 → 2.0
 
-### Version Control
+Minor changes (new content, updates): 1.0 → 1.1
 
-**Every Document Should Include:**
-- Last updated date
-- Version number
-- Document owner
-- Change log (for significant updates)
+Corrections (typos, small fixes): 1.0.0 → 1.0.1
 
-**Version Numbering:**
-- Major changes (restructure, new section): 1.0 → 2.0
-- Minor changes (new content, updates): 1.0 → 1.1
-- Corrections (typos, small fixes): 1.0.0 → 1.0.1
+Review Schedule
+<CardGroup cols={2}> <Card title="High-Change Processes" icon="rotate-fast"> Review: Monthly Examples: Product features, marketing campaigns, new initiatives </Card>
 
-### Review Schedule
+<Card title="Moderate-Change Processes" icon="rotate"> Review: Quarterly Examples: Sales processes, customer onboarding, standard operations </Card>
 
-<CardGroup cols={2}>
-  <Card title="High-Change Processes" icon="rotate-fast">
-    **Review:** Monthly
-    **Examples:** Product features, marketing campaigns, new initiatives
-  </Card>
+<Card title="Stable Processes" icon="clock"> Review: Annually Examples: Compliance procedures, HR policies, financial processes </Card>
 
-  <Card title="Moderate-Change Processes" icon="rotate">
-    **Review:** Quarterly
-    **Examples:** Sales processes, customer onboarding, standard operations
-  </Card>
+<Card title="Triggered Reviews" icon="bell"> Review: When changes occur Triggers: System updates, policy changes, process improvements </Card> </CardGroup>
 
-  <Card title="Stable Processes" icon="clock">
-    **Review:** Annually
-    **Examples:** Compliance procedures, HR policies, financial processes
-  </Card>
-
-  <Card title="Triggered Reviews" icon="bell">
-    **Review:** When changes occur
-    **Triggers:** System updates, policy changes, process improvements
-  </Card>
-</CardGroup>
-
-### Deprecation Strategy
-
+Deprecation Strategy
 When documentation becomes outdated:
 
-<Steps>
-  <Step title="Mark as Deprecated">
-    Add clear notice: "This documentation is outdated. See [new doc] instead."
-  </Step>
+<Steps> <Step title="Mark as Deprecated"> Add clear notice: "This documentation is outdated. See [new doc] instead." </Step>
 
-  <Step title="Set Expiration Date">
-    "This document will be removed on [date]"
-  </Step>
+<Step title="Set Expiration Date"> "This document will be removed on [date]" </Step>
 
-  <Step title="Redirect Links">
-    Update all links pointing to old doc to point to new doc
-  </Step>
+<Step title="Redirect Links"> Update all links pointing to old doc to point to new doc </Step>
 
-  <Step title="Archive (Don't Delete)">
-    Move to archive location for historical reference
-  </Step>
-</Steps>
+<Step title="Archive (Don't Delete)"> Move to archive location for historical reference </Step> </Steps>
 
-<Warning>
-Never delete documentation without archiving. Future audits or reference needs may require historical process documentation.
-</Warning>
+<Warning> Never delete documentation without archiving. Future audits or reference needs may require historical process documentation. </Warning>
 
-## Writing Checklist
-
+Writing Checklist
 Before publishing documentation, verify:
 
-**Content**
-- [ ] Purpose is clearly stated upfront
-- [ ] Target audience is identified
-- [ ] All steps are included and in order
-- [ ] No steps are assumed knowledge
-- [ ] Examples are provided where helpful
-- [ ] Edge cases and exceptions are covered
+Content
 
-**Clarity**
-- [ ] Jargon and acronyms are defined
-- [ ] Instructions are specific and actionable
-- [ ] Active voice is used throughout
-- [ ] Sentences are concise (under 25 words)
-- [ ] Content is scannable with headings and lists
+Purpose is clearly stated upfront
 
-**Completeness**
-- [ ] Prerequisites are listed
-- [ ] Expected outcomes are described
-- [ ] Troubleshooting guidance is included
-- [ ] Related resources are linked
-- [ ] Contact information for questions is provided
+Target audience is identified
 
-**Visual Design**
-- [ ] Headings create clear hierarchy
-- [ ] Important information is highlighted
-- [ ] Screenshots are annotated and current
-- [ ] Tables and diagrams are readable
-- [ ] White space makes content easy to scan
+All steps are included and in order
 
-**Maintenance**
-- [ ] Document owner is assigned
-- [ ] Last updated date is current
-- [ ] Version number is recorded
-- [ ] Review schedule is established
+No steps are assumed knowledge
 
-## Common Documentation Mistakes
+Examples are provided where helpful
 
-<AccordionGroup>
-  <Accordion title="Writing for Yourself, Not the Reader">
-    **Mistake:** Assuming readers have your level of knowledge
+Edge cases and exceptions are covered
 
-    **Example:**
-    "Run the ETL job to sync the data warehouse"
+Clarity
 
-    **Problem:** Assumes reader knows what ETL is, where to run it, and how often
+Jargon and acronyms are defined
 
-    **Fix:**
-    "Each morning at 9 AM, log into the Data Admin panel and click 'Run Data Import' to update the reports with yesterday's sales data."
-  </Accordion>
+Instructions are specific and actionable
 
-  <Accordion title="Using Vague Language">
-    **Mistake:** Instructions that can be interpreted multiple ways
+Active voice is used throughout
 
-    **Examples of Vague Language:**
-    - "Soon" → Within 24 hours
-    - "Several" → 3-5
-    - "Quickly" → Within 2 minutes
-    - "Often" → 2-3 times per week
-    - "Large file" → Files over 10 MB
+Sentences are concise (under 25 words)
 
-    **Fix:** Replace vague terms with specific numbers, timeframes, and criteria
-  </Accordion>
+Content is scannable with headings and lists
 
-  <Accordion title="Skipping the 'Why'">
-    **Mistake:** Only explaining what to do, not why it matters
+Completeness
 
-    **Example:**
-    "Always CC your manager on customer emails"
+Prerequisites are listed
 
-    **Better:**
-    "Always CC your manager on customer emails so they can jump in if the issue escalates and have context for performance reviews"
+Expected outcomes are described
 
-    **When to Include Why:**
-    - When the reason isn't obvious
-    - When it prevents common mistakes
-    - When it helps with troubleshooting
-    - When it builds better understanding
-  </Accordion>
+Troubleshooting guidance is included
 
-  <Accordion title="Death by Screenshot">
-    **Mistake:** Including a screenshot for every single step
+Related resources are linked
 
-    **Problems:**
-    - Makes documentation very long
-    - Screenshots become outdated quickly
-    - Slower to update when UI changes
-    - Harder to scan for specific information
+Contact information for questions is provided
 
-    **Fix:** Only use screenshots for complex UIs or non-obvious actions. For simple actions, text is sufficient.
-  </Accordion>
+Visual Design
 
-  <Accordion title="No Examples">
-    **Mistake:** Only providing abstract instructions without concrete examples
+Headings create clear hierarchy
 
-    **Abstract:**
-    "Enter the customer reference number in the appropriate field"
+Important information is highlighted
 
-    **With Example:**
-    "Enter the customer reference number in the 'Ref ID' field. Example: CUS-2024-001234"
+Screenshots are annotated and current
 
-    **Fix:** Include at least one example per major step
-  </Accordion>
+Tables and diagrams are readable
 
-  <Accordion title="Never Updating">
-    **Mistake:** Writing documentation once and never revising
+White space makes content easy to scan
 
-    **Result:**
-    - Screenshots show old UI
-    - References to tools that no longer exist
-    - Steps that don't match current process
-    - Users lose trust in documentation
+Maintenance
 
-    **Fix:** Establish regular review schedule and assign owner to keep current
-  </Accordion>
-</AccordionGroup>
+Document owner is assigned
 
-## Related Resources
+Last updated date is current
 
-<CardGroup cols={2}>
-  <Card title="Organizing Processes" icon="sitemap" href="/best-practices/organizing-processes">
-    Structure processes before documenting them
-  </Card>
+Version number is recorded
 
-  <Card title="Effective RACI" icon="users" href="/best-practices/effective-raci">
-    Document roles and responsibilities clearly
-  </Card>
+Review schedule is established
 
-  <Card title="Version Control" icon="code-branch" href="/best-practices/version-control">
-    Track changes to your documentation
-  </Card>
+Common Documentation Mistakes
+<AccordionGroup> <Accordion title="Writing for Yourself, Not the Reader"> Mistake: Assuming readers have your level of knowledge
 
-  <Card title="Sales Process Example" icon="handshake" href="/examples/sales-process">
-    See documentation best practices in action
-  </Card>
-</CardGroup>
+**Example:**
+"Run the ETL job to sync the data warehouse"
+
+**Problem:** Assumes reader knows what ETL is, where to run it, and how often
+
+**Fix:**
+"Each morning at 9 AM, log into the Data Admin panel and click 'Run Data Import' to update the reports with yesterday's sales data."
+</Accordion>
+
+<Accordion title="Using Vague Language"> Mistake: Instructions that can be interpreted multiple ways
+
+**Examples of Vague Language:**
+- "Soon" → Within 24 hours
+- "Several" → 3-5
+- "Quickly" → Within 2 minutes
+- "Often" → 2-3 times per week
+- "Large file" → Files over 10 MB
+
+**Fix:** Replace vague terms with specific numbers, timeframes, and criteria
+</Accordion>
+
+<Accordion title="Skipping the 'Why'"> Mistake: Only explaining what to do, not why it matters
+
+**Example:**
+"Always CC your manager on customer emails"
+
+**Better:**
+"Always CC your manager on customer emails so they can track pipeline progress and jump in if needed"
+
+**When to Include Why:**
+- When the reason isn't obvious
+- When it prevents common mistakes
+- When it helps with troubleshooting
+- When it builds better understanding
+</Accordion>
+
+<Accordion title="Death by Screenshot"> Mistake: Including a screenshot for every single step
+
+**Problems:**
+- Makes documentation very long
+- Screenshots become outdated quickly
+- Slower to update when UI changes
+- Harder to scan for specific information
+
+**Fix:** Only use screenshots for complex UIs or non-obvious actions. For simple actions, text is sufficient.
+</Accordion>
+
+<Accordion title="No Examples"> Mistake: Only providing abstract instructions without concrete examples
+
+**Abstract:**
+"Enter the customer reference number in the appropriate field"
+
+**With Example:**
+"Enter the customer reference number in the 'Ref ID' field. Example: CUS-2024-001234"
+
+**Fix:** Include at least one example per major step
+</Accordion>
+
+<Accordion title="Never Updating"> Mistake: Writing documentation once and never revising
+
+**Result:**
+- Screenshots show old UI
+- References to tools that no longer exist
+- Steps that don't match current process
+- Users lose trust in documentation
+
+**Fix:** Establish regular review schedule and assign owner to keep current
+</Accordion> </AccordionGroup>
+
+Related Resources
+<CardGroup cols={2}> <Card title="Organizing Processes" icon="sitemap" href="/best-practices/organizing-processes"> Structure processes before documenting them </Card>
+
+<Card title="Effective RACI" icon="users" href="/best-practices/effective-raci"> Document roles and responsibilities clearly </Card>
+
+<Card title="Version Control" icon="code-branch" href="/best-practices/version-control"> Track changes to your documentation </Card>
+
+<Card title="Sales Process Example" icon="handshake" href="/examples/sales-process"> See documentation best practices in action </Card> </CardGroup>

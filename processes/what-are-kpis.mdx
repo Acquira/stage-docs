@@ -84,55 +84,41 @@ KPIs answer the question: "How do we know if this process is successful?" They t
 
 ## The Anatomy of a KPI
 
-Every KPI has these components:
-
 <AccordionGroup>
   <Accordion title="Name" icon="heading" defaultOpen>
-    **What it is:** A clear, descriptive name for the metric
+    **What it is:** A clear, descriptive name for the metric ("What are you measuring?")
 
     **Example:** "First Response Time" or "Customer Satisfaction Score"
-
-    Keep names short and immediately understandable.
   </Accordion>
 
   <Accordion title="Definition" icon="book">
-    **What it is:** Exact explanation of what you're measuring
+    **What it is:** Exact explanation of what you're measuring ("How will you measure it?")
 
     **Example:** "Average time in minutes between customer submitting a support ticket and receiving our first response"
-
-    This ensures everyone measures the same way.
   </Accordion>
 
   <Accordion title="Target/Goal" icon="bullseye">
-    **What it is:** The number you're aiming for
+    **What it is:** The number you're aiming for ("Goal Value")
 
-    **Example:** "First response within 2 hours" or "CSAT score of 4.5 out of 5"
-
-    Targets give you something to measure against.
+    **Example:** "First response within 2 hours" or "Goal Value: 100"
   </Accordion>
 
   <Accordion title="Actual Value" icon="chart-simple">
     **What it is:** The current measurement
 
     **Example:** "Current first response time: 1.5 hours"
-
-    This is what you record and track over time.
   </Accordion>
 
   <Accordion title="Frequency" icon="calendar">
     **What it is:** How often you measure and report
 
     **Example:** "Measured daily, reported weekly"
-
-    Frequency depends on how fast the metric changes and how critical it is.
   </Accordion>
 
   <Accordion title="Owner" icon="user">
-    **What it is:** The person responsible for tracking and reporting
+    **What it is:** The person responsible for tracking and reporting ("Who is responsible?")
 
     **Example:** "Sarah Johnson, Customer Support Manager"
-
-    One person should own each KPI for accountability.
   </Accordion>
 </AccordionGroup>
 
@@ -205,67 +191,56 @@ Every KPI has these components:
   </Tab>
 </Tabs>
 
-## KPI Hierarchy in the Framework
+## KPI Hierarchy in Stage3
 
-The Business Process Framework uses KPIs at different levels:
+Stage3 allows you to track KPIs at different levels of your process:
 
 <Steps>
-  <Step title="Level 1: Category KPIs">
-    **Highest level** - Strategic measures for entire categories
-
-    **Example:** Overall operational efficiency for all Core Processes
+  <Step title="Level 1: Master Process KPIs">
+    **Highest level** - Strategic measures for an entire Master Process.
   </Step>
-
-  <Step title="Level 2: Master Process KPIs">
-    **Mid-level** - Measures for standard process areas
-
-    **Example:** Overall HR effectiveness across all hiring processes
+  <Step title="Level 2: Core Process KPIs">
+    **Your level** - Measures for your specific Core Process. This is where you'll likely do most of your tracking.
   </Step>
-
-  <Step title="Level 3: Core Process KPIs">
-    **Your level** - Measures for your specific implementation
-
-    **Example:** Your team's onboarding process effectiveness
+  <Step title="Level 3: Category KPIs">
+    **Phase level** - Measures for a specific phase (Category) within your Core Process.
   </Step>
-
   <Step title="Level 4: Activity KPIs">
-    **Detailed level** - Measures for individual activities
-
-    **Example:** Time to complete background check (one activity in onboarding)
+    **Detailed level** - Measures for a single activity.
   </Step>
 </Steps>
 
 <Note>
-You'll typically work with **Level 3 (Core Process KPIs)** and **Level 4 (Activity KPIs)**. These are the metrics you can directly influence and improve.
+You'll typically work with **Core Process KPIs (Level 2)**, **Category KPIs (Level 3)** and **Activity KPIs (Level 4)**. These are the metrics you can directly influence and improve.
 </Note>
 
 ## Good KPIs vs. Bad KPIs
 
 <Tabs>
   <Tab title="Good KPIs">
-    ✅ **Specific:** "First response time under 2 hours" not "fast response"
+    **Specific:** "First response time under 2 hours" not "fast response"
 
-    ✅ **Measurable:** You can count or calculate it objectively
+    **Measurable:** You can count or calculate it objectively
 
-    ✅ **Actionable:** You can do something to improve it
+    **Actionable:** You can do something to improve it
 
-    ✅ **Relevant:** Directly related to process success
+    **Relevant:** Directly related to process success
 
-    ✅ **Tied to Goals:** Supports business objectives
+    **Tied to Goals:** Supports business objectives
 
     **Example:** "Increase customer satisfaction score from 4.2 to 4.5 within 6 months"
   </Tab>
 
   <Tab title="Bad KPIs">
-    ❌ **Vague:** "Good customer service" (how do you measure good?)
+    **Vague:** "Good customer service" (how do you measure good?)
 
-    ❌ **Unmeasurable:** "Make customers happy" (how do you quantify happy?)
+    **Unmeasurable:** "Make customers happy" (how do you quantify happy?)
 
-    ❌ **Not Actionable:** "Industry average revenue" (you can't directly control this)
+    **Not Actionable:** "Industry average revenue" (you can't directly control this)
 
-    ❌ **Irrelevant:** Measuring things that don't matter to process success
+    **Irrelevant:** Measuring things that don't matter to process success
 
-    ❌ **No Target:** "Monitor response time" (okay, but what's the goal?)
+    **No Target:** "Monitor response time" (okay, but what's the goal?)
 
     **Example:** "Be better at sales" (what does better mean? how much? by when?)
   </Tab>
@@ -273,7 +248,7 @@ You'll typically work with **Level 3 (Core Process KPIs)** and **Level 4 (Activi
 
 ## How KPIs Show Status
 
-KPIs typically use color-coding to show performance at a glance:
+When you record an "Actual Value" for a KPI, the system automatically calculates its status to show performance at a glance. This "Status Preview" compares your value to the "Target Goal" (and whether "Higher is Better" or "Lower is Better") to give you a color-coded status.
 
 <CardGroup cols={3}>
   <Card title="Green" icon="circle-check" color="#10b981">
@@ -293,10 +268,9 @@ KPIs typically use color-coding to show performance at a glance:
   </Card>
 </CardGroup>
 
-**Example:** Customer satisfaction target is 4.5/5.0
-- **Green:** 4.5 or higher
-- **Yellow:** 4.0 - 4.4
-- **Red:** Below 4.0
+**Example:** A KPI has a Goal of 10 and "Higher is Better".
+- If you record **11**, your status will likely be **Green**.
+- If you record **1** (10% of goal), your status will be **Red**.
 
 Learn more: [KPI Status Colors](/processes/kpi-status-colors)
 
@@ -382,8 +356,6 @@ Learn more: [KPI Status Colors](/processes/kpi-status-colors)
 
 ## KPIs and Continuous Improvement
 
-KPIs help you improve processes over time:
-
 <Steps>
   <Step title="Establish Baseline">
     Measure current performance. This is your starting point.
@@ -420,12 +392,17 @@ KPIs help you improve processes over time:
 
 <CardGroup cols={2}>
   <Card title="KPI Checklist" icon="list-check">
-    ✅ Clear name and definition
-    ✅ Specific target
-    ✅ Measurable
-    ✅ Relevant to success
-    ✅ Assigned owner
-    ✅ Regular tracking
+    Clear name and definition
+
+    Specific target
+
+    Measurable
+
+    Relevant to success
+
+    Assigned owner
+
+    Regular tracking
   </Card>
   <Card title="When to Review" icon="calendar">
     📊 Daily: Critical metrics

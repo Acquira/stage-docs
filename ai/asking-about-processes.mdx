@@ -3,40 +3,55 @@ title: "Asking About Processes"
 description: "Learn how to get information about your business processes from the AI"
 ---
 
-The AI assistant has deep knowledge of all your documented processes. It can explain them, answer questions, and help you understand how everything works.
+The AI assistant can answer questions about your documented processes. It can explain them, provide step-by-step guidance, and help you understand how everything works.
 
-## Context-Aware Help
+## Adding Process Context to Your Chat
 
-One of the most powerful features is context awareness. When you're viewing a process in the app, the AI automatically knows which one you're looking at.
+To ask questions about specific processes, you need to add them to your chat context first.
 
 <Info>
-You can ask "What is this process for?" or "Who owns this?" without having to specify which process you mean. The AI knows you're talking about what's on your screen.
+Context selection is only available when you're on a Core Process page. Navigate to a Core Process, then use the [Context] tab in the AI chat to select which blueprints and activities you want to discuss.
 </Info>
 
-### Example: On a Process Page
+### How to Add Process Context
 
-```
-You're viewing: "Customer Onboarding Process"
+<Steps>
+  <Step title="Navigate to a Core Process page">
+    Go to Process Framework > Business Processes, then open any Core Process.
+  </Step>
 
-You ask: "What are the main steps?"
+  <Step title="Open the AI chat">
+    Click the blue AI button in the bottom-right corner to open the chat pop-up.
+  </Step>
 
-AI responds: "The Customer Onboarding Process has 5 main steps:
-1. Initial contact and qualification
-2. Needs assessment
-3. Solution design
-4. Contract negotiation
-5. Implementation kickoff"
-```
+  <Step title="Click the [Context] tab">
+    Switch from the [Chat] tab to the [Context] tab at the top of the chat window.
+  </Step>
+
+  <Step title="Select your context">
+    Choose which blueprints and activities you want to add to the conversation.
+  </Step>
+
+  <Step title="Return to [Chat] tab">
+    Switch back to the [Chat] tab and start asking questions about the selected processes.
+  </Step>
+</Steps>
+
+<Note>
+If you're not on a Core Process page, you'll see a message: "Context selection is only available on Core pages. Navigate to a Core page to select blueprints and activities."
+</Note>
 
 ## Types of Questions You Can Ask
+
+Once you've added process context, you can ask detailed questions:
 
 <AccordionGroup>
   <Accordion title="Process Overview Questions">
     **What you can ask:**
-    - "What is the purpose of this process?"
-    - "When should I use this process?"
-    - "How long does this process typically take?"
-    - "What are the main steps?"
+    - "What is the purpose of the [process name]?"
+    - "When should I use the [process name]?"
+    - "How long does [process name] typically take?"
+    - "What are the main steps in [process name]?"
 
     **Example:**
     "What's the invoice approval process used for?"
@@ -44,10 +59,10 @@ AI responds: "The Customer Onboarding Process has 5 main steps:
 
   <Accordion title="Responsibility Questions">
     **What you can ask:**
-    - "Who is responsible for this process?"
-    - "Who do I need approval from?"
-    - "Who should I consult about this?"
-    - "Who needs to be informed?"
+    - "Who is responsible for [activity name]?"
+    - "Who do I need approval from in [process name]?"
+    - "Who should I consult about [step]?"
+    - "Who needs to be informed about [activity]?"
 
     **Example:**
     "Who needs to approve expense reports over $1,000?"
@@ -55,21 +70,21 @@ AI responds: "The Customer Onboarding Process has 5 main steps:
 
   <Accordion title="Step-by-Step Guidance">
     **What you can ask:**
-    - "What's the first step?"
+    - "What's the first step in [process name]?"
     - "What do I do after [specific step]?"
-    - "What happens if [scenario]?"
-    - "What documents do I need?"
+    - "What happens if [scenario] in [process]?"
+    - "What documents do I need for [activity]?"
 
     **Example:**
-    "What do I do if a customer wants to escalate an issue?"
+    "What do I do if a customer wants to escalate an issue during onboarding?"
   </Accordion>
 
   <Accordion title="Requirement Questions">
     **What you can ask:**
-    - "What information do I need to start?"
-    - "What forms are required?"
-    - "Are there any prerequisites?"
-    - "What systems do I need access to?"
+    - "What information do I need to start [process]?"
+    - "What forms are required for [activity]?"
+    - "Are there any prerequisites for [process]?"
+    - "What systems do I need access to for [process]?"
 
     **Example:**
     "What information do I need to onboard a new vendor?"
@@ -77,10 +92,10 @@ AI responds: "The Customer Onboarding Process has 5 main steps:
 
   <Accordion title="Timeline Questions">
     **What you can ask:**
-    - "How long does each step take?"
-    - "What's the total timeline?"
-    - "When do I need to start this?"
-    - "What are the deadlines?"
+    - "How long does each step take in [process]?"
+    - "What's the total timeline for [process]?"
+    - "When do I need to start [process]?"
+    - "What are the deadlines in [process]?"
 
     **Example:**
     "How long does the hiring process usually take from posting to offer?"
@@ -89,7 +104,7 @@ AI responds: "The Customer Onboarding Process has 5 main steps:
 
 ## Getting Specific Answers
 
-The more specific your question, the more helpful the answer.
+The more specific your question, the more helpful the answer. Include process names and specific details.
 
 <CardGroup cols={2}>
   <Card title="General Question" icon="message">
@@ -99,7 +114,7 @@ The more specific your question, the more helpful the answer.
   </Card>
 
   <Card title="Specific Question" icon="message-check">
-    "Who needs to approve marketing materials for external campaigns over $10,000?"
+    "In the Marketing Approval process, who needs to approve external campaigns over $10,000?"
 
     Gets an exact answer
   </Card>
@@ -107,13 +122,13 @@ The more specific your question, the more helpful the answer.
 
 ## Comparing Processes
 
-The AI can help you understand differences between similar processes:
+The AI can help you understand differences between similar processes. Make sure both processes are added to your context first.
 
 ```
 You: "What's the difference between the vendor onboarding
 process and the contractor onboarding process?"
 
-AI: "Great question! Here are the key differences:
+AI: "Based on the processes in your context:
 
 Vendor Onboarding:
 - Used for companies providing goods or services
@@ -130,69 +145,84 @@ Contractor Onboarding:
 
 ## Finding Related Processes
 
-Ask the AI to help you discover related processes:
+Ask the AI to help you discover related processes from those you've added to context:
 
-- "What other processes are related to customer onboarding?"
-- "What process comes after this one?"
-- "What processes does the sales team use most?"
-- "Show me all the approval processes"
+- "What activities are part of the customer onboarding process?"
+- "What category does [activity name] belong to?"
+- "Who is responsible for most activities in [process]?"
+- "What blueprints are available in [process]?"
 
 <Tip>
-If you're not sure which process to use, describe what you're trying to do. The AI can recommend the right process for your situation.
+If you're not sure which process to ask about, describe what you're trying to do. The AI can provide general guidance and suggest where to look in your process framework.
 </Tip>
 
-## Understanding Process Changes
+## Understanding Process Details
 
-If a process has been recently updated, the AI can help:
+Ask about specific elements of processes you've added to context:
 
 ```
-You: "Has the expense approval process changed recently?"
+You: "What are the RACI assignments for the budget approval activity?"
 
-AI: "Yes, the expense approval process was updated last month.
-The main change is that expenses over $500 now require
-department head approval, whereas previously the limit was $1,000."
+AI: "In the budget approval activity:
+- Responsible: Finance Team
+- Accountable: CFO
+- Consulted: Department Head
+- Informed: Project Manager"
 ```
 
 ## Example Questions by Scenario
 
 <Steps>
   <Step title="Starting Something New">
-    "I need to hire a new team member. What process should I follow?"
+    "What are the first steps in the employee onboarding process?"
   </Step>
 
-  <Step title="Stuck on a Step">
-    "I'm waiting for budget approval. What happens next in the project initiation process?"
+  <Step title="Understanding an Activity">
+    "What does the 'Initial Assessment' activity involve in the customer onboarding process?"
   </Step>
 
-  <Step title="Understanding Requirements">
-    "What documents do I need before I can submit a purchase request?"
+  <Step title="Finding Requirements">
+    "What documents are needed for the vendor approval process?"
   </Step>
 
-  <Step title="Finding the Right Person">
-    "Who should I talk to about getting approval for a new vendor?"
+  <Step title="Understanding Responsibilities">
+    "Who is accountable for the contract review activity?"
   </Step>
 </Steps>
 
-## When You Don't Know the Process Name
+## Best Practices
 
-You don't need to know the exact name of a process. Just describe what you're trying to do:
+**Be Specific with Process Names**  
+Mention the exact process or activity name when asking questions for the most accurate answers.
 
-```
-Instead of: "What is the PRQ-2024-001 process?"
+**Add Relevant Context First**  
+Make sure the processes you want to ask about are added to your context through the [Context] tab.
 
-Just ask: "How do I get approval to buy new office furniture?"
-```
+**Ask Follow-Up Questions**  
+You can have a conversation about the processes in your context. Ask clarifying questions as needed.
 
-The AI will identify the right process for you.
+**Navigate to Core Pages**  
+Remember that context selection only works when you're viewing a Core Process page.
 
 <Note>
-The AI can only tell you about processes that have been documented in your system. If you can't find what you're looking for, ask your process owner or admin to add it.
+The AI can only provide detailed answers about processes that you've added to the chat context. If you need information about a different process, use the [Context] tab to add it first.
 </Note>
+
+## Limitations
+
+**Context Must Be Selected Manually**  
+The AI doesn't automatically know which process you're viewing. You need to select it in the [Context] tab.
+
+**Only Works on Core Pages**  
+Context selection is only available when viewing Core Process pages, not on the Dashboard or other sections.
+
+**Based on Documented Information**  
+The AI can only tell you about processes that have been documented and added to your context.
 
 ## What's Next?
 
 Learn how the AI can help you with other tasks:
 
-- [Creating activities with AI assistance](/ai/creating-activities)
-- [Understanding your team structure](/ai/understanding-team)
-- [Searching documentation](/ai/searching-documentation)
+- [Opening and Using AI Chat](/ai/opening-chat)
+- [AI Capabilities Overview](/ai/ai-capabilities)
+- [Having Effective Conversations](/ai/having-conversations)

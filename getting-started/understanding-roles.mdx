@@ -5,9 +5,9 @@ description: "Learn about the three user roles and what they mean for you"
 
 ## What Are User Roles?
 
-User roles determine what you can do in the Business Process Framework. Your role defines your level of access and the actions you can take.
+User roles determine what you can do in Stage3. Your role defines your level of access and the actions you can take.
 
-There are three roles: Owner, Admin, and Member. Each role builds on the previous one, giving you more capabilities as you move up.
+There are three roles: Owner, Administrator, and Member. Each role builds on the previous one, giving you more capabilities as you move up.
 
 ## The Three Roles
 
@@ -16,7 +16,7 @@ There are three roles: Owner, Admin, and Member. Each role builds on the previou
     Basic access to view and use processes. Perfect for most team members.
   </Card>
 
-  <Card title="Admin" icon="user-shield">
+  <Card title="Administrator" icon="user-shield">
     Can create and manage processes. Ideal for process owners and managers.
   </Card>
 
@@ -29,18 +29,18 @@ There are three roles: Owner, Admin, and Member. Each role builds on the previou
 
 Here's a quick overview of what each role can do:
 
-| Action | Member | Admin | Owner |
-|--------|--------|-------|-------|
-| View processes | ✅ | ✅ | ✅ |
-| Search and use AI | ✅ | ✅ | ✅ |
-| Comment on processes | ✅ | ✅ | ✅ |
-| Create new processes | ❌ | ✅ | ✅ |
-| Edit processes | ❌ | ✅ | ✅ |
-| Delete processes | ❌ | ✅ | ✅ |
-| Manage team members | ❌ | ❌ | ✅ |
-| Change roles | ❌ | ❌ | ✅ |
-| Configure workspace | ❌ | ❌ | ✅ |
-| Billing and subscription | ❌ | ❌ | ✅ |
+| Action | Member | Administrator | Owner |
+|--------|--------|---------------|-------|
+| View processes | Yes | Yes | Yes |
+| Search and use AI | Yes | Yes | Yes |
+| Comment on processes | Yes | Yes | Yes |
+| Create new processes | No | Yes | Yes |
+| Edit processes | No | Yes | Yes |
+| Delete processes | No | Yes | Yes |
+| Manage team members | No | No | Yes |
+| Change roles | No | No | Yes |
+| Configure workspace | No | No | Yes |
+| Billing and subscription | No | No | Yes |
 
 <Note>
 These are the default role permissions. Your organization may have customized these settings.
@@ -76,11 +76,12 @@ Members have read access to the processes shared with them. This is the most com
 Being a Member doesn't mean you're less important! Most users are Members, and that's perfectly fine for accessing and using your organization's processes.
 </Tip>
 
-## Admin Role Explained
+## Administrator Role Explained
 
-Admins can create, edit, and manage processes. They're the process owners and content managers.
+Administrators can create, edit, and manage processes. They're the process owners and content managers.
 
-**What Admins Can Do**
+**What Administrators Can Do**
+
 Everything Members can do, plus:
 - Create new processes from scratch
 - Edit any process they have access to
@@ -91,14 +92,14 @@ Everything Members can do, plus:
 - Create templates for reuse
 - Bulk import processes
 
-**What Admins Cannot Do**
+**What Administrators Cannot Do**
 - Add or remove team members
 - Change user roles
 - Modify workspace settings
 - Access billing information
 - Delete the entire workspace
 
-**Who Should Be an Admin**
+**Who Should Be an Administrator**
 - Department managers
 - Process owners
 - Team leads
@@ -106,7 +107,7 @@ Everything Members can do, plus:
 - Anyone responsible for documenting procedures
 
 <Info>
-Admins are responsible for keeping processes accurate and up-to-date. If you're an Admin, make sure to review your processes regularly.
+Administrators are responsible for keeping processes accurate and up-to-date. If you're an Administrator, make sure to review your processes regularly.
 </Info>
 
 ## Owner Role Explained
@@ -114,7 +115,8 @@ Admins are responsible for keeping processes accurate and up-to-date. If you're 
 Owners have complete control over the workspace. There's usually only one or two Owners per organization.
 
 **What Owners Can Do**
-Everything Admins can do, plus:
+
+Everything Administrators can do, plus:
 - Invite new team members
 - Remove team members
 - Change anyone's role
@@ -143,15 +145,16 @@ Owners have powerful privileges, including the ability to delete the entire work
 
 ## How Roles Are Assigned
 
-When you're invited to join the Business Process Framework, you're assigned a role by an Owner.
+When you're invited to join Stage3, you're assigned a role by an Owner.
 
 **During Onboarding**
 1. An Owner sends you an invitation email
-2. The invitation specifies your role
+2. The invitation specifies your role (Member or Administrator)
 3. You accept the invitation and create your account
 4. Your role is active immediately
 
 **Requesting a Role Change**
+
 If you need different permissions:
 1. Contact your workspace Owner
 2. Explain why you need the change
@@ -159,7 +162,7 @@ If you need different permissions:
 4. You'll receive a notification about the change
 
 <Tip>
-If you're unsure what your current role is, click your profile picture in the top right corner. Your role is displayed in your profile information.
+To check your current role, go to Administration > Team Settings and look for your name in the Team Members table. Your role will be displayed there.
 </Tip>
 
 ## Permission Inheritance
@@ -167,10 +170,11 @@ If you're unsure what your current role is, click your profile picture in the to
 Roles work on an inheritance model. This means higher roles can do everything lower roles can do, plus more.
 
 **How It Works**
-- Admin = Member permissions + admin permissions
-- Owner = Admin permissions + owner permissions
+- Administrator = Member permissions + administrator permissions
+- Owner = Administrator permissions + owner permissions
 
 **Why This Matters**
+
 You never lose capabilities when you're promoted to a higher role. You only gain new ones.
 
 ## Role Best Practices
@@ -185,11 +189,11 @@ You never lose capabilities when you're promoted to a higher role. You only gain
   </Accordion>
 
   <Accordion title="Document who has what role">
-    Keep a list of who your Owners and Admins are. This helps during emergencies and when planning team changes.
+    Keep a list of who your Owners and Administrators are. This helps during emergencies and when planning team changes.
   </Accordion>
 
-  <Accordion title="Train Admins properly">
-    Before giving someone Admin access, make sure they understand how to create and manage processes properly. Poor documentation is worse than no documentation.
+  <Accordion title="Train Administrators properly">
+    Before giving someone Administrator access, make sure they understand how to create and manage processes properly. Poor documentation is worse than no documentation.
   </Accordion>
 </AccordionGroup>
 

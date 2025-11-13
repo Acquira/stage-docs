@@ -64,208 +64,117 @@ The best KPIs directly connect to your process goals. If improving this number m
 ## Creating Your First KPI
 
 <Steps>
-  <Step title="Navigate to Your Process">
-    Open the core process or activity where you want to add a KPI.
-
-    KPIs can be attached to:
-    - Entire core processes (overall performance)
-    - Specific activities (detailed metrics)
+  <Step title="Navigate to the KPIs Tab">
+    Open the core process where you want to add a KPI.
+    
+    Click on the **"KPIs"** tab in the main navigation bar (next to SOP, RACI, Visual, etc.).
   </Step>
 
-  <Step title="Find the KPI Section">
-    Look for "KPIs," "Metrics," or "Performance" section.
-
-    Click **"Add KPI"** or **"Create Metric"** button.
+  <Step title="Create New KPI">
+    Click the **"+ New KPI"** or **"+ Create First KPI"** button. This will open the "Create New KPI" modal.
   </Step>
 
-  <Step title="Name Your KPI">
-    Choose a clear, descriptive name that immediately tells people what you're measuring.
-
-    **Good names:**
-    - "First Response Time (Hours)"
-    - "Customer Satisfaction Score (1-5)"
-    - "Time to Hire (Days)"
-    - "Order Accuracy Rate (%)"
-
-    **Poor names:**
-    - "Metric 1"
-    - "Speed"
-    - "Customer Happiness"
-
-    Include units in the name (hours, days, %, score, etc.)
+  <Step title="What are you measuring?">
+    This is the name of your KPI. Choose a clear, descriptive name.
+    
+    **Example:** "Number of sales calls per week"
   </Step>
 
-  <Step title="Write a Clear Definition">
-    Explain exactly what you're measuring and how it's calculated.
-
-    **Example for "First Response Time":**
-    > "Average time in hours between customer submitting a support ticket and receiving our first response. Measured from ticket creation timestamp to first agent reply timestamp. Calculated daily using all tickets from the previous 24 hours."
-
-    Be specific enough that anyone could measure it consistently.
+  <Step title="Who is responsible?">
+    This is the **Owner** of the KPI. Select the team member responsible for tracking and reporting this metric from the dropdown.
+  </Step>
+  
+  <Step title="How will you measure it?">
+    This is the **Definition**. Describe the specific method for collecting the data.
+    
+    **Example:** "Count all outbound calls logged in CRM system"
   </Step>
 
-  <Step title="Set Your Target">
-    What number are you aiming for?
-
-    **Consider:**
-    - Current performance (baseline)
-    - Industry benchmarks
-    - Customer expectations
-    - Business requirements
-    - Resource constraints
-
-    **Example:** If current first response time is 4 hours, target might be 2 hours.
-
-    Be ambitious but realistic.
-  </Step>
-
-  <Step title="Define Thresholds">
-    Set the boundaries for green (good), yellow (warning), and red (problem) status.
-
-    **Example for First Response Time (target: 2 hours):**
-    - **Green:** 2 hours or less
-    - **Yellow:** 2-3 hours
-    - **Red:** Over 3 hours
-
-    Learn more: [KPI Status Colors](/processes/kpi-status-colors)
-  </Step>
-
-  <Step title="Set Measurement Frequency">
-    How often will you record this metric?
-
+  <Step title="What indicates success?">
+    This is the **Measurement Type**. Select whether a higher or lower number is better.
+    
     **Options:**
-    - **Real-time:** Continuously updated (automated systems)
-    - **Daily:** Recorded every day
-    - **Weekly:** Recorded once per week
-    - **Monthly:** Recorded once per month
-    - **Quarterly:** Recorded every 3 months
-
-    Choose based on:
-    - How fast the metric changes
-    - How critical it is
-    - How easy it is to measure
+    - Higher is Better (e.g., sales revenue, satisfaction score)
+    - Lower is Better (e.g., response time, costs)
   </Step>
 
-  <Step title="Assign an Owner">
-    Who is responsible for tracking and reporting this KPI?
-
-    This should be:
-    - Someone with access to the data
-    - Someone accountable for the process
-    - Typically a manager or team lead
-
-    **Example:** Customer Support Manager owns all support-related KPIs
-  </Step>
-
-  <Step title="Add Context (Optional)">
-    Include additional helpful information:
-    - **Data source:** Where the numbers come from
-    - **Calculation method:** Formula or process for calculating
-    - **Reporting format:** How results are shared
-    - **Related KPIs:** Other metrics that connect to this one
-
-    **Example:** "Data pulled from Zendesk reporting dashboard. Exported weekly on Mondays. Shared in weekly ops meeting."
+  <Step title="Set Frequency, Goal Value, and Unit">
+    Fill in the final fields:
+    - **Frequency:** How often you will measure this (e.g., Daily, Weekly, Monthly).
+    - **Goal Value:** The target number you are aiming for.
+    - **Unit (optional):** The unit of measurement (e.g., calls, %, hours).
   </Step>
 
   <Step title="Save Your KPI">
-    Click **"Save"** or **"Create"** to add the KPI to your process.
+    Click **"Create KPI"** to add the KPI to your process dashboard.
 
-    You can now start recording values and tracking performance.
+    You can now start recording values.
   </Step>
 </Steps>
 
 ## KPI Properties Explained
 
 <AccordionGroup>
-  <Accordion title="KPI Name" icon="heading" defaultOpen>
+  <Accordion title="What are you measuring?" icon="heading" defaultOpen>
     **Required:** Yes
 
-    Clear identifier for the metric. Include units.
-
+    The clear, descriptive name for the metric.
+    
     **Tips:**
-    - Use consistent naming across similar KPIs
-    - Include measurement units in parentheses
-    - Keep under 60 characters
-
-    **Examples:**
-    - Sales Conversion Rate (%)
-    - Average Handle Time (Minutes)
-    - Net Promoter Score (0-100)
+    - Use consistent naming.
+    - "Number of sales calls per week" is better than "Sales calls".
   </Accordion>
 
-  <Accordion title="Definition" icon="book">
-    **Required:** Highly recommended
+  <Accordion title="Who is responsible?" icon="user">
+    **Required:** Yes
 
-    Detailed explanation of what you're measuring.
+    The team member accountable for tracking this metric.
+    
+    **Responsibilities:**
+    - Record actual values.
+    - Report on trends.
+    - Take action when falling short of the goal.
+  </Accordion>
+  
+  <Accordion title="How will you measure it?" icon="book">
+    **Required:** No (but highly recommended)
+
+    The detailed definition of what you're measuring and how it's calculated.
 
     **Should include:**
     - What is being measured
     - How it's calculated
     - Data sources
-    - Any exclusions or special cases
-
-    **Length:** 2-4 sentences typically sufficient
   </Accordion>
 
-  <Accordion title="Target Value" icon="bullseye">
+  <Accordion title="What indicates success?" icon="chart-line">
     **Required:** Yes
 
-    The goal you're trying to achieve.
+    How the KPI is measured:
+    - **Higher is better** (e.g., satisfaction score)
+    - **Lower is better** (e.g., response time)
+  </Accordion>
+
+  <Accordion title="Goal Value" icon="bullseye">
+    **Required:** Yes
+
+    The target number you're trying to achieve.
 
     **Tips:**
-    - Base on data, not wishful thinking
-    - Make it challenging but achievable
-    - Review and adjust quarterly
-    - Consider seasonal variations
-  </Accordion>
-
-  <Accordion title="Status Thresholds" icon="traffic-light">
-    **Required:** Yes
-
-    Defines green/yellow/red zones.
-
-    **Consider:**
-    - Green = Target zone (meeting/exceeding)
-    - Yellow = Warning zone (approaching problem)
-    - Red = Problem zone (requires action)
-
-    Be specific about boundaries.
+    - Base it on data, not wishful thinking.
+    - Make it challenging but achievable.
   </Accordion>
 
   <Accordion title="Frequency" icon="calendar">
     **Required:** Yes
 
-    How often you measure and report.
-
-    **Guidance:**
-    - Critical metrics: Daily or real-time
-    - Operational metrics: Weekly
-    - Strategic metrics: Monthly or quarterly
-
-    More frequent isn't always better.
+    How often you measure and report (e.g., Daily, Weekly, Monthly).
   </Accordion>
 
-  <Accordion title="Owner" icon="user">
-    **Required:** Yes
+  <Accordion title="Unit (optional)" icon="beaker">
+    **Required:** No
 
-    The person accountable for this metric.
-
-    **Responsibilities:**
-    - Record actual values
-    - Report on trends
-    - Take action when status is red
-    - Update target when appropriate
-  </Accordion>
-
-  <Accordion title="Measurement Type" icon="chart-line">
-    **Required:** Usually
-
-    How the KPI is measured:
-    - **Higher is better** (e.g., satisfaction score)
-    - **Lower is better** (e.g., response time)
-    - **Target range** (e.g., inventory level - not too high, not too low)
-
-    This affects how status colors are assigned.
+    The unit of measurement (e.g., calls, %, hours, days).
   </Accordion>
 </AccordionGroup>
 
@@ -276,75 +185,66 @@ The best KPIs directly connect to your process goals. If improving this number m
     **Process:** B2B Enterprise Sales
 
     **KPI 1: Lead Conversion Rate**
-    - **Definition:** Percentage of qualified leads that become paying customers, measured monthly
-    - **Target:** 25%
-    - **Thresholds:** Green ≥25%, Yellow 20-24%, Red less than 20%
+    - **What are you measuring:** Lead Conversion Rate
+    - **How will you measure it:** Percentage of qualified leads that become paying customers, measured monthly
+    - **Who is responsible:** Sales Director
+    - **Success:** Higher is Better
     - **Frequency:** Monthly
-    - **Owner:** Sales Director
+    - **Goal Value:** 25
+    - **Unit:** %
 
     **KPI 2: Average Sales Cycle**
-    - **Definition:** Average days from first contact to closed-won, calculated monthly using all closed deals
-    - **Target:** 60 days
-    - **Thresholds:** Green ≤60 days, Yellow 61-75 days, Red >75 days
+    - **What are you measuring:** Average Sales Cycle
+    - **How will you measure it:** Average days from first contact to closed-won, calculated monthly
+    - **Who is responsible:** Sales Operations Manager
+    - **Success:** Lower is Better
     - **Frequency:** Monthly
-    - **Owner:** Sales Operations Manager
-
-    **KPI 3: Pipeline Value**
-    - **Definition:** Total dollar value of all opportunities in active pipeline, measured at month end
-    - **Target:** $2,000,000
-    - **Thresholds:** Green ≥$2M, Yellow $1.5M-$2M, Red <$1.5M
-    - **Frequency:** Monthly
-    - **Owner:** Sales Director
+    - **Goal Value:** 60
+    - **Unit:** days
   </Tab>
 
   <Tab title="Support Process">
     **Process:** Customer Support Ticket Resolution
 
     **KPI 1: First Response Time**
-    - **Definition:** Average hours from ticket creation to first agent response, calculated daily
-    - **Target:** 2 hours
-    - **Thresholds:** Green ≤2 hrs, Yellow 2-4 hrs, Red >4 hrs
+    - **What are you measuring:** First Response Time
+    - **How will you measure it:** Average hours from ticket creation to first agent response, calculated daily
+    - **Who is responsible:** Support Manager
+    - **Success:** Lower is Better
     - **Frequency:** Daily
-    - **Owner:** Support Manager
+    - **Goal Value:** 2
+    - **Unit:** hours
 
-    **KPI 2: Resolution Rate**
-    - **Definition:** Percentage of tickets resolved without escalation, measured weekly
-    - **Target:** 85%
-    - **Thresholds:** Green ≥85%, Yellow 75-84%, Red less than 75%
+    **KPI 2: Customer Satisfaction**
+    - **What are you measuring:** Customer Satisfaction (CSAT)
+    - **How will you measure it:** Average CSAT score from post-resolution surveys (1-5 scale), calculated weekly
+    - **Who is responsible:** Support Manager
+    - **Success:** Higher is Better
     - **Frequency:** Weekly
-    - **Owner:** Support Team Lead
-
-    **KPI 3: Customer Satisfaction**
-    - **Definition:** Average CSAT score from post-resolution surveys (1-5 scale), calculated weekly
-    - **Target:** 4.5
-    - **Thresholds:** Green ≥4.5, Yellow 4.0-4.4, Red less than 4.0
-    - **Frequency:** Weekly
-    - **Owner:** Support Manager
+    - **Goal Value:** 4.5
+    - **Unit:** (none)
   </Tab>
 
   <Tab title="HR Process">
     **Process:** New Employee Onboarding
 
     **KPI 1: Time to Productivity**
-    - **Definition:** Days from start date until new hire meets 100% of productivity goals, averaged monthly
-    - **Target:** 60 days
-    - **Thresholds:** Green ≤60 days, Yellow 61-75 days, Red >75 days
+    - **What are you measuring:** Time to Productivity
+    - **How will you measure it:** Days from start date until new hire meets 100% of productivity goals, averaged monthly
+    - **Who is responsible:** HR Director
+    - **Success:** Lower is Better
     - **Frequency:** Monthly
-    - **Owner:** HR Director
+    - **Goal Value:** 60
+    - **Unit:** days
 
-    **KPI 2: Onboarding Completion Rate**
-    - **Definition:** Percentage of new hires who complete all onboarding tasks within 30 days
-    - **Target:** 95%
-    - **Thresholds:** Green ≥95%, Yellow 85-94%, Red less than 85%
+    **KPI 2: New Hire Satisfaction**
+    - **What are you measuring:** New Hire Satisfaction
+    - **How will you measure it:** Average score from 30-day onboarding survey (1-5 scale)
+    - **Who is responsible:** HR Manager
+    - **Success:** Higher is Better
     - **Frequency:** Monthly
-    - **Owner:** HR Coordinator
-
-    **KPI 3: New Hire Satisfaction**
-    - **Definition:** Average score from 30-day onboarding survey (1-5 scale)
-    - **Target:** 4.3
-    - **Thresholds:** Green ≥4.3, Yellow 3.8-4.2, Red less than 3.8
-    - **Frequency:** Monthly
-    - **Owner:** HR Manager
+    - **Goal Value:** 4.3
+    - **Unit:** (none)
   </Tab>
 </Tabs>
 
@@ -352,7 +252,7 @@ The best KPIs directly connect to your process goals. If improving this number m
 
 <Steps>
   <Step title="Measure Current Performance">
-    Before setting a target, know where you are now. This is your baseline.
+    Before setting a goal, know where you are now. This is your baseline.
 
     Track the metric for at least 2-4 weeks to get a true average.
   </Step>
@@ -374,15 +274,15 @@ The best KPIs directly connect to your process goals. If improving this number m
     - Available budget
     - Time constraints
 
-    Don't set targets that require resources you don't have.
+    Don't set goals that require resources you don't have.
   </Step>
 
   <Step title="Set Stretch Goals">
-    Targets should be challenging but achievable.
+    Targets (Goal Values) should be challenging but achievable.
 
-    **Too easy:** Current performance is 4 hours, target is 3.9 hours (no real improvement)
-    **Too hard:** Current performance is 4 hours, target is 30 minutes (impossible)
-    **Just right:** Current performance is 4 hours, target is 2 hours (significant improvement, achievable with effort)
+    **Too easy:** Current performance is 4 hours, goal is 3.9 hours (no real improvement)
+    **Too hard:** Current performance is 4 hours, goal is 30 minutes (impossible)
+    **Just right:** Current performance is 4 hours, goal is 2 hours (significant improvement, achievable with effort)
   </Step>
 
   <Step title="Phase Improvements">
@@ -390,11 +290,9 @@ The best KPIs directly connect to your process goals. If improving this number m
 
     **Example:**
     - Current: 4 hours
-    - Q1 target: 3 hours
-    - Q2 target: 2.5 hours
-    - Q3 target: 2 hours (final goal)
-
-    This makes big improvements manageable.
+    - Q1 goal: 3 hours
+    - Q2 goal: 2.5 hours
+    - Q3 goal: 2 hours (final goal)
   </Step>
 </Steps>
 
@@ -429,7 +327,7 @@ Don't create KPIs you can't actually track consistently.
 
 **Example:** "Customer happiness" (vague) vs. "Customer satisfaction score from surveys" (measurable)
 
-**Fix:** Ensure you have a reliable way to collect the data.
+**Fix:** Ensure you have a reliable way to collect the data in the "How will you measure it?" field.
 </Warning>
 
 <Warning>
@@ -442,16 +340,6 @@ Be careful of KPIs that incentivize bad behavior.
 **Fix:** Balance multiple metrics. Add "resolution quality" or "customer satisfaction" alongside "tickets closed."
 </Warning>
 
-<Warning>
-**Ignoring Context**
-
-Don't set the same target for all situations if context varies.
-
-**Example:** Response time targets might differ for "Critical" vs. "Low Priority" tickets.
-
-**Fix:** Create separate KPIs for different categories or add context to definitions.
-</Warning>
-
 ## KPI Best Practices
 
 <CardGroup cols={2}>
@@ -462,7 +350,7 @@ Don't set the same target for all situations if context varies.
     Use system reports and dashboards to auto-calculate KPIs instead of manual tracking
   </Card>
   <Card title="Review Regularly" icon="calendar-check">
-    Revisit targets quarterly. Business conditions change; targets should too.
+    Revisit goal values quarterly. Business conditions change; targets should too.
   </Card>
   <Card title="Share Broadly" icon="share-nodes">
     Make KPI status visible to the team. Transparency drives improvement.
@@ -481,45 +369,39 @@ Once you've created a KPI:
   </Step>
 
   <Step title="Share with Team">
-    Make sure everyone involved in the process knows about the KPI and what the target is.
+    Make sure everyone involved in the process knows about the KPI and what the goal is.
   </Step>
 
   <Step title="Monitor Trends">
     Watch how the KPI changes over time. Look for patterns, improvements, or deterioration.
   </Step>
 
-  <Step title="Take Action on Red">
-    When KPIs are in the red zone, investigate why and take corrective action.
+  <Step title="Take Action">
+    When KPIs are falling short of the goal, investigate why and take corrective action.
   </Step>
 
-  <Step title="Celebrate Green">
-    When you hit targets, acknowledge the team's efforts. Positive reinforcement matters.
+  <Step title="Celebrate Success">
+    When you hit goals, acknowledge the team's efforts. Positive reinforcement matters.
   </Step>
 </Steps>
 
 ## KPI Creation Checklist
 
 Before finalizing your KPI:
-
-- [ ] Name clearly describes what's being measured
-- [ ] Units are included in the name
-- [ ] Definition explains exactly how it's calculated
-- [ ] Target is challenging but achievable
-- [ ] Thresholds (green/yellow/red) are defined
-- [ ] Frequency makes sense for the metric
-- [ ] Owner is assigned and understands their responsibility
-- [ ] Data source is identified and accessible
-- [ ] KPI is actually actionable (you can improve it)
-- [ ] Team understands why this metric matters
+- Name clearly describes what's being measured
+- "How will you measure it?" explains the calculation
+- "What indicates success?" is set correctly
+- "Goal Value" is challenging but achievable
+- "Frequency" makes sense for the metric
+- "Responsible" person is assigned
+- Data source is identified and accessible
+- Team understands why this metric matters
 
 ## Next Steps
 
-<CardGroup cols={3}>
+<CardGroup cols={2}>
   <Card title="Recording KPI Values" icon="pen-to-square" href="/processes/recording-kpi-values">
     Learn how to track your KPI data over time
-  </Card>
-  <Card title="KPI Status Colors" icon="palette" href="/processes/kpi-status-colors">
-    Understand the green/yellow/red system
   </Card>
   <Card title="What Are KPIs?" icon="circle-question" href="/processes/what-are-kpis">
     Review KPI fundamentals

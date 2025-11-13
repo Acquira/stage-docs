@@ -80,14 +80,29 @@ Forms complement your activity guides. The guide tells people what to do; the fo
 
 ## Adding Forms to Your Guide
 
+<Warning>
+**Important:** You must create a guide SOP (Standard Operating Procedure) before you can add forms. The system will display a warning "Guide SOP Required: Create a guide SOP first before adding forms" until you create the SOP.
+</Warning>
+
 <Steps>
-  <Step title="Create or Prepare Your Form">
+  <Step title="Create Your Guide Content First">
+    Open your activity guide from the Guides column in the RACI tab.
+    
+    Write your guide content using the rich text editor.
+  </Step>
+
+  <Step title="Create the Guide SOP">
+    Click **"Create SOP"** to save your guide content as a Standard Operating Procedure.
+    
+    This step is required before you can attach any forms.
+  </Step>
+
+  <Step title="Prepare Your Form">
     Create your form in the appropriate format:
     - **PDF forms** with fillable fields
     - **Word/Google Docs** templates
     - **Excel/Google Sheets** spreadsheets
     - **Online forms** (Google Forms, Typeform, etc.)
-    - **System-specific forms** in your software
 
     Make sure the form includes:
     - Clear title
@@ -96,24 +111,17 @@ Forms complement your activity guides. The guide tells people what to do; the fo
     - Submission instructions
   </Step>
 
-  <Step title="Open Your Activity Guide">
-    Navigate to the activity guide where you want to attach the form.
-
-    Click "Edit" to open the guide editor.
+  <Step title="Access the Forms Sidebar">
+    After creating your SOP, look at the right sidebar of the guide editor.
+    
+    You'll see the **Forms** section with a button labeled **"+ Add New Form"**.
   </Step>
 
-  <Step title="Navigate to the Forms Section">
-    Find where you want to reference the form in your instructions.
-
-    Look for an "Attach Form" button, "Upload" option, or simply the place in your instructions where the form should be mentioned.
-  </Step>
-
-  <Step title="Upload or Link the Form">
-    Depending on your system:
-    - **Upload:** Click "Attach Form" and upload the file from your computer
-    - **Link:** Paste the URL to an online form or document
-    - **Embed:** Some systems let you embed forms directly in the guide
-
+  <Step title="Add Your Form">
+    Click **"+ Add New Form"** in the Forms sidebar.
+    
+    Upload your form file or provide a link to your online form.
+    
     Add a descriptive name for the form so users know what it is.
   </Step>
 
@@ -122,19 +130,13 @@ Forms complement your activity guides. The guide tells people what to do; the fo
 
     **Example:**
     > **Step 4: Complete the Budget Request Form**
-    > Download and fill out the Budget Request Form (attached below). Complete all required fields marked with (*). Save the completed form as: YourName_BudgetRequest_YYYY-MM-DD.pdf
+    > Download and fill out the Budget Request Form (available in the Forms section). Complete all required fields marked with (*). Save the completed form as: YourName_BudgetRequest_YYYY-MM-DD.pdf
   </Step>
 
   <Step title="Test the Form">
-    Click the form link or download to make sure it works correctly.
+    Test the form to make sure it's accessible and all fields work correctly.
 
-    Try filling it out to ensure all fields are accessible and instructions are clear.
-  </Step>
-
-  <Step title="Save Your Guide">
-    Click "Save" to publish your guide with the attached form.
-
-    Team members can now access the form directly from the activity guide.
+    Try filling it out to ensure instructions are clear.
   </Step>
 </Steps>
 
@@ -299,7 +301,7 @@ Forms complement your activity guides. The guide tells people what to do; the fo
 
     **Guide Instructions:**
     > **Step 5: Complete Interview Scorecard**
-    > During or immediately after the interview, fill out the Interview Scorecard (attached below).
+    > During or immediately after the interview, fill out the Interview Scorecard (available in the Forms section).
     >
     > **Scoring:**
     > - Rate each criterion on a 1-5 scale
@@ -325,7 +327,7 @@ Forms complement your activity guides. The guide tells people what to do; the fo
 
     **Guide Instructions:**
     > **Step 2: Submit Equipment Request**
-    > Fill out the IT Equipment Request Form (link below) at least 2 weeks before the new hire's start date.
+    > Fill out the IT Equipment Request Form (available in the Forms section) at least 2 weeks before the new hire's start date.
     >
     > **Required Information:**
     > - New hire's name and start date
@@ -349,7 +351,7 @@ Forms complement your activity guides. The guide tells people what to do; the fo
 
     **Guide Instructions:**
     > **Step 3: Complete Expense Report**
-    > Download the Expense Report Template (Excel file attached below) and complete all tabs:
+    > Download the Expense Report Template (Excel file in Forms section) and complete all tabs:
     >
     > **Tab 1: Summary**
     > - Auto-calculates from detail tabs
@@ -477,7 +479,13 @@ Forms evolve over time. Track versions properly:
 ## Troubleshooting Form Issues
 
 <AccordionGroup>
-  <Accordion title="Form Link Is Broken" icon="link-slash" defaultOpen>
+  <Accordion title="Cannot Add Forms to Guide" icon="circle-exclamation" defaultOpen>
+    **Problem:** The "+ Add New Form" button is not available or shows a warning.
+
+    **Solution:** You must create a guide SOP first. Click "Create SOP" to save your guide content, then the Forms section will become available.
+  </Accordion>
+
+  <Accordion title="Form Link Is Broken" icon="link-slash">
     **Problem:** Users click the form link and get an error.
 
     **Solutions:**
@@ -539,6 +547,7 @@ Forms evolve over time. Track versions properly:
 
 Before attaching a form to your guide:
 
+- [ ] Guide SOP has been created
 - [ ] Form has a clear, descriptive title
 - [ ] All fields are clearly labeled
 - [ ] Required fields are marked with (*)
@@ -547,7 +556,7 @@ Before attaching a form to your guide:
 - [ ] Version number and date are visible
 - [ ] Form has been tested with actual users
 - [ ] File format is compatible with your team's tools
-- [ ] Form is properly linked or attached to guide
+- [ ] Form is properly attached in Forms sidebar
 - [ ] Guide instructions reference the form clearly
 
 ## Next Steps

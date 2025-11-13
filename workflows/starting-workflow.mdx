@@ -29,15 +29,7 @@ Workflows can be assigned to you in several ways:
 
 <Steps>
   <Step title="Navigate to My Workflows">
-    Click **My Workflows** in the main navigation menu.
-
-    <Frame>
-      <img src="/images/workflows/my-workflows-nav.png" alt="My Workflows navigation" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot showing My Workflows in navigation menu
-    </Note>
+    Click **Process Framework > My Workflows** in the main navigation sidebar.
   </Step>
 
   <Step title="View Your Workflow List">
@@ -46,23 +38,14 @@ Workflows can be assigned to you in several ways:
     - Active workflows you're working on
     - Not yet started workflows
     - Recently completed workflows
-
-    <Frame>
-      <img src="/images/workflows/workflow-list.png" alt="Workflow list view" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of My Workflows list showing multiple workflows
-    </Note>
   </Step>
 
   <Step title="Filter Your Workflows">
-    Use filters to find specific workflows:
+    Use the filters at the top of the list to find specific workflows:
 
-    - **Status**: Active, Not Started, Completed
-    - **Priority**: High, Medium, Low
-    - **Category**: HR, Operations, Finance, Acquisition
-    - **Date Range**: Created this week, this month, etc.
+    - **Search workflows...**
+    - **All Statuses** (Dropdown)
+    - **All Roles** (Dropdown)
   </Step>
 
   <Step title="Sort Your Workflows">
@@ -77,14 +60,6 @@ Workflows can be assigned to you in several ways:
 ## Understanding Your Workflow List
 
 Each workflow in your list shows key information at a glance:
-
-<Frame>
-  <img src="/images/workflows/workflow-card.png" alt="Workflow card details" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot of a single workflow card with annotations
-</Note>
 
 ### Workflow Card Details
 
@@ -115,14 +90,6 @@ Each workflow in your list shows key information at a glance:
     - **Your Tasks**: Which tasks are assigned to you
     - **Timeline**: Expected completion date
     - **Key Milestones**: Major checkpoints
-
-    <Frame>
-      <img src="/images/workflows/workflow-overview.png" alt="Workflow overview screen" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of workflow overview page
-    </Note>
   </Step>
 
   <Step title="Review Task List">
@@ -154,31 +121,14 @@ When you open a workflow, you'll see all its tasks. Here's how to read the task 
 
 ### Task Status Indicators
 
-<CardGroup cols={3}>
-  <Card title="Available" icon="play-circle">
-    **Green**: Ready to start. All dependencies are met.
-  </Card>
-
-  <Card title="Pending" icon="clock">
-    **Gray**: Waiting for dependencies to complete.
-  </Card>
-
-  <Card title="In Progress" icon="spinner">
-    **Blue**: Currently being worked on by you or a teammate.
-  </Card>
-
-  <Card title="Completed" icon="circle-check">
-    **Green with checkmark**: Finished with evidence uploaded.
-  </Card>
-
-  <Card title="Blocked" icon="ban">
-    **Red**: Cannot proceed due to an issue.
-  </Card>
-
-  <Card title="Not Your Task" icon="user-slash">
-    **Faded**: Assigned to someone else.
-  </Card>
-</CardGroup>
+| Task State | What It Means |
+|-----------|---------------|
+| **Pending** | Task exists but dependencies aren't met yet |
+| **New** | Task is ready to be started (all dependencies met) |
+| **Available** | (Alternative for 'New') Task is ready to be started |
+| **In Progress** | Someone has started working on the task |
+| **Completed** | Task is finished and evidence is uploaded |
+| **Blocked** | Task can't proceed due to an issue |
 
 ### Task Assignment Badges
 
@@ -198,32 +148,24 @@ When you open a workflow, you'll see all its tasks. Here's how to read the task 
 
 Tasks display priority levels that help you decide what to work on first:
 
-- **High Priority**: Red flag - Critical tasks that should be done immediately
-- **Medium Priority**: Orange flag - Important tasks with normal urgency
-- **Low Priority**: Gray flag - Nice-to-have tasks with flexibility
+- **High**: Critical tasks that should be done immediately
+- **Medium**: Important tasks with normal urgency
+- **Low**: Tasks that are helpful but not urgent
 
 ## Task Dependency Indicators
 
 Dependencies determine when tasks become available. The task list shows dependencies clearly:
 
-<Frame>
-  <img src="/images/workflows/task-dependencies-view.png" alt="Task dependencies in workflow" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot showing tasks with dependency indicators
-</Note>
-
 <Accordion title="No Dependencies">
   Task can be started immediately (if assigned to you).
 
-  Shows: Green **"Ready to Start"** indicator
+  Shows: **"Ready to Start"** indicator
 </Accordion>
 
 <Accordion title="Dependencies Met">
   All required tasks are complete. This task is now available.
 
-  Shows: Green **"Available"** indicator
+  Shows: **"Available"** indicator
 </Accordion>
 
 <Accordion title="Waiting on Dependencies">
@@ -262,48 +204,22 @@ Track overall workflow progress from the workflow overview:
 
 Some workflows are organized into sections or phases:
 
-```
-Phase 1: Pre-Onboarding (100% complete)
-  ✓ Task 1: Send offer letter
-  ✓ Task 2: Receive signed offer
-  ✓ Task 3: Order equipment
+Phase 1: Pre-Onboarding (100% complete) Task 1: Send offer letter Task 2: Receive signed offer Task 3: Order equipment
 
-Phase 2: First Day Setup (75% complete)
-  ✓ Task 4: Create email account
-  ✓ Task 5: Set up workstation
-  ⧗ Task 6: Security badge setup
+Phase 2: First Day Setup (75% complete) Task 4: Create email account Task 5: Set up workstation Task 6: Security badge setup
 
-Phase 3: Training (0% complete)
-  ⊗ Task 7: Schedule orientation
-  ⊗ Task 8: Assign training modules
-  ⊗ Task 9: Complete Day 1 training
-```
+Phase 3: Training (0% complete) Task 7: Schedule orientation Task 8: Assign training modules Task 9: Complete Day 1 training
 
-<Info>
-Legend:
-- ✓ = Complete
-- ⧗ = In Progress
-- ⊗ = Not Started (dependencies met)
-- ⊙ = Pending (waiting on dependencies)
-</Info>
 
 ## Starting Work on Your First Task
 
 <Steps>
   <Step title="Identify an Available Task">
-    Look for tasks marked **Available** and assigned to you.
+    Look for tasks marked **Available** or **New** and assigned to you.
   </Step>
 
   <Step title="Click the Task">
     Click the task to open its detail view.
-
-    <Frame>
-      <img src="/images/workflows/task-detail.png" alt="Task detail view" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of task detail panel
-    </Note>
   </Step>
 
   <Step title="Read Task Details">
@@ -315,7 +231,7 @@ Legend:
   </Step>
 
   <Step title="Click 'Start Task'">
-    Click the **Start Task** button to mark it as in progress.
+    Click the **Start Task** button to mark it as in progress. (This may be changing the Status dropdown to "In Progress").
 
     This:
     - Updates the task status to "In Progress"
@@ -336,7 +252,7 @@ Legend:
   </Step>
 
   <Step title="Mark Complete">
-    Click **Mark Complete** to finish the task.
+    Click **Mark Complete** (or change Status dropdown to "Completed") to finish the task.
 
     The task moves to "Completed" status and any dependent tasks may become available.
   </Step>
@@ -374,11 +290,10 @@ Sometimes you can't complete a task as expected. Here's what to do:
   <Accordion title="Task is Blocked">
     If you encounter an issue that prevents completion:
 
-    1. Click **Mark as Blocked**
-    2. Describe the issue in a comment
+    1. Change the **Status** dropdown to "Blocked"
+    2. Describe the issue in a **Comment**
     3. Tag relevant people who can help
-    4. The task status changes to "Blocked"
-    5. Workflow owner is notified
+    4. Workflow owner is notified
 
     **Example**: "Cannot complete - vendor hasn't responded to contract request. Tagged @sarah for follow-up."
   </Accordion>
@@ -386,7 +301,7 @@ Sometimes you can't complete a task as expected. Here's what to do:
   <Accordion title="Task Needs Clarification">
     If task instructions are unclear:
 
-    1. Click **Add Comment**
+    1. Click **Add Comment** in the task details
     2. Ask your question
     3. Tag the workflow owner or admin
     4. Wait for response before proceeding
@@ -397,7 +312,7 @@ Sometimes you can't complete a task as expected. Here's what to do:
   <Accordion title="Task Assigned Incorrectly">
     If you receive a task that shouldn't be assigned to you:
 
-    1. Click **Request Reassignment**
+    1. Click **Request Reassignment** (or "Edit Task")
     2. Explain why it's not yours
     3. Suggest who should own it
     4. Admin will reassign
@@ -463,8 +378,8 @@ If you're working on several workflows simultaneously:
     Set aside dedicated time for workflow tasks to avoid context switching
   </Card>
 
-  <Card title="Use Dashboard View" icon="table-columns">
-    View all your tasks across all workflows in one consolidated list
+  <Card title="Use My Tasks Page" icon="table-columns">
+    View all your tasks across all workflows in one consolidated list on the **My Tasks** page.
   </Card>
 </CardGroup>
 

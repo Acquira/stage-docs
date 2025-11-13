@@ -1,17 +1,17 @@
 ---
-title: "Uploading Documents to Knowledge Base"
+title: "Uploading Documents for AI Context"
 description: "Learn how to upload and manage documents that the AI can reference (Admin feature)"
 ---
 
 <Note>
-This is an **administrator-only feature**. Only users with admin privileges can upload and manage knowledge base documents.
+This is an **administrator-only feature**. Only users with admin privileges can upload and manage documents for the AI.
 </Note>
 
-## What is the Knowledge Base?
+## What is the AI Master Prompts Feature?
 
-The knowledge base is a central repository of documents that the AI assistant can search and reference when helping users. Think of it as the AI's reference library.
+The **AI Master Prompts** section acts as a central repository for documents that the AI assistant can search and reference when helping users. Think of it as the AI's reference library.
 
-When you upload documents to the knowledge base, the AI can:
+When you upload documents here, the AI can:
 
 - Search their contents
 - Answer questions based on the information
@@ -21,7 +21,7 @@ When you upload documents to the knowledge base, the AI can:
 
 ## Why Upload Documents?
 
-Upload documents to the knowledge base when you want the AI to help users with:
+Upload documents to the AI Master Prompts when you want the AI to help users with:
 
 <CardGroup cols={2}>
   <Card title="Company Policies" icon="file-contract">
@@ -57,12 +57,16 @@ PDFs work best for documents with consistent formatting. Word documents are grea
 ## How to Upload Documents
 
 <Steps>
-  <Step title="Navigate to Knowledge Base">
-    From the admin panel, select **AI Settings** then **Knowledge Base**.
+  <Step title="Navigate to AI Master Prompts">
+    From the main sidebar, navigate to **Administration > AI Master Prompts**.
+  </Step>
+  
+  <Step title="Create a Master Prompt (if needed)">
+    If you don't already have a prompt to add documents to, click **"+ Create Prompt"** and give it a clear `Name` and `Description` (e.g., "HR Policies").
   </Step>
 
   <Step title="Click 'Upload Document'">
-    Click the **Upload Document** button in the top right corner.
+    Inside the Master Prompt you want to add to, click the **Upload Document** button (this may be inside the prompt's edit screen).
   </Step>
 
   <Step title="Select your file">
@@ -119,21 +123,16 @@ Large documents (over 100 pages) may take a few minutes to process. You'll see a
 
 ### Add Helpful Descriptions
 
-Good descriptions help you and other admins understand what's in the knowledge base:
+Good descriptions help you and other admins understand what's in the AI's context:
 
-```
-Good Description:
-"Company policy on remote work eligibility, equipment provision,
-and expectations for remote employees. Updated January 2024 to
-include new hybrid work options."
+Good Description: "Company policy on remote work eligibility, equipment provision, and expectations for remote employees. Updated January 2024 to include new hybrid work options."
 
-Minimal Description:
-"Remote work policy"
-```
+Minimal Description: "Remote work policy"
+
 
 ### Organize with Categories
 
-Use consistent categories to keep the knowledge base organized:
+Use consistent categories to keep your documents organized:
 
 - Policies & Procedures
 - Training & Education
@@ -180,7 +179,7 @@ Once uploaded and processed:
 1. **AI Access** - The AI can immediately search the document content
 2. **User Queries** - Users can ask questions, and the AI will reference the document
 3. **Source Citations** - When the AI uses information from the document, it cites the source
-4. **Search Integration** - The document appears in knowledge base searches
+4. **Search Integration** - The document appears in searches
 
 <Tip>
 After uploading an important document, test it by asking the AI a question that should be answered by that document. This confirms it's working correctly.
@@ -190,7 +189,7 @@ After uploading an important document, test it by asking the AI a question that 
 
 - Maximum file size: **25 MB per document**
 - Maximum pages (PDF): **500 pages**
-- Total knowledge base size: **1 GB** (per organization)
+- Total storage size: **1 GB** (per organization)
 
 <Note>
 If you need to upload larger documents, consider splitting them into logical sections (e.g., different chapters or topics).
@@ -198,7 +197,7 @@ If you need to upload larger documents, consider splitting them into logical sec
 
 ## Security Considerations
 
-Documents uploaded to the knowledge base:
+Documents uploaded to **AI Master Prompts**:
 
 - Are only accessible to users in your organization
 - Require authentication to access
@@ -206,7 +205,7 @@ Documents uploaded to the knowledge base:
 - Are subject to the same security measures as your other data
 
 <Warning>
-Only upload documents that are appropriate for all users in your organization to access via the AI. If a document contains sensitive information limited to specific people, use access controls instead of the knowledge base.
+Only upload documents that are appropriate for all users in your organization to access via the AI. If a document contains sensitive information limited to specific people, use access controls instead of uploading it.
 </Warning>
 
 ## Common Upload Issues
@@ -231,6 +230,6 @@ Only upload documents that are appropriate for all users in your organization to
 
 After uploading documents, learn about:
 
-- [Managing the knowledge base](/ai/managing-knowledge-base)
+- [Managing AI Master Prompts](/ai/what-are-master-prompts)
 - [How the AI uses documents](/ai/how-ai-uses-documents)
-- [Creating custom master prompts](/ai/creating-custom-prompts)
+- [Creating custom text prompts](/ai/creating-custom-prompts)
