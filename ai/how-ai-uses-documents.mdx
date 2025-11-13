@@ -1,9 +1,9 @@
 ---
-title: "How the AI Uses Knowledge Base Documents"
+title: "How the AI Uses Uploaded Documents"
 description: "Understand how the AI assistant accesses and references your uploaded documents"
 ---
 
-When you upload documents to the knowledge base, the AI assistant can search and reference them to provide better answers. Here's how it works behind the scenes.
+When you upload documents to **AI Master Prompts**, the AI assistant can search and reference them to provide better answers. Here's how it works behind the scenes.
 
 ## Document Processing
 
@@ -36,23 +36,27 @@ This happens automatically in the background. Most documents are ready within a 
 When a user asks a question, the AI:
 
 1. **Analyzes the question** to understand what information is needed
-2. **Searches the knowledge base** for relevant content
+2. **Searches the AI Master Prompts** for relevant content
 3. **Retrieves matching sections** from documents
 4. **Combines information** from multiple sources if needed
 5. **Provides an answer** with source citations
 
 ### Example Search Process
 
-```
 User asks: "What's our policy on working from home?"
 
 AI process:
-1. Identifies keywords: policy, working from home, remote work
-2. Searches knowledge base for matching content
-3. Finds: "Remote Work Policy 2024" document
-4. Extracts relevant sections about eligibility and requirements
-5. Responds with policy details and cites the source document
-```
+
+Identifies keywords: policy, working from home, remote work
+
+Searches AI Master Prompts for matching content
+
+Finds: "Remote Work Policy 2024" document
+
+Extracts relevant sections about eligibility and requirements
+
+Responds with policy details and cites the source document
+
 
 ## Source Attribution
 
@@ -104,17 +108,20 @@ This ensures users get the most relevant information first.
 
 The AI can synthesize information from multiple documents:
 
-```
 User: "What's the complete process for hiring a contractor?"
 
 AI combines:
-- Contractor Onboarding Process (steps and timeline)
-- Legal Requirements Guide (contract requirements)
-- Finance Policy (payment terms)
-- IT Security Policy (access provisioning)
+
+Contractor Onboarding Process (steps and timeline)
+
+Legal Requirements Guide (contract requirements)
+
+Finance Policy (payment terms)
+
+IT Security Policy (access provisioning)
 
 Result: A comprehensive answer that covers all aspects
-```
+
 
 ## Context Awareness
 
@@ -139,18 +146,14 @@ If the AI finds conflicting information, it will:
 4. **Suggest** confirming with the document owner
 
 Example:
-```
 AI: "I found two different procedures:
 
-The Sales Playbook (updated March 2024) says leads should be
-contacted within 24 hours.
+The Sales Playbook (updated March 2024) says leads should be contacted within 24 hours.
 
-The Manager's Guide (updated June 2023) says leads should be
-contacted within 48 hours.
+The Manager's Guide (updated June 2023) says leads should be contacted within 48 hours.
 
-The Sales Playbook is more recent and likely reflects the current
-standard. I recommend confirming with the Sales Manager."
-```
+The Sales Playbook is more recent and likely reflects the current standard. I recommend confirming with the Sales Manager."
+
 
 ## Document Types and Usage
 
@@ -188,7 +191,7 @@ For the AI to provide accurate information:
 
 <Steps>
   <Step title="Update documents promptly">
-    When policies or procedures change, update the knowledge base immediately.
+    When policies or procedures change, update the **AI Master Prompts** immediately.
   </Step>
 
   <Step title="Disable outdated versions">
@@ -200,12 +203,12 @@ For the AI to provide accurate information:
   </Step>
 
   <Step title="Review regularly">
-    Periodically audit the knowledge base to ensure all content is up-to-date.
+    Periodically audit the **AI Master Prompts** to ensure all content is up-to-date.
   </Step>
 </Steps>
 
 <Warning>
-Outdated documents in the knowledge base can lead to incorrect AI responses. Always disable or remove superseded documents.
+Outdated documents in the **AI Master Prompts** can lead to incorrect AI responses. Always disable or remove superseded documents.
 </Warning>
 
 ## Privacy and Access
@@ -218,7 +221,7 @@ The AI respects document access:
 - Does not share information outside your organization
 
 <Note>
-The AI can only access documents uploaded to the knowledge base. It cannot access external files, databases, or systems.
+The AI can only access documents uploaded to the **AI Master Prompts**. It cannot access external files, databases, or systems.
 </Note>
 
 ## Improving AI Responses
@@ -261,7 +264,7 @@ Help the AI understand when and why:
 Well-structured, clear documents lead to better AI responses. Invest time in document quality and the AI will be more helpful.
 </Tip>
 
-## Best Practices for Knowledge Base Content
+## Best Practices for Uploaded Document Content
 
 <AccordionGroup>
   <Accordion title="Be Specific">
@@ -294,5 +297,5 @@ Well-structured, clear documents lead to better AI responses. Invest time in doc
 Learn more about managing the AI assistant:
 
 - [Uploading documents](/ai/uploading-documents) (Admin)
-- [Managing the knowledge base](/ai/managing-knowledge-base) (Admin)
+- [Managing AI Master Prompts](/ai/managing-master-prompts) (Admin)
 - [Creating custom master prompts](/ai/creating-custom-prompts) (Admin)

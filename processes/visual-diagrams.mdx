@@ -5,12 +5,12 @@ description: "Understanding and using the automatically generated visual and swi
 
 ## Automatic Diagram Generation
 
-The Business Process Framework automatically generates visual diagrams for every core process you create. You don't need to use complicated diagramming software or manually draw anything.
+Stage3 automatically generates visual diagrams for every core process you create. You don't need to use complicated diagramming software or manually draw anything.
 
-As you add activities and assign RACI roles, the system creates beautiful, professional diagrams that you can share with your team or export for presentations.
+As you add activities and assign RACI roles in the **RACI** tab, the system creates professional diagrams in the **Visual** and **Swimlane** tabs that you can share with your team.
 
 <Tip>
-The diagrams update in real-time as you edit your process. Make a change, and watch the diagram reflect it instantly.
+The diagrams update automatically as you edit your process in the RACI tab. Add a new activity or category, and the diagram will reflect it.
 </Tip>
 
 ## Two Types of Diagrams
@@ -18,54 +18,54 @@ The diagrams update in real-time as you edit your process. Make a change, and wa
 The system generates two different diagram views, each serving a different purpose:
 
 <CardGroup cols={2}>
-  <Card title="Visual Diagram" icon="diagram-project" color="#3b82f6">
-    A flowchart-style diagram showing the sequence of activities and their relationships.
+  <Card title="Visual Tab" icon="diagram-project" color="#3b82f6">
+    A high-level diagram showing activities grouped by their color-coded categories.
   </Card>
-  <Card title="Swimlane Diagram" icon="table-columns" color="#10b981">
-    A diagram organized by roles, showing which team members are responsible for which activities.
+  <Card title="Swimlane Tab" icon="table-columns" color="#10b981">
+    A diagram organized by roles, showing which team members are **Responsible** for which activities.
   </Card>
 </CardGroup>
 
 ## Visual Diagram Tab
 
-The Visual Diagram shows your process as a flowchart, making it easy to understand the sequence of activities.
+The Visual Diagram shows your process organized by phases, making it easy to understand the sequence of categories. **This is not a traditional flowchart.**
 
 ### What You'll See
 
 <AccordionGroup>
-  <Accordion title="Activity Boxes" icon="square" defaultOpen>
-    Each activity appears as a box in the diagram. The boxes show:
-    - Activity name
-    - Category color coding
-    - Sequential order
+  <Accordion title="Category Bars" icon="palette" defaultOpen>
+    The diagram is organized into large, horizontal, color-coded bars for each **Category** (e.g., "E" [Red], "Lanning Phase" [Green]).
 
-    Activities are arranged from top to bottom or left to right, showing the flow of work.
+    This gives you an immediate visual sense of the process phases.
   </Accordion>
 
-  <Accordion title="Color Coding" icon="palette">
-    Activities are color-coded based on their categories, making it easy to see how your process is organized.
+  <Accordion title="Activity Cards" icon="square">
+    Beneath each Category bar, you'll see the **Activity cards** associated with that phase.
 
-    You'll instantly recognize which activities belong to which phase or category of your process.
+    Each card displays:
+    - Activity name (e.g., "e" or "Activity 2")
+    - The RACI assignments (e.g., R: e, A: e, C: e)
   </Accordion>
-
-  <Accordion title="Flow Connections" icon="arrows-turn-to-dots">
-    Arrows or lines connect activities, showing the flow from one step to the next.
-
-    This makes it easy to understand dependencies and sequence.
+  
+  <Accordion title="Process Flow Insights" icon="lightbulb">
+    A summary panel often appears on the side or bottom, showing:
+    - Total Activities
+    - Number of Categories
+    - RACI Coverage
   </Accordion>
 </AccordionGroup>
 
 ### Best For
 
 <CardGroup cols={2}>
-  <Card title="Understanding Sequence" icon="arrow-down-1-9">
-    Perfect for seeing what happens first, second, third in your process.
+  <Card title="Understanding Phases" icon="layer-group">
+    Perfect for seeing the main stages of your process at a glance.
   </Card>
-  <Card title="Identifying Gaps" icon="circle-exclamation">
-    Helps you spot missing steps or unnecessary activities.
+  <Card title="Identifying Activities" icon="list-check">
+    Helps you quickly see which activities belong to which phase.
   </Card>
   <Card title="Training" icon="chalkboard-user">
-    Great for teaching new team members how the process flows.
+    Great for teaching new team members the high-level process structure.
   </Card>
   <Card title="High-Level Overview" icon="eye">
     Gives stakeholders a quick understanding of the entire process.
@@ -74,33 +74,23 @@ The Visual Diagram shows your process as a flowchart, making it easy to understa
 
 ## Swimlane Diagram Tab
 
-The Swimlane Diagram organizes activities by roles, showing who does what. Think of it like lanes in a swimming pool, each lane represents a different role or team member.
+The Swimlane Diagram organizes activities by roles, showing who does what. Think of it like lanes in a swimming pool—each lane represents a different "Responsible" person.
 
 ### What You'll See
 
 <AccordionGroup>
-  <Accordion title="Role Lanes" icon="water" defaultOpen>
-    The diagram is divided into horizontal "lanes," one for each RACI role in your process.
-
-    Each lane shows all the activities that person or role is involved in.
+  <Accordion title="Responsible Person Lanes" icon="water" defaultOpen>
+    The diagram is divided into horizontal "lanes," one for each unique entry in the **Responsible (R)** field of your RACI matrix (e.g., a lane for "Braulio", a lane for "e", a lane for "r").
   </Accordion>
 
   <Accordion title="Activities in Lanes" icon="box">
-    Activities appear in the lane of the person who is **Responsible** for that activity.
+    Activities appear in the lane of the person or role that is **Responsible** for that activity.
 
     This makes it crystal clear who does what work.
   </Accordion>
 
-  <Accordion title="Cross-Lane Connections" icon="arrow-right-arrow-left">
-    Arrows show when work moves from one role to another.
-
-    For example, when the recruiter finishes screening and hands off to the hiring manager for interviews.
-  </Accordion>
-
-  <Accordion title="RACI Indicators" icon="user-tag">
-    Small indicators show if someone is Accountable, Consulted, or Informed for activities in other lanes.
-
-    You can see not just who does the work, but who approves it or provides input.
+  <Accordion title="Horizontal Sequence" icon="arrow-right">
+    The chart shows the sequence of steps horizontally (Step 1, Step 2, etc.), allowing you to see how work flows through the team.
   </Accordion>
 </AccordionGroup>
 
@@ -108,7 +98,7 @@ The Swimlane Diagram organizes activities by roles, showing who does what. Think
 
 <CardGroup cols={2}>
   <Card title="Understanding Roles" icon="users">
-    Perfect for seeing all the work a specific person or role does in the process.
+    Perfect for seeing all the work a specific person or role is Responsible for.
   </Card>
   <Card title="Identifying Handoffs" icon="hand-holding">
     Shows where work transfers between team members, highlighting potential bottlenecks.
@@ -127,8 +117,11 @@ The Swimlane Diagram organizes activities by roles, showing who does what. Think
   <Step title="Open Your Process">
     Navigate to any core process you've created.
   </Step>
+  <Step title="Add Activities">
+    Go to the **RACI** tab and add activities with categories and responsible people.
+  </Step>
   <Step title="Find the Tabs">
-    Look for the "Visual" and "Swimlane" tabs near the top of the process view.
+    Look for the "Visual" and "Swimlane" tabs in the top navigation bar.
   </Step>
   <Step title="Switch Between Views">
     Click each tab to see the different diagram styles. The diagrams generate instantly.
@@ -139,12 +132,12 @@ The Swimlane Diagram organizes activities by roles, showing who does what. Think
 </Steps>
 
 <Info>
-The diagrams are read-only. To make changes, edit your activities in the main process view, and the diagrams will update automatically.
+The diagrams are read-only. To make changes, go back to the **RACI** tab to edit your activities, and the diagrams will update automatically.
 </Info>
 
-## Exporting Diagrams
+## Exporting Diagrams (Unverified Feature)
 
-You can export your diagrams for use in presentations, training materials, or documentation.
+You may be able to export your diagrams for use in presentations, training materials, or documentation.
 
 ### Export Options
 
@@ -195,20 +188,24 @@ Export both diagram types for comprehensive documentation. The Visual shows the 
   <Card title="Keep It Simple" icon="minimize">
     If your diagram looks too complex, consider breaking your process into smaller core processes.
   </Card>
-  <Card title="Use Color Wisely" icon="droplet">
-    Choose distinct colors for your activity categories so they're easy to distinguish in diagrams.
+  <Card title="Use Clear Categories" icon="droplet">
+    Use descriptive names for your activity categories so they're easy to distinguish in diagrams.
   </Card>
   <Card title="Review with Your Team" icon="users">
     Share diagrams in team meetings to validate that everyone understands the process.
   </Card>
-  <Card title="Update After Changes" icon="rotate">
-    After editing your process, review the diagrams to ensure they still make sense visually.
+  <Card title="Review After Changes" icon="rotate">
+    After editing your RACI, always check the diagrams to ensure they still make sense visually.
   </Card>
 </CardGroup>
 
 ## Troubleshooting Diagrams
 
 <AccordionGroup>
+  <Accordion title="Diagram is empty" icon="eye-slash">
+    **Solution:** You must add activities in the **RACI** tab first. Both diagrams are empty until activities with categories and responsible people are added.
+  </Accordion>
+    
   <Accordion title="Diagram looks cluttered" icon="explosion">
     **Solution:** Your process might have too many activities. Consider:
     - Breaking it into multiple smaller core processes
@@ -216,15 +213,8 @@ Export both diagram types for comprehensive documentation. The Visual shows the 
     - Simplifying your categories
   </Accordion>
 
-  <Accordion title="Can't see all activities" icon="eye-slash">
-    **Solution:** Zoom out using your mouse wheel or pinch gesture. Large processes create large diagrams.
-  </Accordion>
-
   <Accordion title="Swimlane has too many lanes" icon="list">
-    **Solution:** You might have too many different roles in one process. Consider:
-    - Grouping similar roles
-    - Creating separate processes for different teams
-    - Reviewing if all RACI assignments are necessary
+    **Solution:** You might have too many different roles in one process. Try to standardize the names used in the "Responsible" field.
   </Accordion>
 
   <Accordion title="Export quality is poor" icon="image">
@@ -236,16 +226,16 @@ Export both diagram types for comprehensive documentation. The Visual shows the 
 
 | Use Case | Visual Diagram | Swimlane Diagram |
 |----------|----------------|------------------|
-| Training new team members | ✅ Great | ⚠️ Can be confusing |
-| Showing process flow | ✅ Perfect | ❌ Not ideal |
-| Clarifying roles | ⚠️ Limited | ✅ Perfect |
-| Identifying bottlenecks | ⚠️ Okay | ✅ Excellent |
-| Executive presentations | ✅ Great | ⚠️ Too detailed |
-| Team collaboration | ✅ Good | ✅ Great |
-| Finding workload issues | ❌ Not useful | ✅ Perfect |
+| Training new team members | Good | Limited |
+| Showing process phases | Yes | No |
+| Clarifying roles | Limited | Yes |
+| Identifying handoffs | Good | Yes |
+| Executive presentations | Yes | Limited |
+| Team collaboration | Good | Yes |
+| Finding workload issues | No | Yes |
 
 <Note>
-**Pro tip:** Use the Visual diagram for understanding the process, and the Swimlane diagram for understanding the people.
+**Pro tip:** Use the **Visual** tab for understanding the process *phases*, and the **Swimlane** tab for understanding the *people*.
 </Note>
 
 ## Next Steps

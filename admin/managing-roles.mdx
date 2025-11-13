@@ -13,31 +13,25 @@ User roles determine what team members can do within your organization. As an ad
 
 ## Understanding Role Hierarchy
 
-The Business Process Framework has four role levels:
+**Stage3** has three role levels:
 
-<CardGroup cols={2}>
-  <Card title="Team Owner" icon="crown">
+<CardGroup cols={3}>
+  <Card title="Owner" icon="crown">
     **Full Control**
 
     Complete access to all team features, settings, and administrative functions. Can manage billing, delete the team, and assign/remove other owners.
   </Card>
 
-  <Card title="Team Admin" icon="user-shield">
+  <Card title="Administrator" icon="user-shield">
     **Administrative Access**
 
     Can manage team members, configure settings, and access all processes. Cannot manage billing or delete the team.
   </Card>
 
-  <Card title="Team Member" icon="user">
+  <Card title="Member" icon="user">
     **Standard Access**
 
     Can create and manage processes, participate in workflows, and view team KPIs. Cannot change team settings or manage members.
-  </Card>
-
-  <Card title="Guest" icon="user-clock">
-    **Limited Access**
-
-    Can only access specific processes they are assigned to. Cannot view team-wide information or create new processes.
   </Card>
 </CardGroup>
 
@@ -45,7 +39,7 @@ The Business Process Framework has four role levels:
 
 <Steps>
   <Step title="Navigate to Team Members">
-    Go to **Team Settings** > **Members** to view your team roster.
+    Go to **Administration > Team Settings** to view your team roster in the "Team Members" section.
   </Step>
 
   <Step title="Locate the Team Member">
@@ -57,7 +51,7 @@ The Business Process Framework has four role levels:
   </Step>
 
   <Step title="Select New Role">
-    Choose the new role from the dropdown menu.
+    Choose the new role from the dropdown menu (e.g., promote a "Member" to "Administrator").
   </Step>
 
   <Step title="Confirm the Change">
@@ -73,9 +67,9 @@ Changing roles affects what a team member can access and do. Notify the member w
 
 ## Role Responsibilities and Permissions
 
-### Team Owner Capabilities
+### Owner Capabilities
 
-Team Owners have unrestricted access to:
+Owners have unrestricted access to:
 
 - All administrative functions
 - Billing and subscription management
@@ -86,9 +80,9 @@ Team Owners have unrestricted access to:
 - Managing all processes and workflows
 - Accessing all KPIs and reports
 
-### Team Admin Capabilities
+### Administrator Capabilities
 
-Team Admins can:
+Administrators can:
 
 - Invite and remove team members
 - Change roles (except cannot create/remove Owners)
@@ -98,15 +92,15 @@ Team Admins can:
 - View all KPIs and reports
 - Configure AI settings
 
-Team Admins cannot:
+Administrators cannot:
 
 - Access billing information
 - Delete the team
 - Assign or remove Owner roles
 
-### Team Member Capabilities
+### Member Capabilities
 
-Team Members can:
+Members can:
 
 - Create and manage their own processes
 - Participate in workflows
@@ -115,28 +109,12 @@ Team Members can:
 - Collaborate with other members
 - Use AI features
 
-Team Members cannot:
+Members cannot:
 
 - Change team settings
 - Invite or remove members
 - Access administrative functions
 - Configure system-wide settings
-
-### Guest Capabilities
-
-Guests can:
-
-- View processes they are assigned to
-- Complete assigned tasks
-- Take specific assessments they are invited to
-- Collaborate on assigned processes
-
-Guests cannot:
-
-- View team-wide information
-- Create new processes
-- Access processes they are not assigned to
-- View team KPIs
 
 ## Promoting Team Members
 
@@ -151,7 +129,7 @@ Only promote when the role matches their actual job responsibilities. Avoid unne
 </Accordion>
 
 <Accordion title="Have you communicated expectations?">
-Before promoting someone to Admin or Owner, discuss what you expect from them in their new role.
+Before promoting someone to Administrator or Owner, discuss what you expect from them in their new role.
 </Accordion>
 
 <Accordion title="Do they understand the risks?">
@@ -197,7 +175,7 @@ Before demoting:
   </Card>
 
   <Card title="Train New Admins" icon="graduation-cap">
-    When promoting someone to Admin or Owner, provide guidance on their new responsibilities.
+    When promoting someone to Administrator or Owner, provide guidance on their new responsibilities.
   </Card>
 </CardGroup>
 
@@ -209,7 +187,7 @@ Before demoting:
 Be extremely careful when assigning or removing Owner roles. Owners can delete the team, manage billing, and make irreversible changes.
 </Warning>
 
-- Only Team Owners can assign or remove Owner roles
+- Only Owners can assign or remove Owner roles
 - You cannot remove the Owner role from yourself if you are the last Owner
 - Consider having 2-3 Owners for redundancy
 

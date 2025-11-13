@@ -28,11 +28,11 @@ Start with essential features enabled and gradually adopt advanced capabilities 
 
 <Steps>
   <Step title="Navigate to Team Settings">
-    Click on your team name and select **Team Settings** from the dropdown.
+    In the main sidebar, click **Administration > Team Settings**.
   </Step>
 
   <Step title="Go to Features">
-    In the left sidebar, click **Features** to view all available features.
+    In the secondary menu on the Settings page, click **Features** to view all available features.
   </Step>
 
   <Step title="View Feature Status">
@@ -85,16 +85,6 @@ Start with essential features enabled and gradually adopt advanced capabilities 
     **Best for**: Teams with custom integration needs
 
     **Considerations**: Requires API key management
-  </Card>
-
-  <Card title="Guest Access" icon="user-clock">
-    **What it does**: Allows inviting external guests with limited access to specific processes.
-
-    **Requirements**: None
-
-    **Best for**: Collaborating with contractors, clients, or partners
-
-    **Considerations**: Manage guest permissions carefully
   </Card>
 
   <Card title="Custom Branding" icon="palette">
@@ -183,7 +173,6 @@ Enable these features for most teams:
 
 Consider enabling when your team expands:
 
-- **Guest Access**: When you need external collaborators
 - **KPI Dashboards**: When you have established processes to measure
 - **Document Management**: When documentation becomes extensive
 
@@ -223,7 +212,6 @@ Consider disabling features when:
 
 ### Preventing Misuse
 
-- **Guest Access**: Disable if external access poses security concerns
 - **Data Export**: Temporarily disable during sensitive periods
 - **Advanced Workflows**: Disable if being used incorrectly
 
@@ -233,7 +221,7 @@ Consider disabling features when:
 - **Data Export**: May need to disable in regulated industries
 
 <Warning>
-Disabling features does not delete existing data. For example, disabling Guest Access does not remove existing guests. You must manually remove guests if needed.
+Disabling features does not delete existing data. For example, disabling "Assessments" does not remove existing assessment data.
 </Warning>
 
 ## Feature Dependencies
@@ -294,8 +282,8 @@ After enabling certain features, you may need additional configuration:
 
 1. Configure OpenAI API key
 2. Select default AI model
-3. Set usage limits
-4. Customize system prompts
+3. Set usage limits (in OpenAI)
+4. Create AI Master Prompts
 
 See [Configuring AI](/admin/configuring-ai) for details.
 
@@ -418,7 +406,6 @@ Some features are only available on specific subscription plans:
 | Business Assessments | 3 types | 13 types | 13 types |
 | Advanced Workflows | No | Yes | Yes |
 | API Access | No | Yes | Yes |
-| Guest Access | 2 guests | 10 guests | Unlimited |
 | Custom Branding | No | No | Yes |
 | Activity Tracking | 30 days | 90 days | Unlimited |
 

@@ -1,42 +1,137 @@
 ---
 title: "Adding Activity Categories"
-description: "Learn how to organize your activities with color-coded categories"
+description: "Organize your process activities into logical phases using categories"
 ---
 
 ## What Are Activity Categories?
 
-Activity categories are groupings that organize the activities within your core process. Think of them as chapters in a book or phases in a project.
-
-Categories help you organize complex processes into logical sections, making it easier to understand and navigate.
+Activity categories are automatic groupings that organize activities within your core process. They help you structure complex processes into logical phases or stages, making them easier to understand and navigate.
 
 <Info>
-Categories are optional but highly recommended for processes with more than 5-10 activities. They make large processes much easier to manage.
+Categories are created automatically when you specify a category name while creating an activity. You don't create categories separately - they appear as you build your process.
 </Info>
+
+## How Categories Work in MPQA
+
+Categories in MPQA are **automatically generated** based on the activities you create:
+
+1. **Categories are created through activities** - When you create an activity and enter text in the "Category" field, the system automatically creates that category if it doesn't exist yet.
+
+2. **Colors are assigned automatically** - The system assigns a unique color to each category automatically. You cannot manually choose category colors.
+
+3. **Activities are grouped by category** - In the RACI matrix view, activities are grouped under their category headers.
+
+4. **Visual representation** - In the Visual and Process Flow tabs, each category appears as a colored bar with activities displayed beneath it.
 
 ## Why Use Categories?
 
-<CardGroup cols={2}>
-  <Card title="Visual Organization" icon="palette">
-    Color-coded categories make your process easier to scan and understand at a glance.
-  </Card>
-  <Card title="Logical Grouping" icon="layer-group">
-    Group related activities together to show the phases or stages of your process.
-  </Card>
-  <Card title="Better Navigation" icon="map">
-    Categories create natural sections that make it easier to find specific activities.
-  </Card>
-  <Card title="Clear Communication" icon="comments">
-    When discussing the process, you can reference "the screening phase" instead of listing individual activities.
-  </Card>
-</CardGroup>
+Categories provide several benefits for process organization:
+
+- **Visual organization** - Color-coded category bars make it easy to distinguish between different phases at a glance
+- **Logical grouping** - Group related activities together to show stages or phases of your workflow
+- **Better navigation** - Categories create clear sections in the RACI matrix
+- **Process insights** - The system tracks how many categories (process phases) exist
+
+## Creating Your First Category
+
+<Steps>
+  <Step title="Navigate to Your Core Process">
+    Go to **Business Processes** in the left sidebar and select the core process where you want to add activities.
+
+    Make sure you're on the **RACI** tab to view and manage activities.
+  </Step>
+
+  <Step title="Click Add Activity">
+    Click the blue **"Add Activity"** button in the top right of the RACI matrix.
+
+    This opens the "Create New Activity" dialog.
+  </Step>
+
+  <Step title="Enter Activity Details">
+    Fill in the required information:
+    - **Activity Name** (required)
+    - **Responsible** (R): Who does the work
+    - **Accountable** (A): Who approves the work
+    - **Consulted** (C): Who provides input
+    - **Informed** (I): Who is kept updated
+  </Step>
+
+  <Step title="Specify a Category Name">
+    In the **"Category"** field (optional), type the name of the phase or stage this activity belongs to.
+
+    **Examples of good category names:**
+    - "Initial Screening"
+    - "Planning Phase"
+    - "Execution"
+    - "Final Review"
+    - "Post-Launch"
+
+    <Tip>
+    If you leave the Category field empty, the activity will still be created but won't be grouped under a specific category.
+    </Tip>
+  </Step>
+
+  <Step title="Create the Activity">
+    Click **"Create Activity"** to save.
+
+    The category you specified will automatically appear in the RACI matrix as a new section header, and your activity will be listed underneath it.
+  </Step>
+</Steps>
+
+## Adding More Activities to an Existing Category
+
+To add additional activities to a category that already exists:
+
+1. Click the **"Add Activity"** button to create another activity
+2. In the "Category" field, type the **exact same name** as your existing category
+3. The system will automatically group this new activity under the existing category
+4. Fill in the rest of the activity details and click **"Create Activity"**
+
+<Warning>
+Category names are case-sensitive. "Planning Phase" and "planning phase" would create two separate categories. Make sure to use exact spelling and capitalization.
+</Warning>
+
+## Category Naming Best Practices
+
+<Tabs>
+  <Tab title="Do">
+    Use clear, descriptive phase names:
+    - "Discovery Phase"
+    - "Budget Approval" 
+    - "Implementation"
+    - "Quality Review"
+
+    Be consistent with naming patterns:
+    - "Phase 1: Planning"
+    - "Phase 2: Execution"
+    - "Phase 3: Review"
+
+    Keep names concise (2-4 words):
+    - "Initial Screening"
+    - "Final Approval"
+  </Tab>
+
+  <Tab title="Don't">
+    Avoid vague or generic names:
+    - "Category 1"
+    - "Other Stuff"
+    - "Miscellaneous"
+
+    Don't make names too long:
+    - "This is the category for all activities related to planning"
+
+    Avoid inconsistent naming:
+    - "Planning", "Execution of Tasks", "After Everything is Done"
+  </Tab>
+</Tabs>
 
 ## Common Category Patterns
 
-Different types of processes use different category structures:
+Different types of processes benefit from different category structures:
 
 <Tabs>
-  <Tab title="Sequential Phases">
-    **Best for:** Time-based processes with clear stages
+  <Tab title="Time-Based Phases">
+    **Best for:** Processes with clear time-based stages
 
     **Example: Employee Onboarding**
     - Pre-Arrival Preparation
@@ -44,6 +139,8 @@ Different types of processes use different category structures:
     - First Week Training
     - 30-Day Integration
     - 90-Day Review
+
+    **Why this works:** Clear time-based progression with distinct phases showing the journey.
   </Tab>
 
   <Tab title="Functional Groups">
@@ -54,11 +151,13 @@ Different types of processes use different category structures:
     - Marketing Preparation
     - Sales Enablement
     - Launch Execution
-    - Post-Launch Follow-up
+    - Post-Launch Analysis
+
+    **Why this works:** Functional groups that clearly delineate different types of work.
   </Tab>
 
-  <Tab title="Decision-Based">
-    **Best for:** Processes with approval gates or decision points
+  <Tab title="Approval Gates">
+    **Best for:** Processes with decision points
 
     **Example: Investment Approval**
     - Initial Request
@@ -66,6 +165,8 @@ Different types of processes use different category structures:
     - Risk Assessment
     - Executive Approval
     - Implementation
+
+    **Why this works:** Clear stages with the critical approval gate highlighted.
   </Tab>
 
   <Tab title="Customer Journey">
@@ -77,282 +178,145 @@ Different types of processes use different category structures:
     - Proposal Development
     - Negotiation
     - Closing
-    - Onboarding
+    - Customer Onboarding
+
+    **Why this works:** Follows the customer journey with clear handoff points.
   </Tab>
 </Tabs>
 
-## Creating Your First Category
+## How Categories Appear in Different Views
 
-<Steps>
-  <Step title="Open Your Core Process">
-    Navigate to the core process where you want to add categories.
+Categories display differently depending on which tab you're viewing:
 
-    Make sure you're in the main process view (not the Visual or Swimlane tabs).
-  </Step>
+### RACI Tab
 
-  <Step title="Find the Add Category Button">
-    Look for a button labeled **"Add Category"**, **"New Category"**, or a **"+"** icon in the activities section.
+In the **RACI Responsibility Matrix** view:
+- Categories appear as section headers with the category name
+- Each category shows the count of activities it contains (e.g., "1 activities")
+- Activities are listed in rows beneath their category header
+- A **"Category Blueprint"** link appears next to each category name
 
-    This is usually above your activities list or in a sidebar.
-  </Step>
+### Visual Tab
 
-  <Step title="Name Your Category">
-    Choose a clear, concise name that describes this group of activities.
+In the **Process Flow** diagram:
+- Each category appears as a **colored horizontal bar** across the top
+- The category name is displayed on the left side of the bar
+- Activity boxes appear beneath their respective category bar
+- Each category has a unique automatically-assigned color (e.g., red, green, blue)
+- **"Blueprint"** and **"Workflow"** links appear in each category bar
 
-    **Good names:**
-    - "Initial Screening"
-    - "Budget Approval"
-    - "Post-Launch Review"
+### Swimlane Tab
 
-    **Poor names:**
-    - "Category 1"
-    - "Stuff"
-    - "Things We Do"
+In the **Process Swimlane Chart**:
+- Activities are organized by responsible person (swimlanes)
+- Categories group activities horizontally within each swimlane
+- This view shows the cross-functional flow of your process
 
-    Keep names short (2-4 words is ideal).
-  </Step>
-
-  <Step title="Choose a Color">
-    Select a color for this category. The color will appear:
-    - In activity boxes
-    - In visual diagrams
-    - In the process navigation
-
-    <Tip>
-    Choose colors that make sense together and provide good contrast. Many teams use a progression (light to dark) or traffic light colors (green, yellow, red) based on process stages.
-    </Tip>
-  </Step>
-
-  <Step title="Add a Description (Optional)">
-    Some systems let you add a description explaining what happens in this category.
-
-    **Example:** "Initial Screening includes all activities from receiving the application through scheduling the first interview."
-
-    This is helpful for complex processes or onboarding new team members.
-  </Step>
-
-  <Step title="Save the Category">
-    Click **"Save"** or **"Create"** to add your category.
-
-    Your category will appear in the process, ready for you to add activities to it.
-  </Step>
-</Steps>
-
-## Organizing Categories
-
-Once you have multiple categories, you can organize them to reflect the flow of your process.
-
-### Reordering Categories
-
-<AccordionGroup>
-  <Accordion title="Drag and Drop" icon="hand-pointer" defaultOpen>
-    Most systems let you drag categories up or down to reorder them.
-
-    Click and hold on a category, then drag it to the desired position. The order of categories in your list is the order they appear in diagrams and exports.
-  </Accordion>
-
-  <Accordion title="Move Up/Down Buttons" icon="arrows-up-down">
-    If drag-and-drop isn't available, look for up/down arrow buttons next to each category.
-
-    Click these to move a category one position at a time.
-  </Accordion>
-
-  <Accordion title="Number Prefixes" icon="list-ol">
-    You can add numbers to category names for explicit ordering:
-    - "1. Lead Generation"
-    - "2. Qualification"
-    - "3. Proposal"
-
-    This keeps the order clear even when categories are expanded or collapsed.
-  </Accordion>
-</AccordionGroup>
-
-### Collapsing Categories
-
-For large processes with many activities, you can collapse categories to hide their activities:
-
-- **Collapsed:** Shows only the category name and activity count
-- **Expanded:** Shows all activities within the category
-
-This makes it easier to navigate long processes by focusing on one category at a time.
-
-## Color Coding Best Practices
-
-Colors are powerful visual tools, but use them wisely:
-
-<CardGroup cols={2}>
-  <Card title="Be Consistent" icon="equals">
-    Use similar colors for similar types of activities across different processes.
-  </Card>
-  <Card title="Use Progression" icon="arrow-right">
-    For sequential processes, use colors that progress (light to dark, or through a spectrum).
-  </Card>
-  <Card title="Consider Meaning" icon="lightbulb">
-    Green often means "go" or "done", red means "stop" or "critical", yellow means "caution".
-  </Card>
-  <Card title="Ensure Contrast" icon="adjust">
-    Choose colors that are visually distinct, especially for adjacent categories.
-  </Card>
-</CardGroup>
+## Understanding Category Colors
 
 <Warning>
-**Avoid:** Using too many bright colors or colors that are too similar. If your categories are hard to distinguish at a glance, the colors aren't helping.
+Category colors are assigned automatically by the system. You cannot manually choose or change category colors in MPQA.
 </Warning>
 
-## Category Naming Guidelines
+The system assigns distinct colors to each category to make them visually distinguishable. These colors help you quickly identify which phase an activity belongs to when viewing process diagrams.
 
-<Tabs>
-  <Tab title="Do">
-    ✅ Use clear, action-oriented names
-    - "Conduct Interviews"
-    - "Review Applications"
-    - "Finalize Contract"
+## Category Blueprint Feature
 
-    ✅ Be consistent with naming patterns
-    - "Planning Phase", "Execution Phase", "Review Phase"
+Each category has an associated **"Category Blueprint"** link that appears in the RACI view.
 
-    ✅ Keep names short (2-4 words)
-    - "Initial Setup"
-    - "Final Review"
-  </Tab>
+This feature allows you to:
+- Define standard templates or guidelines for activities in that category
+- Document best practices specific to that process phase
+- Create reusable workflows for similar processes
 
-  <Tab title="Don't">
-    ❌ Use vague names
-    - "Part 1"
-    - "Other Stuff"
-    - "Miscellaneous"
+## Editing and Managing Categories
 
-    ❌ Include unnecessary words
-    - "This is the category for conducting interviews"
+### To Rename a Category
 
-    ❌ Use inconsistent patterns
-    - "Planning", "Execute the Process", "After We're Done"
-  </Tab>
-</Tabs>
+Since categories are created through activities, to rename a category:
 
-## How Many Categories Should You Have?
+1. Click the edit icon (pencil) next to each activity in the category you want to rename
+2. In the "Edit RACI Assignments" dialog, update the activity's category name to the new desired name
+3. Use the **same new name** for all activities you want grouped together
+4. Click **"Save Changes"** for each activity
+5. Once all activities have been updated, the old category will disappear and the new category will appear
 
-There's no perfect number, but here are some guidelines:
+### To Delete a Category
 
-| Process Size | Recommended Categories | Example |
-|--------------|----------------------|---------|
-| Small (5-10 activities) | 2-3 categories | Simple approval process |
-| Medium (10-25 activities) | 3-6 categories | Department onboarding |
-| Large (25-50 activities) | 5-10 categories | Complex sales cycle |
+To remove a category completely:
+
+1. Either delete all activities in that category, or edit them to assign them to a different category
+2. Once no activities remain assigned to that category, it will automatically disappear from the RACI matrix and all views
+
+<Warning>
+There is no direct "delete category" button. Categories only exist as long as at least one activity is assigned to them.
+</Warning>
+
+## Process Flow Insights
+
+When you have categories defined, MPQA provides insights about your process structure:
+
+- **Total Activities:** Number of process steps defined
+- **Categories:** Number of process phases (e.g., "2 process phases")
+- **RACI Coverage:** Confirmation of clear accountability and responsibility assignments
+- **Process Flow:** Indication of sequential progression through defined activities
+
+These insights help you understand the complexity and completeness of your process documentation.
+
+## Best Practices
+
+**Plan your categories first**
+
+Before creating activities, sketch out the main phases of your process to ensure consistent category naming.
+
+**Use consistent naming**
+
+Double-check spelling and capitalization when entering category names to avoid creating duplicate categories accidentally.
+
+**Limit category count**
+
+Aim for 3-7 categories per process. Too many categories can make the process harder to understand.
+
+**Group logically**
+
+Group activities that naturally belong together in the same workflow stage or functional area.
+
+## How Many Categories Should You Use?
+
+General guidelines for category count:
+
+| Process Complexity | Recommended Categories | Example |
+|-------------------|----------------------|---------|
+| Simple (5-10 activities) | 2-3 categories | Basic approval workflow |
+| Medium (10-25 activities) | 3-5 categories | Department onboarding |
+| Large (25-50 activities) | 5-7 categories | Enterprise sales cycle |
 | Very Large (50+ activities) | Consider splitting into multiple core processes | Full product development lifecycle |
 
-<Warning>
-If you need more than 10 categories, your process might be too large. Consider breaking it into multiple smaller core processes instead.
-</Warning>
+<Tip>
+If you find yourself needing more than 7-8 categories, consider whether your process should be split into multiple separate core processes instead.
+</Tip>
 
-## Examples by Process Type
+## Troubleshooting
 
-<AccordionGroup>
-  <Accordion title="HR: Employee Onboarding" icon="user-plus" defaultOpen>
-    **Categories:**
-    1. Pre-Arrival (color: blue)
-    2. First Day (color: green)
-    3. First Week (color: yellow)
-    4. First Month (color: orange)
-    5. 90-Day Review (color: purple)
+**My activities aren't grouping under the same category**
 
-    **Why this works:** Clear time-based progression with distinct colors showing the journey.
-  </Accordion>
+Check that you're using the exact same spelling and capitalization for the category name. "Planning Phase" and "planning phase" are treated as two different categories.
 
-  <Accordion title="Sales: Enterprise Deal" icon="handshake">
-    **Categories:**
-    1. Lead Qualification (color: light blue)
-    2. Discovery (color: blue)
-    3. Proposal Development (color: purple)
-    4. Negotiation (color: orange)
-    5. Contract & Close (color: green)
-    6. Handoff to Delivery (color: gray)
+**I can't find where to edit a category directly**
 
-    **Why this works:** Follows the customer journey with colors intensifying toward the close.
-  </Accordion>
+Categories can't be edited directly. You must edit the activities within that category to change or rename the category grouping.
 
-  <Accordion title="Marketing: Campaign Launch" icon="bullhorn">
-    **Categories:**
-    1. Planning & Research (color: purple)
-    2. Creative Development (color: pink)
-    3. Approval & Review (color: orange)
-    4. Execution (color: green)
-    5. Monitoring & Optimization (color: blue)
+**The category colors don't match my brand**
 
-    **Why this works:** Functional groups that clearly delineate different types of work.
-  </Accordion>
+Category colors are assigned automatically by the system and cannot be customized. Focus on using clear category names instead.
 
-  <Accordion title="Finance: Month-End Close" icon="calculator">
-    **Categories:**
-    1. Data Collection (color: blue)
-    2. Reconciliation (color: purple)
-    3. Review & Adjustment (color: orange)
-    4. Management Approval (color: red)
-    5. Reporting & Distribution (color: green)
+**My category disappeared**
 
-    **Why this works:** Clear stages with red highlighting the critical approval gate.
-  </Accordion>
-</AccordionGroup>
-
-## Editing and Deleting Categories
-
-### Editing a Category
-
-<Steps>
-  <Step title="Find the Category">
-    Locate the category you want to edit in your process view.
-  </Step>
-  <Step title="Open Edit Menu">
-    Click the edit icon (usually a pencil) or three-dot menu next to the category name.
-  </Step>
-  <Step title="Make Changes">
-    Update the name, color, or description as needed.
-  </Step>
-  <Step title="Save">
-    Click "Save" to apply your changes. Visual diagrams will update automatically.
-  </Step>
-</Steps>
-
-### Deleting a Category
-
-<Warning>
-**Be careful when deleting categories.** Depending on your system, this might:
-- Delete all activities in the category
-- Move activities to a default "Uncategorized" section
-- Require you to reassign activities first
-
-Always check what will happen before confirming the deletion.
-</Warning>
-
-## Tips for Large Processes
-
-If you're working with a process that has many activities:
-
-<CardGroup cols={2}>
-  <Card title="Start Broad" icon="maximize">
-    Begin with high-level categories, then refine as you add activities.
-  </Card>
-  <Card title="Use Sub-Categories" icon="indent">
-    If available, use nested categories for extra organization (e.g., "Interviews > Phone Screen" and "Interviews > Final Round").
-  </Card>
-  <Card title="Review Regularly" icon="rotate">
-    As your process evolves, review whether your categories still make sense.
-  </Card>
-  <Card title="Get Feedback" icon="comments">
-    Ask team members if the categories make the process easier to understand.
-  </Card>
-</CardGroup>
+Categories automatically disappear when they no longer contain any activities. Check if all activities were deleted or moved to other categories.
 
 ## Next Steps
 
-<CardGroup cols={2}>
-  <Card title="Adding Activities" icon="list-check" href="/processes/adding-activities">
-    Now add activities to your categories
-  </Card>
-  <Card title="Creating Core Process" icon="plus" href="/processes/creating-core-process">
-    Need to create a process first?
-  </Card>
-  <Card title="Visual Diagrams" icon="diagram-project" href="/processes/visual-diagrams">
-    See how categories appear in diagrams
-  </Card>
-</CardGroup>
+- [Adding Activities](/processes/adding-activities) - Learn how to create activities within your categories
+- [Assigning RACI Roles](/processes/assigning-raci) - Understand how to assign responsibilities
+- [Visual Process Flow](/processes/visual-diagrams) - See how categories appear in visual diagrams
+- [Category Blueprints](/blueprints/category-blueprints) - Learn about using category blueprints

@@ -36,25 +36,18 @@ If the work is part of a repeatable process, consider creating a workflow templa
 ## Creating a New Task
 
 <Steps>
-  <Step title="Navigate to Tasks Section">
-    Go to **Tasks** in the main navigation, then click **Create New Task**.
-
-    <Frame>
-      <img src="/images/tasks/create-new-task-button.png" alt="Create New Task button" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot showing Create New Task button location
-    </Note>
-
-    You may also be able to create tasks from:
-    - Team member profile pages
-    - Workflow views
-    - Project dashboards
+  <Step title="Navigate to Team Tasks">
+    Go to **Tasks & Work > Team Tasks** in the main navigation sidebar.
   </Step>
 
-  <Step title="Enter Task Name">
-    Give the task a clear, action-oriented name:
+  <Step title="Click 'New Task'">
+    Click the **+ New Task** button in the top right corner.
+
+    This opens the "Create New Task" side panel.
+  </Step>
+
+  <Step title="Enter Task Title">
+    Give the task a clear, action-oriented name (this field is required):
 
     **Good task names:**
     - "Review Q2 financial report by Friday"
@@ -70,13 +63,13 @@ If the work is part of a repeatable process, consider creating a workflow templa
   </Step>
 
   <Step title="Write Task Description">
-    Provide detailed instructions on what needs to be done:
+    Provide detailed instructions on what needs to be done (optional):
 
     **Include:**
     - What needs to be done (specific actions)
     - Why it's important (context and purpose)
     - How to do it (instructions or guidance)
-    - What to deliver (expected output)
+    - What to deliver (evidence requirements)
     - Any relevant resources or links
 
     **Example:**
@@ -88,13 +81,8 @@ If the work is part of a repeatable process, consider creating a workflow templa
     WHAT TO CHECK:
     - All revenue numbers match bank deposits
     - Expense categorization is correct
-    - No duplicate entries
-    - Calculations are accurate
 
-    DELIVER: Add a comment confirming review is complete and upload
-    any corrections needed.
-
-    RESOURCES: Financial report is in the Finance shared drive.
+    DELIVER: Add a comment confirming review is complete.
     ```
 
     <Tip>
@@ -103,68 +91,27 @@ If the work is part of a repeatable process, consider creating a workflow templa
   </Step>
 
   <Step title="Assign to Team Member">
-    Choose who should complete this task:
-
-    - **Specific Person**: Select an individual team member
-    - **Role**: Assign to anyone with a specific role
-    - **Team/Department**: Assign to a group
-    - **Me**: Assign to yourself
-
-    <Frame>
-      <img src="/images/tasks/assign-task-options.png" alt="Task assignment options" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of assignment selector
-    </Note>
+    In the **"Assign To"** dropdown, choose who should complete this task. You can select a specific team member.
   </Step>
 
   <Step title="Set Priority Level">
-    Choose task priority:
+    Choose task priority (this field is required):
 
     - **High**: Urgent and important - do first
     - **Medium**: Normal priority (default)
     - **Low**: Nice to have - do when time allows
-
-    <Info>
-    Use High priority sparingly. If everything is high priority, nothing is.
-    </Info>
   </Step>
 
   <Step title="Set Due Date">
-    When should this task be completed?
-
-    - Select a specific date
-    - Or leave blank for "no deadline"
-
-    <Tip>
-    Be realistic with due dates. It's better to give someone 3 days and have them finish early than give 1 day and have them miss the deadline.
-    </Tip>
+    Select a specific date from the calendar for when this task should be completed.
   </Step>
 
   <Step title="Add Tags or Categories">
-    Tag the task for organization:
-
-    - Project name
-    - Department
-    - Work type
-    - Client name
+    In the **"Tags"** field, type to search for or create new tags for organization.
 
     **Examples**: `Q2-planning`, `urgent`, `finance`, `client-acme`
 
     Tags help people filter and find related tasks.
-  </Step>
-
-  <Step title="Specify Evidence Requirements">
-    What documentation should be provided when complete?
-
-    - Screenshots
-    - Documents
-    - Photos
-    - Confirmation emails
-    - Completed forms
-
-    **Example**: "Upload screenshot of sent email confirmation and copy of signed form."
   </Step>
 
   <Step title="Create the Task">
@@ -241,15 +188,7 @@ If the work is part of a repeatable process, consider creating a workflow templa
 
 ## Setting Task Priority
 
-Choose priority based on urgency and importance:
-
-<Frame>
-  <img src="/images/tasks/priority-matrix.png" alt="Priority matrix diagram" />
-</Frame>
-
-<Note>
-**Placeholder**: Visual diagram showing priority matrix (Urgent vs Important)
-</Note>
+Choose priority based on urgency and importance. This is confirmed by the "Priority *" field in the modal.
 
 ### High Priority
 
@@ -359,68 +298,9 @@ Due dates help people prioritize and plan their work:
   </Card>
 </CardGroup>
 
-## Evidence Requirements
-
-Specify what documentation or proof of completion you need:
-
-<Steps>
-  <Step title="Identify What You Need to See">
-    Think about what would prove the task was done correctly:
-
-    - Signed documents
-    - System screenshots
-    - Email confirmations
-    - Completed forms
-    - Photos of physical work
-    - Written summaries
-  </Step>
-
-  <Step title="Be Specific in Requirements">
-    Don't just say "provide evidence." Specify exactly what:
-
-    **Vague**: "Upload evidence"
-
-    **Specific**: "Upload screenshot of sent email showing recipient and timestamp, plus PDF of the signed form"
-  </Step>
-
-  <Step title="Explain Why Evidence Matters">
-    Help them understand the purpose:
-
-    "Upload screenshot of configuration settings so we have a record of what was changed for future troubleshooting."
-  </Step>
-</Steps>
-
-### Common Evidence Requirements
-
-<CardGroup cols={2}>
-  <Card title="For Communication Tasks" icon="envelope">
-    - Screenshot of sent email
-    - Copy of message content
-    - Recipient confirmation
-  </Card>
-
-  <Card title="For Document Tasks" icon="file">
-    - Completed form or report
-    - Signed contracts
-    - Approved documents
-  </Card>
-
-  <Card title="For System Tasks" icon="desktop">
-    - Screenshots of configurations
-    - System status confirmations
-    - Before/after comparisons
-  </Card>
-
-  <Card title="For Physical Tasks" icon="hammer">
-    - Photos of completed work
-    - Inspection reports
-    - Installation documentation
-  </Card>
-</CardGroup>
-
 ## Adding Context and Instructions
 
-Help your team member succeed by providing complete information:
+Help your team member succeed by providing complete information in the **Description** field:
 
 ### Include Resources
 
@@ -452,7 +332,7 @@ Help your team member succeed by providing complete information:
   - Approval requirements
   - Review process
 
-  **Example**: "This needs Finance Director approval before marking complete. After uploading the report, tag @finance-director for review."
+  **Example**: "This needs Finance Director approval before marking complete. After uploading the report, tag @finance-director for review in the comments."
 </Accordion>
 
 ## Following Up on Tasks
@@ -463,7 +343,7 @@ After creating tasks, follow up to ensure completion:
 
 <Steps>
   <Step title="Check Task Status Regularly">
-    Review tasks you've assigned:
+    Review tasks you've assigned in the **"Team Tasks"** list:
 
     - Are they being worked on?
     - Are they on track for deadline?
@@ -501,79 +381,15 @@ After creating tasks, follow up to ensure completion:
   **Example**: "Thanks for completing this ahead of schedule. The report looks great - really thorough analysis. Appreciate your work!"
 </Accordion>
 
-## Bulk Task Creation
-
-If you need to create multiple similar tasks:
-
-<Steps>
-  <Step title="Use Bulk Creation Tool">
-    Some systems offer bulk task creation. Look for **Bulk Create** or **Import Tasks** option.
-  </Step>
-
-  <Step title="Prepare Task List">
-    Create a spreadsheet with task details:
-
-    - Task name
-    - Assignee
-    - Due date
-    - Priority
-    - Description
-
-    <Frame>
-      <img src="/images/tasks/bulk-task-template.png" alt="Bulk task spreadsheet template" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of spreadsheet template for bulk tasks
-    </Note>
-  </Step>
-
-  <Step title="Import and Review">
-    Upload your spreadsheet and review the preview before creating all tasks.
-  </Step>
-
-  <Step title="Create All at Once">
-    Confirm to create all tasks simultaneously.
-
-    All assignees receive notifications.
-  </Step>
-</Steps>
-
-## Task Templates
-
-Create reusable task templates for common work:
-
-<Accordion title="Creating a Task Template">
-  1. Create a task with all standard details
-  2. Save it as a template
-  3. Give it a descriptive name
-  4. Use the template when creating similar tasks
-
-  **Example Templates:**
-  - "Monthly report review"
-  - "New vendor onboarding"
-  - "Equipment request"
-  - "Meeting follow-up"
-</Accordion>
-
-<Accordion title="Using Task Templates">
-  1. Click **Create from Template**
-  2. Select the template
-  3. Customize assignee and due date
-  4. Create the task
-
-  Templates save time and ensure consistency.
-</Accordion>
-
 ## Best Practices for Creating Team Tasks
 
 <AccordionGroup>
   <Accordion title="Be Clear and Specific">
     Vague tasks lead to confusion and poor results:
 
-    ❌ **Bad**: "Update the thing"
+    **Bad**: "Update the thing"
 
-    ✅ **Good**: "Update the Q2 sales forecast spreadsheet with final May numbers from the CRM"
+    **Good**: "Update the Q2 sales forecast spreadsheet with final May numbers from the CRM"
   </Accordion>
 
   <Accordion title="Set Reasonable Expectations">
@@ -586,7 +402,7 @@ Create reusable task templates for common work:
   </Accordion>
 
   <Accordion title="Provide Complete Information">
-    Include everything they need:
+    Include everything they need in the description:
 
     - What to do
     - Why it matters

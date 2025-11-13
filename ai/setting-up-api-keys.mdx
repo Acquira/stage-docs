@@ -9,6 +9,10 @@ This is an **administrator-only feature**. Only users with admin privileges can 
 
 The AI assistant uses OpenAI's API to provide intelligent responses. Before your team can use the AI features, you need to connect your OpenAI API key.
 
+<Tip>
+**Quick Access:** If you see a yellow warning banner at the bottom of your sidebar that says `Configure AI API keys`, you can click it to go directly to the API configuration page.
+</Tip>
+
 ## What You'll Need
 
 Before starting, you'll need:
@@ -16,7 +20,7 @@ Before starting, you'll need:
 - An OpenAI account (create at [platform.openai.com](https://platform.openai.com))
 - Billing information set up in your OpenAI account
 - API access enabled
-- Administrator access to your Business Process Framework
+- Administrator access to your **Stage3** organization
 
 <Info>
 OpenAI charges for API usage based on the number of tokens (words) processed. Typical costs are very reasonable for business use, often just a few dollars per month for small to medium teams.
@@ -42,7 +46,7 @@ OpenAI charges for API usage based on the number of tokens (words) processed. Ty
   </Step>
 
   <Step title="Name your key">
-    Give it a descriptive name like "Business Process Framework Production" so you can identify it later.
+    Give it a descriptive name like "Stage3 Production" so you can identify it later.
   </Step>
 
   <Step title="Copy your key">
@@ -63,8 +67,8 @@ OpenAI charges for API usage based on the number of tokens (words) processed. Ty
 ## Adding Your API Key to the Application
 
 <Steps>
-  <Step title="Navigate to AI Settings">
-    From the admin panel, select **AI Settings** then **API Configuration**.
+  <Step title="Navigate to API Keys">
+    In the main sidebar, go to **Administration > Team Settings**. On the "Settings" page, select **API Keys** from the secondary menu (under Profile, Password, and Team).
   </Step>
 
   <Step title="Enter your API key">
@@ -153,29 +157,20 @@ OpenAI charges based on usage:
 
 ### Typical Usage Examples
 
-```
-Simple question + answer:
-"Who approves expense reports?"
-"Sarah Johnson, the Finance Manager, approves expense reports."
+Simple question + answer: "Who approves expense reports?" "Sarah Johnson, the Finance Manager, approves expense reports."
 
 Cost: ~$0.0001 (less than 1 cent)
 
----
-
-Complex question + detailed answer:
-"Explain the complete hiring process including all approval steps,
-timelines, and required documents."
+Complex question + detailed answer: "Explain the complete hiring process including all approval steps, timelines, and required documents."
 
 [AI provides comprehensive 500-word answer with all details]
 
 Cost: ~$0.01 (one cent)
 
----
-
 Extended conversation (10 messages back and forth):
 
 Cost: ~$0.05-0.10 (5-10 cents)
-```
+
 
 ### Monthly Cost Estimates
 
@@ -280,7 +275,7 @@ If you need to change your API key:
   </Step>
 
   <Step title="Update the application">
-    Replace the old key with the new key in AI Settings > API Configuration.
+    Replace the old key with the new key in **Administration > Team Settings > API Keys**.
   </Step>
 
   <Step title="Test the new key">
@@ -369,8 +364,8 @@ After configuration, test thoroughly:
     Expected: The AI identifies the correct person
   </Accordion>
 
-  <Accordion title="Knowledge Base Test">
-    If you've uploaded documents, ask a question that should be answered from those documents.
+  <Accordion title="Master Prompt Test">
+    If you've uploaded documents to **AI Master Prompts**, ask a question that should be answered from those documents.
 
     Expected: The AI references the uploaded document
   </Accordion>

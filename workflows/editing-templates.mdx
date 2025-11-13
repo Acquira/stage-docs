@@ -33,19 +33,11 @@ You should edit workflow templates when:
 
 <Steps>
   <Step title="Navigate to Workflow Templates">
-    Go to **Settings** > **Workflow Templates**.
-
-    <Frame>
-      <img src="/images/workflows/templates-library.png" alt="Workflow templates library" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of workflow templates list
-    </Note>
+    Go to **Administration** > **Workflows Templates**.
   </Step>
 
   <Step title="Search or Filter">
-    Find the template you want to edit:
+    Find the template you want to edit from the "All Workflow Templates" list:
 
     - Search by name
     - Filter by category
@@ -53,19 +45,7 @@ You should edit workflow templates when:
   </Step>
 
   <Step title="Click Template Name">
-    Click on the template to open its details view.
-  </Step>
-
-  <Step title="Click 'Edit Template'">
-    Click the **Edit Template** button to enter edit mode.
-
-    <Frame>
-      <img src="/images/workflows/edit-template-button.png" alt="Edit Template button" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot showing Edit Template button location
-    </Note>
+    Click on the name of the template you wish to edit. This will open the workflow template builder in edit mode.
   </Step>
 </Steps>
 
@@ -166,22 +146,24 @@ Click on any task in the template to edit its details:
 Transform vague task descriptions into clear, actionable instructions:
 
 **Before:**
-```
 Review financial documents
-```
+
 
 **After:**
-```
 Review and verify all financial documents for accuracy:
 
-1. Compare balance sheet to bank statements
-2. Verify all revenue transactions have supporting invoices
-3. Check expense categorization for accuracy
-4. Confirm no duplicate entries exist
-5. Flag any discrepancies for the Finance Director
+Compare balance sheet to bank statements
+
+Verify all revenue transactions have supporting invoices
+
+Check expense categorization for accuracy
+
+Confirm no duplicate entries exist
+
+Flag any discrepancies for the Finance Director
 
 Upload completed verification checklist as evidence.
-```
+
 
 <Info>
 Good task descriptions answer: What should I do? Why does it matter? How do I do it? What do I deliver?
@@ -227,14 +209,6 @@ Change the order tasks appear in the workflow:
     Enter specific order numbers for precise control
   </Card>
 </CardGroup>
-
-<Frame>
-  <img src="/images/workflows/reorder-tasks-editor.png" alt="Reordering tasks in editor" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot showing drag-and-drop reordering
-</Note>
 
 <Info>
 Remember: Task order (how they appear) is different from dependencies (when they can start). Reordering tasks doesn't change their dependencies.
@@ -290,14 +264,6 @@ Dependencies are critical to workflow logic. Update them carefully:
 
 ### Visualizing Dependencies
 
-<Frame>
-  <img src="/images/workflows/dependency-graph.png" alt="Visual dependency graph" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot of visual dependency graph showing task relationships
-</Note>
-
 Many workflow editors provide a visual dependency graph. Use this to:
 
 - See the workflow's critical path
@@ -341,12 +307,12 @@ When making significant changes to templates, consider version control:
 
 | Scenario | Version (Duplicate) | Edit (Modify) |
 |----------|---------------------|---------------|
-| Minor fixes (typos, clarifications) | ❌ | ✅ |
-| Adding 1-2 tasks | ❌ | ✅ |
-| Major restructuring | ✅ | ❌ |
-| Changing process flow | ✅ | ❌ |
-| Testing experimental changes | ✅ | ❌ |
-| Removing multiple tasks | ✅ | ❌ |
+| Minor fixes (typos, clarifications) | No | Yes |
+| Adding 1-2 tasks | No | Yes |
+| Major restructuring | Yes | No |
+| Changing process flow | Yes | No |
+| Testing experimental changes | Yes | No |
+| Removing multiple tasks | Yes | No |
 
 <Tip>
 When in doubt, create a new version. It's safer and preserves the existing template in case you need to roll back.

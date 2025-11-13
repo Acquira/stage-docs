@@ -5,19 +5,17 @@ description: "Access and manage all your tasks across workflows in one centraliz
 
 ## What is My Tasks?
 
-My Tasks is your personal task dashboard that shows all tasks assigned to you across all workflows in one place.
+"My Tasks" is your personal task dashboard that shows all tasks assigned to you across all workflows in one centralized list.
 
-Instead of jumping between workflows to find your work, My Tasks gives you a consolidated view of everything you need to do.
+Instead of jumping between different workflows to find your work, "My Tasks" gives you a consolidated view of everything you need to do.
 
 <CardGroup cols={3}>
   <Card title="All Tasks" icon="list">
     See every task assigned to you
   </Card>
-
   <Card title="All Workflows" icon="diagram-project">
     From every workflow you're involved in
   </Card>
-
   <Card title="One View" icon="eye">
     No need to switch between workflows
   </Card>
@@ -27,126 +25,58 @@ Instead of jumping between workflows to find your work, My Tasks gives you a con
 
 <Steps>
   <Step title="Click My Tasks in Navigation">
-    Find **My Tasks** in the main navigation menu and click it.
-
-    <Frame>
-      <img src="/images/tasks/my-tasks-navigation.png" alt="My Tasks in navigation menu" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot showing My Tasks in main navigation
-    </Note>
-
-    It's usually in the top navigation or left sidebar.
+    Find and click **Tasks & Work > My Tasks** in the main navigation sidebar.
   </Step>
 
   <Step title="View Your Task List">
-    Your task dashboard loads, showing all your assigned tasks.
-
-    <Frame>
-      <img src="/images/tasks/my-tasks-dashboard.png" alt="My Tasks dashboard" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of My Tasks dashboard with multiple tasks
-    </Note>
+    Your task dashboard loads, showing all your assigned tasks in a table format.
   </Step>
-
-  <Step title="See Task Summary">
-    At the top, you'll see a summary:
-
-    - Total active tasks
-    - Tasks due today
-    - Tasks due this week
-    - Overdue tasks (if any)
-    - Completed tasks (last 7 days)
+  
+  <Step title="Check the Empty State">
+    If you have no tasks, you will see a "No tasks yet" message. Tasks assigned to you will appear here.
   </Step>
 </Steps>
 
 ## Task List Overview
 
-Your task list shows all tasks with key information at a glance:
+Your task list is a table with the following columns:
 
-<Frame>
-  <img src="/images/tasks/task-list-details.png" alt="Task list with annotations" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot of task list with annotations pointing to each element
-</Note>
-
-### Task Card Elements
-
-Each task in your list shows:
-
-| Element | What It Shows |
+| Column | What It Shows |
 |---------|---------------|
-| **Task Name** | What the task is about |
-| **Workflow Name** | Which workflow this task belongs to |
-| **Priority Badge** | High, Medium, or Low priority |
-| **Status Indicator** | Available, In Progress, Pending, etc. |
-| **Due Date** | When task should be completed |
-| **Evidence Status** | Whether evidence is required/uploaded |
+| **Task** | The name of the task (e.g., "Test") |
+| **Status** | The current state of the task (e.g., "New") |
+| **Priority** | The urgency of the task (e.g., "Low") |
 | **Assigned By** | Who assigned this task to you |
-| **Progress Badge** | Your progress (Not Started, In Progress, Complete) |
+| **Due Date** | When the task should be completed |
+| **Tags** | Any tags associated with the task |
+| **Actions** | What you can do (e.g., "View") |
 
 ## Filtering Your Tasks
 
-Use filters to focus on specific tasks:
+Use the filters at the top of the task list to focus on specific tasks:
 
 <Steps>
-  <Step title="Click Filter Button">
-    Click the **Filter** button or icon at the top of your task list.
-
-    <Frame>
-      <img src="/images/tasks/filter-button.png" alt="Filter button location" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot showing filter button
-    </Note>
+  <Step title="Use the Search Bar">
+    Type in the **"Search tasks..."** bar to find tasks by name.
   </Step>
 
-  <Step title="Choose Filter Criteria">
-    Select one or more filters:
-
-    **By Status:**
-    - Available (ready to start)
-    - In Progress (currently working)
-    - Pending (waiting on dependencies)
-    - Blocked (cannot proceed)
-    - Completed (recently finished)
-
-    **By Priority:**
-    - High priority only
-    - Medium priority only
-    - Low priority only
-
-    **By Due Date:**
-    - Due today
-    - Due this week
-    - Due this month
-    - Overdue
-    - No due date
-
-    **By Workflow:**
-    - Specific workflow name
-    - Workflow category (HR, Finance, etc.)
-
-    **By Evidence:**
-    - Evidence required
-    - Evidence uploaded
-    - No evidence required
+  <Step title="Filter by Status">
+    Click the **"All Statuses"** dropdown to filter by task status:
+    - New
+    - In Progress
+    - Completed
+    - Blocked
   </Step>
-
-  <Step title="Apply Filters">
-    Click **Apply** to filter your task list.
-
-    Only tasks matching your criteria will display.
+  
+  <Step title="Filter by Priority">
+    Click the **"All Priorities"** dropdown to filter by task priority:
+    - High
+    - Medium
+    - Low
   </Step>
 
   <Step title="Clear Filters">
-    Click **Clear Filters** to see all tasks again.
+    Set the dropdowns back to "All Statuses" or "All Priorities" to clear the filters.
   </Step>
 </Steps>
 
@@ -154,13 +84,13 @@ Use filters to focus on specific tasks:
 
 <AccordionGroup>
   <Accordion title="Today's Work">
-    **Filters**: Status = Available OR In Progress + Due Date = Today
+    **Filters**: Status = New OR In Progress
 
-    Shows: Everything you should work on today
+    Shows: Everything you need to work on.
   </Accordion>
 
   <Accordion title="High Priority Tasks">
-    **Filters**: Priority = High + Status = Available or In Progress
+    **Filters**: Priority = High + Status = New
 
     Shows: Urgent tasks needing immediate attention
   </Accordion>
@@ -170,68 +100,33 @@ Use filters to focus on specific tasks:
 
     Shows: Tasks you need to escalate or unblock
   </Accordion>
-
-  <Accordion title="Ready to Start">
-    **Filters**: Status = Available + Due Date = This Week
-
-    Shows: Tasks you can start now that are due soon
-  </Accordion>
-
-  <Accordion title="Specific Project">
-    **Filters**: Workflow = [Workflow Name]
-
-    Shows: All your tasks from one specific workflow
-  </Accordion>
 </AccordionGroup>
 
 <Tip>
-Save your commonly used filter combinations as presets for quick access.
+The "My Tasks" page shows tasks assigned *to* you. The "Team Tasks" page shows all tasks and allows you to filter by who they are *assigned by*.
 </Tip>
 
 ## Sorting Your Tasks
 
-Change the order tasks appear in your list:
+You can sort your task list by clicking on the column headers:
 
 <CardGroup cols={2}>
   <Card title="By Due Date" icon="calendar">
-    Soonest deadline first - helps prioritize urgent work
+    Click the "Due Date" header to see the soonest deadlines first.
   </Card>
 
   <Card title="By Priority" icon="exclamation">
-    High priority first - ensures critical tasks get attention
-  </Card>
-
-  <Card title="By Workflow" icon="diagram-project">
-    Grouped by workflow - helps batch similar work
+    Click the "Priority" header to group tasks by urgency.
   </Card>
 
   <Card title="By Status" icon="signal">
-    Available first, then In Progress, then Pending
-  </Card>
-
-  <Card title="By Date Added" icon="clock">
-    Newest or oldest first
+    Click the "Status" header to group all your "New" tasks together.
   </Card>
 
   <Card title="Alphabetically" icon="arrow-down-a-z">
-    By task name A-Z or Z-A
+    Click the "Task" header to sort by name.
   </Card>
 </CardGroup>
-
-<Steps>
-  <Step title="Click Sort Button">
-    Click the **Sort** dropdown at the top of your task list.
-  </Step>
-
-  <Step title="Choose Sort Method">
-    Select how you want tasks ordered.
-  </Step>
-
-  <Step title="Choose Direction">
-    - Ascending (A-Z, oldest first, lowest priority first)
-    - Descending (Z-A, newest first, highest priority first)
-  </Step>
-</Steps>
 
 <Info>
 Most users prefer sorting by **Due Date** (ascending) or **Priority** (descending). This ensures urgent and important work appears at the top.
@@ -244,63 +139,49 @@ Priority levels help you decide what to work on first:
 ### High Priority
 
 <Card title="Urgent and Important" icon="circle-exclamation">
-  **Red Badge**
+  **Red Badge (or similar)**
 
   - Time-sensitive tasks
   - Critical path tasks
   - Tasks blocking others
   - Escalated issues
 
-  **Action**: Do these first. High priority means drop other work if needed.
+  **Action**: Do these first.
 </Card>
 
 ### Medium Priority
 
 <Card title="Important but Not Urgent" icon="circle">
-  **Orange Badge**
+  **Orange Badge (or similar)**
 
   - Normal workflow tasks
   - Standard deadlines
   - Regular responsibilities
 
-  **Action**: Do these after high priority tasks. This is most of your work.
+  **Action**: Do these after high priority tasks.
 </Card>
 
 ### Low Priority
 
 <Card title="Nice to Have" icon="circle">
-  **Gray Badge**
+  **Gray/Green Badge (or similar)**
 
   - Optional improvements
   - Future planning
   - Non-urgent enhancements
 
-  **Action**: Do these when you have extra time after high and medium tasks.
+  **Action**: Do these when you have extra time.
 </Card>
-
-<Tip>
-If everything is marked "High Priority," nothing is truly high priority. Good priority management means most tasks are Medium, with only truly urgent items marked High.
-</Tip>
 
 ## Understanding Due Dates
 
 Due dates show when tasks should be completed:
 
-<Frame>
-  <img src="/images/tasks/due-date-indicators.png" alt="Due date visual indicators" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot showing different due date color codes
-</Note>
-
-### Due Date Status
-
 | Due Date Status | Visual Indicator | Meaning |
 |----------------|------------------|---------|
 | **Overdue** | Red text + warning icon | Past due date - needs immediate attention |
 | **Due Today** | Orange text + clock | Must complete today |
-| **Due This Week** | Yellow text | Complete within next 7 days |
+| **Due Soon** | Yellow text | Complete within next 7 days |
 | **Due Later** | Normal text | More than a week away |
 | **No Due Date** | Gray text or blank | Complete when possible |
 
@@ -310,228 +191,56 @@ Overdue tasks indicate either:
 2. Due dates are unrealistic (need to adjust timeline)
 3. Task is blocked (need to resolve blocker)
 
-Address overdue tasks immediately or escalate to workflow owner.
+Address overdue tasks immediately or escalate to your manager.
 </Warning>
-
-## Task Views and Layouts
-
-Choose how you want to see your tasks:
-
-<CardGroup cols={3}>
-  <Card title="List View" icon="list">
-    Compact list showing all tasks - best for scanning many tasks
-  </Card>
-
-  <Card title="Card View" icon="table-cells-large">
-    Larger cards with more details - best for detailed review
-  </Card>
-
-  <Card title="Calendar View" icon="calendar">
-    Tasks displayed on calendar by due date - best for planning
-  </Card>
-
-  <Card title="Kanban Board" icon="columns">
-    Tasks in columns by status - best for workflow visualization
-  </Card>
-
-  <Card title="Timeline View" icon="timeline">
-    Tasks on timeline by start/end date - best for project planning
-  </Card>
-
-  <Card title="Group View" icon="layer-group">
-    Tasks grouped by workflow or category - best for project focus
-  </Card>
-</CardGroup>
-
-### Switching Views
-
-<Steps>
-  <Step title="Click View Button">
-    Find the view selector at the top of My Tasks (usually icons or dropdown).
-  </Step>
-
-  <Step title="Choose Your Preferred View">
-    Click the view type you want.
-  </Step>
-
-  <Step title="View Persists">
-    Your view preference is saved for next time you visit My Tasks.
-  </Step>
-</Steps>
-
-<Frame>
-  <img src="/images/tasks/view-switcher.png" alt="Task view switcher" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot showing different view options
-</Note>
 
 ## Working with Tasks from My Tasks
 
-You can perform all task actions directly from My Tasks:
-
-<CardGroup cols={2}>
-  <Card title="Open Task Details" icon="up-right-from-square">
-    Click any task to open its detail panel
-  </Card>
-
-  <Card title="Start a Task" icon="play">
-    Click **Start** to mark it in progress
-  </Card>
-
-  <Card title="Mark Complete" icon="check">
-    Click **Complete** when finished (if evidence is already uploaded)
-  </Card>
-
-  <Card title="Upload Evidence" icon="upload">
-    Click **Add Evidence** to upload files
-  </Card>
-
-  <Card title="Add Comments" icon="comment">
-    Click **Comment** to add notes or questions
-  </Card>
-
-  <Card title="Mark as Blocked" icon="ban">
-    Click **Block** to flag issues
-  </Card>
-</CardGroup>
-
-### Quick Actions
-
-Many task list views offer quick action buttons:
-
-<Frame>
-  <img src="/images/tasks/quick-actions.png" alt="Task quick actions" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot showing quick action buttons on tasks
-</Note>
-
-Hover over a task to reveal quick action buttons:
-- 🎯 **Start** - Begin working on task
-- ✓ **Complete** - Mark as done
-- 📎 **Evidence** - Upload files
-- 💬 **Comment** - Add note
-- ⋯ **More** - Additional options
-
-## Task Detail Panel
-
-Click any task to open its detail panel on the right side of the screen:
-
-<Frame>
-  <img src="/images/tasks/task-detail-panel.png" alt="Task detail side panel" />
-</Frame>
-
-<Note>
-**Placeholder**: Screenshot of task detail panel overlaying task list
-</Note>
-
-The detail panel shows:
-- Full task description
-- Current status and progress
-- Priority and due date
-- Assigned workflow
-- Dependencies (what must finish first)
-- Evidence requirements
-- Uploaded evidence
-- Comments and activity history
-- Quick action buttons
-
-This lets you work on tasks without leaving My Tasks.
-
-## Bulk Actions
-
-Select multiple tasks to perform actions on all of them at once:
+You can perform all task actions directly from the "My Tasks" list.
 
 <Steps>
-  <Step title="Select Multiple Tasks">
-    Click checkboxes next to multiple tasks in your list.
-
-    Or use **Select All** to select all visible tasks.
+  <Step title="View Task Details">
+    Click the **"View"** link under the "Actions" column for any task.
   </Step>
-
-  <Step title="Choose Bulk Action">
-    Select an action from the bulk actions menu:
-
-    - Mark all as complete
-    - Change priority
-    - Change due date
-    - Add to a category
-    - Export to CSV
-    - Print task list
+  <Step title="Open the Task Detail Panel">
+    This opens the **"Task Details"** panel from the right side of the screen.
   </Step>
-
-  <Step title="Confirm Action">
-    Confirm you want to apply the action to all selected tasks.
+  <Step title="Manage the Task">
+    From this panel, you can:
+    - Read the full **Description**
+    - Change the **Status** (e.g., to "In Progress" or "Completed")
+    - Change the **Priority**
+    - Re-assign the task (if you have permission)
+    - Add attachments/evidence
+    - **Add Comments**
+    - Click **"Edit Task"** to change the title or due date.
   </Step>
 </Steps>
-
-<Warning>
-Use bulk actions carefully. Make sure all selected tasks truly need the same action applied.
-</Warning>
-
-## My Tasks Dashboard Widgets
-
-Some systems offer customizable dashboard widgets:
-
-<CardGroup cols={2}>
-  <Card title="Task Summary" icon="gauge-high">
-    Quick stats on your tasks (total, due soon, overdue)
-  </Card>
-
-  <Card title="Recent Activity" icon="clock-rotate-left">
-    Recently completed or updated tasks
-  </Card>
-
-  <Card title="Upcoming Deadlines" icon="calendar-days">
-    Tasks due in next 7 days
-  </Card>
-
-  <Card title="My Workflows" icon="diagram-project">
-    All workflows you're assigned to
-  </Card>
-
-  <Card title="Team Activity" icon="users">
-    What your teammates recently completed
-  </Card>
-
-  <Card title="Progress Charts" icon="chart-line">
-    Visual charts of your completion trends
-  </Card>
-</CardGroup>
 
 ## Best Practices for Using My Tasks
 
 <AccordionGroup>
   <Accordion title="Make It Your Daily Starting Point">
     Start each workday by:
-    1. Opening My Tasks
+    1. Opening **My Tasks**
     2. Reviewing what's due today
     3. Checking for any overdue items
     4. Planning your day based on priorities
-
-    This gives you a clear picture of your day's work.
   </Accordion>
 
   <Accordion title="Use Filters Strategically">
     Create filters for common scenarios:
-    - "Today's work" - Due today + Available/In Progress
-    - "This week" - Due this week + High/Medium priority
-    - "Urgent" - Overdue + High priority
-    - "Quick wins" - Low duration + Available
-
-    Switch between these views throughout your day.
+    - "Today's work" - Status = New OR In Progress
+    - "Urgent" - Overdue + Priority = High
   </Accordion>
 
   <Accordion title="Update Status in Real-Time">
     As you work:
-    - Start tasks when you begin
-    - Mark complete immediately when done
-    - Update blocked status right away
+    - Change status to "In Progress" when you begin
+    - Change status to "Completed" immediately when done
+    - Change status to "Blocked" right away if you are stuck
 
-    Don't batch updates at end of day. Real-time updates help the whole team.
+    Real-time updates help the whole team.
   </Accordion>
 
   <Accordion title="Sort by Priority, Then Due Date">
@@ -541,75 +250,7 @@ Some systems offer customizable dashboard widgets:
 
     This ensures urgent AND important work rises to the top.
   </Accordion>
-
-  <Accordion title="Set Aside Time for Task Management">
-    Spend 10-15 minutes daily managing your tasks:
-    - Morning: Review and plan
-    - Midday: Quick check and updates
-    - End of day: Mark completions and prep tomorrow
-
-    This small investment prevents task chaos.
-  </Accordion>
 </AccordionGroup>
-
-## Tips for Managing Many Tasks
-
-If you have dozens of tasks across multiple workflows:
-
-<CardGroup cols={2}>
-  <Card title="Focus on This Week" icon="calendar-week">
-    Filter to only show tasks due this week. Don't overwhelm yourself with everything.
-  </Card>
-
-  <Card title="Batch Similar Tasks" icon="layer-group">
-    Group related tasks together and do them in one session for efficiency.
-  </Card>
-
-  <Card title="Time-Block Your Day" icon="clock">
-    Assign specific time blocks to work on specific workflows or task types.
-  </Card>
-
-  <Card title="Use 'Available' Filter" icon="play-circle">
-    When starting work, filter to only Available tasks. Ignore pending tasks you can't work on yet.
-  </Card>
-
-  <Card title="Mark Low Priority Realistically" icon="arrow-down">
-    If you have too many high priority tasks, discuss with your manager about re-prioritizing.
-  </Card>
-
-  <Card title="Delegate When Possible" icon="hand">
-    If you're overloaded, work with your manager to reassign some tasks.
-  </Card>
-</CardGroup>
-
-## Notifications and Alerts
-
-My Tasks integrates with notification systems:
-
-<Accordion title="Email Notifications">
-  Receive emails when:
-  - New tasks are assigned to you
-  - Task due dates are approaching
-  - Tasks become blocked
-  - Tasks you're waiting on are complete
-  - Someone comments on your task
-
-  Configure email frequency in settings (real-time, daily digest, weekly digest).
-</Accordion>
-
-<Accordion title="In-App Notifications">
-  See notifications in the app:
-  - Bell icon shows unread notifications
-  - Click to see notification details
-  - Click notification to jump to that task
-</Accordion>
-
-<Accordion title="Mobile Notifications">
-  If using the mobile app:
-  - Push notifications for urgent items
-  - Reminders for due dates
-  - Configurable quiet hours
-</Accordion>
 
 ## Next Steps
 

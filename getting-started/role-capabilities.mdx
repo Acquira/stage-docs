@@ -1,11 +1,11 @@
 ---
 title: "Role Capabilities in Detail"
-description: "Comprehensive guide to what each role can do in the Business Process Framework"
+description: "Comprehensive guide to what each role can do in Stage3"
 ---
 
 ## Understanding Your Capabilities
 
-Your role determines what actions you can take in the Business Process Framework. This page breaks down exactly what you can do based on your role.
+Your role determines what actions you can take in Stage3. This page breaks down exactly what you can do based on your role.
 
 Use the sections below to explore the capabilities for your specific role.
 
@@ -14,8 +14,8 @@ Use the sections below to explore the capabilities for your specific role.
 Before diving into specifics, understand this important concept:
 
 **Roles Build on Each Other**
-- Admin can do everything Member can do, plus more
-- Owner can do everything Admin can do, plus more
+- Administrator can do everything Member can do, plus more
+- Owner can do everything Administrator can do, plus more
 
 This means you never lose capabilities when promoted. You only gain new ones.
 
@@ -116,9 +116,9 @@ The AI assistant is powerful! Try asking questions like "How do I submit expense
 
 </Accordion>
 
-## Admin Capabilities
+## Administrator Capabilities
 
-Admins have all Member capabilities plus the following:
+Administrators have all Member capabilities plus the following:
 
 <Accordion title="Creating and Editing Processes">
 
@@ -241,7 +241,7 @@ Before sharing widely, make sure your process is complete and accurate. Once sha
 
 ## Owner Capabilities
 
-Owners have all Admin capabilities plus the following:
+Owners have all Administrator capabilities plus the following:
 
 <Accordion title="User Management">
 
@@ -392,36 +392,36 @@ When you delete a user, their processes are either transferred to you or deleted
 
 Here's a comprehensive view of who can do what:
 
-| Feature | Member | Admin | Owner |
-|---------|--------|-------|-------|
+| Feature | Member | Administrator | Owner |
+|---------|--------|---------------|-------|
 | **Viewing** |
-| View shared processes | ✅ | ✅ | ✅ |
-| View all processes | ❌ | ❌ | ✅ |
-| View process history | ✅ | ✅ | ✅ |
+| View shared processes | Yes | Yes | Yes |
+| View all processes | No | No | Yes |
+| View process history | Yes | Yes | Yes |
 | **Creating** |
-| Create processes | ❌ | ✅ | ✅ |
-| Create templates | ❌ | ✅ | ✅ |
-| Create folders | ❌ | ✅ | ✅ |
+| Create processes | No | Yes | Yes |
+| Create templates | No | Yes | Yes |
+| Create folders | No | Yes | Yes |
 | **Editing** |
-| Edit shared processes | ❌ | ✅ | ✅ |
-| Edit any process | ❌ | ❌ | ✅ |
-| Delete own processes | ❌ | ✅ | ✅ |
-| Delete any process | ❌ | ❌ | ✅ |
+| Edit shared processes | No | Yes | Yes |
+| Edit any process | No | No | Yes |
+| Delete own processes | No | Yes | Yes |
+| Delete any process | No | No | Yes |
 | **Sharing** |
-| Share processes | ❌ | ✅ | ✅ |
-| Set permissions | ❌ | ✅ | ✅ |
+| Share processes | No | Yes | Yes |
+| Set permissions | No | Yes | Yes |
 | **Collaboration** |
-| Comment | ✅ | ✅ | ✅ |
-| @mention users | ✅ | ✅ | ✅ |
+| Comment | Yes | Yes | Yes |
+| @mention users | Yes | Yes | Yes |
 | **Administration** |
-| Manage users | ❌ | ❌ | ✅ |
-| Change roles | ❌ | ❌ | ✅ |
-| Configure workspace | ❌ | ❌ | ✅ |
-| Manage billing | ❌ | ❌ | ✅ |
+| Manage users | No | No | Yes |
+| Change roles | No | No | Yes |
+| Configure workspace | No | No | Yes |
+| Manage billing | No | No | Yes |
 | **Analytics** |
-| Personal analytics | ✅ | ✅ | ✅ |
-| Process analytics | ❌ | ✅ | ✅ |
-| Workspace analytics | ❌ | ❌ | ✅ |
+| Personal analytics | Yes | Yes | Yes |
+| Process analytics | No | Yes | Yes |
+| Workspace analytics | No | No | Yes |
 
 ## Requesting Additional Permissions
 
@@ -446,7 +446,7 @@ If you need capabilities beyond your current role:
 </Steps>
 
 <Tip>
-Sometimes you don't need a role change. For example, if you need to edit one specific process, an Admin can share it with you with edit permissions instead of making you an Admin.
+Sometimes you don't need a role change. For example, if you need to edit one specific process, an Administrator can share it with you with edit permissions instead of making you an Administrator.
 </Tip>
 
 ## Next Steps

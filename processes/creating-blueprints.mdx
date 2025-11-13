@@ -7,7 +7,7 @@ description: "Learn how to create category-level blueprints that provide context
 
 Blueprints are category-level documents that provide context, background, and overview for a group of related activities. They explain the "why" behind your activities and provide important information that applies to the entire category.
 
-Think of blueprints as the introduction to a chapter in a book. They set the stage before diving into the details.
+Think of blueprints as the introduction to a chapter in a book. They set the stage before diving into the specific activity details.
 
 <Info>
 Blueprints are optional. Only create them when your category needs context or explanation that doesn't fit at the activity level.
@@ -35,54 +35,143 @@ Create blueprints when your category:
 </CardGroup>
 
 <Warning>
-**Don't create blueprints for every category.** Only create them when the category truly needs explanation. Simple, self-explanatory categories don't need blueprints.
+Don't create blueprints for every category. Only create them when the category truly needs explanation. Simple, self-explanatory categories don't need blueprints.
 </Warning>
+
+## Accessing the Blueprint Editor
+
+<Steps>
+  <Step title="Navigate to Process Flow">
+    Go to your core process and click the **Visual** tab to see the Process Flow diagram.
+
+    This view shows all your categories as colored horizontal bars with activities beneath them.
+  </Step>
+
+  <Step title="Find Your Category">
+    Locate the category you want to document. Each category appears as a colored bar (red, green, blue, etc.) with the category name on the left.
+  </Step>
+
+  <Step title="Click the Blueprint Button">
+    On the right side of the category bar, click the **"Blueprint"** button.
+
+    This opens the Blueprint editor for that category.
+  </Step>
+</Steps>
+
+## Understanding the Blueprint Editor
+
+When you open the Blueprint editor, you'll see:
+
+### Top Navigation
+
+**Title and breadcrumb:**
+- Category name displayed as "[Category Name] - Blueprint"
+- Breadcrumb showing: Process > Sub-process > Category name
+
+**Action buttons:**
+- **Back to RACI** - Return to the RACI matrix view
+- **Workflow** - View the workflow for this category
+- **KPIs** - Access key performance indicators
+- **Delete Blueprint** - Remove this blueprint (red button)
+- **Create SOP** - Create a Standard Operating Procedure
+
+### Main Editor Area
+
+**Rich text editor** with full formatting capabilities:
+
+**Menu bar:**
+- File, Edit, View, Insert, Format, Tools, Table, Help
+
+**Formatting toolbar:**
+- Heading levels (H1, H2, H3, H4, H5, H6)
+- Text formatting (Bold, Italic, Underline, Strikethrough)
+- Lists (bullets, numbers, indentation)
+- Alignment options
+- Links, images, tables
+- Text color and highlighting
+- Special characters and more
+
+**Editor workspace:**
+- Large text area with placeholder: "Start typing..."
+- Full WYSIWYG editing experience
+
+### Left Sidebar: Version History
+
+The **Version History** sidebar tracks all saved versions of your blueprint:
+
+**When empty:**
+- Shows "No versions yet"
+- Message: "Get started by creating your first blueprint version."
+
+**After saving:**
+- Lists all versions chronologically
+- Shows version numbers and timestamps
+- Click any version to view that version
+
+### Right Sidebar: Metadata
+
+The **Metadata** sidebar displays blueprint information:
+
+**Version Info:**
+- Version number (e.g., 1.0)
+- Created date
+- Created by (user who created it)
+
+**Blueprint Details:**
+- Type: Blueprint
+- Parent: [Category name]
+
+<Tip>
+The metadata sidebar automatically tracks blueprint details. You don't need to manually enter version numbers or metadata - the system handles this for you.
+</Tip>
 
 ## Creating Your First Blueprint
 
 <Steps>
-  <Step title="Navigate to Your Category">
-    Open the core process containing the category you want to document.
+  <Step title="Open the Blueprint Editor">
+    Follow the steps above to access the Blueprint editor for your category.
 
-    Find the category in your list of categories.
+    You'll see the empty editor with "Start typing..." placeholder text.
   </Step>
 
-  <Step title="Open Category Details">
-    Click on the category name or click the settings/options icon next to it.
+  <Step title="Start with a Clear Structure">
+    Begin by outlining the main sections you want to include. Use headings to organize your content.
 
-    Look for a "Blueprint," "Documentation," or "Details" option.
-  </Step>
-
-  <Step title="Click Create Blueprint">
-    Click the **"Create Blueprint"** or **"Add Documentation"** button.
-
-    If a blueprint already exists, you'll see an "Edit" option instead.
-  </Step>
-
-  <Step title="Add a Title">
-    Your blueprint title should match your category name or clearly reference it.
-
-    **Examples:**
-    - "Candidate Screening - Overview and Guidelines"
-    - "First Week Training Blueprint"
-    - "Budget Approval Process Guide"
+    Common sections include:
+    - Purpose & Objectives
+    - Overview & Context
+    - Key Policies & Guidelines
+    - Tools & Resources
+    - Roles & Responsibilities
   </Step>
 
   <Step title="Write Your Content">
-    Document the key information for this category. Include:
-    - Purpose and objectives
-    - Context and background
-    - Key policies or guidelines
-    - Tools and resources
-    - Success criteria
+    Use the rich text editor to document the key information for this category.
 
-    Use the rich text editor to format your content clearly.
+    Focus on category-level information that applies to all activities in this group, not specific step-by-step procedures.
   </Step>
 
-  <Step title="Review and Save">
-    Read through your blueprint. Does it help someone understand this category better?
+  <Step title="Format for Readability">
+    Use the formatting toolbar to:
+    - Add headings to create clear sections
+    - Use bullet points for lists
+    - Bold important terms or concepts
+    - Add links to related resources
+    - Include tables for structured information
 
-    Click **"Save"** to publish your blueprint.
+    Good formatting makes blueprints much easier to scan and understand.
+  </Step>
+
+  <Step title="Add Comments (Optional)">
+    Click **"Add Comment"** to leave notes or questions for team members.
+
+    Comments are useful when collaborating on blueprint documentation.
+  </Step>
+
+  <Step title="Save Your Blueprint">
+    Once you've documented the essential information, save your work.
+
+    The system will create version 1.0 and add it to the Version History.
   </Step>
 </Steps>
 
@@ -90,7 +179,7 @@ Create blueprints when your category:
 
 <AccordionGroup>
   <Accordion title="1. Purpose & Objectives" icon="bullseye" defaultOpen>
-    **Start with why.** Explain what this category accomplishes and why it matters.
+    Start with why. Explain what this category accomplishes and why it matters to the overall process.
 
     **Example for "Candidate Screening":**
     > **Purpose**
@@ -106,7 +195,7 @@ Create blueprints when your category:
   </Accordion>
 
   <Accordion title="2. Overview & Context" icon="map">
-    **Provide background.** Help readers understand how this category fits into the bigger picture.
+    Provide background. Help readers understand how this category fits into the bigger picture.
 
     **Example for "Budget Approval":**
     > **Context**
@@ -119,7 +208,7 @@ Create blueprints when your category:
   </Accordion>
 
   <Accordion title="3. Key Policies & Guidelines" icon="scale-balanced">
-    **Document important rules.** List policies, compliance requirements, or best practices that apply to all activities in this category.
+    Document important rules. List policies, compliance requirements, or best practices that apply to all activities in this category.
 
     **Example for "Customer Support - Ticket Resolution":**
     > **Critical Policies**
@@ -139,7 +228,7 @@ Create blueprints when your category:
   </Accordion>
 
   <Accordion title="4. Tools & Resources" icon="toolbox">
-    **List what people need.** Include systems, templates, training, and references.
+    List what people need. Include systems, templates, training materials, and references.
 
     **Example for "Sales - Discovery Phase":**
     > **Required Tools**
@@ -162,7 +251,7 @@ Create blueprints when your category:
   </Accordion>
 
   <Accordion title="5. Roles & Responsibilities" icon="users">
-    **Clarify who does what.** Provide a high-level overview of roles involved in this category.
+    Clarify who does what. Provide a high-level overview of roles involved in this category.
 
     **Example for "Employee Onboarding - First Week":**
     > **Role Responsibilities**
@@ -172,11 +261,11 @@ Create blueprints when your category:
     > - **Onboarding Buddy:** Provides day-to-day support, answers questions, facilitates introductions
     > - **New Hire:** Completes required tasks, asks questions, provides feedback
 
-    You can reference your RACI matrix here or provide a simplified overview.
+    You can reference your RACI matrix here or provide a simplified overview for the category.
   </Accordion>
 
   <Accordion title="6. Success Criteria & Metrics" icon="chart-line">
-    **Define success.** How do you know if this category is working well?
+    Define success. How do you know if this category is working well?
 
     **Example for "Marketing - Campaign Execution":**
     > **Success Metrics**
@@ -190,11 +279,11 @@ Create blueprints when your category:
     > - Images meet brand guidelines (see style guide)
     > - Legal approved messaging for regulated industries
 
-    Link to KPIs if you've created them in the system.
+    Link to KPIs if you've created them in the system using the KPIs button.
   </Accordion>
 
   <Accordion title="7. Common Scenarios & FAQs" icon="circle-question">
-    **Address common situations.** Include frequently asked questions or edge cases.
+    Address common situations. Include frequently asked questions or edge cases that apply to this category.
 
     **Example for "Purchase Approval":**
     > **Common Scenarios**
@@ -215,9 +304,8 @@ Create blueprints when your category:
 ## Blueprint Structure Template
 
 Use this template as a starting point:
-
 ```markdown
-# [Category Name] - Blueprint
+# [Category Name] - Overview
 
 ## Purpose & Objectives
 [Why this category exists and what it aims to accomplish]
@@ -232,7 +320,7 @@ Use this template as a starting point:
 [Systems, templates, training materials, reference documents]
 
 ## Roles & Responsibilities
-[High-level overview of who does what]
+[High-level overview of who does what in this category]
 
 ## Success Criteria & Metrics
 [How you measure success for this category]
@@ -240,8 +328,8 @@ Use this template as a starting point:
 ## Common Scenarios & FAQs
 [Frequently asked questions and edge cases]
 
-## Related Documentation
-[Links to relevant SOPs, guides, or other resources]
+## Related Activities & Documentation
+[Links to activity guides, SOPs, or other resources]
 ```
 
 ## Writing Style Tips
@@ -257,7 +345,7 @@ Use this template as a starting point:
     Short paragraphs (2-3 sentences) are easier to read than long blocks of text.
   </Card>
   <Card title="Link Generously" icon="link">
-    Link to related resources, guides, forms, and documentation rather than duplicating information.
+    Link to activity guides, forms, templates, and other documentation rather than duplicating information.
   </Card>
 </CardGroup>
 
@@ -267,7 +355,7 @@ Use this template as a starting point:
   <Tab title="Approval Category">
     **Category:** Budget Approval - Requests Over $25K
 
-    **Blueprint:**
+    **Blueprint Content:**
 
     > **Purpose**
     > Large expense requests require CFO approval to ensure alignment with company financial strategy and cash flow management. This additional review protects the company while maintaining reasonable approval speed for legitimate business needs.
@@ -297,7 +385,7 @@ Use this template as a starting point:
   <Tab title="Training Category">
     **Category:** New Hire Training - First Week
 
-    **Blueprint:**
+    **Blueprint Content:**
 
     > **Training Philosophy**
     > The first week balances compliance requirements with culture immersion and role-specific learning. We aim to make new hires feel welcomed while ensuring they have the foundation to succeed.
@@ -330,7 +418,7 @@ Use this template as a starting point:
   <Tab title="Execution Category">
     **Category:** Marketing Campaign - Launch Activities
 
-    **Blueprint:**
+    **Blueprint Content:**
 
     > **Launch Overview**
     > Campaign launches require coordinated execution across channels (email, social, paid ads, website). This category covers the 48-hour launch window from final prep through go-live.
@@ -365,23 +453,48 @@ Use this template as a starting point:
   </Tab>
 </Tabs>
 
+## Version History and Updates
+
+MPQA automatically tracks versions of your blueprints:
+
+### How Versions Work
+
+**Initial save:**
+- Creates version 1.0
+- Appears in Version History sidebar
+- Metadata shows creation date and author
+
+**Subsequent saves:**
+- Each save creates a new version
+- Versions are numbered automatically
+- You can view any previous version by clicking it in the sidebar
+
+**Viewing past versions:**
+- Click any version in the Version History sidebar
+- The editor displays that version's content
+- You can copy content from old versions if needed
+
+<Tip>
+Use the Version History to track how your blueprint has evolved over time and to recover accidentally deleted content.
+</Tip>
+
 ## Best Practices
 
 <Steps>
   <Step title="Start with an Outline">
-    List the sections you need before writing. This prevents rambling and ensures you cover everything.
+    List the sections you need before writing. This prevents rambling and ensures you cover everything important.
   </Step>
   <Step title="Get Input from Team">
-    Ask team members what context or information would be helpful. They know what's confusing or unclear.
+    Ask team members what context or information would be helpful for this category. They know what's confusing or unclear.
   </Step>
   <Step title="Use Real Examples">
     Provide concrete examples rather than abstract concepts. Examples make blueprints much easier to understand.
   </Step>
   <Step title="Link to Activity Guides">
-    Reference specific activity guides when relevant. Blueprints and guides work together.
+    Reference specific activity guides when relevant. Blueprints and guides work together to provide complete documentation.
   </Step>
   <Step title="Keep It Current">
-    Review blueprints when processes change. Outdated blueprints cause confusion.
+    Review and update blueprints when processes, policies, or tools change. Set calendar reminders for regular reviews.
   </Step>
 </Steps>
 
@@ -390,86 +503,57 @@ Use this template as a starting point:
 <Warning>
 **Too Much Detail**
 
-Blueprints should be high-level overviews, not step-by-step manuals. If you're documenting every click, you're writing a guide, not a blueprint.
+Blueprints should be high-level overviews, not step-by-step manuals. If you're documenting every click and button press, you're writing an activity guide, not a blueprint.
 </Warning>
 
 <Warning>
-**Duplicating SOP Content**
+**Duplicating Content**
 
-Don't copy your SOP into your blueprint. Blueprints are category-specific. SOPs cover the entire process. Link between them instead.
+Don't copy your process SOP into your blueprint or repeat information from activity guides. Each documentation level has its purpose. Link between them instead of duplicating.
 </Warning>
 
 <Warning>
-**Creating Blueprints That Aren't Needed**
+**Creating Unnecessary Blueprints**
 
-Not every category needs a blueprint. Simple, self-explanatory categories don't benefit from additional documentation.
+Not every category needs a blueprint. Simple, self-explanatory categories don't benefit from additional documentation. Only create blueprints when they add real value.
 </Warning>
 
 <Warning>
 **Forgetting to Update**
 
-When policies change or tools change, update your blueprints. Outdated information is worse than no information.
+When policies change, tools change, or roles change, update your blueprints. Outdated information is worse than no information because it misleads people.
 </Warning>
-
-## Version Control
-
-Track changes to your blueprints:
-
-<AccordionGroup>
-  <Accordion title="Version Numbering" icon="list-ol" defaultOpen>
-    Mark your blueprint with version numbers:
-    - **1.0** - Initial version
-    - **1.1, 1.2** - Minor updates (clarifications, small additions)
-    - **2.0, 3.0** - Major updates (significant changes to policies or structure)
-  </Accordion>
-
-  <Accordion title="Revision History" icon="clock-rotate-left">
-    Keep a simple log of changes:
-
-    | Version | Date | Author | Changes |
-    |---------|------|--------|---------|
-    | 1.0 | Jan 2024 | Sarah J. | Initial blueprint |
-    | 1.1 | Mar 2024 | Mike C. | Added FAQ section |
-    | 2.0 | Jun 2024 | Sarah J. | Updated approval thresholds |
-  </Accordion>
-
-  <Accordion title="Review Schedule" icon="calendar">
-    Set a reminder to review blueprints:
-    - **Quarterly:** For rapidly changing categories
-    - **Semi-annually:** For moderately stable categories
-    - **Annually:** For very stable categories
-  </Accordion>
-</AccordionGroup>
 
 ## Blueprint Checklist
 
 Before considering your blueprint complete:
 
-- [ ] Clear title referencing the category
-- [ ] Purpose and objectives stated
-- [ ] Context provided for the category
-- [ ] Key policies and guidelines documented
-- [ ] Tools and resources listed with links
-- [ ] Success criteria defined
-- [ ] Proper formatting with headings
-- [ ] Reviewed by team members
-- [ ] Version number and date included
-- [ ] Grammar and spelling checked
+- Clear structure with descriptive headings
+- Purpose and objectives clearly stated
+- Context provided for how this category fits in the process
+- Key policies and guidelines documented
+- Tools and resources listed with working links
+- Roles and responsibilities clarified
+- Success criteria or metrics defined (if applicable)
+- Common scenarios or FAQs addressed
+- Proper formatting for readability
+- Reviewed by team members who use this category
+- Free of typos and grammatical errors
 
 ## Tips for Success
 
 <CardGroup cols={2}>
   <Card title="Focus on Context" icon="lightbulb">
-    Explain why things are done this way, not just what to do.
+    Explain why things are done this way, not just what to do. The "why" is what makes blueprints valuable.
   </Card>
   <Card title="Use Visuals" icon="image">
-    Add diagrams, flowcharts, or screenshots when they clarify complex concepts.
+    Add diagrams, flowcharts, or screenshots when they clarify complex concepts or relationships.
   </Card>
   <Card title="Be Strategic" icon="chess">
     Only create blueprints that add real value. Don't document for the sake of documentation.
   </Card>
   <Card title="Gather Feedback" icon="comments">
-    Ask team members if the blueprint helps them understand the category better.
+    After creating the blueprint, ask team members if it helps them understand the category better. Update based on their feedback.
   </Card>
 </CardGroup>
 

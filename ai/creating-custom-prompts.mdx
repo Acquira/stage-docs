@@ -27,33 +27,41 @@ Don't worry about making it perfect the first time. You can test, refine, and up
 
 <Steps>
   <Step title="Navigate to Master Prompts">
-    From the admin panel, select **AI Settings** then **Master Prompts**.
+    From the main sidebar, navigate to **Administration > AI Master Prompts**.
   </Step>
 
-  <Step title="Click 'Create New Prompt'">
-    Click the **Create Master Prompt** button.
+  <Step title="Click '+ Create Prompt'">
+    Click the **+ Create Prompt** button (or "+ Create Your First Prompt" if the list is empty).
   </Step>
 
-  <Step title="Name your prompt">
-    Give it a clear, descriptive name like "Global AI Guidelines" or "Customer Service Context".
+  <Step title="Enter Name and Description">
+    In the "Create Master Prompt" modal, fill in the:
+    - **Name**: A clear, descriptive name (e.g., "Global AI Guidelines").
+    - **Description**: A brief summary of what this prompt does.
+    
+    Click **"Create Prompt"**.
+  </Step>
+  
+  <Step title="Open the Prompt Editor">
+    You will now see your new prompt in the list. Click on it to open the main editor page.
   </Step>
 
-  <Step title="Choose prompt type">
+  <Step title="Write your prompt">
+    In the main text area, enter your instructions for the AI (detailed guidance below).
+  </Step>
+
+  <Step title="Choose prompt type (if applicable)">
     Select:
     - **Global**: Applies to all AI conversations
     - **Context-specific**: Applies only in certain situations
   </Step>
 
-  <Step title="Write your prompt">
-    Enter your instructions for the AI (detailed guidance below).
-  </Step>
-
   <Step title="Test the prompt">
-    Use the testing panel to see how the AI responds with your prompt.
+    Use the testing panel (if available) to see how the AI responds with your prompt.
   </Step>
 
   <Step title="Activate the prompt">
-    Once satisfied, activate it to make it live for all users.
+    Once satisfied, save and activate it to make it live for all users.
   </Step>
 </Steps>
 
@@ -65,7 +73,6 @@ A good master prompt typically includes:
 
 Tell the AI how to communicate:
 
-```
 Examples:
 
 "Use a friendly, conversational tone. Avoid overly formal language."
@@ -75,30 +82,25 @@ Examples:
 "Be concise and direct. Busy executives prefer brief, actionable answers."
 
 "Be encouraging and supportive, especially for training topics."
-```
+
 
 ### 2. Organizational Context
 
 Provide background about your organization:
 
-```
 Examples:
 
-"We are a healthcare provider. Patient privacy and HIPAA compliance
-are critical considerations in all processes."
+"We are a healthcare provider. Patient privacy and HIPAA compliance are critical considerations in all processes."
 
-"We're a fast-growing startup. Emphasize flexibility and adaptability.
-Processes may change frequently."
+"We're a fast-growing startup. Emphasize flexibility and adaptability. Processes may change frequently."
 
-"We operate globally across 15 countries. Be mindful of time zones
-and international considerations."
-```
+"We operate globally across 15 countries. Be mindful of time zones and international considerations."
+
 
 ### 3. System and Tool References
 
 List the tools your team uses:
 
-```
 Examples:
 
 "When discussing CRM, reference Salesforce specifically."
@@ -108,30 +110,25 @@ Examples:
 "Project management questions should reference Asana."
 
 "Always include links to tool login pages when mentioning systems."
-```
+
 
 ### 4. Key Priorities
 
 Highlight what matters most:
 
-```
 Examples:
 
-"Safety is our top priority. Always mention safety considerations
-first, followed by operational steps."
+"Safety is our top priority. Always mention safety considerations first, followed by operational steps."
 
-"Customer satisfaction drives all decisions. Frame answers in terms
-of customer impact."
+"Customer satisfaction drives all decisions. Frame answers in terms of customer impact."
 
-"Efficiency and speed are valued. Suggest the quickest compliant
-approach first."
-```
+"Efficiency and speed are valued. Suggest the quickest compliant approach first."
+
 
 ### 5. Special Considerations
 
 Note unique aspects of your organization:
 
-```
 Examples:
 
 "We have a fully remote team. Don't assume people are in the office."
@@ -141,7 +138,7 @@ Examples:
 "We use 'clients' not 'customers' in all communications."
 
 "Include accessibility considerations in process recommendations."
-```
+
 
 ## Sample Master Prompts
 
@@ -374,9 +371,9 @@ For larger organizations, consider multiple prompts:
 
 1. **Start with one global prompt** covering organization-wide guidance
 2. **Add department-specific prompts** only when needed:
-   - Sales team prompt (emphasizes CRM, pipeline)
-   - Finance team prompt (emphasizes compliance, accuracy)
-   - HR team prompt (emphasizes confidentiality, employee care)
+    - Sales team prompt (emphasizes CRM, pipeline)
+    - Finance team prompt (emphasizes compliance, accuracy)
+    - HR team prompt (emphasizes confidentiality, employee care)
 
 ### Managing Multiple Prompts
 
@@ -395,31 +392,59 @@ Start with these templates and customize:
 
 ### Basic Template
 
+
+
 ```
+
 [YOUR ORGANIZATION NAME] AI Assistant Guidelines
 
+
+
 Communication Style:
+
 - [Tone: professional/casual/friendly/technical]
+
 - [Format: concise/detailed/visual/step-by-step]
 
+
+
 Organizational Context:
+
 - We are a [type of organization]
+
 - Our key focus is [main business/mission]
+
 - We value [core values]
 
+
+
 Systems and Tools:
+
 - [System type]: [Specific tool name]
+
 - [System type]: [Specific tool name]
+
+
 
 Key Priorities:
+
 - [Priority 1]
+
 - [Priority 2]
+
 - [Priority 3]
 
+
+
 Special Considerations:
+
 - [Unique aspect 1]
+
 - [Unique aspect 2]
+
 ```
+
+
 
 ## Getting Feedback
 
@@ -438,9 +463,17 @@ Create a feedback channel (Slack, email, survey) where users can report when AI 
 
 After creating your master prompt:
 
-- [Set up API keys](/ai/setting-up-api-keys) to connect to OpenAI
-- [Upload documents](/ai/uploading-documents) to enhance AI knowledge
-- [Manage the knowledge base](/ai/managing-knowledge-base) for ongoing maintenance
+<CardGroup cols={3}>
+  <Card title="Set up API keys" href="/ai/setting-up-api-keys">
+    [Set up API keys](/ai/setting-up-api-keys) to connect to OpenAI
+  </Card>
+  <Card title="Upload documents" href="/ai/uploading-documents">
+    [Upload documents](/ai/uploading-documents) to enhance AI knowledge
+  </Card>
+  <Card title="Manage AI Master Prompts" href="/ai/managing-master-prompts">
+    [Manage AI Master Prompts](/ai/managing-master-prompts) for ongoing maintenance
+  </Card>
+</CardGroup>
 
 Learn more about how the AI works:
 - [How AI uses documents](/ai/how-ai-uses-documents)

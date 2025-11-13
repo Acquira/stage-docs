@@ -9,41 +9,35 @@ This feature is available to **Team Admins** and **Team Owners** only.
 
 ## Overview
 
-Inviting team members allows you to grow your team and delegate responsibilities. When you invite someone, they receive an email with instructions to join your team and access the Business Process Framework.
+Inviting team members allows you to grow your team and delegate responsibilities. When you invite someone, they receive an email with instructions to join your team and access **Stage3**.
 
 ## How to Invite Team Members
 
 <Steps>
   <Step title="Navigate to Team Settings">
-    Click on your team name in the top navigation bar, then select **Team Settings** from the dropdown menu.
+    In the main navigation sidebar, click on **Administration**, then select **Team Settings**.
   </Step>
 
   <Step title="Access the Members Section">
-    In the left sidebar, click on **Members** to view your current team roster.
+    The **Team Settings** page will load, showing the "Team Members" section by default.
   </Step>
 
   <Step title="Click Invite Member">
-    Click the **Invite Member** button in the top right corner of the Members page.
+    Click the **+ Invite Member** button, located above the "Team Members" list on the right.
   </Step>
 
   <Step title="Enter Email Address">
-    Type the email address of the person you want to invite. Ensure the email address is correct, as the invitation will be sent to this address.
+    In the "Invite Team Member" modal, type the email address of the person you want to invite. Ensure the email address is correct.
   </Step>
 
   <Step title="Select Initial Role">
-    Choose the role you want to assign to the new member:
-    - **Team Owner**: Full administrative access
-    - **Team Admin**: Can manage team settings and members
-    - **Team Member**: Standard access to team features
-    - **Guest**: Limited access to specific processes
-  </Step>
-
-  <Step title="Add Personal Message (Optional)">
-    You can include a personal message that will be included in the invitation email. This is helpful for providing context about why they are being invited.
+    Choose the role you want to assign to the new member from the dropdown:
+    - **Administrator**: Full permissions to manage settings and members.
+    - **Member**: Standard permissions to create and manage processes.
   </Step>
 
   <Step title="Send Invitation">
-    Click **Send Invitation** to send the email. The invitee will appear in your **Pending Invitations** list.
+    Click the **Send Invitation** button (icon) to send the email. The invitee will appear in your "Pending Invitations" list.
   </Step>
 </Steps>
 
@@ -54,7 +48,6 @@ When you send an invitation, the recipient receives an email containing:
 - Your team name and who sent the invitation
 - A secure invitation link (valid for 7 days)
 - The role they have been assigned
-- Any personal message you included
 - Instructions for accepting the invitation
 
 <Tip>
@@ -63,12 +56,11 @@ Invitation links expire after 7 days for security reasons. If an invitation expi
 
 ## Setting Initial Roles
 
-When inviting a new member, you must assign them an initial role. Consider the following:
+When inviting a new member, you must assign them an initial role. The roles available are:
 
-- **Start conservative**: You can always promote members later, but demoting can be awkward
-- **Match responsibilities**: Assign roles that align with their actual job responsibilities
-- **Consider trust level**: Owner and Admin roles have significant permissions
-- **Review role permissions**: Understand what each role can do before assigning it
+- **Administrator**: Can manage team settings, billing, and invite other members.
+- **Member**: Standard access to create processes and workflows. They cannot access the **Administration** panel.
+- **Owner**: This role is typically assigned to the team creator and cannot be assigned directly via invitation.
 
 <Note>
 You can change a member's role at any time after they accept the invitation. See [Managing Roles](/admin/managing-roles) for more information.
@@ -78,7 +70,7 @@ You can change a member's role at any time after they accept the invitation. See
 
 ### Viewing Pending Invitations
 
-In the Members section, pending invitations are displayed in a separate **Pending Invitations** tab. Here you can see:
+In **Team Settings**, you can see the number of "Pending Invitations" in the metrics at the top. A separate list or tab shows:
 
 - Email address of the invitee
 - Role assigned
@@ -90,7 +82,7 @@ In the Members section, pending invitations are displayed in a separate **Pendin
 
 If an invitation expires or the recipient did not receive the email:
 
-1. Locate the pending invitation in the **Pending Invitations** tab
+1. Locate the pending invitation in the **Pending Invitations** list
 2. Click the **Resend** button next to the invitation
 3. A new invitation email will be sent with a fresh 7-day expiration
 
@@ -98,7 +90,7 @@ If an invitation expires or the recipient did not receive the email:
 
 To cancel a pending invitation:
 
-1. Find the invitation in the **Pending Invitations** tab
+1. Find the invitation in the **Pending Invitations** list
 2. Click the **Cancel** button (trash icon)
 3. Confirm the cancellation
 
@@ -112,7 +104,7 @@ The invitation link will be immediately invalidated, and the invitee will no lon
   </Card>
 
   <Card title="Communicate Expectations" icon="comments">
-    Use the personal message field to explain what you expect from the new team member and what they can expect from the team.
+    Let your team member know an invitation is coming so they can look for it.
   </Card>
 
   <Card title="Monitor Pending Invitations" icon="clock">
@@ -133,7 +125,7 @@ If a team member says they did not receive the invitation email:
 1. Ask them to check their spam/junk folder
 2. Verify you entered the correct email address
 3. Resend the invitation
-4. If the issue persists, have them add `noreply@yourdomain.com` to their email contacts
+4. If the issue persists, have them add `noreply@acquira.com` (or your organization's domain) to their email contacts
 
 ### Cannot Send Invitation
 

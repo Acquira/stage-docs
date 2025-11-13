@@ -1,384 +1,557 @@
 ---
 title: "Assigning RACI Roles"
-description: "Learn how to assign responsibility, accountability, consultation, and information roles to activities"
+description: "Define who is responsible, accountable, consulted, and informed for each process activity"
 ---
 
-## Why Assign RACI Roles?
+## Understanding RACI in MPQA
 
-RACI assignments clarify who does what for every activity in your process. Without RACI, team members waste time figuring out who should handle tasks, who needs to approve, and who needs updates.
+In MPQA, RACI role assignments are an **integral part of creating activities**, not a separate step. When you create an activity, you immediately assign who does the work (Responsible), who approves it (Accountable), who provides input (Consulted), and who receives updates (Informed).
 
-With RACI assignments, everyone knows their role instantly.
+These assignments clarify ownership and eliminate confusion about who should handle each task in your process.
 
 <Info>
-**Quick reminder:** RACI stands for Responsible (does the work), Accountable (owns the outcome), Consulted (provides input), and Informed (receives updates).
-
-Need a refresher? [Read the full RACI explanation](/processes/what-is-raci)
+**RACI Reminder:**
+- **R**esponsible: Does the work to complete the task
+- **A**ccountable: Is accountable for the completion and signs off
+- **C**onsulted: Provides input and feedback
+- **I**nformed: Needs to be kept updated on progress
 </Info>
 
-## Before You Assign RACI
+## How RACI Works in MPQA
 
-Make sure you have:
+Unlike traditional RACI documentation where you assign roles after creating activities, MPQA requires RACI assignments as part of the activity creation process:
 
-- **Activities created** in your core process
-- **Team members** added to your organization
-- **Understanding** of who does what in your process
+1. **RACI is assigned during activity creation** - When you click "Add Activity," the creation modal includes four RACI fields that you fill out immediately.
 
-<Tip>
-Map out RACI assignments on paper first. Discuss with your team to avoid conflicts or missed assignments.
-</Tip>
+2. **You can use real users or free text** - Each RACI field accepts two types of input: select actual team members from your organization, or type role names and job titles freely.
 
-## Assigning RACI to an Activity
+3. **Assignments appear immediately** - Once you save the activity, the RACI assignments appear in the matrix, visual diagrams, and swimlane charts.
+
+4. **Edit anytime** - Click the edit icon next to any activity to update RACI assignments through the same modal interface.
+
+## Assigning RACI When Creating an Activity
 
 <Steps>
-  <Step title="Open the Activity">
-    Navigate to your core process and find the activity you want to assign roles to.
+  <Step title="Open the Create Activity Modal">
+    Navigate to your core process and click the blue **"Add Activity"** button.
 
-    Click on the activity to open its detail view, or click the edit icon.
+    The "Create New Activity" modal appears with fields for activity name, category, and all four RACI roles.
   </Step>
 
-  <Step title="Find the RACI Section">
-    Look for a section labeled "RACI", "Roles", "Assignments", or similar.
+  <Step title="Enter Activity Name and Category">
+    Fill in the **Activity Name** (required) and **Category** (optional).
 
-    You'll see four categories: Responsible, Accountable, Consulted, and Informed.
+    These are covered in detail in the [Adding Activities guide](/processes/adding-activities).
   </Step>
 
-  <Step title="Assign Accountable First">
-    Start by assigning the **Accountable** person - the one who owns the outcome.
+  <Step title="Assign Responsible (R)">
+    In the **"Responsible"** field labeled "Who does the work":
 
-    **Important:** You must assign exactly ONE Accountable person. No more, no less.
+    **Option 1 - Select a user:**
+    - Click the dropdown arrow
+    - Select a team member from your organization
+    - Their name appears with an avatar initial
 
-    Click "Add" or the "+" next to Accountable and select a team member from the dropdown.
+    **Option 2 - Type freely:**
+    - Simply type a name, role, or job title
+    - Example: "Sales Rep", "John Smith", "Engineering Team"
+
+    <Tip>
+    You can assign multiple responsible parties by entering multiple names or using a team name like "Marketing Team."
+    </Tip>
   </Step>
 
-  <Step title="Assign Responsible">
-    Next, assign who does the actual work (Responsible).
+  <Step title="Assign Accountable (A)">
+    In the **"Accountable"** field labeled "Who approves the work":
 
-    You can assign multiple people if several team members share the work.
+    Choose the person who ultimately owns this activity and has final approval authority.
 
-    Click "Add" next to Responsible and select team member(s).
+    You can select from the dropdown or type freely, just like Responsible.
+
+    <Warning>
+    Best Practice: Assign exactly ONE accountable person. If you need to list multiple people, consider who truly has final say if there's disagreement - that person should be Accountable.
+    </Warning>
   </Step>
 
-  <Step title="Assign Consulted (If Needed)">
-    Add anyone who needs to provide input or expertise before the work is done.
+  <Step title="Assign Consulted (C) - Optional">
+    In the **"Consulted"** field labeled "Who provides input":
 
-    Only include people whose expertise is truly necessary. Too many Consulted people slow things down.
+    Add anyone whose expertise or input is needed before the work is completed.
+
+    You can leave this field empty if no consultation is needed, or select/type names as with other roles.
+
+    <Tip>
+    Only include people whose input is truly necessary. Too many consulted parties can slow down progress.
+    </Tip>
   </Step>
 
-  <Step title="Assign Informed (If Needed)">
-    Add anyone who needs to receive updates after the work is done.
+  <Step title="Assign Informed (I) - Optional">
+    In the **"Informed"** field labeled "Who is kept updated":
 
-    Keep this list focused. Only include stakeholders who truly need to know.
+    Add anyone who needs to receive updates about this activity's progress or completion.
+
+    You can leave this field empty or use the dropdown to select "None" if no one needs to be informed.
+
+    <Note>
+    Informed roles receive one-way communication. They're updated but don't provide input (that would be Consulted).
+    </Note>
   </Step>
 
-  <Step title="Save Assignments">
-    Click "Save" to apply your RACI assignments.
+  <Step title="Create the Activity">
+    Click **"Create Activity"** to save the activity with all RACI assignments.
 
-    The assignments now appear in the activity view, diagrams, and RACI matrices.
+    The activity appears in your RACI matrix with all role assignments visible in their respective columns.
   </Step>
 </Steps>
-
-## Mapping Team Members to Roles
-
-You can assign RACI roles in two ways:
-
-<Tabs>
-  <Tab title="By Individual">
-    **Assign specific people by name**
-
-    **Example:**
-    - Responsible: Sarah Johnson
-    - Accountable: Mike Chen
-    - Consulted: Legal Team (3 people)
-    - Informed: All Managers (5 people)
-
-    **Best for:** Small teams, specific one-time processes, clear individual accountability
-  </Tab>
-
-  <Tab title="By Role/Position">
-    **Assign by job title or role**
-
-    **Example:**
-    - Responsible: Recruiter
-    - Accountable: Hiring Manager
-    - Consulted: Department Head
-    - Informed: HR Director
-
-    **Best for:** Scalable processes, processes that work regardless of who fills the role, documentation that survives turnover
-  </Tab>
-</Tabs>
-
-<Note>
-Many organizations use a hybrid approach: assign by role in the process documentation, then map actual people to those roles for specific process instances.
-</Note>
-
-## RACI Assignment Examples
-
-<AccordionGroup>
-  <Accordion title="Example 1: Approve Marketing Budget" icon="money-bill" defaultOpen>
-    **Activity:** Approve Marketing Budget Request
-
-    - **Responsible:** Marketing Director (prepares the request and justification)
-    - **Accountable:** CFO (makes the final approval decision)
-    - **Consulted:** CEO (provides strategic input), Finance Manager (ensures budget alignment)
-    - **Informed:** Marketing Team (learns about the approved budget), Finance Team (updates financial systems)
-
-    **Why this works:** One person owns the decision (CFO), one does the work (Marketing Director), experts provide input, and stakeholders stay informed.
-  </Accordion>
-
-  <Accordion title="Example 2: Conduct Phone Interview" icon="phone">
-    **Activity:** Conduct Phone Interview with Candidate
-
-    - **Responsible:** Recruiter (conducts the actual interview)
-    - **Accountable:** Hiring Manager (decides if candidate moves forward)
-    - **Consulted:** Department Lead (if needed for technical questions)
-    - **Informed:** HR Coordinator (updates candidate status in system)
-
-    **Why this works:** Clear ownership with the hiring manager, recruiter does the work, and HR stays in the loop.
-  </Accordion>
-
-  <Accordion title="Example 3: Launch Product Feature" icon="rocket">
-    **Activity:** Deploy New Feature to Production
-
-    - **Responsible:** Engineering Team (3 developers - perform the deployment)
-    - **Accountable:** Engineering Manager (owns the deployment decision and rollback if needed)
-    - **Consulted:** Product Manager (confirms feature is ready), QA Lead (confirms testing complete)
-    - **Informed:** Customer Support (prepares for user questions), Sales Team (updates pitch decks)
-
-    **Why this works:** Multiple people can be Responsible when they share the work, but one person is Accountable for the outcome.
-  </Accordion>
-
-  <Accordion title="Example 4: Monthly Financial Close" icon="calendar-check">
-    **Activity:** Reconcile Bank Accounts
-
-    - **Responsible:** Accounting Specialist (performs reconciliation)
-    - **Accountable:** Controller (reviews and approves reconciliation)
-    - **Consulted:** - (no consultation needed for routine task)
-    - **Informed:** CFO (receives summary report)
-
-    **Why this works:** Routine tasks often don't need Consulted roles. Keep it simple.
-  </Accordion>
-</AccordionGroup>
-
-## Multiple Assignments
-
-<CardGroup cols={2}>
-  <Card title="Multiple Responsible" icon="users" color="#3b82f6">
-    **Allowed:** Yes
-
-    Multiple people can share the work. Be clear about who does what part.
-
-    **Example:** Three recruiters all screen candidates
-  </Card>
-  <Card title="Multiple Accountable" icon="shield-xmark" color="#ef4444">
-    **Allowed:** NO
-
-    Only ONE person can be accountable. Multiple owners = no owner.
-
-    **Fix:** Choose the person with final decision authority
-  </Card>
-  <Card title="Multiple Consulted" icon="comments" color="#10b981">
-    **Allowed:** Yes
-
-    Several experts can provide input. But keep it focused to avoid delays.
-
-    **Example:** Legal, Finance, and Sales all consulted on pricing
-  </Card>
-  <Card title="Multiple Informed" icon="bell" color="#8b5cf6">
-    **Allowed:** Yes
-
-    Many stakeholders can receive updates. Just don't overdo it.
-
-    **Example:** All department heads informed of policy changes
-  </Card>
-</CardGroup>
-
-<Warning>
-**The One Accountable Rule**
-
-This is the most important RACI rule. Every activity must have exactly ONE Accountable person. If you think you need two, ask: "Who has final say if they disagree?" That person is Accountable.
-</Warning>
-
-## RACI Assignment Best Practices
-
-<Tabs>
-  <Tab title="Start Right">
-    ✅ Assign Accountable first
-    ✅ Choose the person with final decision authority
-    ✅ Make sure every activity has ONE Accountable person
-    ✅ Assign Responsible to whoever does the actual work
-  </Tab>
-
-  <Tab title="Keep It Focused">
-    ✅ Only consult people whose expertise is truly needed
-    ✅ Only inform people who need to take action based on updates
-    ✅ When in doubt, leave someone off the list
-    ✅ You can always add people later
-  </Tab>
-
-  <Tab title="Be Specific">
-    ✅ Use job titles or roles that will survive employee turnover
-    ✅ Document what "Responsible" means if multiple people share it
-    ✅ Clarify what input Consulted people should provide
-    ✅ Note when Informed people receive updates (after completion, daily, etc.)
-  </Tab>
-
-  <Tab title="Test It">
-    ✅ Walk through the process with your team
-    ✅ Ask: "Does everyone know what they're supposed to do?"
-    ✅ Identify gaps where no one is assigned
-    ✅ Look for activities where everyone is Consulted (too many cooks)
-  </Tab>
-</Tabs>
-
-## Common RACI Mistakes
-
-<AccordionGroup>
-  <Accordion title="Mistake: Everyone is Accountable" icon="triangle-exclamation" defaultOpen>
-    **Problem:** "We all own this together!"
-
-    **Why it fails:** When everyone is accountable, no one is. Decisions stall because there's no clear owner.
-
-    **Fix:** Choose ONE person who makes the final call. Others can be Responsible or Consulted, but only one is Accountable.
-  </Accordion>
-
-  <Accordion title="Mistake: Too Many Consulted" icon="users">
-    **Problem:** 10+ people are Consulted on a simple decision.
-
-    **Why it fails:** Gathering input from too many people creates delays and decision fatigue.
-
-    **Fix:** Only consult people whose expertise directly impacts the decision. Others can be Informed instead.
-  </Accordion>
-
-  <Accordion title="Mistake: No Responsible Person" icon="circle-question">
-    **Problem:** Activity has an Accountable person but no Responsible person.
-
-    **Why it fails:** Someone owns the outcome, but no one is doing the work!
-
-    **Fix:** Assign who actually performs the activity. Sometimes the Accountable person is also Responsible.
-  </Accordion>
-
-  <Accordion title="Mistake: Confusing Consulted and Informed" icon="shuffle">
-    **Problem:** People who just need updates are marked as Consulted.
-
-    **Why it fails:** Consulted people expect to provide input. If you just need to notify them, they're Informed.
-
-    **Fix:** Use Consulted for two-way input, Informed for one-way notifications.
-  </Accordion>
-
-  <Accordion title="Mistake: Overly Detailed Assignments" icon="microscope">
-    **Problem:** Assigning RACI to every tiny sub-task.
-
-    **Why it fails:** Creates administrative overhead with little value. RACI is for meaningful activities, not every mouse click.
-
-    **Fix:** Assign RACI to activity-level tasks, not sub-steps within activities.
-  </Accordion>
-</AccordionGroup>
 
 ## Editing RACI Assignments
 
-Need to change who's assigned to an activity?
+To change who's assigned to an existing activity:
 
 <Steps>
-  <Step title="Open the Activity">
-    Navigate to the activity with assignments you want to change.
+  <Step title="Locate the Activity">
+    Find the activity in your RACI Responsibility Matrix.
   </Step>
-  <Step title="Edit RACI Section">
-    Click "Edit" in the RACI section or open the activity editor.
+
+  <Step title="Click the Edit Icon">
+    Click the pencil icon in the **Actions** column of that activity's row.
+
+    This opens the "Edit RACI Assignments" modal.
   </Step>
-  <Step title="Add or Remove People">
-    - To add: Click "Add" and select team members
-    - To remove: Click the "X" or trash icon next to a person's name
+
+  <Step title="Update Any RACI Fields">
+    The edit modal shows the same four RACI fields:
+    - **Responsible (R):** Who does the work to complete the task
+    - **Accountable (A):** Who is accountable for the completion and signs off
+    - **Consulted (C):** Who provides input and feedback
+    - **Informed (I):** Who needs to be kept updated on progress
+
+    **To change an assignment:**
+    - Select a different user from the dropdown, OR
+    - Clear the field and type new text, OR
+    - Select "None" from the dropdown to remove the assignment
   </Step>
-  <Step title="Save Changes">
-    Click "Save" to update the assignments.
+
+  <Step title="Save Your Changes">
+    Click the blue **"Save Changes"** button.
+
+    The RACI matrix and all visual diagrams immediately update to reflect your changes.
   </Step>
 </Steps>
 
 <Info>
-When you update RACI assignments, swimlane diagrams and RACI matrices automatically update to reflect the changes.
+The edit modal is identical to the create modal, making it easy to update assignments using the same familiar interface.
 </Info>
 
-## Viewing RACI Assignments
+## Choosing Between Users and Free Text
 
-Once assigned, you can view RACI in several ways:
+MPQA gives you flexibility in how you assign RACI roles:
 
-<CardGroup cols={3}>
-  <Card title="In Activities" icon="list-check">
-    See assignments directly on each activity in your process view
-  </Card>
-  <Card title="In Swimlane Diagrams" icon="water">
-    View assignments visually with each role in its own lane
-  </Card>
-  <Card title="In RACI Matrix" icon="table">
-    See a grid of all activities and assignments at once
-  </Card>
-</CardGroup>
+<Tabs>
+  <Tab title="Select Real Users">
+    **When to use:**
+    - You have team members added to your MPQA organization
+    - You want to assign specific individuals by name
+    - You need to track individual accountability
 
-## RACI by Process Type
+    **How it appears:**
+    - User names display with avatar initials (e.g., "J Jhon")
+    - Selected from dropdown menu
+    - Links to actual user accounts
 
-Different processes have different RACI patterns:
+    **Benefits:**
+    - Clear individual accountability
+    - Can connect to user dashboards and notifications
+    - Easy to see who's assigned what
 
-| Process Type | Typical Accountable | Typical Responsible | Typical Consulted |
-|--------------|-------------------|-------------------|------------------|
-| **Approval Process** | Manager/Director | Specialist/Analyst | Subject Matter Experts |
-| **Creation Process** | Team Lead | Designer/Developer | Stakeholders |
-| **Review Process** | Senior Role | Reviewer | Original Creator |
-| **Communication** | Sender | Sender (can be same) | Message Approver |
-| **Execution Process** | Project Manager | Team Members | Department Heads |
+    **Example:**
+    - Responsible: [J] Jhon
+    - Accountable: [C] Chris
+  </Tab>
 
-## Tips for Large Teams
+  <Tab title="Type Role Names">
+    **When to use:**
+    - You want to document by role rather than individual
+    - The process should work regardless of who fills the role
+    - Planning for future scalability
 
-If you have many team members, RACI assignment can get complex:
+    **How it appears:**
+    - Text you type appears in the field
+    - Dropdown may show "None" but your text remains
+    - Does not link to specific user accounts
 
-<CardGroup cols={2}>
-  <Card title="Use Groups" icon="user-group">
-    If your system supports it, create groups like "Marketing Team" or "Engineering" instead of listing individuals.
-  </Card>
-  <Card title="Assign by Role" icon="id-badge">
-    Use job titles or roles instead of names so processes survive team changes.
-  </Card>
-  <Card title="Document Defaults" icon="file-lines">
-    Create a guide showing standard RACI patterns for your organization.
-  </Card>
-  <Card title="Review Regularly" icon="rotate">
-    As teams change, review and update RACI assignments quarterly.
-  </Card>
-</CardGroup>
+    **Benefits:**
+    - Process documentation survives employee turnover
+    - Scalable across teams and departments
+    - Focuses on roles rather than people
+
+    **Example:**
+    - Responsible: Sales Representative
+    - Accountable: Regional Sales Manager
+    - Consulted: Legal Team, Finance Department
+  </Tab>
+
+  <Tab title="Hybrid Approach">
+    **Recommended for most organizations**
+
+    Use role names in your standard process documentation, but select specific users when executing a process instance.
+
+    **Example Standard Process:**
+    - Responsible: Recruiter
+    - Accountable: Hiring Manager
+    - Consulted: Department Head
+
+    **Example Actual Instance:**
+    - Responsible: [S] Sarah Johnson
+    - Accountable: [M] Mike Chen
+    - Consulted: [D] David Park
+  </Tab>
+</Tabs>
+
+## RACI Assignment Examples
+
+### Example 1: Approve Marketing Budget
+
+**Activity:** Approve Marketing Budget Request
+
+**Assignments:**
+- **Responsible:** Marketing Director
+  - Prepares the budget request and gathers supporting data
+- **Accountable:** CFO
+  - Makes the final approval or rejection decision
+- **Consulted:** CEO, Finance Manager
+  - CEO provides strategic input, Finance Manager ensures alignment with company budget
+- **Informed:** Marketing Team, Finance Team
+  - Marketing learns the approved budget, Finance updates financial systems
+
+**Why this works:**
+- One person (CFO) has final decision authority
+- One person (Marketing Director) does the preparation work
+- Experts provide necessary input without slowing the process
+- Stakeholders stay informed without being bottlenecks
+
+### Example 2: Conduct Phone Interview
+
+**Activity:** Conduct Phone Screen Interview
+
+**Assignments:**
+- **Responsible:** Recruiter
+  - Conducts the actual phone interview with the candidate
+- **Accountable:** Hiring Manager
+  - Reviews interview notes and decides if candidate advances
+- **Consulted:** (None)
+  - Routine phone screens don't require consultation
+- **Informed:** HR Coordinator
+  - Updates candidate status in applicant tracking system
+
+**Why this works:**
+- Clear ownership with the hiring manager
+- Recruiter performs the work without bottlenecks
+- No unnecessary consultation for routine tasks
+- HR stays in the loop for administrative tracking
+
+### Example 3: Deploy Software Feature
+
+**Activity:** Deploy New Feature to Production
+
+**Assignments:**
+- **Responsible:** Engineering Team (or list specific developers)
+  - Multiple engineers perform the deployment together
+- **Accountable:** Engineering Manager
+  - Owns the deployment decision and rollback authority
+- **Consulted:** Product Manager, QA Lead
+  - Product confirms feature readiness, QA confirms testing complete
+- **Informed:** Customer Support, Sales Team
+  - Support prepares for user questions, Sales updates their materials
+
+**Why this works:**
+- Multiple people can share Responsible role for team activities
+- Still only one Accountable owner (Engineering Manager)
+- Consultation ensures quality gates are met
+- Downstream teams get timely notification
+
+### Example 4: Simple Approval Task
+
+**Activity:** Approve Expense Report
+
+**Assignments:**
+- **Responsible:** Finance Specialist
+  - Reviews expense report for policy compliance
+- **Accountable:** Department Manager
+  - Approves or rejects the expense report
+- **Consulted:** (None)
+- **Informed:** Employee
+  - Learns whether their expenses were approved
+
+**Why this works:**
+- Routine tasks don't need consultation
+- Clear two-step process: review then approve
+- Employee gets notified of outcome
+
+## Understanding Multiple Assignments
+
+**Multiple Responsible - Allowed**
+
+Multiple people can share the work on an activity.
+
+How to indicate: Type multiple names separated by commas, or use a team name like "Sales Team" or "Engineering Squad"
+
+Example: "John Smith, Sarah Lee, Mike Chen"
+
+**Multiple Accountable - Not Allowed**
+
+Only ONE person should be accountable for final decisions.
+
+If you think you need two: Ask: "Who has final say if they disagree?" That person is Accountable. The other might be Consulted.
+
+Fix: Choose the ultimate decision-maker
+
+**Multiple Consulted - Allowed**
+
+Several experts can provide input.
+
+Caution: Keep it focused. Too many consulted parties create delays.
+
+Example: "Legal Team, Finance Director, VP Sales"
+
+**Multiple Informed - Allowed**
+
+Many stakeholders can receive updates.
+
+Caution: Only inform people who truly need to know.
+
+Example: "All Managers, Executive Team, Board"
+
+<Warning>
+**The Golden Rule: One Accountable Person**
+
+This is the most critical RACI principle. Every activity must have exactly ONE accountable person. Multiple accountable parties means no one truly owns the outcome, leading to confusion and delayed decisions.
+</Warning>
+
+## RACI Best Practices
+
+<Tabs>
+  <Tab title="Assignment Strategy">
+    **Assign Accountable first**
+    
+    Start by identifying who has final decision authority. This clarifies ownership from the start.
+
+    **Then assign Responsible**
+    
+    Who actually does the work? Can be multiple people for team activities.
+
+    **Add Consulted sparingly**
+    
+    Only people whose expertise is truly necessary. Ask: "Would we be missing critical information without them?"
+
+    **Keep Informed focused**
+    
+    Only stakeholders who need to take action based on updates. Not everyone who's "interested".
+  </Tab>
+
+  <Tab title="Naming Conventions">
+    **For standard processes:**
+    
+    Use role names: "Sales Manager", "Recruiter", "Engineer". Survives employee changes and scales across teams.
+
+    **For specific instances:**
+    
+    Select actual users from dropdown. Clear individual accountability and enables notifications and tracking.
+
+    **Be consistent:**
+    
+    If one activity says "Marketing Manager", don't use "VP of Marketing" for similar activities. Standardize role names across your organization.
+  </Tab>
+
+  <Tab title="Review Process">
+    **Walk through with your team**
+    
+    Does everyone understand their assignments? Are there gaps where no one is assigned? Are there bottlenecks with too many consulted parties?
+
+    **Test it in practice**
+    
+    Try executing the process with assigned roles. Identify confusion or delays. Adjust assignments based on real experience.
+
+    **Update regularly**
+    
+    As teams change, update assignments. As processes evolve, review if RACI still makes sense. Quarterly reviews for active processes.
+  </Tab>
+</Tabs>
+
+## Common RACI Mistakes and Fixes
+
+### Mistake: Everyone is Accountable
+
+**Problem:** "We all own this together!" or listing multiple people as Accountable
+
+**Why it fails:** When everyone is accountable, no one is. Decisions stall because there's no clear final authority.
+
+**Real-world example:** Three managers are all "Accountable" for approving a new hire. Each waits for the others, and the candidate waits weeks for a decision.
+
+**Fix:** Identify who has final say. Others can be Responsible (if they share the work) or Consulted (if they provide input), but only one person is Accountable.
+
+### Mistake: Too Many Consulted Parties
+
+**Problem:** 10+ people listed as Consulted on a routine decision
+
+**Why it fails:** Gathering input from too many people creates delays, decision fatigue, and meeting overload.
+
+**Real-world example:** A simple design change requires consultation with 8 different people. Scheduling a meeting takes 2 weeks, and the discussion goes in circles.
+
+**Fix:** Only consult people whose expertise directly impacts the decision. Others can be Informed after the fact instead.
+
+### Mistake: No Responsible Person
+
+**Problem:** Activity has an Accountable person but no Responsible person listed
+
+**Why it fails:** Someone owns the outcome, but no one is actually doing the work!
+
+**Real-world example:** The CEO is Accountable for preparing the board presentation, but no one is Responsible for actually creating the slides. Nothing happens.
+
+**Fix:** Always assign who performs the work. Sometimes the Accountable person is also Responsible (especially for senior roles), and that's okay - just list them in both fields.
+
+### Mistake: Confusing Consulted and Informed
+
+**Problem:** People who just need updates are marked as Consulted
+
+**Why it fails:** Consulted people expect to provide input and be asked for their opinion. If you just need to notify them, they're Informed.
+
+**Real-world example:** The entire department is "Consulted" on a decision, but really they just need to know the outcome. Everyone expects to be asked for input and feels ignored.
+
+**Fix:**
+- **Consulted = two-way:** Their input influences the decision
+- **Informed = one-way:** They receive notification after the decision
+
+### Mistake: RACI for Every Tiny Step
+
+**Problem:** Assigning RACI to every sub-task and micro-step
+
+**Why it fails:** Creates administrative burden with little value. RACI is for meaningful activities, not every action.
+
+**Real-world example:** RACI for "Open email", "Type subject line", "Attach document", "Click send" instead of just "Send proposal to client"
+
+**Fix:** Assign RACI at the activity level (the meaningful tasks in your process), not for every sub-step within an activity.
+
+## Viewing Your RACI Assignments
+
+Once assigned, RACI information appears throughout MPQA:
+
+### In the RACI Matrix Tab
+
+- Each activity row shows icons in the R, A, C, and I columns
+- Click any icon to see who's assigned to that role
+- Quick visual scan of all assignments across your process
+
+### In Visual Process Flow
+
+- Activities display in boxes color-coded by category
+- RACI information is embedded in the activity details
+- Shows the flow of responsibility through your process
+
+### In Swimlane Charts
+
+- Activities are automatically organized into lanes by Responsible person
+- Shows clearly who handles what in cross-functional processes
+- Makes handoffs between team members visible
+
+### In Activity Details
+
+- Full RACI assignments displayed when you open any activity
+- Edit capability directly from the activity view
+- Links to user profiles (if using real users)
+
+## RACI Patterns by Process Type
+
+Different process types tend to have different RACI patterns:
+
+| Process Type | Typical Pattern | Example |
+|--------------|----------------|---------|
+| **Approval Process** | Specialist prepares, Manager approves | R: Analyst, A: Director, C: SME, I: Team |
+| **Creation Process** | Creator does work, Lead owns quality | R: Designer, A: Creative Director, C: Stakeholders |
+| **Review Process** | Reviewer checks, Senior role decides | R: QA Specialist, A: QA Manager, C: Developer |
+| **Communication** | Sender creates, Approver signs off | R: Coordinator, A: Manager, C: Legal, I: Recipients |
+| **Execution** | Team executes, PM owns | R: Team Members, A: Project Manager, C: Stakeholders |
+
+## When to Use "None"
+
+The dropdown option "None" allows you to explicitly indicate that a role doesn't apply:
+
+**Common for Consulted**
+
+Many activities don't require consultation. Routine, well-established tasks often have:
+- Responsible: Assigned
+- Accountable: Assigned
+- Consulted: None
+- Informed: Assigned
+
+Example: Processing a standard expense report
+
+**Common for Informed**
+
+Some activities are self-contained and don't require informing others:
+- Responsible: Assigned
+- Accountable: Assigned
+- Consulted: Assigned
+- Informed: None
+
+Example: Internal team planning meeting
+
+<Note>
+Using "None" is different from leaving a field blank. "None" explicitly states "this role doesn't apply" while blank might just mean "not filled out yet."
+</Note>
 
 ## RACI Assignment Checklist
 
-Before considering an activity "complete," verify:
+Before considering your RACI assignments complete:
 
-- [ ] Exactly ONE Accountable person assigned
-- [ ] At least one Responsible person assigned
-- [ ] Consulted limited to essential experts only
-- [ ] Informed limited to stakeholders who need updates
-- [ ] All assignments make sense when walking through the process
-- [ ] Team members confirm they understand their roles
+- Every activity has exactly ONE Accountable person
+- Every activity has at least one Responsible person
+- Consulted is limited to people whose input is truly necessary
+- Informed includes stakeholders who need updates to do their jobs
+- Role names are consistent across similar activities
+- Team members have reviewed and confirmed they understand their roles
+- No activities have blank RACI fields (use "None" if a role doesn't apply)
 
-## What Happens After Assignment?
+## Tips for Large Organizations
 
-Once RACI roles are assigned:
+If you're working with many team members or complex processes:
 
-- **Swimlane diagrams** automatically organize by Responsible person
-- **Team members** can see their assignments in their personal dashboards
-- **Notifications** can be sent to appropriate people when activities start or complete
-- **Reports** can show workload distribution across team members
+**Standardize role names**
 
-<Tip>
-Some systems let you filter views by RACI role. For example, show "All activities where I'm Accountable" to see your decision points.
-</Tip>
+Create a glossary of standard role names your organization uses.
+
+Example: Always use "Sales Manager" not "Sales Lead" or "Sales Supervisor"
+
+**Document RACI patterns**
+
+For common process types, document standard RACI patterns as templates.
+
+Example: All approval processes have the same RACI structure
+
+**Review quarterly**
+
+Set a reminder to review RACI assignments every quarter as teams change.
+
+Update assignments when people change roles or leave
+
+**Train your team**
+
+Make sure everyone understands what RACI means and how to read the assignments.
+
+Quiz: "If you're Consulted, what does that mean?"
 
 ## Next Steps
 
 <CardGroup cols={3}>
-  <Card title="Visual Diagrams" icon="diagram-project" href="/processes/visual-diagrams">
-    See your RACI assignments in swimlane diagrams
+  <Card title="Visual Process Flow" href="/processes/visual-diagrams">
+    See how RACI assignments appear in visual diagrams
   </Card>
-  <Card title="Creating Guides" icon="book" href="/processes/creating-guides">
-    Add step-by-step guides to your activities
+
+  <Card title="Swimlane Charts" href="/processes/swimlane-charts">
+    View cross-functional process flows organized by responsible person
   </Card>
-  <Card title="Sharing Processes" icon="share-nodes" href="/processes/sharing-processes">
-    Share your process with team members
+
+  <Card title="Creating SOPs" href="/processes/creating-sops">
+    Add detailed procedure documentation to your activities
   </Card>
 </CardGroup>

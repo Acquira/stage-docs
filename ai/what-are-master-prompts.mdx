@@ -27,35 +27,39 @@ Master prompts tell the AI:
 
 ### Example Without Master Prompt
 
-```
 User: "How do I submit an expense report?"
 
 AI: "To submit an expense report, follow these steps:
-1. Gather your receipts
-2. Complete the expense form
-3. Submit for approval
-4. Wait for processing"
-```
+
+Gather your receipts
+
+Complete the expense form
+
+Submit for approval
+
+Wait for processing"
+
 
 ### Example With Custom Master Prompt
 
-```
 User: "How do I submit an expense report?"
 
-AI: "I'll help you submit your expense report through our
-Concur system. Here's what you need:
+AI: "I'll help you submit your expense report through our Concur system. Here's what you need:
 
-1. Log into Concur (link in your email from IT)
-2. Click 'New Report' and select your department
-3. Upload receipts (required for anything over $25)
-4. Your manager Sarah will get it for approval
-5. Finance processes reports every Friday
+Log into Concur (link in your email from IT)
 
-Need help with Concur? The Finance team has drop-in
-hours Tuesdays 2-4pm.
+Click 'New Report' and select your department
+
+Upload receipts (required for anything over $25)
+
+Your manager Sarah will get it for approval
+
+Finance processes reports every Friday
+
+Need help with Concur? The Finance team has drop-in hours Tuesdays 2-4pm.
 
 Tip: Submit by Thursday to get reimbursed the same week!"
-```
+
 
 The master prompt added:
 - Specific system name (Concur)
@@ -134,7 +138,7 @@ The master prompt added:
 <Warning>
 **Master prompts are not:**
 
-- A way to add new information (use the knowledge base for that)
+- A way to add new information (use **AI Master Prompts** to upload documents for that)
 - A replacement for documentation
 - Guaranteed to change every AI response
 - A way to restrict AI capabilities
@@ -167,40 +171,52 @@ Start with one global master prompt. Add specialized prompts only when you have 
 
 ### Example 1: Professional Services Firm
 
-```
 Master prompt emphasis:
-- Client confidentiality always
-- Reference timekeeping system (ClickTime)
-- Include billing implications when relevant
-- Professional, formal tone
-- Mention project codes for expense tracking
-```
+
+Client confidentiality always
+
+Reference timekeeping system (ClickTime)
+
+Include billing implications when relevant
+
+Professional, formal tone
+
+Mention project codes for expense tracking
+
 
 Result: AI naturally includes these elements in responses about projects, time tracking, and expenses.
 
 ### Example 2: Remote-First Tech Company
 
-```
 Master prompt emphasis:
-- Assume remote work context
-- Reference async communication preferences
-- Time zone awareness in scheduling
-- Tools: Slack, Zoom, Notion, GitHub
-- Emphasize documentation and written communication
-```
+
+Assume remote work context
+
+Reference async communication preferences
+
+Time zone awareness in scheduling
+
+Tools: Slack, Zoom, Notion, GitHub
+
+Emphasize documentation and written communication
+
 
 Result: AI provides remote-friendly guidance and references the right tools.
 
 ### Example 3: Customer Service Organization
 
-```
 Master prompt emphasis:
-- Customer satisfaction is top priority
-- Reference SLA requirements
-- Include escalation paths
-- Empathetic, helpful tone
-- Mention available support hours
-```
+
+Customer satisfaction is top priority
+
+Reference SLA requirements
+
+Include escalation paths
+
+Empathetic, helpful tone
+
+Mention available support hours
+
 
 Result: AI focuses on customer impact and service standards.
 
@@ -249,4 +265,4 @@ Ready to create your first master prompt?
 - [Setting up API keys](/ai/setting-up-api-keys)
 
 Or learn about other admin features:
-- [Uploading documents to knowledge base](/ai/uploading-documents)
+- [Uploading documents](/ai/uploading-documents)

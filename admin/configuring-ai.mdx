@@ -1,5 +1,5 @@
 ---
-title: "Configuring AI"
+title: "Configuring AI (Setting Up API Keys)"
 description: "Set up and manage AI integration for your team"
 ---
 
@@ -9,21 +9,20 @@ This feature is available to **Team Admins** and **Team Owners** only.
 
 ## Overview
 
-The Business Process Framework uses OpenAI's GPT models to provide intelligent assistance with process documentation, recommendations, and insights. As an administrator, you need to configure AI settings to enable these features for your team.
-
-## AI Configuration Overview
+**Stage3** uses OpenAI's GPT models to provide intelligent assistance. As an administrator, you need to configure AI settings to enable these features for your team.
 
 AI configuration involves:
-
 - Connecting your OpenAI API key
 - Selecting default AI models
-- Setting usage limits and controls
-- Monitoring AI usage
 - Troubleshooting connection issues
 
 <Info>
 AI features require an active OpenAI API key with available credits. You can obtain an API key from [platform.openai.com](https://platform.openai.com).
 </Info>
+
+<Tip>
+**Quick Access:** If you see a yellow warning banner at the bottom of your sidebar that says `Configure AI API keys`, you can click it to go directly to the API configuration page.
+</Tip>
 
 ## Setting Up OpenAI API Keys
 
@@ -33,36 +32,26 @@ AI features require an active OpenAI API key with available credits. You can obt
     2. Sign in or create an account
     3. Navigate to **API Keys** in your account settings
     4. Click **Create new secret key**
-    5. Give your key a name (e.g., "Business Process Framework")
+    5. Give your key a name (e.g., "Stage3 Production")
     6. Copy the API key immediately (you cannot view it again)
   </Step>
 
-  <Step title="Navigate to AI Configuration">
-    In your team settings, go to **Settings** > **AI Configuration**.
+  <Step title="Navigate to API Keys">
+    In the main sidebar, go to **Administration > Team Settings**. On the "Settings" page, select **API Keys** from the secondary menu (under Profile, Password, and Team).
   </Step>
 
   <Step title="Enter Your API Key">
-    1. Click **Connect OpenAI**
-    2. Paste your API key into the secure input field
-    3. Click **Verify Connection** to test the key
+    Paste your OpenAI API key into the **API Key** field.
   </Step>
 
   <Step title="Configure Default Settings">
     After verification, set your default AI preferences:
-    - Default model (GPT-4, GPT-3.5 Turbo)
-    - Temperature setting (creativity level)
-    - Maximum tokens per request
+    - **Default model**: Choose GPT-4o, GPT-4-turbo, etc.
   </Step>
 
-  <Step title="Set Usage Limits">
-    Configure usage controls:
-    - Monthly token limit (optional)
-    - Per-user daily limit (optional)
-    - Alert threshold for high usage
-  </Step>
-
-  <Step title="Save Configuration">
-    Click **Save Changes** to activate AI features for your team.
+  <Step title="Test and Save">
+    Click **Test Connection** to verify the key works.
+    Click **Save** to activate the AI assistant for your organization.
   </Step>
 </Steps>
 
@@ -72,7 +61,7 @@ Your API key provides access to your OpenAI account and incurs costs based on us
 
 ## Default AI Models
 
-The Business Process Framework supports multiple OpenAI models:
+**Stage3** supports multiple OpenAI models:
 
 <CardGroup cols={2}>
   <Card title="GPT-4 Turbo" icon="brain">
@@ -115,41 +104,13 @@ Consider these factors when selecting your default model:
 - **Budget**: GPT-3.5 Turbo is most cost-effective
 - **Quality needs**: GPT-4 provides best results for complex tasks
 - **Response time**: Smaller models respond faster
-- **Token limits**: Larger models can handle more context
 
 <Tip>
-Start with GPT-4o as your default. It provides excellent quality at a reasonable cost. You can switch to GPT-3.5 Turbo if costs become a concern.
+Start with GPT-4o as your default. It provides excellent quality at a reasonable cost. You can switch to a different model later if you want to optimize costs.
 </Tip>
 
-## AI Usage Limits
+## Understanding Token Usage
 
-Configure limits to control costs and prevent unexpected charges:
-
-### Monthly Token Limit
-
-Set a maximum number of tokens your team can use per month:
-
-- **Soft limit**: Sends warning email at threshold
-- **Hard limit**: Disables AI features when reached
-- **Recommended**: Set to 2-3x your expected usage
-
-### Per-User Daily Limit
-
-Prevent individual users from consuming excessive tokens:
-
-- **Default**: 50,000 tokens per user per day
-- **Recommended**: 10,000-100,000 depending on team size and usage
-- **Effect**: User receives a notification when limit is reached
-
-### Cost Alerts
-
-Receive notifications when costs exceed thresholds:
-
-- **Alert levels**: 50%, 75%, 90%, 100% of monthly budget
-- **Recipients**: Team Owners and Admins
-- **Delivery**: Email and in-app notifications
-
-<Accordion title="Understanding Token Usage">
 Tokens are the units that OpenAI uses to measure usage. Roughly:
 - 1 token ≈ 4 characters of English text
 - 1,000 tokens ≈ 750 words
@@ -160,88 +121,20 @@ Tokens are the units that OpenAI uses to measure usage. Roughly:
 - GPT-3.5 Turbo: $0.50-$2.00 per 1M tokens
 - GPT-4o: $2.50-$10.00 per 1M tokens
 - GPT-4 Turbo: $10-$30 per 1M tokens
-</Accordion>
-
-## Advanced AI Settings
-
-### Temperature
-
-Controls the creativity and randomness of AI responses:
-
-- **0.0-0.3**: Focused and deterministic (best for factual content)
-- **0.4-0.7**: Balanced creativity and consistency (recommended default)
-- **0.8-1.0**: More creative and varied (best for brainstorming)
-
-**Recommended**: 0.5 for most business use cases
-
-### Context Window
-
-Maximum number of tokens to include in each AI request:
-
-- **Smaller window**: Faster responses, lower cost
-- **Larger window**: More context, better understanding
-- **Recommended**: 8,000-16,000 tokens for most processes
-
-### Response Length
-
-Control the maximum length of AI-generated responses:
-
-- **Short** (256 tokens): Quick suggestions and summaries
-- **Medium** (512 tokens): Standard responses (default)
-- **Long** (1,024 tokens): Detailed analysis and documentation
-- **Extended** (2,048 tokens): Comprehensive reports
-
-### System Prompt Customization
-
-Customize the default instructions given to the AI:
-
-```
-You are an AI assistant helping with business process documentation
-and improvement. Provide practical, actionable advice based on industry
-best practices. Be concise but thorough.
-```
-
-You can customize this prompt to match your industry, tone, or specific needs.
-
-<Tip>
-Adding industry-specific context to your system prompt can significantly improve AI response relevance.
-</Tip>
 
 ## Monitoring AI Usage
 
-### Usage Dashboard
+<Accordion title="Monitoring Usage and Costs">
+To monitor your usage and set spending limits, you must use your **OpenAI Dashboard**.
 
-View real-time and historical AI usage:
-
-- **Total tokens used**: By day, week, or month
-- **Cost estimate**: Based on current OpenAI pricing
-- **Top users**: Who is using AI features most
-- **Popular features**: Which AI features are used most often
-- **Model distribution**: Usage breakdown by AI model
-
-### Usage Reports
-
-Generate detailed usage reports:
-
-- **Export to CSV**: Download usage data for analysis
-- **Scheduled reports**: Receive monthly usage summaries via email
-- **Cost tracking**: Monitor costs over time
-- **Trend analysis**: Identify usage patterns and anomalies
-
-### Activity Log
-
-Review specific AI interactions:
-
-- **Timestamp**: When each request was made
-- **User**: Who initiated the request
-- **Feature**: Which feature used AI (process assist, assessment, etc.)
-- **Model**: Which AI model was used
-- **Tokens**: How many tokens were consumed
-- **Success/failure**: Whether the request completed successfully
+1.  Log into [platform.openai.com](https://platform.openai.com) and go to **Usage**.
+2.  View your daily/monthly token usage and cost breakdown.
+3.  In your OpenAI account settings, set **Usage Limits** (soft or hard limits) to prevent overages.
+</Accordion>
 
 ## Troubleshooting AI Connection
 
-### Connection Failed
+### Connection Failed ("Invalid API Key")
 
 If your API key verification fails:
 
@@ -267,29 +160,25 @@ If your API key verification fails:
 
 If AI features are not responding:
 
-- **Check connection status**: Go to AI Configuration and verify the connection indicator is green
-- **Review usage limits**: Ensure you have not exceeded your configured limits
-- **Check OpenAI status**: Visit [status.openai.com](https://status.openai.com) for service issues
-- **Verify feature is enabled**: Ensure AI features are enabled in Team Settings > Features
+- **Check connection status**: Go to the API Keys page and re-test the connection.
+- **Review usage limits**: Ensure you have not exceeded your spending limits in your OpenAI account.
+- **Check OpenAI status**: Visit [status.openai.com](https://status.openai.com) for service issues.
 
 ### Slow AI Responses
 
 If AI responses are taking too long:
 
-- **Switch to faster model**: Try GPT-3.5 Turbo or GPT-4o Mini
-- **Reduce context window**: Lower the maximum tokens sent to the AI
-- **Check OpenAI load**: Response times vary with OpenAI's server load
-- **Limit concurrent requests**: Too many simultaneous AI requests can slow responses
+- **Switch to faster model**: Try GPT-3.5 Turbo.
+- **Check OpenAI load**: Response times vary with OpenAI's server load.
+- **Break complex questions** into simpler parts.
 
 ### High Costs
 
 If your AI costs are higher than expected:
 
-1. **Review usage dashboard**: Identify which users or features consume the most tokens
-2. **Switch to cheaper models**: Consider GPT-3.5 Turbo for routine tasks
-3. **Set stricter limits**: Implement per-user daily limits
-4. **Optimize prompts**: Reduce unnecessary context in AI requests
-5. **Disable unused features**: Turn off AI features that are not providing value
+1. **Review usage dashboard** in OpenAI to identify which models consume the most tokens.
+2. **Switch to cheaper models**: Consider GPT-3.5 Turbo for routine tasks.
+3. **Set stricter limits** in your OpenAI account.
 
 <Warning>
 OpenAI charges based on actual token usage. Monitor your usage dashboard regularly to avoid unexpected costs.
@@ -299,11 +188,11 @@ OpenAI charges based on actual token usage. Monitor your usage dashboard regular
 
 <CardGroup cols={2}>
   <Card title="Monitor Usage Weekly" icon="chart-line">
-    Review your usage dashboard weekly to catch unusual patterns or cost spikes early.
+    Review your OpenAI usage dashboard weekly to catch unusual patterns or cost spikes early.
   </Card>
 
   <Card title="Set Conservative Limits" icon="shield-halved">
-    Start with lower limits and increase them as you understand your team's usage patterns.
+    Start with lower spending limits in OpenAI and increase them as you understand your team's usage.
   </Card>
 
   <Card title="Rotate API Keys" icon="key">
@@ -312,14 +201,6 @@ OpenAI charges based on actual token usage. Monitor your usage dashboard regular
 
   <Card title="Use Appropriate Models" icon="sliders">
     Do not use GPT-4 for simple tasks that GPT-3.5 can handle effectively.
-  </Card>
-
-  <Card title="Educate Your Team" icon="graduation-cap">
-    Help team members understand AI costs so they use features responsibly.
-  </Card>
-
-  <Card title="Budget for Growth" icon="calculator">
-    Plan for increased AI usage as your team adopts AI features more extensively.
   </Card>
 </CardGroup>
 
@@ -346,8 +227,8 @@ For sensitive or regulated industries, review OpenAI's data processing agreement
 ## Related Resources
 
 <CardGroup cols={3}>
-  <Card title="Managing Features" icon="toggle-on" href="/admin/managing-features">
-    Enable or disable AI features
+  <Card title="AI Master Prompts" icon="file-lines" href="/ai/what-are-master-prompts">
+    Learn about custom AI instructions
   </Card>
 
   <Card title="Team Settings" icon="gear" href="/admin/team-settings">

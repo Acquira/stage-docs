@@ -52,19 +52,11 @@ Think of blueprints as the 30,000-foot view of your business processes, while gu
 
 <Steps>
   <Step title="Navigate to Workflow Templates">
-    Go to **Settings** > **Workflow Templates** in the main navigation.
+    Go to **Administration** > **Workflows Templates** in the main navigation.
   </Step>
 
   <Step title="Click 'Generate from Blueprint'">
     Click the **Generate from Blueprint** button in the top right corner.
-
-    <Frame>
-      <img src="/images/workflows/generate-from-blueprint-button.png" alt="Generate from Blueprint button" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot showing the button location
-    </Note>
   </Step>
 
   <Step title="Select a Blueprint">
@@ -75,14 +67,6 @@ Think of blueprints as the 30,000-foot view of your business processes, while gu
     - **HR & People Management Blueprint**
     - **Financial Management Blueprint**
     - Custom blueprints your organization has created
-
-    <Frame>
-      <img src="/images/workflows/select-blueprint.png" alt="Blueprint selection interface" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot of blueprint selection screen
-    </Note>
   </Step>
 
   <Step title="Choose Process Category">
@@ -118,14 +102,6 @@ Think of blueprints as the 30,000-foot view of your business processes, while gu
     - Sub-workflows (if applicable)
     - Key stakeholders
     - Major milestones
-
-    <Frame>
-      <img src="/images/workflows/blueprint-preview.png" alt="Blueprint-generated workflow preview" />
-    </Frame>
-
-    <Note>
-    **Placeholder**: Screenshot showing preview of generated workflows
-    </Note>
   </Step>
 
   <Step title="Customize Workflows">
@@ -197,14 +173,6 @@ Think of blueprints as the 30,000-foot view of your business processes, while gu
 
 Blueprint generation creates category-level workflows, which are broader than procedure-level workflows:
 
-<Frame>
-  <img src="/images/workflows/category-vs-procedure.png" alt="Category vs Procedure Workflows" />
-</Frame>
-
-<Note>
-**Placeholder**: Visual diagram comparing category-level and procedure-level workflows
-</Note>
-
 ### Category-Level: Acquisition Due Diligence
 
 - **Scope**: Entire due diligence process
@@ -273,15 +241,8 @@ Blueprint generation can create dependencies between related workflows:
 
 **Example: Acquisition Process**
 
-```
-Workflow: Pre-Acquisition Analysis
-  ↓ (Must complete before starting)
-Workflow: Due Diligence
-  ↓ (Must complete before starting)
-Workflow: Closing & Transition
-  ↓ (Must complete before starting)
-Workflow: Post-Acquisition Integration
-```
+Workflow: Pre-Acquisition Analysis ↓ (Must complete before starting) Workflow: Due Diligence ↓ (Must complete before starting) Workflow: Closing & Transition ↓ (Must complete before starting) Workflow: Post-Acquisition Integration
+
 
 <Info>
 When you enable "Link Related Workflows," the system ensures workflows are completed in sequence. You can't start Due Diligence until Pre-Acquisition Analysis is complete.

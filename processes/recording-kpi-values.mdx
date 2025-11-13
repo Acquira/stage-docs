@@ -19,71 +19,39 @@ Think of KPI tracking like checking your weight when dieting. One weigh-in doesn
 ## Recording Your First Value
 
 <Steps>
-  <Step title="Navigate to Your KPI">
-    Open the core process or activity that contains your KPI.
-
-    Find the KPI in the metrics or performance section.
+  <Step title="Navigate to the KPIs Tab">
+    Open the core process that contains your KPI and click the **"KPIs"** tab in the top navigation bar.
+  </Step>
+  
+  <Step title="Find Your KPI">
+    You will see a card for each KPI you have created (e.g., "5 - Number of sales calls per week").
+    
+    Click the **"Record Data"** button on the card for the KPI you want to update.
   </Step>
 
-  <Step title="Click Add Value or Record Data">
-    Look for a button like:
-    - **"Add Value"**
-    - **"Record Data"**
-    - **"Update"**
-    - **"+"** icon next to the KPI
-
-    Click it to open the data entry form.
+  <Step title="Enter Data in the Modal">
+    This opens the **"Record Actual Value"** modal. Fill in the fields:
+    - **Reporting Period***: Select the date this measurement represents.
+    - **Actual Value***: Type in the measured value (e.g., "1" or "120").
+    - **Notes (optional):** Add any context for this value.
   </Step>
 
-  <Step title="Enter the Date">
-    Select the date this measurement represents.
-
-    **For:**
-    - Daily KPIs: Use the specific day
-    - Weekly KPIs: Use the last day of the week (e.g., Friday)
-    - Monthly KPIs: Use the last day of the month
-    - Quarterly KPIs: Use the last day of the quarter
-
-    Most systems default to today's date.
-  </Step>
-
-  <Step title="Enter the Actual Value">
-    Type in the measured value.
-
-    **Examples:**
-    - First response time: **2.3** (hours)
-    - Customer satisfaction: **4.6** (score)
-    - Conversion rate: **23** (percent)
-    - Time to hire: **45** (days)
-
-    Enter just the number. The system knows the units from your KPI definition.
-  </Step>
-
-  <Step title="Add Notes (Optional)">
-    Include context about this measurement if relevant:
-    - Unusual circumstances
-    - Special events affecting the metric
-    - Reasons for significant changes
-    - Action taken in response
-
-    **Example:** "Response time spiked due to system outage 6/15. Back to normal as of 6/16."
-
-    Notes help future you understand what happened.
+  <Step title="Observe Status Preview">
+    After entering an "Actual Value," the modal will show you an automatic **"Status Preview"**.
+    
+    The system calculates this by comparing your "Actual Value" to the "Target Goal" and shows you the status (e.g., "10% of goal" - **Red**).
   </Step>
 
   <Step title="Save the Value">
-    Click **"Save"** or **"Submit"** to record the value.
+    Click **"Save & Close"** (or "Save & Add Another") to record the value.
 
-    The system automatically:
-    - Calculates status (green/yellow/red)
-    - Updates charts and trends
-    - Adds this data point to historical record
+    The system adds this data point to the KPI's historical record and updates its card.
   </Step>
 </Steps>
 
 ## Understanding Automatic Status
 
-When you record a value, the system compares it to your thresholds and assigns a status color:
+When you record a value, the system compares it to your "Target Goal" and automatically assigns a status color based on its internal rules.
 
 <CardGroup cols={3}>
   <Card title="Green" icon="circle-check" color="#10b981">
@@ -103,10 +71,10 @@ When you record a value, the system compares it to your thresholds and assigns a
   </Card>
 </CardGroup>
 
-**Example:** First Response Time KPI (target: 2 hours)
-- Record **1.5 hours** → Status: **Green** ✅
-- Record **2.8 hours** → Status: **Yellow** ⚠️
-- Record **4.2 hours** → Status: **Red** 🔴
+**Example:** A KPI has a Goal of 10 and "Higher is Better".
+- Record **11** → Status: **Green**
+- Record **8** → Status: **Yellow**
+- Record **1** → Status: **Red**
 
 Learn more: [KPI Status Colors](/processes/kpi-status-colors)
 
@@ -122,13 +90,6 @@ Stick to the frequency you defined when creating the KPI:
     - Support ticket response time
     - Daily sales volume
     - Website conversion rate
-
-    **Tips:**
-    - Set a recurring reminder
-    - Record at the same time each day
-    - Automate if possible
-
-    **Best time:** End of day when data is complete
   </Accordion>
 
   <Accordion title="Weekly KPIs" icon="calendar-week">
@@ -137,14 +98,6 @@ Stick to the frequency you defined when creating the KPI:
     **Examples:**
     - Weekly sales pipeline
     - Average project completion time
-    - Employee engagement scores
-
-    **Tips:**
-    - Choose a consistent day (e.g., every Friday)
-    - Allow time for data to accumulate
-    - Look at weekly trends, not daily fluctuations
-
-    **Best time:** End of week (Friday afternoon)
   </Accordion>
 
   <Accordion title="Monthly KPIs" icon="calendar">
@@ -154,13 +107,6 @@ Stick to the frequency you defined when creating the KPI:
     - Monthly revenue
     - Customer churn rate
     - Time to hire
-
-    **Tips:**
-    - Record within first few days of new month
-    - Wait for all month-end data to be final
-    - Compare month-over-month trends
-
-    **Best time:** 1st-5th business day of following month
   </Accordion>
 
   <Accordion title="Quarterly KPIs" icon="calendar-days">
@@ -169,14 +115,6 @@ Stick to the frequency you defined when creating the KPI:
     **Examples:**
     - Quarterly strategic goals
     - Employee retention rate
-    - Long-term customer satisfaction
-
-    **Tips:**
-    - Record after quarter-end close
-    - Look for long-term patterns
-    - Compare year-over-year
-
-    **Best time:** Within first week after quarter end
   </Accordion>
 </AccordionGroup>
 
@@ -199,8 +137,6 @@ Stick to the frequency you defined when creating the KPI:
     - Export ticket data from support system
     - Calculate: Total response time ÷ Number of tickets
     - Enter average into KPI tracker
-
-    **Best for:** Simple metrics, small data sets, metrics without automated reporting
   </Tab>
 
   <Tab title="System Reports">
@@ -211,10 +147,6 @@ Stick to the frequency you defined when creating the KPI:
     2. Run the standard report
     3. Find the metric value
     4. Enter into KPI tracker
-
-    **Example:** Open Salesforce, run "Monthly Sales Report," find conversion rate, enter value
-
-    **Best for:** Metrics already calculated by your tools
   </Tab>
 
   <Tab title="Automated Integration">
@@ -224,10 +156,6 @@ Stick to the frequency you defined when creating the KPI:
     1. Set up integration between data source and KPI tracker
     2. Values update automatically
     3. Review for accuracy periodically
-
-    **Example:** KPI tracker syncs with support system API, pulling response time daily automatically
-
-    **Best for:** High-frequency metrics, large data volumes, reducing manual work
   </Tab>
 
   <Tab title="Surveys or Forms">
@@ -238,10 +166,6 @@ Stick to the frequency you defined when creating the KPI:
     2. Collect responses
     3. Calculate average or aggregate score
     4. Enter into KPI tracker
-
-    **Example:** Send customer satisfaction survey, calculate average score, record monthly
-
-    **Best for:** Satisfaction metrics, quality scores, feedback-based KPIs
   </Tab>
 </Tabs>
 
@@ -264,7 +188,7 @@ Stick to the frequency you defined when creating the KPI:
 
 ## Viewing Historical Data
 
-After recording values over time, you can see trends:
+After recording values, click the **"View Records"** button on the KPI card to see trends.
 
 <Tabs>
   <Tab title="Charts and Graphs">
@@ -272,11 +196,9 @@ After recording values over time, you can see trends:
 
     **What you'll see:**
     - Line charts showing trends
-    - Target line for comparison
-    - Green/yellow/red zones
+    - Goal line for comparison
+    - Color-coded status zones (Green/Yellow/Red)
     - Data points for each period
-
-    **Use for:** Spotting patterns, presenting to stakeholders, quick visual assessment
   </Tab>
 
   <Tab title="Data Tables">
@@ -285,11 +207,9 @@ After recording values over time, you can see trends:
     **What you'll see:**
     - Date of each measurement
     - Actual value
-    - Status (green/yellow/red)
+    - Status (Green/Yellow/Red)
     - Notes
     - Who recorded it
-
-    **Use for:** Detailed analysis, finding specific data points, auditing
   </Tab>
 
   <Tab title="Summary Statistics">
@@ -299,9 +219,7 @@ After recording values over time, you can see trends:
     - Average value
     - Minimum and maximum
     - Trend direction (improving/declining)
-    - Percent of time in green/yellow/red
-
-    **Use for:** Understanding overall performance, comparing periods
+    - Percent of time in Green/Yellow/Red
   </Tab>
 </Tabs>
 
@@ -311,9 +229,9 @@ After recording values over time, you can see trends:
   <Accordion title="Upward Trend" icon="arrow-trend-up" defaultOpen>
     **Values consistently increasing over time**
 
-    **If higher is better** (e.g., satisfaction score): ✅ Great! Keep it up.
+    **If 'Higher is Better'**: Great! Keep it up.
 
-    **If lower is better** (e.g., response time): ⚠️ Problem. Investigate why.
+    **If 'Lower is Better'**: Problem. Investigate why.
 
     **Action:** Understand what's driving the trend and respond accordingly.
   </Accordion>
@@ -321,9 +239,9 @@ After recording values over time, you can see trends:
   <Accordion title="Downward Trend" icon="arrow-trend-down">
     **Values consistently decreasing over time**
 
-    **If higher is better** (e.g., sales conversion): ⚠️ Problem. Find root cause.
+    **If 'Higher is Better'**: Problem. Find root cause.
 
-    **If lower is better** (e.g., defect rate): ✅ Excellent. Document what improved it.
+    **If 'Lower is Better'**: Excellent. Document what improved it.
 
     **Action:** For positive trends, sustain the improvement. For negative, take corrective action.
   </Accordion>
@@ -331,11 +249,11 @@ After recording values over time, you can see trends:
   <Accordion title="Stable/Flat Trend" icon="minus">
     **Values staying relatively constant**
 
-    **If in green zone:** ✅ Good. Process is stable and meeting targets.
+    **If in Green zone:** Good. Process is stable and meeting targets.
 
-    **If in yellow/red zone:** ⚠️ Concerning. You're consistently not meeting goals.
+    **If in Yellow/Red zone:** Concerning. You're consistently not meeting goals.
 
-    **Action:** If stable in green, maintain. If stable below target, process change needed.
+    **Action:** If stable in Green, maintain. If stable below target, process change needed.
   </Accordion>
 
   <Accordion title="Volatile/Erratic" icon="wave-square">
@@ -357,9 +275,9 @@ Need to correct a past entry?
 
 <Steps>
   <Step title="Find the Value">
-    Navigate to the KPI and open the historical data view.
+    Navigate to the KPI and click **"View Records"**.
 
-    Find the date/value you need to correct.
+    Find the date/value you need to correct in the data table.
   </Step>
 
   <Step title="Click Edit">
@@ -399,8 +317,6 @@ What if you can't record a value for a period?
     - External factors made measurement impossible
 
     **Effect:** Gap in your chart, but no false data
-
-    **Example:** "Customer satisfaction survey wasn't sent in July due to email system migration."
   </Tab>
 
   <Tab title="Estimate">
@@ -412,10 +328,6 @@ What if you can't record a value for a period?
     - The period is important for reporting
 
     **Effect:** Maintains continuity but less accurate
-
-    **Example:** "Estimated based on partial week data. System was offline 2 days."
-
-    Mark estimates clearly in notes.
   </Tab>
 
   <Tab title="Carry Forward">
@@ -426,8 +338,6 @@ What if you can't record a value for a period?
     - Rarely appropriate - use with caution
 
     **Effect:** Shows stability that may not be real
-
-    Generally not recommended unless specifically appropriate for your metric.
   </Tab>
 </Tabs>
 
@@ -437,7 +347,7 @@ What if you can't record a value for a period?
 
 ## Taking Action on Red Status
 
-When a KPI value is in the red zone:
+When a KPI value is in the Red zone:
 
 <Steps>
   <Step title="Investigate Root Cause">
@@ -450,7 +360,7 @@ When a KPI value is in the red zone:
   </Step>
 
   <Step title="Document Your Findings">
-    Add notes to the KPI explaining what you discovered.
+    Add notes to the KPI record explaining what you discovered.
 
     This creates a knowledge base for future reference.
   </Step>
@@ -482,22 +392,18 @@ When a KPI value is in the red zone:
   <Accordion title="Daily Standups" icon="users" defaultOpen>
     **Quick status check for critical metrics**
 
-    - Share current status (green/yellow/red)
-    - Highlight any reds requiring action
+    - Share current status (Green/Yellow/Red)
+    - Highlight any Reds requiring action
     - Note significant changes from yesterday
-
-    **Keep it brief:** 1-2 minutes per KPI
   </Accordion>
 
   <Accordion title="Weekly Team Meetings" icon="calendar-week">
     **Review trends and discuss patterns**
 
     - Show weekly trend charts
-    - Discuss any concerns
-    - Celebrate improvements
-    - Plan actions for yellows and reds
-
-    **Allocate:** 5-10 minutes of meeting time
+    * Discuss any concerns
+    * Celebrate improvements
+    * Plan actions for Yellows and Reds
   </Accordion>
 
   <Accordion title="Monthly Management Reports" icon="file-chart-line">
@@ -507,8 +413,6 @@ When a KPI value is in the red zone:
     - Month-over-month trends
     - Explanations for off-target metrics
     - Actions taken and results
-
-    **Format:** Dashboard or report document
   </Accordion>
 
   <Accordion title="Quarterly Business Reviews" icon="presentation">
@@ -518,8 +422,6 @@ When a KPI value is in the red zone:
     - Achievement of targets
     - Comparison to benchmarks
     - Recommendations for process changes
-
-    **Audience:** Senior leadership and stakeholders
   </Accordion>
 </AccordionGroup>
 
@@ -542,14 +444,14 @@ When a KPI value is in the red zone:
 
 ## KPI Recording Checklist
 
-- [ ] Value recorded on schedule (daily/weekly/monthly)
-- [ ] Correct date selected
-- [ ] Accurate value entered
-- [ ] Notes added for any unusual circumstances
-- [ ] Status (green/yellow/red) reviewed
-- [ ] Red status investigated and action taken
-- [ ] Trends reviewed for patterns
-- [ ] Team notified of significant changes
+- Value recorded on schedule (daily/weekly/monthly)
+- Correct reporting period selected
+- Accurate value entered
+- Notes added for any unusual circumstances
+- Status (Green/Yellow/Red) reviewed
+- Red status investigated and action taken
+- Trends reviewed for patterns
+- Team notified of significant changes
 
 ## Next Steps
 
